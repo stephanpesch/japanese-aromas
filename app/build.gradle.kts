@@ -52,6 +52,8 @@ dependencies {
     implementation(libs.compose.material.icons)
     implementation(libs.compose.material.icons.extended)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.play.services)
+    implementation(libs.play.services.location)
     implementation(libs.maplibre.android)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
@@ -61,5 +63,6 @@ dependencies {
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.turbine)
+    testImplementation(testFixtures(project(":core")))
     testRuntimeOnly(libs.junit.platform.launcher)
 }

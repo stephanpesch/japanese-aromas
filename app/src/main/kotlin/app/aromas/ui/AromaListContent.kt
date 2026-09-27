@@ -19,7 +19,11 @@ import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
 
 @Composable
-fun AromaListContent(aromas: List<Aroma>, language: Language, modifier: Modifier = Modifier) {
+fun AromaListContent(
+    aromas: List<Aroma>,
+    language: Language,
+    modifier: Modifier = Modifier,
+) {
     LazyColumn(modifier = modifier.fillMaxSize()) {
         items(aromas, key = { it.number }) { aroma ->
             AromaRow(aroma, language)
@@ -29,7 +33,10 @@ fun AromaListContent(aromas: List<Aroma>, language: Language, modifier: Modifier
 }
 
 @Composable
-private fun AromaRow(aroma: Aroma, language: Language) {
+private fun AromaRow(
+    aroma: Aroma,
+    language: Language,
+) {
     Column(
         modifier =
             Modifier

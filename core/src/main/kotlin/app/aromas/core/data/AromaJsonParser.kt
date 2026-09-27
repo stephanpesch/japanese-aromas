@@ -10,6 +10,5 @@ object AromaJsonParser {
 
     fun parse(text: String): List<Aroma> = json.decodeFromString(text)
 
-    fun parse(input: InputStream): List<Aroma> =
-        parse(input.bufferedReader().use { it.readText() })
+    fun parse(input: InputStream): List<Aroma> = parse(input.bufferedReader().use { it.readText() })
 }

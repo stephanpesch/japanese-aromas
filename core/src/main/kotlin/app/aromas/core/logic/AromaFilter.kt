@@ -11,11 +11,15 @@ object AromaFilter {
         selectedCategories: Set<String>,
     ): List<Aroma> =
         all.filter { aroma ->
-            val categoryOk = selectedCategories.isEmpty() ||
-                aroma.categories.any { it in selectedCategories }
+            val categoryOk =
+                selectedCategories.isEmpty() ||
+                    aroma.categories.any { it in selectedCategories }
             categoryOk && SeasonMatcher.matches(aroma, selectedMonths, includeYearRound)
         }
 
-    fun sortedByDistance(list: List<Aroma>, lat: Double, lon: Double): List<Aroma> =
-        list.sortedBy { DistanceCalculator.distanceKm(it, lat, lon) }
+    fun sortedByDistance(
+        list: List<Aroma>,
+        lat: Double,
+        lon: Double,
+    ): List<Aroma> = list.sortedBy { DistanceCalculator.distanceKm(it, lat, lon) }
 }
