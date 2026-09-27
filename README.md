@@ -1,54 +1,58 @@
 # Japanese Aromas 🌸
 
-Native Android-App zu den **100 Duft-Landschaften Japans** (かおり風景100選) — zum
-standortbewussten „Durch-Japan-Gehen": Karte, „in der Nähe"-Liste, Detailseiten,
-Filter nach Reisezeit und Kategorie, umschaltbar Deutsch ⇄ 日本語.
+Native Android app for the **100 Fragrance Landscapes of Japan** (かおり風景100選) —
+a location-aware companion for walking through Japan: a map, a "nearby" list, detail
+pages, filters by travel time and category, switchable between German and 日本語.
 
-Die Daten (100 zweisprachige Einträge + Fotos + geprüfte Koordinaten) stammen aus
-dem Schwesterprojekt `../../100-aromas` und werden als Snapshot gebündelt.
+The data (100 bilingual entries + photos + verified coordinates) comes from the
+sibling project `../../100-aromas` and is bundled as a snapshot.
 
-## Bauen & Installieren
+> Note: the app's user interface is German/Japanese by design; everything else in
+> this repository (code, comments, docs, commits) is English.
 
-Braucht ein **JDK 21** (das System-JRE 26 hat kein `javac`). SDK-Pfad in
-`local.properties` (`sdk.dir=…`, nicht eingecheckt).
+## Build & install
+
+Requires a **JDK 21** (the system JRE 26 has no `javac`). The SDK path goes into
+`local.properties` (`sdk.dir=…`, not committed).
 
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
-./gradlew assembleDebug          # APK bauen
-./gradlew :app:installDebug      # auf verbundenes Gerät installieren
+./gradlew assembleDebug          # build the APK
+./gradlew :app:installDebug      # install on a connected device/emulator
 ```
 
-## Qualität (lokal wie in CI)
+## Quality (local, same as CI)
 
-Ein Befehl prüft alles — **muss grün sein, bevor gemerged wird**:
+One command checks everything — it **must be green before merging**:
 
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 ./gradlew ktlintCheck detekt test :core:koverVerify lintDebug assembleDebug
 ```
 
-- **ktlint** + **detekt** — Formatierung & statische Analyse (`./gradlew ktlintFormat` fixt Formatierung).
-- **Kover** — ≥ 80 % Zeilenabdeckung in `:core`.
-- Auf GitHub erzwingt die **CI** (`.github/workflows/ci.yml`) genau diese Checks als
-  Pflicht vor jedem Merge (Branch Protection auf `main`). Das **Code-Review** läuft
-  lokal über den `code-reviewer`-Subagenten vor jedem Push (siehe `CLAUDE.md`).
+- **ktlint** + **detekt** — formatting & static analysis (`./gradlew ktlintFormat` fixes formatting).
+- **Kover** — ≥ 80 % line coverage in `:core`.
+- On GitHub, **CI** (`.github/workflows/ci.yml`) enforces these checks as a required
+  status before every merge (branch protection on `main`). **Code review** runs
+  locally via the `code-reviewer` subagent before every push (see `CLAUDE.md`).
 
-## Struktur
+## Structure
 
-- **`:core`** — `app.aromas.core`, UI-frei & testbar: Datenmodell, JSON-Parser,
-  Repository, Logik (`SeasonMatcher`, `DistanceCalculator`, `AromaFilter`,
-  Sprach-Accessoren). Hier gilt das 80 %-Coverage-Gate.
-- **`:app`** — `app.aromas`, Jetpack Compose + Hilt: Screens, Standort, DI,
-  Sprachumschalter.
-- **Daten:** `app/src/main/assets/aromas.json` + `images/` (generiert). Nach einer
-  Datenänderung in `100-aromas`: `python3 tools/sync_data.py` neu laufen lassen.
+- **`:core`** — `app.aromas.core`, UI-free & testable: data model, JSON parser,
+  repository, logic (`SeasonMatcher`, `DistanceCalculator`, `AromaFilter`, language
+  accessors). The 80 % coverage gate applies here.
+- **`:app`** — `app.aromas`, Jetpack Compose + Hilt: screens, location, DI, language
+  switch.
+- **Data:** `app/src/main/assets/aromas.json` + `images/` (generated). After changing
+  the data in `100-aromas`, re-run `python3 tools/sync_data.py`.
 
-## Karten
+## Maps
 
-**MapLibre** mit freiem **OpenFreeMap**-Style — **kein API-Key, kein Konto**. Nur die
-Kartenkacheln brauchen Internet; Liste/Filter/Fotos/Distanz laufen offline.
+**MapLibre** with the free **OpenFreeMap** style — **no API key, no account**. Only
+the map tiles need the internet; list/filter/photos/distance work offline. Uses the
+OpenGL renderer (`org.maplibre.gl:android-sdk-opengl`).
 
-## Mitarbeiten
+## Contributing
 
-Arbeit läuft über **Pull Requests** gegen `main` (geschützt). Details zum
-Entwickler-Workflow in `CLAUDE.md`, Architektur in `docs/ARCHITECTURE.md`.
+Work happens through **pull requests** against `main` (protected). See `CLAUDE.md`
+for the developer workflow and `docs/ARCHITECTURE.md` for the architecture.
