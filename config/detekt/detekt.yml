@@ -1,0 +1,25 @@
+naming:
+  FunctionNaming:
+    ignoreAnnotated: ['Composable']
+  TopLevelPropertyNaming:
+    # PascalCase (Compose-Farben/-Listen) und SCREAMING_SNAKE (klassische Konstanten)
+    constantPattern: '[A-Z][A-Za-z0-9_]*'
+
+style:
+  UnusedPrivateMember:
+    ignoreAnnotated: ['Preview']
+  MagicNumber:
+    ignoreAnnotated: ['Composable', 'Preview']
+    ignorePropertyDeclaration: true
+    ignoreCompanionObjectPropertyDeclaration: true
+
+complexity:
+  LongMethod:
+    ignoreAnnotated: ['Composable']
+  LongParameterList:
+    ignoreAnnotated: ['Composable']
+  TooManyFunctions:
+    ignoreAnnotatedFunctions: ['Composable']
+    # Room-DAOs und Retrofit-APIs sind naturgemäß breite Schnittstellen.
+    ignoreAnnotated: ['Dao']
+    thresholdInInterfaces: 16

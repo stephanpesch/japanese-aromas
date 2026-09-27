@@ -1,0 +1,19 @@
+# Gradle / build
+.gradle/
+build/
+*/build/
+captures/
+.cxx/
+
+# Android / IDE
+local.properties
+*.iml
+.idea/
+*.keystore
+*.jks
+
+# OS
+.DS_Store
+
+# Claude agent memory (per Takibi convention)
+.claude/agent-memory/
