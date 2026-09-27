@@ -5,7 +5,8 @@
 Sources:
 - app/src/main/assets/aromas.json  (the aroma snapshot, produced by sync_data.py)
 - tools/data/scenery.json          (authored: 36 Special Places of Scenic Beauty)
-- (later) tools/data/waters.json, tools/data/sounds.json
+- tools/data/waters.json           (authored: 100 Remarkable Waters)
+- (later) tools/data/sounds.json
 
 Each source is normalised to the German-keyed schema the Place model reads
 (@SerialName), tagged with its collection, and written to
@@ -37,13 +38,12 @@ def aroma_places():
     return aromas
 
 
-def scenery_places():
-    """The 36 Special Places of Scenic Beauty, mapped to the Place schema."""
-    scenery = load(os.path.join(DATA, "scenery.json"))
+def authored_places(filename, collection):
+    """An authored collection (scenery/waters/sounds), mapped to the Place schema."""
     out = []
-    for s in scenery:
+    for s in load(os.path.join(DATA, filename)):
         entry = {
-            "collection": "scenery",
+            "collection": collection,
             "nummer": s["number"],
             "titel_ja": s["titleJa"],
             "titel_de": s["titleDe"],
@@ -61,7 +61,11 @@ def scenery_places():
 
 
 def main():
-    places = aroma_places() + scenery_places()
+    places = (
+        aroma_places()
+        + authored_places("scenery.json", "scenery")
+        + authored_places("waters.json", "water")
+    )
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(places, f, ensure_ascii=False, indent=2)
     by_collection = {}
