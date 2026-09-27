@@ -28,4 +28,10 @@
     <string name="alerts_enable">周辺アラートを有効にする</string>
     <string name="alerts_disable">無効にする</string>
     <string name="alerts_permission_hint">有効にできませんでした。設定で位置情報を「常に許可」にし、通知を許可してください。</string>
+    <string name="collection_aroma">香り</string>
+    <string name="collection_water">名水</string>
+    <string name="collection_sound">音風景</string>
+    <string name="collection_scenery">名勝</string>
+    <string name="detail_open_map">地図アプリで開く</string>
+    <string name="detail_wikipedia">ウィキペディア</string>
 </resources>

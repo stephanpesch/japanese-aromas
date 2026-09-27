@@ -52,8 +52,9 @@ private fun PlaceRow(
             style = MaterialTheme.typography.titleMedium,
         )
         Text(text = place.secondaryTitle(language), style = MaterialTheme.typography.bodyMedium)
+        val season = place.season(language)
         Text(
-            text = "${place.prefecture} · ${place.season(language)}",
+            text = if (season.isEmpty()) place.prefecture else "${place.prefecture} · $season",
             style = MaterialTheme.typography.labelMedium,
         )
     }

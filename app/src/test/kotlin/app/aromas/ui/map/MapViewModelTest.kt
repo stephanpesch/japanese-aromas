@@ -2,6 +2,7 @@ package app.aromas.ui.map
 
 import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.Season
+import app.aromas.core.model.PlaceCollection
 import app.aromas.core.place
 import app.aromas.ui.testutil.MainDispatcherExtension
 import app.cash.turbine.test
@@ -26,10 +27,25 @@ class MapViewModelTest {
     }
 
     @Test
-    fun `no filter shows every aroma`() =
+    fun `no filter shows every place`() =
         runTest {
             viewModel().filtered.test {
                 assertEquals(listOf(1, 2, 3), awaitItem().map { it.number })
+                cancelAndConsumeRemainingEvents()
+            }
+        }
+
+    @Test
+    fun `collection filter keeps only the selected collection`() =
+        runTest {
+            val scene =
+                place(number = 9, collection = PlaceCollection.SCENERY, categories = emptyList(), months = emptyList())
+            val vm = MapViewModel(PlaceRepository(listOf(flower, scene)))
+            assertEquals(listOf(PlaceCollection.AROMA, PlaceCollection.SCENERY), vm.collections)
+            vm.filtered.test {
+                assertEquals(listOf(1, 9), awaitItem().map { it.number })
+                vm.toggleCollection(PlaceCollection.SCENERY)
+                assertEquals(listOf(9), awaitItem().map { it.number })
                 cancelAndConsumeRemainingEvents()
             }
         }

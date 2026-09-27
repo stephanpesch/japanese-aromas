@@ -1,6 +1,11 @@
 package app.aromas.ui.detail
 
+import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -12,6 +17,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
@@ -19,6 +25,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -31,7 +38,7 @@ import app.aromas.core.logic.source
 import app.aromas.core.logic.title
 import app.aromas.core.model.Language
 import app.aromas.core.model.Place
-import app.aromas.ui.map.CategoryColors
+import app.aromas.ui.map.CollectionColors
 import app.aromas.ui.map.OPENFREEMAP_STYLE_URL
 import app.aromas.ui.map.rememberMapViewWithLifecycle
 import coil.compose.AsyncImage
@@ -120,6 +127,21 @@ fun DetailScreen(
                 val season = place.season(language)
                 if (season.isNotEmpty()) Field(stringResource(R.string.label_season), season)
 
+                val context = LocalContext.current
+                Row(
+                    modifier = Modifier.padding(top = 16.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                ) {
+                    OutlinedButton(onClick = { openInMaps(context, place.lat, place.lon, place.title(language)) }) {
+                        Text(stringResource(R.string.detail_open_map))
+                    }
+                    place.wikipediaUrl?.let { url ->
+                        OutlinedButton(onClick = { openUrl(context, url) }) {
+                            Text(stringResource(R.string.detail_wikipedia))
+                        }
+                    }
+                }
+
                 Text(
                     text = place.description(language),
                     style = MaterialTheme.typography.bodyLarge,
@@ -134,6 +156,28 @@ fun DetailScreen(
             }
         }
     }
+}
+
+private fun openInMaps(
+    context: Context,
+    lat: Double,
+    lon: Double,
+    label: String,
+) {
+    val uri = Uri.parse("geo:$lat,$lon?q=$lat,$lon(${Uri.encode(label)})")
+    launchView(context, uri)
+}
+
+private fun openUrl(
+    context: Context,
+    url: String,
+) = launchView(context, Uri.parse(url))
+
+private fun launchView(
+    context: Context,
+    uri: Uri,
+) {
+    runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, uri)) }
 }
 
 @Composable
@@ -173,7 +217,7 @@ private fun DetailMiniMap(
                     )
                     style.addLayer(
                         CircleLayer(DETAIL_LAYER_ID, DETAIL_SOURCE_ID).withProperties(
-                            PropertyFactory.circleColor(CategoryColors.hex(place.category.orEmpty())),
+                            PropertyFactory.circleColor(CollectionColors.hex(place.collection)),
                             PropertyFactory.circleRadius(MARKER_RADIUS),
                             PropertyFactory.circleStrokeColor("#ffffff"),
                             PropertyFactory.circleStrokeWidth(MARKER_STROKE),
