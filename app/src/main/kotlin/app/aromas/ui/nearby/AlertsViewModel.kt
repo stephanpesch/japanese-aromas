@@ -2,11 +2,11 @@ package app.aromas.ui.nearby
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import app.aromas.core.data.AromaRepository
+import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.GeofenceSelection
 import app.aromas.geofence.AlertsPreferences
-import app.aromas.geofence.AromaNotifier
 import app.aromas.geofence.GeofenceRegistrar
+import app.aromas.geofence.PlaceNotifier
 import app.aromas.location.LocationProvider
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -20,11 +20,11 @@ import javax.inject.Inject
 class AlertsViewModel
     @Inject
     constructor(
-        private val repository: AromaRepository,
+        private val repository: PlaceRepository,
         private val registrar: GeofenceRegistrar,
         private val preferences: AlertsPreferences,
         private val locationProvider: LocationProvider,
-        private val notifier: AromaNotifier,
+        private val notifier: PlaceNotifier,
     ) : ViewModel() {
         private val enabledState = MutableStateFlow(preferences.enabled)
         val enabled: StateFlow<Boolean> = enabledState.asStateFlow()

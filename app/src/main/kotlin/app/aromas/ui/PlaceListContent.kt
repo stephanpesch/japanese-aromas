@@ -16,27 +16,27 @@ import androidx.compose.ui.unit.dp
 import app.aromas.core.logic.season
 import app.aromas.core.logic.secondaryTitle
 import app.aromas.core.logic.title
-import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
+import app.aromas.core.model.Place
 
 @Composable
-fun AromaListContent(
-    aromas: List<Aroma>,
+fun PlaceListContent(
+    places: List<Place>,
     language: Language,
-    onOpenDetail: (Aroma) -> Unit,
+    onOpenDetail: (Place) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     LazyColumn(modifier = modifier.fillMaxSize()) {
-        items(aromas, key = { it.number }) { aroma ->
-            AromaRow(aroma, language, onClick = { onOpenDetail(aroma) })
+        items(places, key = { it.id }) { place ->
+            PlaceRow(place, language, onClick = { onOpenDetail(place) })
             HorizontalDivider()
         }
     }
 }
 
 @Composable
-private fun AromaRow(
-    aroma: Aroma,
+private fun PlaceRow(
+    place: Place,
     language: Language,
     onClick: () -> Unit,
 ) {
@@ -48,12 +48,12 @@ private fun AromaRow(
                 .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Text(
-            text = "${aroma.number}. ${aroma.title(language)}",
+            text = "${place.number}. ${place.title(language)}",
             style = MaterialTheme.typography.titleMedium,
         )
-        Text(text = aroma.secondaryTitle(language), style = MaterialTheme.typography.bodyMedium)
+        Text(text = place.secondaryTitle(language), style = MaterialTheme.typography.bodyMedium)
         Text(
-            text = "${aroma.prefecture} · ${aroma.season(language)}",
+            text = "${place.prefecture} · ${place.season(language)}",
             style = MaterialTheme.typography.labelMedium,
         )
     }

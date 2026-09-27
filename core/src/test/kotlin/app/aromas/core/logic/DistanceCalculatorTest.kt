@@ -1,6 +1,6 @@
 package app.aromas.core.logic
 
-import app.aromas.core.aroma
+import app.aromas.core.place
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
@@ -18,8 +18,8 @@ class DistanceCalculatorTest {
     }
 
     @Test
-    fun `aroma overload matches raw coordinates`() {
-        val a = aroma(lat = 34.296, lon = 132.320)
+    fun `place overload matches raw coordinates`() {
+        val a = place(lat = 34.296, lon = 132.320)
         assertEquals(
             DistanceCalculator.distanceKm(34.296, 132.320, 35.0, 135.0),
             DistanceCalculator.distanceKm(a, 35.0, 135.0),

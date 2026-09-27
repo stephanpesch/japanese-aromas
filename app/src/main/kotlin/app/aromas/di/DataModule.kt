@@ -1,8 +1,8 @@
 package app.aromas.di
 
 import android.content.Context
-import app.aromas.core.data.AromaJsonParser
-import app.aromas.core.data.AromaRepository
+import app.aromas.core.data.PlaceJsonParser
+import app.aromas.core.data.PlaceRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,10 +15,10 @@ import javax.inject.Singleton
 object DataModule {
     @Provides
     @Singleton
-    fun provideAromaRepository(
+    fun providePlaceRepository(
         @ApplicationContext context: Context,
-    ): AromaRepository =
-        AromaRepository(
-            context.assets.open("aromas.json").use { AromaJsonParser.parse(it) },
+    ): PlaceRepository =
+        PlaceRepository(
+            context.assets.open("aromas.json").use { PlaceJsonParser.parse(it) },
         )
 }

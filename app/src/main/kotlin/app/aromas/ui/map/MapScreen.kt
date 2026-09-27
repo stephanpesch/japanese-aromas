@@ -32,8 +32,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.core.logic.season
 import app.aromas.core.logic.title
-import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
+import app.aromas.core.model.Place
 import org.maplibre.android.camera.CameraPosition
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.maps.MapLibreMap
@@ -44,8 +44,8 @@ import org.maplibre.android.style.layers.PropertyFactory
 import org.maplibre.android.style.sources.GeoJsonSource
 import java.util.concurrent.atomic.AtomicBoolean
 
-private const val SOURCE_ID = "aromas"
-private const val LAYER_ID = "aroma-circles"
+private const val SOURCE_ID = "places"
+private const val LAYER_ID = "place-circles"
 private const val CIRCLE_RADIUS = 6f
 private const val STROKE_WIDTH = 1.5f
 private const val JAPAN_LAT = 37.5
@@ -56,20 +56,20 @@ private const val TAP_SLOP = 24f
 @Composable
 fun MapScreen(
     language: Language,
-    onOpenDetail: (Aroma) -> Unit,
+    onOpenDetail: (Place) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: MapViewModel = hiltViewModel(),
 ) {
     val mapView = rememberMapViewWithLifecycle()
-    val aromas by viewModel.filtered.collectAsStateWithLifecycle()
+    val places by viewModel.filtered.collectAsStateWithLifecycle()
     val filter by viewModel.filter.collectAsStateWithLifecycle()
-    var selected by remember { mutableStateOf<Aroma?>(null) }
-    val byNumber = remember(aromas) { aromas.associateBy { it.number } }
+    var selected by remember { mutableStateOf<Place?>(null) }
+    val byId = remember(places) { places.associateBy { it.id } }
     // The map is configured once inside an async style load; read the latest
     // filtered set and lookup through these so a filter toggled while the style
     // is still loading is not lost.
-    val currentAromas by rememberUpdatedState(aromas)
-    val currentByNumber by rememberUpdatedState(byNumber)
+    val currentPlaces by rememberUpdatedState(places)
+    val currentById by rememberUpdatedState(byId)
     // Guards the one-time map setup: setStyle() is async, so `map.style` stays
     // null during loading — a recomposition (e.g. language toggle) must not
     // re-run the setup and stack up click listeners.
@@ -81,7 +81,7 @@ fun MapScreen(
             if (configured.compareAndSet(false, true)) {
                 view.getMapAsync { map ->
                     maplibreMap = map
-                    configureMap(map, currentAromas) { selected = currentByNumber[it] }
+                    configureMap(map, currentPlaces) { selected = currentById[it] }
                 }
             }
         }
@@ -94,12 +94,12 @@ fun MapScreen(
             onClear = viewModel::clear,
             modifier = Modifier.align(Alignment.TopCenter),
         )
-        selected?.let { aroma ->
-            AromaInfoCard(
-                aroma = aroma,
+        selected?.let { place ->
+            PlaceInfoCard(
+                place = place,
                 language = language,
                 onClose = { selected = null },
-                onOpenDetail = { onOpenDetail(aroma) },
+                onOpenDetail = { onOpenDetail(place) },
                 modifier =
                     Modifier
                         .align(Alignment.BottomCenter)
@@ -110,17 +110,17 @@ fun MapScreen(
 
     // Push the filtered set into the existing marker source and drop a selection
     // that the filter just hid.
-    LaunchedEffect(aromas) {
-        maplibreMap?.style?.getSourceAs<GeoJsonSource>(SOURCE_ID)?.setGeoJson(AromaFeatures.collection(aromas))
-        selected?.let { if (it.number !in byNumber) selected = null }
+    LaunchedEffect(places) {
+        maplibreMap?.style?.getSourceAs<GeoJsonSource>(SOURCE_ID)?.setGeoJson(PlaceFeatures.collection(places))
+        selected?.let { if (it.id !in byId) selected = null }
     }
 }
 
 /** One-time map configuration: camera, style + circle layer, tap handler. */
 private fun configureMap(
     map: MapLibreMap,
-    aromas: List<Aroma>,
-    onPick: (Int?) -> Unit,
+    places: List<Place>,
+    onPick: (String?) -> Unit,
 ) {
     map.cameraPosition =
         CameraPosition
@@ -129,10 +129,10 @@ private fun configureMap(
             .zoom(JAPAN_ZOOM)
             .build()
     map.setStyle(Style.Builder().fromUri(OPENFREEMAP_STYLE_URL)) { style ->
-        style.addSource(GeoJsonSource(SOURCE_ID, AromaFeatures.collection(aromas)))
+        style.addSource(GeoJsonSource(SOURCE_ID, PlaceFeatures.collection(places)))
         style.addLayer(
             CircleLayer(LAYER_ID, SOURCE_ID).withProperties(
-                PropertyFactory.circleColor(Expression.get(AromaFeatures.PROP_COLOR)),
+                PropertyFactory.circleColor(Expression.get(PlaceFeatures.PROP_COLOR)),
                 PropertyFactory.circleRadius(CIRCLE_RADIUS),
                 PropertyFactory.circleStrokeColor("#ffffff"),
                 PropertyFactory.circleStrokeWidth(STROKE_WIDTH),
@@ -143,15 +143,15 @@ private fun configureMap(
         val screen = map.projection.toScreenLocation(point)
         val box = RectF(screen.x - TAP_SLOP, screen.y - TAP_SLOP, screen.x + TAP_SLOP, screen.y + TAP_SLOP)
         val hit = map.queryRenderedFeatures(box, LAYER_ID).firstOrNull()
-        val number = hit?.getNumberProperty(AromaFeatures.PROP_NUMBER)?.toInt()
-        onPick(number)
-        number != null
+        val id = hit?.getStringProperty(PlaceFeatures.PROP_ID)
+        onPick(id)
+        id != null
     }
 }
 
 @Composable
-private fun AromaInfoCard(
-    aroma: Aroma,
+private fun PlaceInfoCard(
+    place: Place,
     language: Language,
     onClose: () -> Unit,
     onOpenDetail: () -> Unit,
@@ -165,11 +165,11 @@ private fun AromaInfoCard(
         ) {
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "${aroma.number}. ${aroma.title(language)}",
+                    text = "${place.number}. ${place.title(language)}",
                     style = MaterialTheme.typography.titleMedium,
                 )
                 Text(
-                    text = "${aroma.prefecture} · ${aroma.season(language)}",
+                    text = "${place.prefecture} · ${place.season(language)}",
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }

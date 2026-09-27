@@ -1,8 +1,8 @@
 package app.aromas.ui.nearby
 
-import app.aromas.core.aroma
-import app.aromas.core.data.AromaRepository
+import app.aromas.core.data.PlaceRepository
 import app.aromas.core.model.UserLocation
+import app.aromas.core.place
 import app.aromas.location.LocationProvider
 import app.aromas.ui.testutil.MainDispatcherExtension
 import app.cash.turbine.test
@@ -25,11 +25,11 @@ class NearbyViewModelTest {
     @Test
     fun `refresh loads location and sorts aromas by distance`() =
         runTest {
-            val near = aroma(number = 1, lat = 35.0, lon = 135.0)
-            val far = aroma(number = 2, lat = 43.0, lon = 143.0)
+            val near = place(number = 1, lat = 35.0, lon = 135.0)
+            val far = place(number = 2, lat = 43.0, lon = 143.0)
             val viewModel =
                 NearbyViewModel(
-                    AromaRepository(listOf(far, near)),
+                    PlaceRepository(listOf(far, near)),
                     FakeLocationProvider(UserLocation(35.0, 135.0)),
                 )
 
@@ -37,7 +37,7 @@ class NearbyViewModelTest {
                 assertEquals(emptyList<NearbyItem>(), awaitItem())
                 viewModel.refresh()
                 val items = awaitItem()
-                assertEquals(listOf(1, 2), items.map { it.aroma.number })
+                assertEquals(listOf(1, 2), items.map { it.place.number })
                 assertTrue(items[0].distanceKm < items[1].distanceKm)
                 cancelAndConsumeRemainingEvents()
             }
@@ -46,7 +46,7 @@ class NearbyViewModelTest {
     @Test
     fun `no location yields an empty list`() =
         runTest {
-            val viewModel = NearbyViewModel(AromaRepository(listOf(aroma())), FakeLocationProvider(null))
+            val viewModel = NearbyViewModel(PlaceRepository(listOf(place())), FakeLocationProvider(null))
             viewModel.items.test {
                 assertEquals(emptyList<NearbyItem>(), awaitItem())
                 viewModel.refresh()

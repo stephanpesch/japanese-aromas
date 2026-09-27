@@ -2,9 +2,9 @@ package app.aromas.ui.nearby
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import app.aromas.core.data.AromaRepository
+import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.DistanceCalculator
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import app.aromas.core.model.UserLocation
 import app.aromas.location.LocationProvider
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -17,9 +17,9 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-/** An aroma together with its distance from the user, in kilometres. */
+/** A place together with its distance from the user, in kilometres. */
 data class NearbyItem(
-    val aroma: Aroma,
+    val place: Place,
     val distanceKm: Double,
 )
 
@@ -27,10 +27,10 @@ data class NearbyItem(
 class NearbyViewModel
     @Inject
     constructor(
-        repository: AromaRepository,
+        repository: PlaceRepository,
         private val locationProvider: LocationProvider,
     ) : ViewModel() {
-        private val aromas = repository.all()
+        private val places = repository.all()
         private val locationState = MutableStateFlow<UserLocation?>(null)
 
         val location: StateFlow<UserLocation?> = locationState.asStateFlow()
@@ -45,7 +45,7 @@ class NearbyViewModel
         }
 
         private fun sortedByDistance(location: UserLocation): List<NearbyItem> =
-            aromas
+            places
                 .map { NearbyItem(it, DistanceCalculator.distanceKm(it, location.lat, location.lon)) }
                 .sortedBy { it.distanceKm }
 

@@ -10,13 +10,13 @@ import androidx.core.app.NotificationManagerCompat
 import app.aromas.MainActivity
 import app.aromas.R
 import app.aromas.core.logic.title
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import app.aromas.settings.AppLanguage
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
-/** Posts "you are near an aroma" notifications, on its own channel. */
-class AromaNotifier
+/** Posts "you are near a place" notifications, on its own channel. */
+class PlaceNotifier
     @Inject
     constructor(
         @ApplicationContext private val context: Context,
@@ -33,7 +33,7 @@ class AromaNotifier
             manager.createNotificationChannel(channel)
         }
 
-        fun notifyNearby(aroma: Aroma) {
+        fun notifyNearby(place: Place) {
             if (!manager.areNotificationsEnabled()) return
             ensureChannel()
             val notification =
@@ -41,11 +41,11 @@ class AromaNotifier
                     .Builder(context, CHANNEL_ID)
                     .setSmallIcon(R.drawable.ic_notification)
                     .setContentTitle(context.getString(R.string.alert_title))
-                    .setContentText(context.getString(R.string.alert_text, aroma.title(AppLanguage.current(context))))
+                    .setContentText(context.getString(R.string.alert_text, place.title(AppLanguage.current(context))))
                     .setContentIntent(openAppIntent())
                     .setAutoCancel(true)
                     .build()
-            manager.notify(aroma.number, notification)
+            manager.notify(place.id.hashCode(), notification)
         }
 
         private fun openAppIntent(): PendingIntent {

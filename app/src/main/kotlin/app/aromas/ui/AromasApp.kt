@@ -38,19 +38,19 @@ private enum class AromaTab { MAP, NEARBY, LIST }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
+fun AromasApp(viewModel: PlaceViewModel = hiltViewModel()) {
     val context = LocalContext.current
     val configuration = LocalConfiguration.current
     val language = remember(configuration) { AppLanguage.current(context) }
     var tab by rememberSaveable { mutableStateOf(AromaTab.MAP) }
-    // Persist the open detail by number (Aroma is not Parcelable), so rotation and
-    // process death restore it; resolve back to the aroma from the loaded dataset.
-    var detailNumber by rememberSaveable { mutableStateOf<Int?>(null) }
-    val openDetail = detailNumber?.let { number -> viewModel.aromas.firstOrNull { it.number == number } }
+    // Persist the open detail by id (Place is not Parcelable), so rotation and
+    // process death restore it; resolve back to the place from the loaded dataset.
+    var detailId by rememberSaveable { mutableStateOf<String?>(null) }
+    val openDetail = detailId?.let { id -> viewModel.places.firstOrNull { it.id == id } }
 
     if (openDetail != null) {
-        BackHandler { detailNumber = null }
-        DetailScreen(aroma = openDetail, language = language, onBack = { detailNumber = null })
+        BackHandler { detailId = null }
+        DetailScreen(place = openDetail, language = language, onBack = { detailId = null })
         return
     }
 
@@ -98,10 +98,10 @@ fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
                     .padding(padding),
         ) {
             when (tab) {
-                AromaTab.MAP -> MapScreen(language, onOpenDetail = { detailNumber = it.number })
-                AromaTab.NEARBY -> NearbyScreen(language, onOpenDetail = { detailNumber = it.number })
+                AromaTab.MAP -> MapScreen(language, onOpenDetail = { detailId = it.id })
+                AromaTab.NEARBY -> NearbyScreen(language, onOpenDetail = { detailId = it.id })
                 AromaTab.LIST ->
-                    AromaListContent(viewModel.aromas, language, onOpenDetail = { detailNumber = it.number })
+                    PlaceListContent(viewModel.places, language, onOpenDetail = { detailId = it.id })
             }
         }
     }

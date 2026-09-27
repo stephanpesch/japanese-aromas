@@ -1,11 +1,13 @@
 package app.aromas.core
 
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
+import app.aromas.core.model.PlaceCollection
 
-/** Builds an [Aroma] with sensible defaults for tests; override what matters. */
+/** Builds a [Place] with sensible defaults for tests; override what matters. */
 @Suppress("LongParameterList")
-fun aroma(
+fun place(
     number: Int = 1,
+    collection: PlaceCollection = PlaceCollection.AROMA,
     titleJa: String = "タイトル",
     titleDe: String = "Titel",
     months: List<Int> = listOf(6, 7, 8),
@@ -13,9 +15,10 @@ fun aroma(
     categories: List<String> = listOf("Blumen & Blüten"),
     lat: Double = 35.0,
     lon: Double = 135.0,
-): Aroma =
-    Aroma(
+): Place =
+    Place(
         number = number,
+        collection = collection,
         titleJa = titleJa,
         titleDe = titleDe,
         region = "Kansai",
@@ -27,7 +30,7 @@ fun aroma(
         seasonDe = "Juni–August",
         months = months,
         yearRound = yearRound,
-        category = categories.first(),
+        category = categories.firstOrNull(),
         categories = categories,
         lat = lat,
         lon = lon,

@@ -1,6 +1,6 @@
 package app.aromas.core.logic
 
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import app.aromas.core.model.UserLocation
 
 /**
@@ -12,10 +12,10 @@ object GeofenceSelection {
     const val MAX_GEOFENCES = 100
 
     fun select(
-        all: List<Aroma>,
+        all: List<Place>,
         near: UserLocation?,
         max: Int = MAX_GEOFENCES,
-    ): List<Aroma> {
+    ): List<Place> {
         if (all.size <= max) return all
         return if (near != null) {
             all

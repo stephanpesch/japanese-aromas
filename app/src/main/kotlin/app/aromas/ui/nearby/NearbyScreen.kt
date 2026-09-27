@@ -32,8 +32,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.core.logic.secondaryTitle
 import app.aromas.core.logic.title
-import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
+import app.aromas.core.model.Place
 import app.aromas.location.hasLocationPermission
 
 private const val METERS_PER_KM = 1000
@@ -42,7 +42,7 @@ private const val KM_THRESHOLD = 1.0
 @Composable
 fun NearbyScreen(
     language: Language,
-    onOpenDetail: (Aroma) -> Unit,
+    onOpenDetail: (Place) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: NearbyViewModel = hiltViewModel(),
 ) {
@@ -79,8 +79,8 @@ fun NearbyScreen(
                     AlertsSection()
                     HorizontalDivider()
                 }
-                items(items, key = { it.aroma.number }) { item ->
-                    NearbyRow(item, language, onClick = { onOpenDetail(item.aroma) })
+                items(items, key = { it.place.id }) { item ->
+                    NearbyRow(item, language, onClick = { onOpenDetail(item.place) })
                     HorizontalDivider()
                 }
             }
@@ -136,12 +136,12 @@ private fun NearbyRow(
                 .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Text(
-            text = "${item.aroma.number}. ${item.aroma.title(language)}",
+            text = "${item.place.number}. ${item.place.title(language)}",
             style = MaterialTheme.typography.titleMedium,
         )
-        Text(text = item.aroma.secondaryTitle(language), style = MaterialTheme.typography.bodyMedium)
+        Text(text = item.place.secondaryTitle(language), style = MaterialTheme.typography.bodyMedium)
         Text(
-            text = "${item.aroma.prefecture} · ${formatDistance(item.distanceKm)}",
+            text = "${item.place.prefecture} · ${formatDistance(item.distanceKm)}",
             style = MaterialTheme.typography.labelMedium,
         )
     }

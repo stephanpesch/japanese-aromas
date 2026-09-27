@@ -1,6 +1,6 @@
 package app.aromas.core.logic
 
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import java.time.LocalDate
 
 /** Season logic mirrored from the web app: match by month set, plus year-round. */
@@ -28,12 +28,12 @@ object SeasonMatcher {
      * (and those are included), or when its months intersect the selection.
      */
     fun matches(
-        aroma: Aroma,
+        place: Place,
         selectedMonths: Set<Int>,
         includeYearRound: Boolean,
     ): Boolean {
         if (selectedMonths.isEmpty()) return true
-        return (includeYearRound && aroma.yearRound) ||
-            aroma.months.any { it in selectedMonths }
+        return (includeYearRound && place.yearRound) ||
+            place.months.any { it in selectedMonths }
     }
 }
