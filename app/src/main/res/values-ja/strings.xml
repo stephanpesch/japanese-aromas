@@ -4,6 +4,9 @@
     <string name="list_title">かおり風景100選</string>
     <string name="toggle_language">言語を切り替え（ドイツ語／日本語）</string>
     <string name="tab_map">地図</string>
+    <string name="tab_nearby">近く</string>
     <string name="tab_list">リスト</string>
     <string name="close">閉じる</string>
+    <string name="location_needed">近くのかおり風景を見るには位置情報を許可してください。</string>
+    <string name="grant_location">位置情報を許可</string>
 </resources>

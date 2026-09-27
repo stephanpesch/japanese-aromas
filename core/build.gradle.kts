@@ -20,6 +20,11 @@ android {
     testOptions {
         unitTests.all { it.useJUnitPlatform() }
     }
+
+    // Shared test builders (aroma()) exposed to :app tests via test fixtures.
+    testFixtures {
+        enable = true
+    }
 }
 
 kover {
@@ -47,5 +52,6 @@ dependencies {
     testImplementation(libs.junit.jupiter)
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.turbine)
+    testImplementation(testFixtures(project(":core")))
     testRuntimeOnly(libs.junit.platform.launcher)
 }

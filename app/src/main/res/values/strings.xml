@@ -4,6 +4,9 @@
     <string name="list_title">Duft-Landschaften Japans</string>
     <string name="toggle_language">Sprache wechseln (Deutsch / Japanisch)</string>
     <string name="tab_map">Karte</string>
+    <string name="tab_nearby">In der Nähe</string>
     <string name="tab_list">Liste</string>
     <string name="close">Schließen</string>
+    <string name="location_needed">Gib deinen Standort frei, um die Duft-Landschaften in deiner Nähe zu sehen.</string>
+    <string name="grant_location">Standort freigeben</string>
 </resources>

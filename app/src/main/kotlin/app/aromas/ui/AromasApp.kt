@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.List
 import androidx.compose.material.icons.filled.Map
+import androidx.compose.material.icons.filled.NearMe
 import androidx.compose.material.icons.filled.Translate
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -29,8 +30,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import app.aromas.R
 import app.aromas.settings.AppLanguage
 import app.aromas.ui.map.MapScreen
+import app.aromas.ui.nearby.NearbyScreen
 
-private enum class AromaTab { MAP, LIST }
+private enum class AromaTab { MAP, NEARBY, LIST }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -63,6 +65,12 @@ fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
                     label = { Text(stringResource(R.string.tab_map)) },
                 )
                 NavigationBarItem(
+                    selected = tab == AromaTab.NEARBY,
+                    onClick = { tab = AromaTab.NEARBY },
+                    icon = { Icon(Icons.Filled.NearMe, contentDescription = null) },
+                    label = { Text(stringResource(R.string.tab_nearby)) },
+                )
+                NavigationBarItem(
                     selected = tab == AromaTab.LIST,
                     onClick = { tab = AromaTab.LIST },
                     icon = { Icon(Icons.AutoMirrored.Filled.List, contentDescription = null) },
@@ -79,6 +87,7 @@ fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
         ) {
             when (tab) {
                 AromaTab.MAP -> MapScreen(viewModel.aromas, language)
+                AromaTab.NEARBY -> NearbyScreen(language)
                 AromaTab.LIST -> AromaListContent(viewModel.aromas, language)
             }
         }
