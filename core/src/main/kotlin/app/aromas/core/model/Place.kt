@@ -27,6 +27,7 @@ data class Place(
     @SerialName("lat") val lat: Double,
     @SerialName("lon") val lon: Double,
     @SerialName("bild") val image: String? = null,
+    @SerialName("bild_quelle") val imageAttribution: String? = null,
     @SerialName("audio") val audio: String? = null,
     @SerialName("wikipedia") val wikipediaUrl: String? = null,
     @SerialName("untertitel_ja") val subtitleJa: String? = null,

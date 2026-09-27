@@ -185,7 +185,9 @@
     "lon": 140.01,
     "descriptionJa": "秋田県能代市の海岸に広がる風の松原は、約700万本のクロマツからなる巨大な防砂林。日本海から吹きつける風が松林を渡り、絶え間なく潮騒のような音を奏でる。",
     "descriptionDe": "Der Kaze-no-Matsubara an der Küste von Noshiro ist ein riesiger Schutzwald aus rund sieben Millionen Schwarzkiefern. Der vom Japanischen Meer heranwehende Wind streicht durch die Wipfel und lässt ein Rauschen wie ferne Brandung erklingen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E3%81%AE%E6%9D%BE%E5%8E%9F"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E3%81%AE%E6%9D%BE%E5%8E%9F",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Kaze_no_Matsubara_in_morning_mist_20180721a.jpg/1280px-Kaze_no_Matsubara_in_morning_mist_20180721a.jpg",
+    "imageAttribution": "掬茶 · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 18,
@@ -484,7 +486,9 @@
     "lon": 137.5106,
     "descriptionJa": "富山県立山町の称名滝は、落差350mを誇る日本一の名瀑。四段になって一気に流れ落ちる水が、地響きのような轟音を谷にとどろかせる。",
     "descriptionDe": "Die Shōmyō-Fälle bei Tateyama sind mit 350 Metern Japans höchster Wasserfall. Das in vier Stufen herabstürzende Wasser lässt ein grollendes Tosen durch das Tal dröhnen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%B0%E5%90%8D%E6%BB%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%B0%E5%90%8D%E6%BB%9D",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Shomyo_Falls%2C_zenkei.jpg/1280px-Shomyo_Falls%2C_zenkei.jpg",
+    "imageAttribution": "Saigen Jiro · CC0 / Wikimedia Commons"
   },
   {
     "number": 45,
@@ -540,7 +544,9 @@
     "lon": 136.28,
     "descriptionJa": "福井県越前市蓑脇の山中に湧く「時水」は、一定の間隔で水が出たり止まったりする珍しい間欠冷泉。水がわき出すときの音が、山あいの静けさに響く。",
     "descriptionDe": "Das „Tokimizu“ in den Bergen von Minowaki bei Echizen ist eine seltene intermittierende Quelle, die in regelmäßigen Abständen zu fließen beginnt und wieder versiegt. Das Aufwallen des Wassers erklingt in der Stille des Bergtals.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%93%91%E8%84%87%E3%81%AE%E6%99%82%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%93%91%E8%84%87%E3%81%AE%E6%99%82%E6%B0%B4",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/%E6%99%82%E6%B0%B4.jpg",
+    "imageAttribution": "英恵芙 · Public domain / Wikimedia Commons"
   },
   {
     "number": 50,
@@ -673,7 +679,9 @@
     "lon": 135.44,
     "descriptionJa": "京都府南丹市のるり渓は、園部川がつくり出した全長約4kmの美しい渓谷。滝や淵が連なり、岩を流れ落ちる水の音が緑の谷間に涼やかに響く。",
     "descriptionDe": "Die Ruri-Schlucht bei Nantan ist ein rund vier Kilometer langes, malerisches Tal des Sonobe-Flusses. Wasserfälle und Gumpen reihen sich aneinander, und das über die Felsen rinnende Wasser klingt kühl durch die grüne Schlucht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%8B%E3%82%8A%E6%B8%93"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%8B%E3%82%8A%E6%B8%93",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Meibaku%2C_Rurikei02.JPG/1280px-Meibaku%2C_Rurikei02.JPG",
+    "imageAttribution": "Kansai explorer · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "number": 62,
@@ -762,7 +770,9 @@
     "lon": 135.89,
     "descriptionJa": "和歌山県那智勝浦町の那智滝は、落差133mを誇る一段の滝としては日本一の名瀑で、古来より神として崇められてきた。垂直の岩壁を落ちる水の轟音が、熊野の山々に響きわたる。",
     "descriptionDe": "Der Nachi-Wasserfall bei Nachikatsuura stürzt 133 Meter in einem einzigen Fall herab und wird seit alters als Gottheit verehrt. Das Tosen des über die senkrechte Felswand fallenden Wassers hallt über die Berge von Kumano.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%82%A3%E6%99%BA%E6%BB%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%82%A3%E6%99%BA%E6%BB%9D",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nachi_Falls_2025-10-13.jpg/1280px-Nachi_Falls_2025-10-13.jpg",
+    "imageAttribution": "Alpsdake · CC0 / Wikimedia Commons"
   },
   {
     "number": 70,
@@ -873,7 +883,9 @@
     "lon": 134.6494,
     "descriptionJa": "徳島県鳴門市と淡路島の間の鳴門海峡では、潮の満ち引きにより世界最大級の渦潮が生まれる。渦が巻き、ぶつかり合う海のとどろきが、大潮のたびに海峡を満たす。",
     "descriptionDe": "In der Naruto-Straße zwischen Naruto und der Insel Awaji entstehen durch die Gezeiten Strudel von weltweit einzigartiger Größe. Bei jeder Springflut erfüllt das Tosen der wirbelnden, aufeinandertreffenden Wassermassen die Meerenge.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B3%B4%E9%96%80%E3%81%AE%E6%B8%A6%E6%BD%AE"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B3%B4%E9%96%80%E3%81%AE%E6%B8%A6%E6%BD%AE",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Naruto_Whirlpools_taken_4-21-2008.jpg/1280px-Naruto_Whirlpools_taken_4-21-2008.jpg",
+    "imageAttribution": "Hellbuny · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 80,
@@ -885,7 +897,9 @@
     "lon": 134.5547,
     "descriptionJa": "徳島市の阿波踊りは、四百年以上の歴史をもつ日本を代表する盆踊り。三味線や太鼓、鉦、笛が奏でる「ぞめき」のお囃子に合わせ、踊り手の掛け声が夏の夜を熱く彩る。",
     "descriptionDe": "Der Awa-Odori in Tokushima ist ein über vierhundert Jahre alter Bon-Tanz von nationalem Rang. Zu der treibenden „Zomeki“-Begleitung aus Shamisen, Trommeln, Gongs und Flöten heizen die Rufe der Tänzer die Sommernacht an.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E8%B8%8A%E3%82%8A"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E8%B8%8A%E3%82%8A",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Awa-odori_2008_Tokushima.jpg/1280px-Awa-odori_2008_Tokushima.jpg",
+    "imageAttribution": "Rosino · CC BY-SA 2.0 / Wikimedia Commons"
   },
   {
     "number": 81,
@@ -1073,7 +1087,9 @@
     "lon": 130.32,
     "descriptionJa": "鹿児島県出水市の干拓地には、毎年冬に一万羽をこえるツルが越冬のため飛来する。世界有数のツルの渡来地で、朝夕に響く数千羽の鳴き声は圧巻である。",
     "descriptionDe": "Auf dem eingedeichten Marschland von Izumi überwintern jeden Winter über zehntausend Kraniche. An diesem weltweit bedeutenden Rastplatz ist das Rufen der vielen tausend Vögel am Morgen und Abend überwältigend.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E6%B0%B4%E3%81%AE%E3%83%84%E3%83%AB"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E6%B0%B4%E3%81%AE%E3%83%84%E3%83%AB",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cranes_in_Izumi%2C_Kagoshima.jpg/1280px-Cranes_in_Izumi%2C_Kagoshima.jpg",
+    "imageAttribution": "20nana75 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 98,
@@ -1107,6 +1123,8 @@
     "lon": 127.8575,
     "descriptionJa": "沖縄のエイサーは、お盆に祖先を送り迎えするために踊られる伝統芸能。大太鼓や締め太鼓の勇壮な響きと三線の音色、踊り手の掛け声が、島の夏の夜を盛り上げる。",
     "descriptionDe": "Der Eisā auf Okinawa ist ein traditioneller Tanz, mit dem zur Bon-Zeit die Ahnen geleitet werden. Der wuchtige Klang großer und kleiner Trommeln, die Töne der Sanshin und die Rufe der Tänzer beleben die sommerlichen Inselnächte.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A4%E3%82%B5%E3%83%BC"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A4%E3%82%B5%E3%83%BC",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Seragaki_eisa.jpg",
+    "imageAttribution": "Kasanui]＆KI] · CC BY-SA 3.0 / Wikimedia Commons"
   }
 ]
