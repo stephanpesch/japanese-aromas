@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Japanische Düfte</string>
     <string name="list_title">Duft-Landschaften Japans</string>
+    <string name="toggle_language">Sprache wechseln (Deutsch / Japanisch)</string>
 </resources>

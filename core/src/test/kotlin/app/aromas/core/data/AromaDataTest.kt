@@ -35,13 +35,13 @@ class AromaDataTest {
         """.trimIndent()
 
     @Test
-    fun `parser maps snake_case keys and ignores unknown fields`() {
+    fun `parser maps german json keys and ignores unknown fields`() {
         val list = AromaJsonParser.parse(sample)
         assertEquals(1, list.size)
         val a = list.first()
-        assertEquals("北見のハッカとハーブ", a.titelJa)
-        assertEquals("Minze und Kräuter von Kitami", a.titelDe)
-        assertEquals(listOf(6, 7, 8), a.monate)
+        assertEquals("北見のハッカとハーブ", a.titleJa)
+        assertEquals("Minze und Kräuter von Kitami", a.titleDe)
+        assertEquals(listOf(6, 7, 8), a.months)
         assertEquals(143.895, a.lon, 1e-9)
     }
 
@@ -50,12 +50,12 @@ class AromaDataTest {
         val repo =
             AromaRepository(
                 listOf(
-                    aroma(nummer = 1, kategorien = listOf("Meer & Küste")),
-                    aroma(nummer = 2, kategorien = listOf("Meer & Küste", "Tee")),
+                    aroma(number = 1, categories = listOf("Meer & Küste")),
+                    aroma(number = 2, categories = listOf("Meer & Küste", "Tee")),
                 ),
             )
         assertEquals(2, repo.all().size)
-        assertEquals(1, repo.byNumber(1)?.nummer)
+        assertEquals(1, repo.byNumber(1)?.number)
         assertNull(repo.byNumber(99))
         assertEquals(listOf("Meer & Küste", "Tee"), repo.categories())
     }
