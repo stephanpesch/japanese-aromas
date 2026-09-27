@@ -16,15 +16,19 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.core.logic.season
 import app.aromas.core.logic.title
@@ -51,25 +55,45 @@ private const val TAP_SLOP = 24f
 
 @Composable
 fun MapScreen(
-    aromas: List<Aroma>,
     language: Language,
     onOpenDetail: (Aroma) -> Unit,
     modifier: Modifier = Modifier,
+    viewModel: MapViewModel = hiltViewModel(),
 ) {
     val mapView = rememberMapViewWithLifecycle()
+    val aromas by viewModel.filtered.collectAsStateWithLifecycle()
+    val filter by viewModel.filter.collectAsStateWithLifecycle()
     var selected by remember { mutableStateOf<Aroma?>(null) }
     val byNumber = remember(aromas) { aromas.associateBy { it.number } }
+    // The map is configured once inside an async style load; read the latest
+    // filtered set and lookup through these so a filter toggled while the style
+    // is still loading is not lost.
+    val currentAromas by rememberUpdatedState(aromas)
+    val currentByNumber by rememberUpdatedState(byNumber)
     // Guards the one-time map setup: setStyle() is async, so `map.style` stays
     // null during loading — a recomposition (e.g. language toggle) must not
     // re-run the setup and stack up click listeners.
     val configured = remember { AtomicBoolean(false) }
+    var maplibreMap by remember { mutableStateOf<MapLibreMap?>(null) }
 
     Box(modifier.fillMaxSize()) {
         AndroidView(factory = { mapView }) { view ->
             if (configured.compareAndSet(false, true)) {
-                view.getMapAsync { map -> configureMap(map, aromas) { selected = byNumber[it] } }
+                view.getMapAsync { map ->
+                    maplibreMap = map
+                    configureMap(map, currentAromas) { selected = currentByNumber[it] }
+                }
             }
         }
+        MapFilterBar(
+            categories = viewModel.categories,
+            filter = filter,
+            language = language,
+            onToggleSeason = viewModel::toggleSeason,
+            onToggleCategory = viewModel::toggleCategory,
+            onClear = viewModel::clear,
+            modifier = Modifier.align(Alignment.TopCenter),
+        )
         selected?.let { aroma ->
             AromaInfoCard(
                 aroma = aroma,
@@ -82,6 +106,13 @@ fun MapScreen(
                         .padding(12.dp),
             )
         }
+    }
+
+    // Push the filtered set into the existing marker source and drop a selection
+    // that the filter just hid.
+    LaunchedEffect(aromas) {
+        maplibreMap?.style?.getSourceAs<GeoJsonSource>(SOURCE_ID)?.setGeoJson(AromaFeatures.collection(aromas))
+        selected?.let { if (it.number !in byNumber) selected = null }
     }
 }
 
