@@ -52,6 +52,7 @@ dependencies {
     implementation(libs.compose.material.icons)
     implementation(libs.compose.material.icons.extended)
     implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.maplibre.android)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.compose)

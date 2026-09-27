@@ -7,7 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class AromaListViewModel
+class AromaViewModel
     @Inject
     constructor(
         repository: AromaRepository,
