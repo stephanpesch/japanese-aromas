@@ -17,6 +17,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
@@ -27,7 +30,6 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.core.logic.secondaryTitle
-import app.aromas.core.logic.season
 import app.aromas.core.logic.title
 import app.aromas.core.model.Language
 import app.aromas.location.hasLocationPermission
@@ -44,39 +46,45 @@ fun NearbyScreen(
     val context = LocalContext.current
     val items by viewModel.items.collectAsStateWithLifecycle()
     val location by viewModel.location.collectAsStateWithLifecycle()
+    var permissionGranted by remember { mutableStateOf(hasLocationPermission(context)) }
 
+    // Fine may be denied while coarse is granted (the "approximate" choice), so
+    // re-read the actual permission state rather than trusting the single result.
     val launcher =
-        rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
-            if (granted) viewModel.refresh()
+        rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) {
+            permissionGranted = hasLocationPermission(context)
+            if (permissionGranted) viewModel.refresh()
         }
 
-    LaunchedEffect(Unit) {
-        if (hasLocationPermission(context)) viewModel.refresh()
+    LaunchedEffect(permissionGranted) {
+        if (permissionGranted) viewModel.refresh()
     }
 
-    if (location == null) {
-        LocationPrompt(
-            onGrant = {
-                if (hasLocationPermission(context)) {
-                    viewModel.refresh()
-                } else {
-                    launcher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
+    when {
+        !permissionGranted ->
+            LocationPrompt(
+                onGrant = { launcher.launch(Manifest.permission.ACCESS_FINE_LOCATION) },
+                modifier = modifier,
+            )
+
+        location == null ->
+            CenteredMessage(stringResource(R.string.location_loading), modifier)
+
+        else ->
+            LazyColumn(modifier = modifier.fillMaxSize()) {
+                items(items, key = { it.aroma.number }) { item ->
+                    NearbyRow(item, language)
+                    HorizontalDivider()
                 }
-            },
-            modifier = modifier,
-        )
-    } else {
-        LazyColumn(modifier = modifier.fillMaxSize()) {
-            items(items, key = { it.aroma.number }) { item ->
-                NearbyRow(item, language)
-                HorizontalDivider()
             }
-        }
     }
 }
 
 @Composable
-private fun LocationPrompt(onGrant: () -> Unit, modifier: Modifier = Modifier) {
+private fun LocationPrompt(
+    onGrant: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     Column(
         modifier = modifier.fillMaxSize().padding(32.dp),
         verticalArrangement = Arrangement.Center,
@@ -94,7 +102,24 @@ private fun LocationPrompt(onGrant: () -> Unit, modifier: Modifier = Modifier) {
 }
 
 @Composable
-private fun NearbyRow(item: NearbyItem, language: Language) {
+private fun CenteredMessage(
+    text: String,
+    modifier: Modifier = Modifier,
+) {
+    Column(
+        modifier = modifier.fillMaxSize().padding(32.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally,
+    ) {
+        Text(text = text, textAlign = TextAlign.Center, style = MaterialTheme.typography.bodyLarge)
+    }
+}
+
+@Composable
+private fun NearbyRow(
+    item: NearbyItem,
+    language: Language,
+) {
     Column(
         modifier =
             Modifier
@@ -113,5 +138,4 @@ private fun NearbyRow(item: NearbyItem, language: Language) {
     }
 }
 
-private fun formatDistance(km: Double): String =
-    if (km < KM_THRESHOLD) "%.0f m".format(km * METERS_PER_KM) else "%.1f km".format(km)
+private fun formatDistance(km: Double): String = if (km < KM_THRESHOLD) "%.0f m".format(km * METERS_PER_KM) else "%.1f km".format(km)

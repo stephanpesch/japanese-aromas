@@ -9,4 +9,5 @@
     <string name="close">Schließen</string>
     <string name="location_needed">Gib deinen Standort frei, um die Duft-Landschaften in deiner Nähe zu sehen.</string>
     <string name="grant_location">Standort freigeben</string>
+    <string name="location_loading">Standort wird ermittelt …</string>
 </resources>

@@ -3,7 +3,6 @@ package app.aromas.ui.nearby
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import app.aromas.core.data.AromaRepository
-import app.aromas.core.logic.AromaFilter
 import app.aromas.core.logic.DistanceCalculator
 import app.aromas.core.model.Aroma
 import app.aromas.core.model.UserLocation
@@ -19,7 +18,10 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 /** An aroma together with its distance from the user, in kilometres. */
-data class NearbyItem(val aroma: Aroma, val distanceKm: Double)
+data class NearbyItem(
+    val aroma: Aroma,
+    val distanceKm: Double,
+)
 
 @HiltViewModel
 class NearbyViewModel
@@ -43,9 +45,9 @@ class NearbyViewModel
         }
 
         private fun sortedByDistance(location: UserLocation): List<NearbyItem> =
-            AromaFilter.sortedByDistance(aromas, location.lat, location.lon).map { aroma ->
-                NearbyItem(aroma, DistanceCalculator.distanceKm(aroma, location.lat, location.lon))
-            }
+            aromas
+                .map { NearbyItem(it, DistanceCalculator.distanceKm(it, location.lat, location.lon)) }
+                .sortedBy { it.distanceKm }
 
         private companion object {
             const val STOP_TIMEOUT_MS = 5000L

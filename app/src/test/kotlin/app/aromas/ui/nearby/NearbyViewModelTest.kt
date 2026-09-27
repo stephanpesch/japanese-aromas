@@ -13,7 +13,9 @@ import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 
-private class FakeLocationProvider(private val location: UserLocation?) : LocationProvider {
+private class FakeLocationProvider(
+    private val location: UserLocation?,
+) : LocationProvider {
     override suspend fun currentLocation(): UserLocation? = location
 }
 

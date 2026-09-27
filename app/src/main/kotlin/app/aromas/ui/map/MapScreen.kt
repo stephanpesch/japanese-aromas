@@ -60,7 +60,11 @@ private const val JAPAN_ZOOM = 3.8
 private const val TAP_SLOP = 24f
 
 @Composable
-fun MapScreen(aromas: List<Aroma>, language: Language, modifier: Modifier = Modifier) {
+fun MapScreen(
+    aromas: List<Aroma>,
+    language: Language,
+    modifier: Modifier = Modifier,
+) {
     val mapView = rememberMapViewWithLifecycle()
     var selected by remember { mutableStateOf<Aroma?>(null) }
     val byNumber = remember(aromas) { aromas.associateBy { it.number } }
@@ -90,9 +94,14 @@ fun MapScreen(aromas: List<Aroma>, language: Language, modifier: Modifier = Modi
 }
 
 /** One-time map configuration: camera, style + circle layer, tap handler. */
-private fun configureMap(map: MapLibreMap, aromas: List<Aroma>, onPick: (Int?) -> Unit) {
+private fun configureMap(
+    map: MapLibreMap,
+    aromas: List<Aroma>,
+    onPick: (Int?) -> Unit,
+) {
     map.cameraPosition =
-        CameraPosition.Builder()
+        CameraPosition
+            .Builder()
             .target(LatLng(JAPAN_LAT, JAPAN_LON))
             .zoom(JAPAN_ZOOM)
             .build()

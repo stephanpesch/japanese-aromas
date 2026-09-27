@@ -11,7 +11,9 @@ import org.junit.jupiter.api.extension.ExtensionContext
 
 /** Swaps Dispatchers.Main for an eager test dispatcher around each test. */
 @OptIn(ExperimentalCoroutinesApi::class)
-class MainDispatcherExtension : BeforeEachCallback, AfterEachCallback {
+class MainDispatcherExtension :
+    BeforeEachCallback,
+    AfterEachCallback {
     override fun beforeEach(context: ExtensionContext?) {
         Dispatchers.setMain(UnconfinedTestDispatcher())
     }

@@ -20,7 +20,7 @@ playLocation = "21.3.0"
 junitJupiter = "5.11.4"
 turbine = "1.2.0"
 detekt = "1.23.8"
-ktlintGradle = "12.1.1"
+ktlintGradle = "14.2.0"
 kover = "0.9.8"
 
 [libraries]

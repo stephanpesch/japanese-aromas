@@ -9,4 +9,5 @@
     <string name="close">閉じる</string>
     <string name="location_needed">近くのかおり風景を見るには位置情報を許可してください。</string>
     <string name="grant_location">位置情報を許可</string>
+    <string name="location_loading">位置情報を取得しています…</string>
 </resources>

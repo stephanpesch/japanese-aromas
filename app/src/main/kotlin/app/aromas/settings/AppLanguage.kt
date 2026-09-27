@@ -18,7 +18,10 @@ object AppLanguage {
         return Language.fromTag(tag)
     }
 
-    fun set(context: Context, language: Language) {
+    fun set(
+        context: Context,
+        language: Language,
+    ) {
         val manager = context.getSystemService(LocaleManager::class.java)
         manager.applicationLocales = LocaleList.forLanguageTags(language.tag)
     }
