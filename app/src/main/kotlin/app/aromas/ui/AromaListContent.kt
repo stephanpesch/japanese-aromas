@@ -1,5 +1,6 @@
 package app.aromas.ui
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -22,11 +23,12 @@ import app.aromas.core.model.Language
 fun AromaListContent(
     aromas: List<Aroma>,
     language: Language,
+    onOpenDetail: (Aroma) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     LazyColumn(modifier = modifier.fillMaxSize()) {
         items(aromas, key = { it.number }) { aroma ->
-            AromaRow(aroma, language)
+            AromaRow(aroma, language, onClick = { onOpenDetail(aroma) })
             HorizontalDivider()
         }
     }
@@ -36,11 +38,13 @@ fun AromaListContent(
 private fun AromaRow(
     aroma: Aroma,
     language: Language,
+    onClick: () -> Unit,
 ) {
     Column(
         modifier =
             Modifier
                 .fillMaxWidth()
+                .clickable(onClick = onClick)
                 .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Text(

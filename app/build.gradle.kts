@@ -53,6 +53,7 @@ dependencies {
     implementation(libs.compose.material.icons.extended)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.play.services)
+    implementation(libs.coil.compose)
     implementation(libs.play.services.location)
     implementation(libs.maplibre.android)
     implementation(libs.hilt.android)

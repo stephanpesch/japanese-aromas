@@ -1,7 +1,5 @@
 package app.aromas.ui.map
 
-import android.content.ComponentCallbacks2
-import android.content.res.Configuration
 import android.graphics.RectF
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -18,30 +16,23 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
-import androidx.lifecycle.Lifecycle
-import androidx.lifecycle.LifecycleEventObserver
-import androidx.lifecycle.compose.LocalLifecycleOwner
 import app.aromas.R
 import app.aromas.core.logic.season
 import app.aromas.core.logic.title
 import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
-import org.maplibre.android.MapLibre
 import org.maplibre.android.camera.CameraPosition
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.maps.MapLibreMap
-import org.maplibre.android.maps.MapView
 import org.maplibre.android.maps.Style
 import org.maplibre.android.style.expressions.Expression
 import org.maplibre.android.style.layers.CircleLayer
@@ -49,7 +40,6 @@ import org.maplibre.android.style.layers.PropertyFactory
 import org.maplibre.android.style.sources.GeoJsonSource
 import java.util.concurrent.atomic.AtomicBoolean
 
-private const val STYLE_URL = "https://tiles.openfreemap.org/styles/liberty"
 private const val SOURCE_ID = "aromas"
 private const val LAYER_ID = "aroma-circles"
 private const val CIRCLE_RADIUS = 6f
@@ -63,6 +53,7 @@ private const val TAP_SLOP = 24f
 fun MapScreen(
     aromas: List<Aroma>,
     language: Language,
+    onOpenDetail: (Aroma) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     val mapView = rememberMapViewWithLifecycle()
@@ -84,6 +75,7 @@ fun MapScreen(
                 aroma = aroma,
                 language = language,
                 onClose = { selected = null },
+                onOpenDetail = { onOpenDetail(aroma) },
                 modifier =
                     Modifier
                         .align(Alignment.BottomCenter)
@@ -105,7 +97,7 @@ private fun configureMap(
             .target(LatLng(JAPAN_LAT, JAPAN_LON))
             .zoom(JAPAN_ZOOM)
             .build()
-    map.setStyle(Style.Builder().fromUri(STYLE_URL)) { style ->
+    map.setStyle(Style.Builder().fromUri(OPENFREEMAP_STYLE_URL)) { style ->
         style.addSource(GeoJsonSource(SOURCE_ID, AromaFeatures.collection(aromas)))
         style.addLayer(
             CircleLayer(LAYER_ID, SOURCE_ID).withProperties(
@@ -131,9 +123,10 @@ private fun AromaInfoCard(
     aroma: Aroma,
     language: Language,
     onClose: () -> Unit,
+    onOpenDetail: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    Card(modifier = modifier.fillMaxWidth()) {
+    Card(onClick = onOpenDetail, modifier = modifier.fillMaxWidth()) {
         Row(
             modifier = Modifier.padding(start = 16.dp, top = 8.dp, end = 8.dp, bottom = 12.dp),
             verticalAlignment = Alignment.Top,
@@ -154,48 +147,4 @@ private fun AromaInfoCard(
             }
         }
     }
-}
-
-@Composable
-private fun rememberMapViewWithLifecycle(): MapView {
-    val context = LocalContext.current
-    val mapView =
-        remember {
-            MapLibre.getInstance(context)
-            MapView(context)
-        }
-    val lifecycleOwner = LocalLifecycleOwner.current
-    DisposableEffect(lifecycleOwner, mapView) {
-        mapView.onCreate(null)
-        val observer =
-            LifecycleEventObserver { _, event ->
-                when (event) {
-                    Lifecycle.Event.ON_START -> mapView.onStart()
-                    Lifecycle.Event.ON_RESUME -> mapView.onResume()
-                    Lifecycle.Event.ON_PAUSE -> mapView.onPause()
-                    Lifecycle.Event.ON_STOP -> mapView.onStop()
-                    else -> Unit
-                }
-            }
-        lifecycleOwner.lifecycle.addObserver(observer)
-        // onLowMemory() comes from ComponentCallbacks2, not the lifecycle.
-        val memoryCallbacks =
-            object : ComponentCallbacks2 {
-                override fun onConfigurationChanged(newConfig: Configuration) = Unit
-
-                @Deprecated("Kept for the ComponentCallbacks2 contract")
-                override fun onLowMemory() = mapView.onLowMemory()
-
-                override fun onTrimMemory(level: Int) = mapView.onLowMemory()
-            }
-        val appContext = context.applicationContext
-        appContext.registerComponentCallbacks(memoryCallbacks)
-        onDispose {
-            lifecycleOwner.lifecycle.removeObserver(observer)
-            appContext.unregisterComponentCallbacks(memoryCallbacks)
-            mapView.onStop()
-            mapView.onDestroy()
-        }
-    }
-    return mapView
 }

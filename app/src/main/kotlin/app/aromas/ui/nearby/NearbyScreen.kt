@@ -3,6 +3,7 @@ package app.aromas.ui.nearby
 import android.Manifest
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -31,6 +32,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.core.logic.secondaryTitle
 import app.aromas.core.logic.title
+import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
 import app.aromas.location.hasLocationPermission
 
@@ -40,6 +42,7 @@ private const val KM_THRESHOLD = 1.0
 @Composable
 fun NearbyScreen(
     language: Language,
+    onOpenDetail: (Aroma) -> Unit,
     modifier: Modifier = Modifier,
     viewModel: NearbyViewModel = hiltViewModel(),
 ) {
@@ -73,7 +76,7 @@ fun NearbyScreen(
         else ->
             LazyColumn(modifier = modifier.fillMaxSize()) {
                 items(items, key = { it.aroma.number }) { item ->
-                    NearbyRow(item, language)
+                    NearbyRow(item, language, onClick = { onOpenDetail(item.aroma) })
                     HorizontalDivider()
                 }
             }
@@ -119,11 +122,13 @@ private fun CenteredMessage(
 private fun NearbyRow(
     item: NearbyItem,
     language: Language,
+    onClick: () -> Unit,
 ) {
     Column(
         modifier =
             Modifier
                 .fillMaxWidth()
+                .clickable(onClick = onClick)
                 .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Text(

@@ -1,5 +1,6 @@
 package app.aromas.ui
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -29,6 +30,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import app.aromas.R
 import app.aromas.settings.AppLanguage
+import app.aromas.ui.detail.DetailScreen
 import app.aromas.ui.map.MapScreen
 import app.aromas.ui.nearby.NearbyScreen
 
@@ -41,6 +43,16 @@ fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
     val configuration = LocalConfiguration.current
     val language = remember(configuration) { AppLanguage.current(context) }
     var tab by rememberSaveable { mutableStateOf(AromaTab.MAP) }
+    // Persist the open detail by number (Aroma is not Parcelable), so rotation and
+    // process death restore it; resolve back to the aroma from the loaded dataset.
+    var detailNumber by rememberSaveable { mutableStateOf<Int?>(null) }
+    val openDetail = detailNumber?.let { number -> viewModel.aromas.firstOrNull { it.number == number } }
+
+    if (openDetail != null) {
+        BackHandler { detailNumber = null }
+        DetailScreen(aroma = openDetail, language = language, onBack = { detailNumber = null })
+        return
+    }
 
     Scaffold(
         topBar = {
@@ -86,9 +98,10 @@ fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
                     .padding(padding),
         ) {
             when (tab) {
-                AromaTab.MAP -> MapScreen(viewModel.aromas, language)
-                AromaTab.NEARBY -> NearbyScreen(language)
-                AromaTab.LIST -> AromaListContent(viewModel.aromas, language)
+                AromaTab.MAP -> MapScreen(viewModel.aromas, language, onOpenDetail = { detailNumber = it.number })
+                AromaTab.NEARBY -> NearbyScreen(language, onOpenDetail = { detailNumber = it.number })
+                AromaTab.LIST ->
+                    AromaListContent(viewModel.aromas, language, onOpenDetail = { detailNumber = it.number })
             }
         }
     }
