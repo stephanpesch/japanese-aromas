@@ -75,6 +75,10 @@ fun NearbyScreen(
 
         else ->
             LazyColumn(modifier = modifier.fillMaxSize()) {
+                item {
+                    AlertsSection()
+                    HorizontalDivider()
+                }
                 items(items, key = { it.aroma.number }) { item ->
                     NearbyRow(item, language, onClick = { onOpenDetail(item.aroma) })
                     HorizontalDivider()
