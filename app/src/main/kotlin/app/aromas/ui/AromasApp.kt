@@ -98,7 +98,7 @@ fun AromasApp(viewModel: AromaViewModel = hiltViewModel()) {
                     .padding(padding),
         ) {
             when (tab) {
-                AromaTab.MAP -> MapScreen(viewModel.aromas, language, onOpenDetail = { detailNumber = it.number })
+                AromaTab.MAP -> MapScreen(language, onOpenDetail = { detailNumber = it.number })
                 AromaTab.NEARBY -> NearbyScreen(language, onOpenDetail = { detailNumber = it.number })
                 AromaTab.LIST ->
                     AromaListContent(viewModel.aromas, language, onOpenDetail = { detailNumber = it.number })

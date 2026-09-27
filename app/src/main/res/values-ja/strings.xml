@@ -14,4 +14,9 @@
     <string name="label_location">所在地</string>
     <string name="label_source">かおりの源</string>
     <string name="label_season">季節</string>
+    <string name="season_spring">春</string>
+    <string name="season_summer">夏</string>
+    <string name="season_autumn">秋</string>
+    <string name="season_winter">冬</string>
+    <string name="filter_clear">フィルターをリセット</string>
 </resources>
