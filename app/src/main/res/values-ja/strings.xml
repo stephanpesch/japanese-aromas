@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">日本の香り</string>
     <string name="list_title">かおり風景100選</string>
+    <string name="toggle_language">言語を切り替え（ドイツ語／日本語）</string>
 </resources>
