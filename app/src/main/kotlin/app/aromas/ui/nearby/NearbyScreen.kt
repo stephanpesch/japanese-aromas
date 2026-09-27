@@ -138,4 +138,11 @@ private fun NearbyRow(
     }
 }
 
-private fun formatDistance(km: Double): String = if (km < KM_THRESHOLD) "%.0f m".format(km * METERS_PER_KM) else "%.1f km".format(km)
+private fun formatDistance(km: Double): String =
+    if (km <
+        KM_THRESHOLD
+    ) {
+        "%.0f m".format(km * METERS_PER_KM)
+    } else {
+        "%.1f km".format(km)
+    }

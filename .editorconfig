@@ -1,5 +1,7 @@
 root = true
 
 [*.{kt,kts}]
+# Keep ktlint and detekt in agreement on line length.
+max_line_length = 120
 # Jetpack Compose @Composable functions are intentionally PascalCase.
 ktlint_function_naming_ignore_when_annotated_with = Composable
