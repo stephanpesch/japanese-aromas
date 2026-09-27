@@ -6,7 +6,7 @@ Sources:
 - app/src/main/assets/aromas.json  (the aroma snapshot, produced by sync_data.py)
 - tools/data/scenery.json          (authored: 36 Special Places of Scenic Beauty)
 - tools/data/waters.json           (authored: 100 Remarkable Waters)
-- (later) tools/data/sounds.json
+- tools/data/sounds.json           (authored: 100 Soundscapes)
 
 Each source is normalised to the German-keyed schema the Place model reads
 (@SerialName), tagged with its collection, and written to
@@ -65,6 +65,7 @@ def main():
         aroma_places()
         + authored_places("scenery.json", "scenery")
         + authored_places("waters.json", "water")
+        + authored_places("sounds.json", "sound")
     )
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(places, f, ensure_ascii=False, indent=2)
