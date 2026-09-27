@@ -19,4 +19,13 @@
     <string name="season_autumn">Herbst</string>
     <string name="season_winter">Winter</string>
     <string name="filter_clear">Filter zurücksetzen</string>
+    <string name="alerts_channel_name">Umgebungs-Alarme</string>
+    <string name="alerts_channel_description">Meldet, wenn du einer Duft-Landschaft nahe kommst.</string>
+    <string name="alert_title">Eine Duft-Landschaft in der Nähe</string>
+    <string name="alert_text">Du bist in der Nähe von %1$s.</string>
+    <string name="alerts_on">Umgebungs-Alarme sind aktiv. Du wirst benachrichtigt, wenn du einer Duft-Landschaft nahe kommst.</string>
+    <string name="alerts_off">Aktiviere Umgebungs-Alarme, um benachrichtigt zu werden, wenn du einer Duft-Landschaft nahe kommst.</string>
+    <string name="alerts_enable">Umgebungs-Alarme aktivieren</string>
+    <string name="alerts_disable">Deaktivieren</string>
+    <string name="alerts_permission_hint">Aktivierung fehlgeschlagen. Erlaube den Standortzugriff „Immer zulassen“ (und Benachrichtigungen) in den Einstellungen.</string>
 </resources>

@@ -19,4 +19,13 @@
     <string name="season_autumn">秋</string>
     <string name="season_winter">冬</string>
     <string name="filter_clear">フィルターをリセット</string>
+    <string name="alerts_channel_name">周辺アラート</string>
+    <string name="alerts_channel_description">かおり風景の近くに来たときに知らせます。</string>
+    <string name="alert_title">近くのかおり風景</string>
+    <string name="alert_text">%1$s の近くにいます。</string>
+    <string name="alerts_on">周辺アラートは有効です。かおり風景の近くに来ると通知します。</string>
+    <string name="alerts_off">周辺アラートを有効にすると、かおり風景の近くで通知します。</string>
+    <string name="alerts_enable">周辺アラートを有効にする</string>
+    <string name="alerts_disable">無効にする</string>
+    <string name="alerts_permission_hint">有効にできませんでした。設定で位置情報を「常に許可」にし、通知を許可してください。</string>
 </resources>
