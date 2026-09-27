@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import app.aromas.R
 import app.aromas.core.logic.saison
+import app.aromas.core.logic.secondaryTitel
 import app.aromas.core.logic.titel
 import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
@@ -36,11 +37,7 @@ import app.aromas.settings.AppLanguage
 fun AromaListScreen(viewModel: AromaListViewModel = hiltViewModel()) {
     val context = LocalContext.current
     val configuration = LocalConfiguration.current
-    val language =
-        remember(configuration) {
-            val locales = configuration.locales
-            Language.fromTag(if (locales.isEmpty) null else locales[0].language)
-        }
+    val language = remember(configuration) { AppLanguage.current(context) }
 
     Scaffold(
         topBar = {
@@ -71,7 +68,7 @@ fun AromaListScreen(viewModel: AromaListViewModel = hiltViewModel()) {
 
 @Composable
 private fun AromaRow(aroma: Aroma, language: Language) {
-    val secondaryTitle = if (language == Language.JAPANESE) aroma.titelDe else aroma.titelJa
+    val secondaryTitle = aroma.secondaryTitel(language)
     Column(
         modifier =
             Modifier

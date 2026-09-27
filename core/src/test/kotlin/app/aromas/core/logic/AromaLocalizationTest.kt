@@ -30,4 +30,16 @@ class AromaLocalizationTest {
         assertEquals(Language.GERMAN, Language.fromTag("de"))
         assertEquals(Language.GERMAN, Language.fromTag(null))
     }
+
+    @Test
+    fun `opposite flips the language`() {
+        assertEquals(Language.JAPANESE, Language.GERMAN.opposite())
+        assertEquals(Language.GERMAN, Language.JAPANESE.opposite())
+    }
+
+    @Test
+    fun `secondary title is the other language`() {
+        assertEquals("Kitami", a.secondaryTitel(Language.JAPANESE))
+        assertEquals("北見", a.secondaryTitel(Language.GERMAN))
+    }
 }

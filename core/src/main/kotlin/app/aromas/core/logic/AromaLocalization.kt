@@ -8,6 +8,9 @@ import app.aromas.core.model.Language
 fun Aroma.titel(language: Language): String =
     if (language == Language.JAPANESE) titelJa else titelDe
 
+/** The title in the *other* language, e.g. for a bilingual subtitle. */
+fun Aroma.secondaryTitel(language: Language): String = titel(language.opposite())
+
 fun Aroma.beschreibung(language: Language): String =
     if (language == Language.JAPANESE) beschreibungJa else beschreibungDe
 
