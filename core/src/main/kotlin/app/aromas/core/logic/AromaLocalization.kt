@@ -5,17 +5,17 @@ import app.aromas.core.model.Language
 
 /** Language-aware accessors: pick the Japanese or German field of an [Aroma]. */
 
-fun Aroma.titel(language: Language): String =
-    if (language == Language.JAPANESE) titelJa else titelDe
+fun Aroma.title(language: Language): String =
+    if (language == Language.JAPANESE) titleJa else titleDe
+
+fun Aroma.description(language: Language): String =
+    if (language == Language.JAPANESE) descriptionJa else descriptionDe
+
+fun Aroma.season(language: Language): String =
+    if (language == Language.JAPANESE) seasonJa else seasonDe
+
+fun Aroma.source(language: Language): String =
+    if (language == Language.JAPANESE) sourceJa else sourceDe
 
 /** The title in the *other* language, e.g. for a bilingual subtitle. */
-fun Aroma.secondaryTitel(language: Language): String = titel(language.opposite())
-
-fun Aroma.beschreibung(language: Language): String =
-    if (language == Language.JAPANESE) beschreibungJa else beschreibungDe
-
-fun Aroma.saison(language: Language): String =
-    if (language == Language.JAPANESE) saisonJa else saisonDe
-
-fun Aroma.duftquelle(language: Language): String =
-    if (language == Language.JAPANESE) duftquelleJa else duftquelleDe
+fun Aroma.secondaryTitle(language: Language): String = title(language.opposite())

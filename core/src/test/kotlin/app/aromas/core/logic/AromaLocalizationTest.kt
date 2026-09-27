@@ -6,22 +6,22 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class AromaLocalizationTest {
-    private val a = aroma(titelJa = "北見", titelDe = "Kitami")
+    private val a = aroma(titleJa = "北見", titleDe = "Kitami")
 
     @Test
     fun `japanese picks the ja fields`() {
-        assertEquals("北見", a.titel(Language.JAPANESE))
-        assertEquals(a.beschreibungJa, a.beschreibung(Language.JAPANESE))
-        assertEquals(a.saisonJa, a.saison(Language.JAPANESE))
-        assertEquals(a.duftquelleJa, a.duftquelle(Language.JAPANESE))
+        assertEquals("北見", a.title(Language.JAPANESE))
+        assertEquals(a.descriptionJa, a.description(Language.JAPANESE))
+        assertEquals(a.seasonJa, a.season(Language.JAPANESE))
+        assertEquals(a.sourceJa, a.source(Language.JAPANESE))
     }
 
     @Test
     fun `german picks the de fields`() {
-        assertEquals("Kitami", a.titel(Language.GERMAN))
-        assertEquals(a.beschreibungDe, a.beschreibung(Language.GERMAN))
-        assertEquals(a.saisonDe, a.saison(Language.GERMAN))
-        assertEquals(a.duftquelleDe, a.duftquelle(Language.GERMAN))
+        assertEquals("Kitami", a.title(Language.GERMAN))
+        assertEquals(a.descriptionDe, a.description(Language.GERMAN))
+        assertEquals(a.seasonDe, a.season(Language.GERMAN))
+        assertEquals(a.sourceDe, a.source(Language.GERMAN))
     }
 
     @Test
@@ -39,7 +39,7 @@ class AromaLocalizationTest {
 
     @Test
     fun `secondary title is the other language`() {
-        assertEquals("Kitami", a.secondaryTitel(Language.JAPANESE))
-        assertEquals("北見", a.secondaryTitel(Language.GERMAN))
+        assertEquals("Kitami", a.secondaryTitle(Language.JAPANESE))
+        assertEquals("北見", a.secondaryTitle(Language.GERMAN))
     }
 }

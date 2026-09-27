@@ -25,9 +25,9 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import app.aromas.R
-import app.aromas.core.logic.saison
-import app.aromas.core.logic.secondaryTitel
-import app.aromas.core.logic.titel
+import app.aromas.core.logic.season
+import app.aromas.core.logic.secondaryTitle
+import app.aromas.core.logic.title
 import app.aromas.core.model.Aroma
 import app.aromas.core.model.Language
 import app.aromas.settings.AppLanguage
@@ -58,7 +58,7 @@ fun AromaListScreen(viewModel: AromaListViewModel = hiltViewModel()) {
             contentPadding = padding,
             modifier = Modifier.fillMaxSize(),
         ) {
-            items(viewModel.aromas, key = { it.nummer }) { aroma ->
+            items(viewModel.aromas, key = { it.number }) { aroma ->
                 AromaRow(aroma, language)
                 HorizontalDivider()
             }
@@ -68,7 +68,6 @@ fun AromaListScreen(viewModel: AromaListViewModel = hiltViewModel()) {
 
 @Composable
 private fun AromaRow(aroma: Aroma, language: Language) {
-    val secondaryTitle = aroma.secondaryTitel(language)
     Column(
         modifier =
             Modifier
@@ -76,12 +75,12 @@ private fun AromaRow(aroma: Aroma, language: Language) {
                 .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Text(
-            text = "${aroma.nummer}. ${aroma.titel(language)}",
+            text = "${aroma.number}. ${aroma.title(language)}",
             style = MaterialTheme.typography.titleMedium,
         )
-        Text(text = secondaryTitle, style = MaterialTheme.typography.bodyMedium)
+        Text(text = aroma.secondaryTitle(language), style = MaterialTheme.typography.bodyMedium)
         Text(
-            text = "${aroma.praefektur} · ${aroma.saison(language)}",
+            text = "${aroma.prefecture} · ${aroma.season(language)}",
             style = MaterialTheme.typography.labelMedium,
         )
     }

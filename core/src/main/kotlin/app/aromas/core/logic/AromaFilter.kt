@@ -12,7 +12,7 @@ object AromaFilter {
     ): List<Aroma> =
         all.filter { aroma ->
             val categoryOk = selectedCategories.isEmpty() ||
-                aroma.kategorien.any { it in selectedCategories }
+                aroma.categories.any { it in selectedCategories }
             categoryOk && SeasonMatcher.matches(aroma, selectedMonths, includeYearRound)
         }
 

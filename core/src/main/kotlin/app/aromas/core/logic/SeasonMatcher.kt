@@ -26,7 +26,7 @@ object SeasonMatcher {
      */
     fun matches(aroma: Aroma, selectedMonths: Set<Int>, includeYearRound: Boolean): Boolean {
         if (selectedMonths.isEmpty()) return true
-        return (includeYearRound && aroma.ganzjaehrig) ||
-            aroma.monate.any { it in selectedMonths }
+        return (includeYearRound && aroma.yearRound) ||
+            aroma.months.any { it in selectedMonths }
     }
 }

@@ -6,8 +6,8 @@ import app.aromas.core.model.Aroma
 class AromaRepository(private val aromas: List<Aroma>) {
     fun all(): List<Aroma> = aromas
 
-    fun byNumber(nummer: Int): Aroma? = aromas.firstOrNull { it.nummer == nummer }
+    fun byNumber(number: Int): Aroma? = aromas.firstOrNull { it.number == number }
 
     /** Distinct categories across all aromas, in first-seen order. */
-    fun categories(): List<String> = aromas.flatMap { it.kategorien }.distinct()
+    fun categories(): List<String> = aromas.flatMap { it.categories }.distinct()
 }

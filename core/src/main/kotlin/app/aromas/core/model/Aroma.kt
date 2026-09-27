@@ -4,28 +4,29 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
- * One of the 100 "aroma landscapes". Fields mirror the bundled aromas.json
- * (generated from the 100-aromas dataset by tools/sync_data.py).
+ * One of the 100 "aroma landscapes". The German [SerialName]s map the bundled
+ * aromas.json keys (generated from the 100-aromas dataset); the Kotlin
+ * identifiers stay English per the project convention.
  */
 @Serializable
 data class Aroma(
-    val nummer: Int,
-    @SerialName("titel_ja") val titelJa: String,
-    @SerialName("titel_de") val titelDe: String,
-    val region: String,
-    val praefektur: String,
-    val ort: String,
-    @SerialName("duftquelle_ja") val duftquelleJa: String,
-    @SerialName("duftquelle_de") val duftquelleDe: String,
-    @SerialName("saison_ja") val saisonJa: String,
-    @SerialName("saison_de") val saisonDe: String,
-    val monate: List<Int>,
-    val ganzjaehrig: Boolean,
-    val kategorie: String,
-    val kategorien: List<String>,
-    val lat: Double,
-    val lon: Double,
-    val bild: String,
-    @SerialName("beschreibung_ja") val beschreibungJa: String,
-    @SerialName("beschreibung_de") val beschreibungDe: String,
+    @SerialName("nummer") val number: Int,
+    @SerialName("titel_ja") val titleJa: String,
+    @SerialName("titel_de") val titleDe: String,
+    @SerialName("region") val region: String,
+    @SerialName("praefektur") val prefecture: String,
+    @SerialName("ort") val city: String,
+    @SerialName("duftquelle_ja") val sourceJa: String,
+    @SerialName("duftquelle_de") val sourceDe: String,
+    @SerialName("saison_ja") val seasonJa: String,
+    @SerialName("saison_de") val seasonDe: String,
+    @SerialName("monate") val months: List<Int>,
+    @SerialName("ganzjaehrig") val yearRound: Boolean,
+    @SerialName("kategorie") val category: String,
+    @SerialName("kategorien") val categories: List<String>,
+    @SerialName("lat") val lat: Double,
+    @SerialName("lon") val lon: Double,
+    @SerialName("bild") val image: String,
+    @SerialName("beschreibung_ja") val descriptionJa: String,
+    @SerialName("beschreibung_de") val descriptionDe: String,
 )
