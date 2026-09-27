@@ -56,6 +56,9 @@ def authored_places(filename, collection):
         }
         if s.get("wikipedia"):
             entry["wikipedia"] = s["wikipedia"]
+        if s.get("image"):
+            entry["bild"] = s["image"]
+            entry["bild_quelle"] = s.get("imageAttribution", "Wikimedia Commons")
         out.append(entry)
     return out
 

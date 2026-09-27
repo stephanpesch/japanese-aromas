@@ -2731,7 +2731,9 @@
     "lon": 141.1075,
     "beschreibung_ja": "岩手県平泉町にある毛越寺の浄土庭園で、大泉が池を中心に平安時代の作庭を今に伝える。園内には当時の遣水（やりみず）の遺構が残り、極楽浄土を地上に写した美しさで知られる。",
     "beschreibung_de": "Der Garten des Mōtsū-ji in Hiraizumi ist ein Reines-Land-Garten (Jōdo) aus der Heian-Zeit, dessen weiter Teich Ōizumi-ga-ike bis heute erhalten ist. Ein originaler Bachlauf (yarimizu) aus jener Epoche zeugt von der Kunst, das buddhistische Paradies auf Erden nachzubilden.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%AF%9B%E8%B6%8A%E5%AF%BA%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%AF%9B%E8%B6%8A%E5%AF%BA%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/230728_Motsuji_Hiraizumi_Iwate_pref_Japan37s3.jpg/1280px-230728_Motsuji_Hiraizumi_Iwate_pref_Japan37s3.jpg",
+    "bild_quelle": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2744,7 +2746,9 @@
     "lon": 141.0764,
     "beschreibung_ja": "宮城県の松島湾に大小260余りの島々が浮かぶ景勝地で、日本三景の一つに数えられる。松に覆われた島影が織りなす眺めは、古くから多くの歌人に愛されてきた。",
     "beschreibung_de": "Die Bucht von Matsushima in der Präfektur Miyagi ist mit ihren über 260 kiefernbewachsenen Inseln eine der „Drei berühmten Ansichten Japans“. Das Spiel der Inselsilhouetten inspiriert seit Jahrhunderten Dichter und Reisende.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B3%B6"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B3%B6",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Matsushima_miyagi_z.JPG/1280px-Matsushima_miyagi_z.JPG",
+    "bild_quelle": "Chensiyuan · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2757,7 +2761,9 @@
     "lon": 139.746667,
     "beschreibung_ja": "東京都文京区にある江戸時代の回遊式築山泉水庭園で、五代将軍徳川綱吉の側用人・柳沢吉保が造営した。和歌の趣を庭に写したもので、園内には歌枕にちなむ景が配されている。",
     "beschreibung_de": "Der Garten Rikugi-en im Tokioter Bezirk Bunkyō ist ein Wandelgarten der Edo-Zeit, den Yanagisawa Yoshiyasu, Vertrauter des Shōgun Tsunayoshi, um 1700 anlegen ließ. Sein Name spielt auf die Prinzipien der Waka-Dichtung an, und viele Szenen des Gartens zitieren Motive klassischer Gedichte.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AD%E7%BE%A9%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AD%E7%BE%A9%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/ja/thumb/e/e0/Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG/1280px-Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG",
+    "bild_quelle": "京浜にけ · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2770,7 +2776,9 @@
     "lon": 139.749889,
     "beschreibung_ja": "東京都文京区にある大名庭園で、水戸徳川家によって江戸初期に造られた回遊式築山泉水庭園。明の遺臣・朱舜水の意見も取り入れられ、園名は「先憂後楽」に由来する。",
     "beschreibung_de": "Der Garten Koishikawa Kōraku-en in Bunkyō gehörte der Mito-Linie der Tokugawa und zählt zu den ältesten Wandelgärten Edos. Bei der Gestaltung wirkte der chinesische Gelehrte Zhu Shunshui mit; der Name geht auf den Leitsatz zurück, sich erst nach dem Volk zu erfreuen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%9F%B3%E5%B7%9D%E5%BE%8C%E6%A5%BD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%9F%B3%E5%B7%9D%E5%BE%8C%E6%A5%BD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Koishikawa_korakuen_-_Osensui_and_Horaijima.jpg/1280px-Koishikawa_korakuen_-_Osensui_and_Horaijima.jpg",
+    "bild_quelle": "Gribeco · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2795,7 +2803,9 @@
     "lon": 138.56639,
     "beschreibung_ja": "山梨県甲府市にある荒川上流の渓谷で、花崗岩が削られてできた断崖や奇岩が連なる。主峰の覚円峰や仙娥滝が見どころで、日本有数の渓谷美として知られる。",
     "beschreibung_de": "Die Shōsenkyō-Schlucht am Oberlauf des Arakawa bei Kōfu besticht durch schroffe Granitfelsen und bizarr geformte Steine. Höhepunkte sind der Felspfeiler Kakuenpō und der Wasserfall Senga-taki – eine der schönsten Schluchten Japans.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%B2%B3%E6%98%87%E4%BB%99%E5%B3%A1"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%B2%B3%E6%98%87%E4%BB%99%E5%B3%A1",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kakuenpou_in_autumn.jpg",
+    "bild_quelle": "Captain76 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2808,7 +2818,9 @@
     "lon": 137.6333,
     "beschreibung_ja": "長野県の梓川沿いに広がる標高約1500mの山岳景勝地で、穂高連峰や焼岳を望む。河童橋や大正池、清流と原生林が織りなす風景で、日本を代表する山岳景勝地として知られる。",
     "beschreibung_de": "Das Hochtal Kamikōchi auf rund 1500 m Höhe erstreckt sich entlang des Azusa-Flusses und blickt auf die Gipfel der Hotaka-Kette und den Vulkan Yakedake. Mit der Kappa-Brücke, dem Taishō-See und klaren Bergwäldern gilt es als eines der schönsten Alpengebiete Japans.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%AB%98%E5%9C%B0"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%AB%98%E5%9C%B0",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%E7%A7%8B%E3%81%AE%E4%B8%8A%E9%AB%98%E5%9C%B0_%28Kamikochi_in_autumn%29_24_Oct%2C_2011_-_panoramio.jpg",
+    "bild_quelle": "Hiroaki Kaneko · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2821,7 +2833,9 @@
     "lon": 138.7274,
     "beschreibung_ja": "静岡県と山梨県にまたがる標高3776mの日本最高峰で、美しい円錐形の成層火山。古来、信仰の対象・芸術の源泉として親しまれ、2013年には世界文化遺産に登録された。",
     "beschreibung_de": "Der 3776 m hohe Fuji an der Grenze von Shizuoka und Yamanashi ist Japans höchster Berg, ein Schichtvulkan von vollkommener Kegelform. Seit jeher Ziel religiöser Verehrung und Motiv der Kunst, wurde er 2013 als Weltkulturerbe anerkannt.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%A3%AB%E5%B1%B1"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%A3%AB%E5%B1%B1",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Mt.Fuji_from_Mierula.jpg/1280px-Mt.Fuji_from_Mierula.jpg",
+    "bild_quelle": "Gifu-sizu · CC0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2846,7 +2860,9 @@
     "lon": 136.6625,
     "beschreibung_ja": "石川県金沢市にある加賀藩前田家の大名庭園で、日本三名園の一つ。広大な池泉回遊式庭園で、雪吊りや徽軫灯籠など、四季を通じて多彩な景色を楽しめる。",
     "beschreibung_de": "Der Garten Kenroku-en in Kanazawa war der Fürstengarten der Maeda von Kaga und zählt zu den „Drei großen Gärten Japans“. Der weitläufige Wandelgarten mit Teich begeistert zu jeder Jahreszeit – etwa mit der berühmten Kotoji-Steinlaterne und den winterlichen Schneeschutz-Seilen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%BC%E5%85%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%BC%E5%85%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Kenrokuen10-r.jpg/1280px-Kenrokuen10-r.jpg",
+    "bild_quelle": "Oilstreet · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2859,7 +2875,9 @@
     "lon": 136.2969,
     "beschreibung_ja": "福井市の一乗谷にある、戦国大名・朝倉氏の居館跡に残る四つの庭園。中世の姿をよくとどめた池泉庭園や石組が評価され、室町末期の庭園文化を今に伝える。",
     "beschreibung_de": "Die Asakura-Gärten von Ichijōdani bei Fukui umfassen vier Gärten auf dem Gelände der Residenz des Kriegsfürsten-Klans Asakura. Ihre Teichgärten und Steinsetzungen sind seit dem Mittelalter kaum verändert und zeugen von der Gartenkunst der späten Muromachi-Zeit.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%80%E4%B9%97%E8%B0%B7%E6%9C%9D%E5%80%89%E6%B0%8F%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%80%E4%B9%97%E8%B0%B7%E6%9C%9D%E5%80%89%E6%B0%8F%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Asakura_Yakata_of_Ichijodani_Asakura_Family_Historic_Ruins02s3s4440.jpg/1280px-Asakura_Yakata_of_Ichijodani_Asakura_Family_Historic_Ruins02s3s4440.jpg",
+    "bild_quelle": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2872,7 +2890,9 @@
     "lon": 135.191528,
     "beschreibung_ja": "京都府宮津市の宮津湾を南北に隔てる、約3.6kmの松に覆われた砂州。日本三景の一つで、股のぞきで見ると天に架かる橋のように見えることで知られる。",
     "beschreibung_de": "Die Sandbank Amanohashidate teilt die Bucht von Miyazu auf einer Länge von rund 3,6 km und ist dicht mit Kiefern bestanden. Als eine der „Drei berühmten Ansichten Japans“ wirkt sie – kopfüber zwischen den Beinen betrachtet – wie eine Brücke zum Himmel.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E6%A9%8B%E7%AB%8B"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E6%A9%8B%E7%AB%8B",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg/1280px-Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg",
+    "bild_quelle": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2885,7 +2905,9 @@
     "lon": 135.7460806,
     "beschreibung_ja": "京都・大徳寺の塔頭、大仙院にある室町時代の枯山水庭園。石組と白砂だけで、深山から流れ出す滝が大河となり大海へ至る雄大な自然を表現している。",
     "beschreibung_de": "Der Steingarten des Daisen-in, eines Untertempels des Daitoku-ji, entstand in der Muromachi-Zeit um 1509. Allein aus Steinen und weißem Sand stellt er dar, wie ein Wasserfall aus den Bergen zum Strom anschwillt und schließlich ins Meer mündet.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%BB%99%E9%99%A2%E6%9B%B8%E9%99%A2%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%BB%99%E9%99%A2%E6%9B%B8%E9%99%A2%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Daisen-in.JPG/1280px-Daisen-in.JPG",
+    "bild_quelle": "CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2898,7 +2920,9 @@
     "lon": 135.7460806,
     "beschreibung_ja": "京都市北区の大徳寺方丈にある江戸初期の枯山水庭園。白砂を敷いた簡素な構成に石組を配し、東と南に広がる庭は禅の美意識を映している。",
     "beschreibung_de": "Der Hōjō-Garten des Daitoku-ji in Kyoto ist ein Trockenlandschaftsgarten aus der frühen Edo-Zeit. Auf weißem Sand ruhen wenige Steinsetzungen; die nach Osten und Süden ausgreifende Anlage spiegelt das Schönheitsempfinden des Zen wider.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%BE%B3%E5%AF%BA%E6%96%B9%E4%B8%88%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%BE%B3%E5%AF%BA%E6%96%B9%E4%B8%88%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/090228_Daitoku-ji_Kyoto_Japan03s5.jpg/1280px-090228_Daitoku-ji_Kyoto_Japan03s5.jpg",
+    "bild_quelle": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -2911,7 +2935,9 @@
     "lon": 135.7293639,
     "beschreibung_ja": "金閣（舎利殿）で名高い鹿苑寺の池泉回遊式庭園。鏡湖池の水面に金色の楼閣が映える景観は、室町時代の北山文化を代表する名園として知られる。",
     "beschreibung_de": "Der Garten des Rokuon-ji ist berühmt für den Kinkaku, den Goldenen Pavillon, der sich im Spiegelteich Kyōko-chi widerspiegelt. Der Teich-Wandelgarten gilt als Höhepunkt der Kitayama-Kultur der Muromachi-Zeit.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E8%8B%91%E5%AF%BA%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E8%8B%91%E5%AF%BA%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Kinkaku-ji_2015.JPG/1280px-Kinkaku-ji_2015.JPG",
+    "bild_quelle": "Kakidai · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3008,7 +3034,9 @@
     "lon": 135.6833139,
     "beschreibung_ja": "「苔寺」の名で親しまれる西芳寺の庭園で、夢窓疎石が再興した。約120種ともいわれる苔が池の周囲を覆い、緑一面に包まれた幽玄な景観で知られる。",
     "beschreibung_de": "Der Garten des Saihō-ji, im Volksmund „Moostempel“ genannt, wurde vom Zen-Meister Musō Soseki neu gestaltet. Rund 120 Moosarten überziehen das Ufer des Teichs und hüllen die Anlage in ein tiefgrünes, mystisches Licht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E8%8A%B3%E5%AF%BA%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E8%8A%B3%E5%AF%BA%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Saihouji-kokedera01.jpg/1280px-Saihouji-kokedera01.jpg",
+    "bild_quelle": "Ivanoff~commonswiki · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3021,7 +3049,9 @@
     "lon": 135.821778,
     "beschreibung_ja": "京都・醍醐寺の三宝院にある池泉回遊式庭園で、豊臣秀吉が「醍醐の花見」に際して自ら基本設計をしたと伝わる。名石・藤戸石を中心に据えた、桃山文化を象徴する豪華な庭である。",
     "beschreibung_de": "Der Sanbō-in-Garten des Daigo-ji geht auf Toyotomi Hideyoshi zurück, der ihn 1598 anlässlich seines berühmten Kirschblütenfests entwerfen ließ. Um den kostbaren Stein Fujido-ishi angeordnet, gilt er als prachtvolles Sinnbild der Momoyama-Kultur.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%86%8D%E9%86%90%E5%AF%BA%E4%B8%89%E5%AE%9D%E9%99%A2%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%86%8D%E9%86%90%E5%AF%BA%E4%B8%89%E5%AE%9D%E9%99%A2%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/DaigojiSanpoinKaramon.jpg/1280px-DaigojiSanpoinKaramon.jpg",
+    "bild_quelle": "ja:利用者:＋－ · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3046,7 +3076,9 @@
     "lon": 135.802389,
     "beschreibung_ja": "奈良市にある奈良時代の庭園跡で、発掘によって玉石を敷いた曲線状の流れが見つかった。曲水の宴などに用いられたとみられ、古代の庭園のありさまを伝える貴重な遺跡である。",
     "beschreibung_de": "Dieser Palastgarten aus der Nara-Zeit wurde in der Stadt Nara ausgegraben und offenbarte einen geschwungenen, mit Kieseln ausgelegten Wasserlauf. Er diente wohl höfischen Dichterfesten am Wasser und gibt seltenen Einblick in die Gartenkunst des japanischen Altertums.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E4%BA%AC%E5%B7%A6%E4%BA%AC%E4%B8%89%E6%9D%A1%E4%BA%8C%E5%9D%8A%E5%AE%AE%E8%B7%A1%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E4%BA%AC%E5%B7%A6%E4%BA%AC%E4%B8%89%E6%9D%A1%E4%BA%8C%E5%9D%8A%E5%AE%AE%E8%B7%A1%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/2020_Heijokyo_Sakyo_Sanjo_Nibo_Palace_Garden_01.jpg/1280px-2020_Heijokyo_Sakyo_Sanjo_Nibo_Palace_Garden_01.jpg",
+    "bild_quelle": "NNDDD · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3059,7 +3091,9 @@
     "lon": 135.7956,
     "beschreibung_ja": "奈良の平城宮跡の東の張り出し部にある、奈良時代の庭園。発掘成果をもとに池や建物が復原され、日本庭園の原型ともいわれる古代の宴遊の場を今に伝えている。",
     "beschreibung_de": "Der Tōin-Garten im Ostteil des Heijō-Palasts in Nara stammt aus der Nara-Zeit. Auf Grundlage der Ausgrabungen wurden Teich und Gebäude rekonstruiert; die Anlage gilt als eine Urform des japanischen Gartens und diente einst höfischen Festen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E5%AE%AE%E6%9D%B1%E9%99%A2%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E5%AE%AE%E6%9D%B1%E9%99%A2%E5%BA%AD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/%E5%BE%A9%E5%85%83%E3%81%95%E3%82%8C%E3%81%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E6%A5%B5%E6%AE%BF.jpg/1280px-%E5%BE%A9%E5%85%83%E3%81%95%E3%82%8C%E3%81%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E6%A5%B5%E6%AE%BF.jpg",
+    "bild_quelle": "Tsuyoshi chiba · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3072,7 +3106,9 @@
     "lon": 135.88628,
     "beschreibung_ja": "奈良・和歌山・三重の県境を流れる北山川（熊野川水系）の峡谷「瀞峡」のうち、最も美しいとされる下瀞の一帯。切り立った巨岩とエメラルドグリーンの淵が続く、清冽な渓谷美で知られる。",
     "beschreibung_de": "Dorohatchō ist der eindrucksvollste Abschnitt der Doro-Schlucht am Fluss Kitayama (Kumano-System), wo die Grenzen von Nara, Wakayama und Mie zusammentreffen. Hoch aufragende Felsen und smaragdgrüne Wasserbecken prägen diese kristallklare Schlucht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%80%9E%E5%85%AB%E4%B8%81"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%80%9E%E5%85%AB%E4%B8%81",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/171007_Dorohatcho_Shingu_Wakayama_pref_Japan01s3.jpg/1280px-171007_Dorohatcho_Shingu_Wakayama_pref_Japan01s3.jpg",
+    "bild_quelle": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3085,7 +3121,9 @@
     "lon": 133.935139,
     "beschreibung_ja": "岡山市にある岡山藩主池田家の大名庭園で、日本三名園の一つ。広い芝生と池、築山を配した回遊式庭園で、岡山城を借景に取り込んだ明るくのびやかな景観で知られる。",
     "beschreibung_de": "Der Garten Kōraku-en in Okayama war der Fürstengarten der Ikeda und zählt zu den „Drei großen Gärten Japans“. Weite Rasenflächen, Teiche und Hügel bilden einen offenen Wandelgarten, der die Burg von Okayama als geliehene Kulisse einbezieht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E5%BE%8C%E6%A5%BD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E5%BE%8C%E6%A5%BD%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Okayama_Korakuen_Garden01.jpg/1280px-Okayama_Korakuen_Garden01.jpg",
+    "bild_quelle": "Fjkelfeimvvn · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3098,7 +3136,9 @@
     "lon": 132.1875,
     "beschreibung_ja": "広島県の太田川水系・柴木川がつくり出した約16kmの峡谷。三段滝をはじめとする滝や淵、切り立った岩壁が続き、西中国山地国定公園を代表する渓谷美として知られる。",
     "beschreibung_de": "Die Sandan-Schlucht in der Präfektur Hiroshima erstreckt sich rund 16 km entlang des Shibaki-Flusses im Ōta-Flusssystem. Wasserfälle wie der dreistufige Sandan-taki, tiefe Gumpen und steile Felswände machen sie zum landschaftlichen Höhepunkt des Nishi-Chūgoku-Sanchi-Quasi-Nationalparks.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E5%B3%A1"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E5%B3%A1",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Sandankyo_%289875225076%29.jpg/1280px-Sandankyo_%289875225076%29.jpg",
+    "bild_quelle": "Nobuyuki Kondo from Sendai, Miyagi, Japan · CC BY 2.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3111,7 +3151,9 @@
     "lon": 132.3,
     "beschreibung_ja": "広島県廿日市市の、宮島とも呼ばれる島で、日本三景の一つ。海上に立つ大鳥居で名高い厳島神社を擁し、島全体が神聖な場所として古くから信仰を集めてきた。",
     "beschreibung_de": "Die Insel Itsukushima, auch Miyajima genannt, gehört zu den „Drei berühmten Ansichten Japans“. Sie beherbergt den Itsukushima-Schrein mit seinem im Meer stehenden Torii und gilt seit alters her als heilige Insel.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8E%B3%E5%B3%B6"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8E%B3%E5%B3%B6",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Miyajima_From_The_Ferry_%2830093845%29.jpeg/1280px-Miyajima_From_The_Ferry_%2830093845%29.jpeg",
+    "bild_quelle": "Mark Bucayan · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3124,7 +3166,9 @@
     "lon": 134.044403,
     "beschreibung_ja": "香川県高松市にある高松藩主松平家の大名庭園。六つの池と十三の築山を巧みに配し、背後の紫雲山を借景とした、江戸時代を代表する広大な回遊式庭園である。",
     "beschreibung_de": "Der Garten Ritsurin in Takamatsu war der Fürstengarten der Matsudaira und zählt zu den großartigsten Wandelgärten der Edo-Zeit. Sechs Teiche und dreizehn künstliche Hügel sind kunstvoll angeordnet, wobei der Berg Shiun als geliehene Landschaft dient.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ritsurin.JPG/1280px-Ritsurin.JPG",
+    "bild_quelle": "Leela Soden · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3137,7 +3181,9 @@
     "lon": 130.013556,
     "beschreibung_ja": "佐賀県唐津市の唐津湾沿いに約4.5km続く、クロマツの松原。江戸時代に防風林として植えられたもので、白砂青松の美しい海岸景観で知られる。",
     "beschreibung_de": "Der Kiefernhain Niji-no-Matsubara zieht sich rund 4,5 km entlang der Bucht von Karatsu in der Präfektur Saga. In der Edo-Zeit als Windschutzwald angelegt, verkörpert er das klassische Bild von weißem Sand und grünen Kiefern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%99%B9%E3%81%AE%E6%9D%BE%E5%8E%9F"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%99%B9%E3%81%AE%E6%9D%BE%E5%8E%9F",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Nijinomatsubara.jpg/1280px-Nijinomatsubara.jpg",
+    "bild_quelle": "ascesis · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3150,7 +3196,9 @@
     "lon": 130.29889,
     "beschreibung_ja": "長崎県島原半島にある火山群の総称で、主峰の普賢岳や、1990年代の噴火で生まれた平成新山などからなる。温泉と紅葉の名所として知られ、火山がつくり出した雄大な景観が広がる。",
     "beschreibung_de": "Der Berg Unzen auf der Shimabara-Halbinsel in Nagasaki ist eine Gruppe von Vulkanen um den Hauptgipfel Fugen-dake und den in den 1990er Jahren neu entstandenen Heisei-Shinzan. Berühmt für heiße Quellen und Herbstlaub, breitet sich hier eine großartige, von Vulkanen geformte Landschaft aus.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%B2%E4%BB%99%E5%B2%B3"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%B2%E4%BB%99%E5%B2%B3",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Fugendake_02_Pyroplastic_flow_area.JPG/1280px-Fugendake_02_Pyroplastic_flow_area.JPG",
+    "bild_quelle": "CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "scenery",
@@ -3163,7 +3211,9 @@
     "lon": 127.715306,
     "beschreibung_ja": "沖縄県那覇市にある琉球王家の別邸庭園で、18世紀末に造られた回遊式庭園。中国風の六角堂やアーチ橋を池畔に配し、中国からの使者をもてなす場としても用いられた。",
     "beschreibung_de": "Der Garten Shikina-en in Naha war die Villa der königlichen Familie der Ryūkyū und entstand als Wandelgarten am Ende des 18. Jahrhunderts. Ein Teich mit chinesisch anmutendem Sechseckpavillon und Bogenbrücke bildet sein Herz; hier empfing man auch Gesandte aus China.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%AD%98%E5%90%8D%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%AD%98%E5%90%8D%E5%9C%92",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Naha_Shikinaen17n4272.jpg/1280px-Naha_Shikinaen17n4272.jpg",
+    "bild_quelle": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3176,7 +3226,9 @@
     "lon": 140.87056,
     "beschreibung_ja": "北海道京極町のふきだし公園に湧く、羊蹄山に降った雪や雨が伏流水となって噴き出す湧水。豊富な水量と冷たく澄んだ味わいで知られ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "In Kyōgoku am Fuße des Yōtei tritt hier das Schmelz- und Regenwasser des Vulkans als unterirdisch gefiltertes Quellwasser wieder zutage. Die Fukidashi-Quellen im gleichnamigen Park sind für ihre große Schüttung und ihr kühles, klares Wasser bekannt und zählen zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%BE%8A%E8%B9%84%E3%81%AE%E3%81%B5%E3%81%8D%E3%81%A0%E3%81%97%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%BE%8A%E8%B9%84%E3%81%AE%E3%81%B5%E3%81%8D%E3%81%A0%E3%81%97%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Kyogoku%2C_Fukidashi_Park_2024.jpg/1280px-Kyogoku%2C_Fukidashi_Park_2024.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3189,7 +3241,9 @@
     "lon": 141.24194,
     "beschreibung_ja": "利尻島の利尻山にある湧水で、登山道の入口付近から湧き出す。日本最北の名水百選とされ、雪解け水を集めたまろやかな味わいで登山者に親しまれている。",
     "beschreibung_de": "Die Kanro-Quelle entspringt am Aufstieg zum Rishiri-zan auf der Insel Rishiri. Als nördlichstes der 100 herausragenden Wasser Japans erfrischt ihr weiches Schmelzwasser seit jeher die Bergsteiger.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2%E6%B3%89%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%94%98%E9%9C%B2%E6%B3%89%E6%B0%B4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mt_Rishiri%282004%29.jpg",
+    "bild_quelle": "E-190 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3214,7 +3268,9 @@
     "lon": 140.47136,
     "beschreibung_ja": "青森県弘前市の紙漉町にある湧水で、江戸時代から生活用水として大切にされてきた。用途ごとに水をくむ場所を分けた昔ながらの水利用が残り、名水百選に選ばれている。",
     "beschreibung_de": "Das Quellwasser Tomita no Shitsuko in Hirosaki wird seit der Edo-Zeit als Trink- und Brauchwasser genutzt. Bis heute ist die alte Ordnung erhalten, nach der man an gestuften Becken je nach Zweck schöpft; es zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E7%94%B0%E3%81%AE%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E7%94%B0%E3%81%AE%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Tomita_no_shitsuko.jpg/1280px-Tomita_no_shitsuko.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3227,7 +3283,9 @@
     "lon": 140.62139,
     "beschreibung_ja": "青森県平川市唐竹にある湧水で、古くから地域の暮らしを支えてきた清水。眼病に効くという言い伝えも残り、名水百選のひとつに数えられている。",
     "beschreibung_de": "Das Quellwasser Igami no Shitsuko in Hirakawa versorgt seit alters her die Umgebung. Der Legende nach heilt es Augenleiden; es gehört zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B8%BE%E7%A5%9E%E3%81%AE%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B8%BE%E7%A5%9E%E3%81%AE%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Igaminoshitsuko2.jpg/1280px-Igaminoshitsuko2.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3240,7 +3298,9 @@
     "lon": 140.98778,
     "beschreibung_ja": "岩手県八幡平市松尾寄木にある七か所の湧水の総称で、八幡平の伏流水が湧き出す。澄んだ水は農業や生活を潤し、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Kanazawa-Quellen bei Hachimantai fassen sieben Quellaustritte zusammen, in denen das unterirdische Wasser des Hachimantai-Massivs zutage tritt. Ihr klares Wasser nährt Felder und Alltag und zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%87%91%E6%B2%A2%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%87%91%E6%B2%A2%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Kanazawashimizu.jpg/1280px-Kanazawashimizu.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3265,7 +3325,9 @@
     "lon": 141.00951,
     "beschreibung_ja": "宮城県栗原市高清水にある湧水で、桂の大木の根元から湧き出すことからこの名がある。地元で「かつらっぱ」と親しまれ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Quellwasser Katsuraba Shimizu in Kurihara entspringt am Fuß eines mächtigen Katsura-Baums, dem es seinen Namen verdankt. Von den Einheimischen liebevoll „Katsurappa“ genannt, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A1%82%E8%91%89%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A1%82%E8%91%89%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Katsuraha_Shimizu.jpg/1280px-Katsuraha_Shimizu.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3290,7 +3352,9 @@
     "lon": 140.54456,
     "beschreibung_ja": "秋田県美郷町の六郷扇状地に点在する湧水群で、扇状地に染み込んだ水が各所で湧き出す。「清水（しみず）」と呼ばれる湧き口が数多く残り、名水百選に選ばれている。",
     "beschreibung_de": "Auf dem Schwemmfächer von Rokugō in Misato tritt versickertes Wasser an zahllosen Stellen wieder aus. Die vielen als „Shimizu“ bekannten Quellaustritte prägen den Ort und zählen zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AD%E9%83%B7%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AD%E9%83%B7%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Niteko_Spring-1.jpg/1280px-Niteko_Spring-1.jpg",
+    "bild_quelle": "掬茶 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3315,7 +3379,9 @@
     "lon": 140.02694,
     "beschreibung_ja": "山形県西川町など、月山の山麓一帯に湧き出す湧水群。深い雪が育んだ豊かな伏流水が各所で湧き出し、澄んだ水は名水百選のひとつに選ばれている。",
     "beschreibung_de": "Rund um den Fuß des Gassan in Nishikawa treten die vom tiefen Schnee gespeisten Bergwasser an vielen Stellen zutage. Diese klaren Quellen zählen zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9C%88%E5%B1%B1%E5%B1%B1%E9%BA%93%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9C%88%E5%B1%B1%E5%B1%B1%E9%BA%93%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Gassan_%285693125340%29.jpg",
+    "bild_quelle": "Jun K · CC BY-SA 2.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3340,7 +3406,9 @@
     "lon": 140.07222,
     "beschreibung_ja": "福島県磐梯町の磐梯山西麓に湧く湧水群で、代表的なものに龍ヶ沢湧水がある。磐梯山の伏流水が集まった清らかな水は、古くから信仰も集め、名水百選に選ばれている。",
     "beschreibung_de": "Am Westfuß des Bandai bei Bandai-machi treten mehrere Quellen zutage, darunter das bekannte Ryūgasawa-Quellwasser. Das gesammelte unterirdische Wasser des Vulkans wurde früh auch verehrt und zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A3%90%E6%A2%AF%E8%A5%BF%E5%B1%B1%E9%BA%93%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A3%90%E6%A2%AF%E8%A5%BF%E5%B1%B1%E9%BA%93%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Ryuuga_Spring.jpg/1280px-Ryuuga_Spring.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3389,7 +3457,9 @@
     "lon": 139.82167,
     "beschreibung_ja": "栃木県塩谷町の高原山の山麓、標高約590mの地に湧く湧水群。ブナ林を通って湧き出す水は水量が豊かで澄んでおり、名水百選のなかでも高い評価を受けている。",
     "beschreibung_de": "Die Shōjinzawa-Quellen entspringen bei Shioya auf rund 590 m Höhe am Fuß des Takahara-Bergs. Durch Buchenwald gefiltert, tritt hier reichlich klares Wasser aus, das unter Japans 100 herausragenden Wassern besonders geschätzt wird.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B0%9A%E4%BB%81%E6%B2%A2%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B0%9A%E4%BB%81%E6%B2%A2%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/%E3%82%84%E3%82%84%E5%A2%97%E6%B0%B4%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E5%B0%9A%E4%BB%81%E6%B2%A2%E6%B9%A7%E6%B0%B4_Pcs34560_IMG3519.jpg/1280px-%E3%82%84%E3%82%84%E5%A2%97%E6%B0%B4%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E5%B0%9A%E4%BB%81%E6%B2%A2%E6%B9%A7%E6%B0%B4_Pcs34560_IMG3519.jpg",
+    "bild_quelle": "pcs34560 · Public domain / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3402,7 +3472,9 @@
     "lon": 138.91394,
     "beschreibung_ja": "群馬県甘楽町の小幡の城下町を流れる用水路で、雄川からの水を町なかに引いている。江戸時代の面影を残す水路として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Ogawa-Kanal leitet Wasser des Ogawa durch die alte Burgstadt Obata in Kanra. Als Bewässerungskanal mit dem Flair der Edo-Zeit zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%84%E5%B7%9D%E5%A0%B0"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%84%E5%B7%9D%E5%A0%B0",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Ogawa_River_Gunma_Japan.JPG/1280px-Ogawa_River_Gunma_Japan.JPG",
+    "bild_quelle": "Triglav · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3415,7 +3487,9 @@
     "lon": 138.92861,
     "beschreibung_ja": "群馬県東吾妻町にある湧水で、湧出量が豊富なことで知られる。近くの弁財天をまつる島から湧き出す澄んだ水は、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Hakoshima-Quelle in Higashiagatsuma ist für ihre große Schüttung bekannt. Das klare Wasser tritt bei einer kleinen, der Benzaiten geweihten Insel aus und zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%AE%B1%E5%B3%B6%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%AE%B1%E5%B3%B6%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Hakoshima_Yusui_1.jpg/1280px-Hakoshima_Yusui_1.jpg",
+    "bild_quelle": "photo: Qurren (talk) Taken with Canon IXY 10S (Digital IXUS 210) · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3440,7 +3514,9 @@
     "lon": 140.24795,
     "beschreibung_ja": "千葉県長南町佐坪にある湧水で、千葉県で唯一の名水百選に選ばれている。熊野神社のそばに湧く澄んだ水で、古くから地域に大切にされてきた。",
     "beschreibung_de": "Das Quellwasser Yuya no Shimizu in Chōnan ist das einzige der 100 herausragenden Wasser Japans in der Präfektur Chiba. Es entspringt nahe dem Kumano-Schrein und wird seit langem von der Gemeinde gehegt.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E3%81%AE%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%86%8A%E9%87%8E%E3%81%AE%E6%B8%85%E6%B0%B4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/e/e0/%E7%86%8A%E9%87%8E%E3%81%AE%E6%B8%85%E6%B0%B4.jpg",
+    "bild_quelle": "Ibaraki101c · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3453,7 +3529,9 @@
     "lon": 139.47403,
     "beschreibung_ja": "東京都国分寺市の国分寺崖線（ハケ）に沿って湧き出す湧水群で、真姿の池を潤す。かつて鷹狩りの道だった小径「お鷹の道」に沿い、都会に残る貴重な清流として名水百選に選ばれている。",
     "beschreibung_de": "Entlang der Geländekante von Kokubunji treten Quellen aus, die den Masugata-Teich speisen. Sie säumen den „Otaka-no-michi“, einen einstigen Falkenjagd-Weg, und gelten als kostbares klares Wasser inmitten der Großstadt – Teil von Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%81%8A%E9%B7%B9%E3%81%AE%E9%81%93%E3%83%BB%E7%9C%9F%E5%A7%BF%E3%81%AE%E6%B1%A0%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%81%8A%E9%B7%B9%E3%81%AE%E9%81%93%E3%83%BB%E7%9C%9F%E5%A7%BF%E3%81%AE%E6%B1%A0%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Masugata_spring.jpg/1280px-Masugata_spring.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3478,7 +3556,9 @@
     "lon": 139.22827,
     "beschreibung_ja": "神奈川県秦野市の秦野盆地に湧き出す湧水群で、丹沢山地に降った雨が地下水となって各所で湧く。「弘法の清水」などが知られ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Im Hadano-Becken tritt das im Tanzawa-Gebirge versickerte Regenwasser an vielen Stellen wieder aus. Bekannte Austritte wie das „Kōbō-Quellwasser“ zählen zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%A6%E9%87%8E%E7%9B%86%E5%9C%B0%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%A6%E9%87%8E%E7%9B%86%E5%9C%B0%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/3/31/Hadano_Basin_01.gif",
+    "bild_quelle": "Σ64 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3540,7 +3620,9 @@
     "lon": 137.4075,
     "beschreibung_ja": "富山県上市町の「穴の谷霊場」に湧く伏流水で、古くから薬効があるとされ、信仰を集めてきた。今も多くの人が水をくみに訪れ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Im Wallfahrtsort Annotani bei Kamiichi entspringt ein unterirdisches Wasser, dem seit alters Heilkraft nachgesagt wird. Noch heute schöpfen viele Pilger daraus; es zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A9%B4%E3%81%AE%E8%B0%B7%E3%81%AE%E9%9C%8A%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A9%B4%E3%81%AE%E8%B0%B7%E3%81%AE%E9%9C%8A%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/The_sprit_water_of_the_hole_a_valley.jpg/1280px-The_sprit_water_of_the_hole_a_valley.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3566,7 +3648,9 @@
     "lon": 136.98969,
     "beschreibung_ja": "富山県砺波市庄川町にある湧水で、冷たさで瓜が裂けたという言い伝えから名がついたとされる。庄川扇状地の伏流水が湧き出す澄んだ水で、名水百選に選ばれている。",
     "beschreibung_de": "Das Quellwasser Uriwari no Shimizu in Tonami verdankt seinen Namen der Sage, eine Melone sei in seiner Kälte zersprungen. Das aus dem Shōgawa-Schwemmfächer tretende klare Wasser zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%93%9C%E8%A3%82%E3%81%AE%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%93%9C%E8%A3%82%E3%81%AE%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/UriwariSpring.jpg/1280px-UriwariSpring.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3591,7 +3675,9 @@
     "lon": 136.77056,
     "beschreibung_ja": "石川県輪島市、曹洞宗の名刹・總持寺祖院ゆかりの山中に湧く湧水。禅の修行の地に湧く清らかな水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Quellwasser Kowashūdo entspringt in den Bergen bei Wajima, nahe dem Zen-Tempel Sōji-ji Soin. Als klares Wasser einer Stätte der Zen-Übung zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8F%A4%E5%92%8C%E7%A7%80%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8F%A4%E5%92%8C%E7%A7%80%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Souijisoinnsoudou.jpg/1280px-Souijisoinnsoudou.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3616,7 +3702,9 @@
     "lon": 135.8429,
     "beschreibung_ja": "福井県若狭町の若狭瓜割名水公園にある湧水で、湧き出した水が小さな滝となって流れ落ちる。年間を通じて水温が低く、瓜も割れるほど冷たいことから名がついたと伝わり、名水百選に選ばれている。",
     "beschreibung_de": "Im Wakasa-Uriwari-Park in Wakasa tritt Quellwasser aus, das als kleiner Wasserfall herabfällt. Das ganzjährig kühle Wasser soll so kalt sein, dass „Melonen zerspringen“ – daher der Name; es zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%93%9C%E5%89%B2%E3%81%AE%E6%BB%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%93%9C%E5%89%B2%E3%81%AE%E6%BB%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Uriwarinotaki.JPG/1280px-Uriwarinotaki.JPG",
+    "bild_quelle": "Kumamushi · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3629,7 +3717,9 @@
     "lon": 136.4851,
     "beschreibung_ja": "福井県大野市の城下町に湧く湧水で、「名水と朝市のまち」を代表する清水。町なかに湧く生活の水として親しまれ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Quellwasser Oshōzu entspringt mitten in der Burgstadt Ōno und ist das Wahrzeichen der „Stadt des Quellwassers und der Morgenmärkte“. Als mitten im Ort genutztes Alltagswasser zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BE%A1%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BE%A1%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Shimizu_our_waters.jpg/1280px-Shimizu_our_waters.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3642,7 +3732,9 @@
     "lon": 135.78069,
     "beschreibung_ja": "福井県小浜市の遠敷川にある淵で、奈良・東大寺二月堂の「お水取り」に送る水をくむ「お水送り」の神事で知られる。若狭と奈良を結ぶ聖なる水辺として、名水百選に選ばれている。",
     "beschreibung_de": "Der Unose ist ein Flussbecken im Onyū bei Obama, bekannt für das „Omizu-okuri“-Ritual, bei dem Wasser für die berühmte „Omizu-tori“-Zeremonie des Tōdai-ji in Nara geschöpft wird. Als heiliger Ort, der Wakasa mit Nara verbindet, zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B5%9C%E3%81%AE%E7%80%AC"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B5%9C%E3%81%AE%E7%80%AC",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Unose_onyu_river.jpg/1280px-Unose_onyu_river.jpg",
+    "bild_quelle": "Opqr · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3655,7 +3747,9 @@
     "lon": 138.83167,
     "beschreibung_ja": "山梨県忍野村にある八つの湧水池で、富士山に降った雪や雨が長い年月をかけて伏流水となり湧き出したもの。透き通った水と富士を望む景観で名高く、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Oshino Hakkai in Oshino besteht aus acht Quellteichen, in denen das über Jahrzehnte durch den Fuji gefilterte Schnee- und Regenwasser wieder zutage tritt. Berühmt für sein glasklares Wasser und den Blick auf den Fuji, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BF%8D%E9%87%8E%E5%85%AB%E6%B5%B7",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg/1280px-231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg",
+    "bild_quelle": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3668,7 +3762,9 @@
     "lon": 138.37,
     "beschreibung_ja": "山梨県北杜市の八ヶ岳南麓の高原に点在する湧水群で、八ヶ岳に降った雨や雪が伏流水となって各所に湧く。冷涼で澄んだ水は名水百選のひとつに選ばれている。",
     "beschreibung_de": "Am südlichen Hochland des Yatsugatake bei Hokuto treten die im Gebirge versickerten Wasser an vielen Stellen wieder aus. Diese kühlen, klaren Quellen zählen zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AB%E3%83%B6%E5%B2%B3%E5%8D%97%E9%BA%93%E9%AB%98%E5%8E%9F%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AB%E3%83%B6%E5%B2%B3%E5%8D%97%E9%BA%93%E9%AB%98%E5%8E%9F%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Otaki_shrine_springs.jpg/1280px-Otaki_shrine_springs.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3705,7 +3801,9 @@
     "lon": 137.9091,
     "beschreibung_ja": "長野県安曇野市に広がる湧水群で、北アルプスの伏流水が扇状地に湧き出す。冷たく澄んだ水はわさびの栽培に用いられ、大王わさび農場などの景観とともに名水百選に選ばれている。",
     "beschreibung_de": "In Azumino tritt das unterirdische Wasser der Nordalpen auf dem Schwemmfächer aus. Das kühle, klare Wasser wird zum Anbau von Wasabi genutzt – etwa auf der Daiō-Wasabi-Farm – und zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%89%E6%9B%87%E9%87%8E%E3%82%8F%E3%81%95%E3%81%B3%E7%94%B0%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%89%E6%9B%87%E9%87%8E%E3%82%8F%E3%81%95%E3%81%B3%E7%94%B0%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/f/f0/MatsumotoBonchiTagged.jpg",
+    "bild_quelle": "BehBeh · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3718,7 +3816,9 @@
     "lon": 137.84722,
     "beschreibung_ja": "長野県白馬村にある姫川の源流の湧水で、澄んだ水が湿原を潤し川となって流れ出す。バイカモなどが育つ清らかな流れで、名水百選のひとつに選ばれている。",
     "beschreibung_de": "In Hakuba entspringen die Quellen, die den Ursprung des Himekawa bilden: klares Wasser durchzieht ein Feuchtgebiet und wird zum Fluss. In der reinen Strömung gedeiht der Wasserhahnenfuß; sie zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A7%AB%E5%B7%9D%E6%BA%90%E6%B5%81%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A7%AB%E5%B7%9D%E6%BA%90%E6%B5%81%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Himekawa_River_Hakuba07bs4592.jpg/1280px-Himekawa_River_Hakuba07bs4592.jpg",
+    "bild_quelle": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3731,7 +3831,9 @@
     "lon": 136.95589,
     "beschreibung_ja": "岐阜県郡上市八幡町の城下町に湧く湧水で、室町時代の連歌師・宗祇がこの水を愛したことから名がついたと伝わる。町の暮らしを支える清水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Sōgi-Wasser entspringt in der Burgstadt Gujō-Hachiman und soll seinen Namen dem Renga-Dichter Sōgi der Muromachi-Zeit verdanken, der es schätzte. Als Alltagswasser der Stadt zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%97%E7%A5%87%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%97%E7%A5%87%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Sougisui.JPG/1280px-Sougisui.JPG",
+    "bild_quelle": "じゃんもどき · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3768,7 +3870,9 @@
     "lon": 138.90056,
     "beschreibung_ja": "静岡県清水町に湧き出す大規模な湧水群で、富士山に降った雪や雨の伏流水が集まって全長わずか約1.2kmの柿田川となる。日本有数の湧出量と透明度を誇り、名水百選のひとつに選ばれている。",
     "beschreibung_de": "In Shimizu bilden gewaltige Quellen aus dem unterirdischen Schnee- und Regenwasser des Fuji den nur rund 1,2 km langen Kakita-Fluss. Mit einer der größten Schüttungen und höchsten Klarheiten Japans zählt er zu den 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9F%BF%E7%94%B0%E5%B7%9D%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9F%BF%E7%94%B0%E5%B7%9D%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Kakita_River_%282005-11-04%29.jpg/1280px-Kakita_River_%282005-11-04%29.jpg",
+    "bild_quelle": "国土地理院 (Geospatial Information Authority of Japan) · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3793,7 +3897,9 @@
     "lon": 136.54194,
     "beschreibung_ja": "三重県菰野町から四日市市智積町へ流れる用水路で、湧水を引いて生活や農業に使われてきた。澄んだ水路は地域に大切に守られ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Chishaku-Kanal führt Quellwasser von Komono nach Yokkaichi und dient seit langem Alltag und Landwirtschaft. Der klare, von der Gemeinde gepflegte Wasserlauf zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%99%BA%E7%A9%8D%E9%A4%8A%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%99%BA%E7%A9%8D%E9%A4%8A%E6%B0%B4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/4/46/%E4%B8%89%E9%87%8D%E3%83%BB%E6%99%BA%E7%A9%8D%E7%94%A8%E6%B0%B41.JPG",
+    "bild_quelle": "user:hiroyuki0904 · CC0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3818,7 +3924,9 @@
     "lon": 136.23906,
     "beschreibung_ja": "滋賀県彦根市西今町にある湧水で、名水百選の第一弾に選ばれた清水。古くから地域の生活を支えてきた澄んだ水として親しまれている。",
     "beschreibung_de": "Das Quellwasser von Jūōmura in Hikone gehörte zur ersten Auswahl der 100 herausragenden Wasser Japans. Seit alters versorgt sein klares Wasser die Gemeinde.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8D%81%E7%8E%8B%E6%9D%91%E3%81%AE%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8D%81%E7%8E%8B%E6%9D%91%E3%81%AE%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Jyuuou_Lingquan.jpg/1280px-Jyuuou_Lingquan.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3879,7 +3987,9 @@
     "lon": 135.33968,
     "beschreibung_ja": "兵庫県西宮市の西宮神社付近一帯から湧き出す井戸水で、江戸時代後期から日本酒づくりに適した水として知られる。灘五郷の酒造に欠かせない名水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Miyamizu tritt rund um den Nishinomiya-Schrein aus und gilt seit dem späten Edo als ideales Wasser für die Sake-Herstellung. Als unentbehrliches Brauwasser der „Fünf Gaue von Nada“ zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%AE%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Miyamizu_monument_01.JPG/1280px-Miyamizu_monument_01.JPG",
+    "bild_quelle": "Miya.m · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3892,7 +4002,9 @@
     "lon": 135.19361,
     "beschreibung_ja": "神戸市中央区の市街地の背後を流れる渓流で、日本三大神滝のひとつ布引の滝を擁する。都心に近い澄んだ渓流として親しまれ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Nunobiki-Bach fließt unmittelbar hinter der Innenstadt von Kobe und beherbergt den Nunobiki-Wasserfall, einen der drei großen „heiligen Wasserfälle“ Japans. Als klarer Bergbach nahe dem Stadtzentrum zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B8%83%E5%BC%95%E6%B8%93%E6%B5%81"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B8%83%E5%BC%95%E6%B8%93%E6%B5%81",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Odaki%2C_from_the_Nunobiki_Falls.jpg/1280px-Odaki%2C_from_the_Nunobiki_Falls.jpg",
+    "bild_quelle": "Laitr Keiows · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3905,7 +4017,9 @@
     "lon": 134.44698,
     "beschreibung_ja": "兵庫県南西部を流れる清流で、上流域の澄んだ水で知られる。アユなどが育つ豊かな川として親しまれ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Chikusa-Fluss im Südwesten der Präfektur Hyōgo ist für sein klares Wasser im Oberlauf bekannt. Als fischreicher Fluss, in dem etwa Süßwasserfische wie der Ayu gedeihen, zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8D%83%E7%A8%AE%E5%B7%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8D%83%E7%A8%AE%E5%B7%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Chikusagawa02s1920.jpg/1280px-Chikusagawa02s1920.jpg",
+    "bild_quelle": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3918,7 +4032,9 @@
     "lon": 135.87986,
     "beschreibung_ja": "奈良県天川村洞川に点在する鍾乳洞の地下水と湧水で、修験の里・洞川温泉の一帯にある。石灰岩を通って湧く冷たく澄んだ水は、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Dorogawa-Quellen in Tenkawa entspringen den Kalkhöhlen rund um den Kurort Dorogawa, eine Stätte der Bergaskese. Das durch Kalkstein gefilterte, kühle und klare Wasser zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B4%9E%E5%B7%9D%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B4%9E%E5%B7%9D%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Dorokawa.meisuii.jpg/1280px-Dorokawa.meisuii.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3931,7 +4047,9 @@
     "lon": 135.63417,
     "beschreibung_ja": "和歌山県田辺市中辺路の熊野古道沿い、継桜王子のそばに湧く湧水。熊野詣での旅人ののどを潤してきた清水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Quellwasser Nonaka no Shimizu entspringt am Kumano-Kodō bei Tanabe, nahe dem Tsugizakura-Ōji. Als Wasser, das die Pilger auf dem Weg nach Kumano erquickte, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%87%8E%E4%B8%AD%E3%81%AE%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%87%8E%E4%B8%AD%E3%81%AE%E6%B8%85%E6%B0%B4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/6/62/Tsugizakura-oji_and_Ippo_Sugi.JPG",
+    "bild_quelle": "user:KMR · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3956,7 +4074,9 @@
     "lon": 133.44028,
     "beschreibung_ja": "鳥取県米子市淀江町に湧く地下水で、大山の伏流水を水源とする。「天の真名井」の名は神話にちなむとされ、澄んだ水は名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Ame-no-Manai-Quelle in Yonago wird vom unterirdischen Wasser des Daisen gespeist. Ihr Name klingt an den Mythos an; das klare Wasser zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E3%81%AE%E7%9C%9F%E5%90%8D%E4%BA%95"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E3%81%AE%E7%9C%9F%E5%90%8D%E4%BA%95",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Amenomanai1.jpg/1280px-Amenomanai1.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -3994,7 +4114,9 @@
     "lon": 133.67939,
     "beschreibung_ja": "岡山県真庭市蒜山に湧く冷泉で、蒜山の伏流水が湧き出す。夏でも冷たく澄んだ水で知られ、大山隠岐国立公園内にあり、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die kalte Quelle von Shiogama am Hiruzen-Hochland bei Maniwa wird vom unterirdischen Wasser des Bergs gespeist. Bekannt für ihr auch im Sommer kühles, klares Wasser, liegt sie im Daisen-Oki-Nationalpark und zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A1%A9%E9%87%9C%E3%81%AE%E5%86%B7%E6%B3%89"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A1%A9%E9%87%9C%E3%81%AE%E5%86%B7%E6%B3%89",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Quan_SIOGAMA.jpg/1280px-Quan_SIOGAMA.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4007,7 +4129,9 @@
     "lon": 133.97295,
     "beschreibung_ja": "岡山市の雄町地区に湧く冷泉で、古くから酒造りや生活に使われてきた名水。今も同じ水脈の水が親水公園で楽しめ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die kalte Quelle von Omachi in Okayama wird seit alters für Sake-Herstellung und Alltag genutzt. Das Wasser derselben Ader ist heute in einem Wasserpark zugänglich; die Quelle zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%84%E7%94%BA%E3%81%AE%E5%86%B7%E6%B3%89"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%84%E7%94%BA%E3%81%AE%E5%86%B7%E6%B3%89",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Omachi_aquagarden.jpg/1280px-Omachi_aquagarden.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4068,7 +4192,9 @@
     "lon": 132.01628,
     "beschreibung_ja": "山口県岩国市通津にある井戸で、古くから地域の飲み水として大切にされてきた。桜にちなむと伝わる清水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Sakura-Brunnen im Ortsteil Tsuzu von Iwakuni versorgte die Gemeinde seit alters mit Trinkwasser. Als Quellwasser, dessen Name auf Kirschblüten anspielt, zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A1%9C%E4%BA%95%E6%88%B8"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A1%9C%E4%BA%95%E6%88%B8",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Sakuraido.jpg/1280px-Sakuraido.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4081,7 +4207,9 @@
     "lon": 132.05551,
     "beschreibung_ja": "山口県岩国市の寂地峡を流れる川で、澄んだ渓流と滝が続く。西中国山地の深い森を源とする清流として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Jakuchi-Fluss durchfließt die Jakuchi-Schlucht bei Iwakuni mit klaren Strömungen und Wasserfällen. Als Bergbach aus den tiefen Wäldern des Nishi-Chūgoku-Gebirges zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%82%E5%9C%B0%E5%B7%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%82%E5%9C%B0%E5%B7%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Jakuchiky%C5%8D_01.jpg/1280px-Jakuchiky%C5%8D_01.jpg",
+    "bild_quelle": "sean from Osaka, Japan · CC BY-SA 2.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4094,7 +4222,9 @@
     "lon": 134.19975,
     "beschreibung_ja": "徳島県吉野川市山川町に湧く湧水で、夏は冷たく冬は暖かく感じられる水温の変化で知られる。吉野川の伏流水が湧き出す清水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Egawa-Quelle in Yoshinogawa ist dafür bekannt, dass ihr Wasser im Sommer kühl und im Winter mild wirkt. Als aus dem unterirdischen Wasser des Yoshino-Flusses gespeistes Quellwasser zählt sie zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B1%9F%E5%B7%9D%E3%81%AE%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B1%9F%E5%B7%9D%E3%81%AE%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Goukawa1.jpg/1280px-Goukawa1.jpg",
+    "bild_quelle": "紫煙 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4107,7 +4237,9 @@
     "lon": 134.09417,
     "beschreibung_ja": "徳島県三好市の剣山に湧く湧水で、祖谷川の源流とされる。霊峰・剣山の御神水として信仰を集め、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das heilige Wasser des Tsurugi entspringt am Berg Tsurugi in Miyoshi und gilt als Ursprung des Iya-Flusses. Als geweihtes Wasser des heiligen Bergs verehrt, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%89%A3%E5%B1%B1%E5%BE%A1%E7%A5%9E%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%89%A3%E5%B1%B1%E5%BE%A1%E7%A5%9E%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Turugisan_osikimizu20220528_1.jpg/1280px-Turugisan_osikimizu20220528_1.jpg",
+    "bild_quelle": "Dokudami · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4120,7 +4252,9 @@
     "lon": 134.24223,
     "beschreibung_ja": "香川県小豆島町中山に湧く泉で、瀬戸内海国立公園内にある。下流には日本の棚田百選に選ばれた千枚田が広がり、島の暮らしを支える名水として名水百選に選ばれている。",
     "beschreibung_de": "Das Wasser von Yubune entspringt in Nakayama auf der Insel Shōdoshima im Setonaikai-Nationalpark. Unterhalb liegen die berühmten Reisterrassen von Nakayama; als Wasser, das das Inselleben trägt, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B9%AF%E8%88%B9%E3%81%AE%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B9%AF%E8%88%B9%E3%81%AE%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Yubune_no_mizu.jpg/1280px-Yubune_no_mizu.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4133,7 +4267,9 @@
     "lon": 133.18123,
     "beschreibung_ja": "愛媛県西条市の一帯に数多く存在する自噴の地下水で、掘れば水が自然にわき上がることから「うちぬき」と呼ばれる。市街地のいたるところで清水が噴き出す珍しい名水として、名水百選に選ばれている。",
     "beschreibung_de": "„Uchinuki“ sind die zahllosen artesischen Brunnen im Stadtgebiet von Saijō, aus denen das Wasser von selbst emporsteigt. Als seltenes Phänomen, bei dem überall in der Stadt klares Wasser quillt, zählen sie zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%A1%E3%81%AC%E3%81%8D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%A1%E3%81%AC%E3%81%8D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Uchinuki_%28a_spring_in_saijyo-shi%2C_Japan%29.JPG/1280px-Uchinuki_%28a_spring_in_saijyo-shi%2C_Japan%29.JPG",
+    "bild_quelle": "おむこさん志望 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4158,7 +4294,9 @@
     "lon": 132.5846,
     "beschreibung_ja": "愛媛県西予市宇和町明間に湧く湧水で、石灰洞から豊かに湧き出す。夏には流しそうめんでも親しまれる冷たく澄んだ水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Kannon-Wasser in Seiyo tritt reichlich aus einer Kalkhöhle aus. Als kühles, klares Wasser, an dem man im Sommer „Nagashi-sōmen“ genießt, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%A6%B3%E9%9F%B3%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%A6%B3%E9%9F%B3%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Kannonsui.jpg/1280px-Kannonsui.jpg",
+    "bild_quelle": "As6022014 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4171,7 +4309,9 @@
     "lon": 132.99572,
     "beschreibung_ja": "高知県西部を流れる全長約196kmの一級河川で、本流にダムがなく「日本最後の清流」とも呼ばれる。沈下橋の風景と澄んだ流れで名高く、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der rund 196 km lange Shimanto im Westen von Kōchi trägt keine Staumauer im Hauptlauf und gilt als „letzter klarer Fluss Japans“. Berühmt für seine flutbaren Brücken und das klare Wasser, zählt er zu den 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E4%B8%87%E5%8D%81%E5%B7%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%9B%9B%E4%B8%87%E5%8D%81%E5%B7%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/ja/thumb/c/c1/Shimanto_River_And_Iwama_Bridge_1.JPG/1280px-Shimanto_River_And_Iwama_Bridge_1.JPG",
+    "bild_quelle": "京浜にけ · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4184,7 +4324,9 @@
     "lon": 133.20772,
     "beschreibung_ja": "高知県越知町の横倉山に湧く湧水で、安徳天皇の潜幸伝説が残る地にちなむ。深い山に湧く澄んだ水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Antoku-Wasser entspringt am Berg Yokogura bei Ochi, einem Ort, der mit der Sage vom versteckten Kaiser Antoku verbunden ist. Als klares Wasser tief in den Bergen zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%89%E5%BE%B3%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AE%89%E5%BE%B3%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Antoku_spring_water_area.jpg/1280px-Antoku_spring_water_area.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4197,7 +4339,9 @@
     "lon": 130.81339,
     "beschreibung_ja": "福岡県うきは市の清水寺の境内に湧く地下水で、約700年前に寺が開かれて以来大切にされてきた。豊富で澄んだ水は名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Kiyomizu-Quelle entspringt im Bezirk des Tempels Kiyomizu-dera in Ukiha und wird seit dessen Gründung vor rund 700 Jahren gehegt. Ihr reichliches, klares Wasser zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B8%85%E6%B0%B4%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B8%85%E6%B0%B4%E6%B9%A7%E6%B0%B4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Kiyomizu_Spring.jpg",
+    "bild_quelle": "Muyo · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4210,7 +4354,9 @@
     "lon": 130.45266,
     "beschreibung_ja": "福岡市東区の香椎宮のそばに湧く霊泉で、飲めば老いないという言い伝えから「不老水」と呼ばれる。古くから信仰を集めた清水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Furōsui entspringt nahe dem Kashii-Schrein in Fukuoka; der Legende nach altert nicht, wer davon trinkt – daher „Wasser der Unsterblichkeit“. Als seit alters verehrtes Quellwasser zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%8D%E8%80%81%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%8D%E8%80%81%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Kashii-gu0902.jpg/1280px-Kashii-gu0902.jpg",
+    "bild_quelle": "ぱちょぴ（投稿者）撮影 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4223,7 +4369,9 @@
     "lon": 129.88088,
     "beschreibung_ja": "佐賀県有田町の竜門峡に湧く湧水で、黒髪山を源とする有田川支流の清流沿いにある。焼き物の里・有田を潤す名水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Das Quellwasser von Ryūmon entspringt in der Ryūmon-Schlucht bei Arita, am klaren Zufluss des Arita-Flusses vom Berg Kurokami. Als Wasser, das die Porzellanstadt Arita nährt, zählt es zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%AB%9C%E9%96%80%E3%81%AE%E6%B8%85%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%AB%9C%E9%96%80%E3%81%AE%E6%B8%85%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Hirose_River_The_source.jpg/1280px-Hirose_River_The_source.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4248,7 +4396,9 @@
     "lon": 130.3747,
     "beschreibung_ja": "長崎県島原市の一帯に七十か所以上湧き出す湧水群で、雲仙普賢岳の伏流水を水源とする。市内を流れる水路や「鯉の泳ぐまち」の景観で知られ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "In Shimabara treten an über siebzig Stellen Quellen aus, die vom unterirdischen Wasser des Unzen-Fugen-dake gespeist werden. Bekannt für die Wasserkanäle der „Stadt, in der Karpfen schwimmen“, zählen sie zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%8E%9F%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B3%B6%E5%8E%9F%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/140320_Shimeiso_Shimabara_Nagasaki_pref_Japan02s3.jpg/1280px-140320_Shimeiso_Shimabara_Nagasaki_pref_Japan02s3.jpg",
+    "bild_quelle": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4261,7 +4411,9 @@
     "lon": 130.27769,
     "beschreibung_ja": "長崎県諫早市を流れる本明川水系の渓流で、大小の滝が連なる。多良岳県立公園に含まれる緑豊かな渓谷の清流として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Todoroki-Bach bei Isahaya gehört zum Flusssystem des Honmyō und reiht Wasserfälle aneinander. Als klarer Bergbach im grünen Tara-dake-Präfekturpark zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%BD%9F%E6%B8%93%E6%B5%81"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%BD%9F%E6%B8%93%E6%B5%81",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/%E5%A2%83%E5%B7%9D_%E5%B7%9D%E8%BE%BA%E5%85%AC%E5%9C%92_-_panoramio.jpg/1280px-%E5%A2%83%E5%B7%9D_%E5%B7%9D%E8%BE%BA%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+    "bild_quelle": "mahlervv · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4274,7 +4426,9 @@
     "lon": 130.63873,
     "beschreibung_ja": "熊本県宇土市にある湧水で、江戸時代に敷かれた現存最古とされる上水道「轟泉水道」の水源。今も市民に使われる歴史ある名水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Todoroki-Quelle in Uto speist die „Gōsen-Wasserleitung“, das älteste erhaltene Wasserversorgungssystem Japans aus der Edo-Zeit. Als bis heute genutztes historisches Wasser zählt sie zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%BD%9F%E6%B0%B4%E6%BA%90"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%BD%9F%E6%B0%B4%E6%BA%90",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Gousen_Natural_Park.JPG/1280px-Gousen_Natural_Park.JPG",
+    "bild_quelle": "ButuCC · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4287,7 +4441,9 @@
     "lon": 131.09453,
     "beschreibung_ja": "熊本県南阿蘇村に湧く大湧水で、白川の水源となっている。阿蘇の伏流水が毎秒数十トンも湧き出す豊かで澄んだ水として名高く、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Shirakawa-Quelle in Minamiaso ist der Ursprung des Shirakawa-Flusses. Aus ihr tritt das unterirdische Wasser des Aso in gewaltiger Menge zutage; das reichliche, klare Wasser zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B7%9D%E6%B0%B4%E6%BA%90"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B7%9D%E6%B0%B4%E6%BA%90",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Shirakawa-river_from_shin-yotsugi-bridge_1.jpg",
+    "bild_quelle": "MK Products · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4325,7 +4481,9 @@
     "lon": 131.29422,
     "beschreibung_ja": "大分県由布市庄内町の黒岳の麓に湧く湧水群で、原生林に囲まれた「男池」を中心とする。冷たく澄んだ水は名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Oike-Quellen am Fuße des Kuro-dake bei Yufu gruppieren sich um den von Urwald umgebenen Teich „Oike“. Ihr kühles, klares Wasser zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%94%B7%E6%B1%A0%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%94%B7%E6%B1%A0%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Oike_Springs.jpg/1280px-Oike_Springs.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4338,7 +4496,9 @@
     "lon": 131.39803,
     "beschreibung_ja": "大分県竹田市祖峰地区に点在する湧水群で、くじゅう連山の伏流水を水源とする。豊富で澄んだ水は生活や農業を潤し、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Quellen von Taketa im Bezirk Sohō werden vom unterirdischen Wasser der Kujū-Bergkette gespeist. Ihr reichliches, klares Wasser nährt Alltag und Landwirtschaft und zählt zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%AB%B9%E7%94%B0%E6%B9%A7%E6%B0%B4%E7%BE%A4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%AB%B9%E7%94%B0%E6%B9%A7%E6%B0%B4%E7%BE%A4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Taketayusuigun.jpg/1280px-Taketayusuigun.jpg",
+    "bild_quelle": "As6673 · Public domain / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4351,7 +4511,9 @@
     "lon": 131.5464,
     "beschreibung_ja": "大分県豊後大野市を流れる大野川水系の川で、中津無礼川と奥畑川をあわせた総称。澄んだ流れと川沿いの自然で知られ、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Hakusan-Fluss bei Bungo-ōno ist die gemeinsame Bezeichnung für die Flüsse Nakatsumure und Okuhata im Ōno-Flusssystem. Bekannt für sein klares Wasser und die naturnahen Ufer, zählt er zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E5%B7%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%99%BD%E5%B1%B1%E5%B7%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Hakusan_River_and_Morimoto_Bridge.jpg/1280px-Hakusan_River_and_Morimoto_Bridge.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4364,7 +4526,9 @@
     "lon": 130.94556,
     "beschreibung_ja": "宮崎県小林市の出の山公園に湧く湧水で、霧島山系の伏流水を水源とする。ホタルの名所としても知られる澄んだ水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Idenoyama-Quelle im gleichnamigen Park bei Kobayashi wird vom unterirdischen Wasser des Kirishima-Gebirges gespeist. Auch als Ort der Glühwürmchen bekannt, zählt ihr klares Wasser zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E3%81%AE%E5%B1%B1%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E3%81%AE%E5%B1%B1%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Denoyama_springs2.jpg/1280px-Denoyama_springs2.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY 4.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4413,7 +4577,9 @@
     "lon": 130.42472,
     "beschreibung_ja": "鹿児島県南九州市の清水岩屋公園にある湧水で、万之瀬川沿いの緑豊かな地に湧く。古い石仏や滝とともに親しまれる澄んだ水として、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Die Kiyomizu-Quelle im Iwaya-Park von Minamikyūshū entspringt in einer grünen Landschaft am Manose-Fluss. Zusammen mit alten Steinbuddhas und einem Wasserfall geschätzt, zählt ihr klares Wasser zu Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B8%85%E6%B0%B4%E3%81%AE%E6%B9%A7%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%B8%85%E6%B0%B4%E3%81%AE%E6%B9%A7%E6%B0%B4",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Iwaya_kouen_kagoshima-shi-japan-102.jpg/1280px-Iwaya_kouen_kagoshima-shi-japan-102.jpg",
+    "bild_quelle": "Hirase · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "water",
@@ -4426,7 +4592,9 @@
     "lon": 127.79564,
     "beschreibung_ja": "沖縄県南城市玉城の垣花に湧く湧水で、沖縄の言葉で泉を「樋川（ひーじゃー）」と呼ぶ。斜面から湧き出す水を石畳や水路に導いた古来の暮らしの景観が残り、名水百選のひとつに選ばれている。",
     "beschreibung_de": "Der Kakinohana-Hījā entspringt in Kakinohana bei Nanjō; „Hījā“ bedeutet auf Okinawaisch Quelle. Das aus dem Hang tretende Wasser wird über altes Steinpflaster und Rinnen geleitet – ein erhaltenes Bild traditionellen Lebens und Teil von Japans 100 herausragenden Wassern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%9E%A3%E8%8A%B1%E6%A8%8B%E5%B7%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%9E%A3%E8%8A%B1%E6%A8%8B%E5%B7%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Kakinohana.jpg/1280px-Kakinohana.jpg",
+    "bild_quelle": "ブルーノ・プラス · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -4631,7 +4799,9 @@
     "lon": 140.01,
     "beschreibung_ja": "秋田県能代市の海岸に広がる風の松原は、約700万本のクロマツからなる巨大な防砂林。日本海から吹きつける風が松林を渡り、絶え間なく潮騒のような音を奏でる。",
     "beschreibung_de": "Der Kaze-no-Matsubara an der Küste von Noshiro ist ein riesiger Schutzwald aus rund sieben Millionen Schwarzkiefern. Der vom Japanischen Meer heranwehende Wind streicht durch die Wipfel und lässt ein Rauschen wie ferne Brandung erklingen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E3%81%AE%E6%9D%BE%E5%8E%9F"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E3%81%AE%E6%9D%BE%E5%8E%9F",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Kaze_no_Matsubara_in_morning_mist_20180721a.jpg/1280px-Kaze_no_Matsubara_in_morning_mist_20180721a.jpg",
+    "bild_quelle": "掬茶 · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -4957,7 +5127,9 @@
     "lon": 137.5106,
     "beschreibung_ja": "富山県立山町の称名滝は、落差350mを誇る日本一の名瀑。四段になって一気に流れ落ちる水が、地響きのような轟音を谷にとどろかせる。",
     "beschreibung_de": "Die Shōmyō-Fälle bei Tateyama sind mit 350 Metern Japans höchster Wasserfall. Das in vier Stufen herabstürzende Wasser lässt ein grollendes Tosen durch das Tal dröhnen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%B0%E5%90%8D%E6%BB%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%B0%E5%90%8D%E6%BB%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Shomyo_Falls%2C_zenkei.jpg/1280px-Shomyo_Falls%2C_zenkei.jpg",
+    "bild_quelle": "Saigen Jiro · CC0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5018,7 +5190,9 @@
     "lon": 136.28,
     "beschreibung_ja": "福井県越前市蓑脇の山中に湧く「時水」は、一定の間隔で水が出たり止まったりする珍しい間欠冷泉。水がわき出すときの音が、山あいの静けさに響く。",
     "beschreibung_de": "Das „Tokimizu“ in den Bergen von Minowaki bei Echizen ist eine seltene intermittierende Quelle, die in regelmäßigen Abständen zu fließen beginnt und wieder versiegt. Das Aufwallen des Wassers erklingt in der Stille des Bergtals.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%93%91%E8%84%87%E3%81%AE%E6%99%82%E6%B0%B4"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%93%91%E8%84%87%E3%81%AE%E6%99%82%E6%B0%B4",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/9/94/%E6%99%82%E6%B0%B4.jpg",
+    "bild_quelle": "英恵芙 · Public domain / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5163,7 +5337,9 @@
     "lon": 135.44,
     "beschreibung_ja": "京都府南丹市のるり渓は、園部川がつくり出した全長約4kmの美しい渓谷。滝や淵が連なり、岩を流れ落ちる水の音が緑の谷間に涼やかに響く。",
     "beschreibung_de": "Die Ruri-Schlucht bei Nantan ist ein rund vier Kilometer langes, malerisches Tal des Sonobe-Flusses. Wasserfälle und Gumpen reihen sich aneinander, und das über die Felsen rinnende Wasser klingt kühl durch die grüne Schlucht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%8B%E3%82%8A%E6%B8%93"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%8B%E3%82%8A%E6%B8%93",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Meibaku%2C_Rurikei02.JPG/1280px-Meibaku%2C_Rurikei02.JPG",
+    "bild_quelle": "Kansai explorer · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5260,7 +5436,9 @@
     "lon": 135.89,
     "beschreibung_ja": "和歌山県那智勝浦町の那智滝は、落差133mを誇る一段の滝としては日本一の名瀑で、古来より神として崇められてきた。垂直の岩壁を落ちる水の轟音が、熊野の山々に響きわたる。",
     "beschreibung_de": "Der Nachi-Wasserfall bei Nachikatsuura stürzt 133 Meter in einem einzigen Fall herab und wird seit alters als Gottheit verehrt. Das Tosen des über die senkrechte Felswand fallenden Wassers hallt über die Berge von Kumano.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%82%A3%E6%99%BA%E6%BB%9D"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%82%A3%E6%99%BA%E6%BB%9D",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nachi_Falls_2025-10-13.jpg/1280px-Nachi_Falls_2025-10-13.jpg",
+    "bild_quelle": "Alpsdake · CC0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5381,7 +5559,9 @@
     "lon": 134.6494,
     "beschreibung_ja": "徳島県鳴門市と淡路島の間の鳴門海峡では、潮の満ち引きにより世界最大級の渦潮が生まれる。渦が巻き、ぶつかり合う海のとどろきが、大潮のたびに海峡を満たす。",
     "beschreibung_de": "In der Naruto-Straße zwischen Naruto und der Insel Awaji entstehen durch die Gezeiten Strudel von weltweit einzigartiger Größe. Bei jeder Springflut erfüllt das Tosen der wirbelnden, aufeinandertreffenden Wassermassen die Meerenge.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B3%B4%E9%96%80%E3%81%AE%E6%B8%A6%E6%BD%AE"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B3%B4%E9%96%80%E3%81%AE%E6%B8%A6%E6%BD%AE",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Naruto_Whirlpools_taken_4-21-2008.jpg/1280px-Naruto_Whirlpools_taken_4-21-2008.jpg",
+    "bild_quelle": "Hellbuny · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5394,7 +5574,9 @@
     "lon": 134.5547,
     "beschreibung_ja": "徳島市の阿波踊りは、四百年以上の歴史をもつ日本を代表する盆踊り。三味線や太鼓、鉦、笛が奏でる「ぞめき」のお囃子に合わせ、踊り手の掛け声が夏の夜を熱く彩る。",
     "beschreibung_de": "Der Awa-Odori in Tokushima ist ein über vierhundert Jahre alter Bon-Tanz von nationalem Rang. Zu der treibenden „Zomeki“-Begleitung aus Shamisen, Trommeln, Gongs und Flöten heizen die Rufe der Tänzer die Sommernacht an.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E8%B8%8A%E3%82%8A"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E8%B8%8A%E3%82%8A",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Awa-odori_2008_Tokushima.jpg/1280px-Awa-odori_2008_Tokushima.jpg",
+    "bild_quelle": "Rosino · CC BY-SA 2.0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5599,7 +5781,9 @@
     "lon": 130.32,
     "beschreibung_ja": "鹿児島県出水市の干拓地には、毎年冬に一万羽をこえるツルが越冬のため飛来する。世界有数のツルの渡来地で、朝夕に響く数千羽の鳴き声は圧巻である。",
     "beschreibung_de": "Auf dem eingedeichten Marschland von Izumi überwintern jeden Winter über zehntausend Kraniche. An diesem weltweit bedeutenden Rastplatz ist das Rufen der vielen tausend Vögel am Morgen und Abend überwältigend.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E6%B0%B4%E3%81%AE%E3%83%84%E3%83%AB"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E6%B0%B4%E3%81%AE%E3%83%84%E3%83%AB",
+    "bild": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cranes_in_Izumi%2C_Kagoshima.jpg/1280px-Cranes_in_Izumi%2C_Kagoshima.jpg",
+    "bild_quelle": "20nana75 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "collection": "sound",
@@ -5636,6 +5820,8 @@
     "lon": 127.8575,
     "beschreibung_ja": "沖縄のエイサーは、お盆に祖先を送り迎えするために踊られる伝統芸能。大太鼓や締め太鼓の勇壮な響きと三線の音色、踊り手の掛け声が、島の夏の夜を盛り上げる。",
     "beschreibung_de": "Der Eisā auf Okinawa ist ein traditioneller Tanz, mit dem zur Bon-Zeit die Ahnen geleitet werden. Der wuchtige Klang großer und kleiner Trommeln, die Töne der Sanshin und die Rufe der Tänzer beleben die sommerlichen Inselnächte.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A4%E3%82%B5%E3%83%BC"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A4%E3%82%B5%E3%83%BC",
+    "bild": "https://upload.wikimedia.org/wikipedia/commons/5/52/Seragaki_eisa.jpg",
+    "bild_quelle": "Kasanui]＆KI] · CC BY-SA 3.0 / Wikimedia Commons"
   }
 ]

@@ -92,7 +92,7 @@ fun DetailScreen(
         ) {
             place.image?.let { image ->
                 AsyncImage(
-                    model = "file:///android_asset/$image",
+                    model = if (image.startsWith("http")) image else "file:///android_asset/$image",
                     contentDescription = place.title(language),
                     contentScale = ContentScale.Crop,
                     modifier =
@@ -100,6 +100,14 @@ fun DetailScreen(
                             .fillMaxWidth()
                             .height(HERO_HEIGHT_DP.dp),
                 )
+                place.imageAttribution?.let { credit ->
+                    Text(
+                        text = credit,
+                        style = MaterialTheme.typography.labelSmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
+                    )
+                }
             }
             Column(modifier = Modifier.padding(16.dp)) {
                 Text(

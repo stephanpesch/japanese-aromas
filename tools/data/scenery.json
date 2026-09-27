@@ -20,7 +20,9 @@
     "lon": 141.1075,
     "descriptionJa": "岩手県平泉町にある毛越寺の浄土庭園で、大泉が池を中心に平安時代の作庭を今に伝える。園内には当時の遣水（やりみず）の遺構が残り、極楽浄土を地上に写した美しさで知られる。",
     "descriptionDe": "Der Garten des Mōtsū-ji in Hiraizumi ist ein Reines-Land-Garten (Jōdo) aus der Heian-Zeit, dessen weiter Teich Ōizumi-ga-ike bis heute erhalten ist. Ein originaler Bachlauf (yarimizu) aus jener Epoche zeugt von der Kunst, das buddhistische Paradies auf Erden nachzubilden.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%AF%9B%E8%B6%8A%E5%AF%BA%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%AF%9B%E8%B6%8A%E5%AF%BA%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/230728_Motsuji_Hiraizumi_Iwate_pref_Japan37s3.jpg/1280px-230728_Motsuji_Hiraizumi_Iwate_pref_Japan37s3.jpg",
+    "imageAttribution": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 3,
@@ -32,7 +34,9 @@
     "lon": 141.0764,
     "descriptionJa": "宮城県の松島湾に大小260余りの島々が浮かぶ景勝地で、日本三景の一つに数えられる。松に覆われた島影が織りなす眺めは、古くから多くの歌人に愛されてきた。",
     "descriptionDe": "Die Bucht von Matsushima in der Präfektur Miyagi ist mit ihren über 260 kiefernbewachsenen Inseln eine der „Drei berühmten Ansichten Japans“. Das Spiel der Inselsilhouetten inspiriert seit Jahrhunderten Dichter und Reisende.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B3%B6"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%9D%BE%E5%B3%B6",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Matsushima_miyagi_z.JPG/1280px-Matsushima_miyagi_z.JPG",
+    "imageAttribution": "Chensiyuan · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 4,
@@ -44,7 +48,9 @@
     "lon": 139.746667,
     "descriptionJa": "東京都文京区にある江戸時代の回遊式築山泉水庭園で、五代将軍徳川綱吉の側用人・柳沢吉保が造営した。和歌の趣を庭に写したもので、園内には歌枕にちなむ景が配されている。",
     "descriptionDe": "Der Garten Rikugi-en im Tokioter Bezirk Bunkyō ist ein Wandelgarten der Edo-Zeit, den Yanagisawa Yoshiyasu, Vertrauter des Shōgun Tsunayoshi, um 1700 anlegen ließ. Sein Name spielt auf die Prinzipien der Waka-Dichtung an, und viele Szenen des Gartens zitieren Motive klassischer Gedichte.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AD%E7%BE%A9%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%AD%E7%BE%A9%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/ja/thumb/e/e0/Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG/1280px-Bunkyo_Rikugien_Panoramic_View_In_Late_Autumn_1.JPG",
+    "imageAttribution": "京浜にけ · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 5,
@@ -56,7 +62,9 @@
     "lon": 139.749889,
     "descriptionJa": "東京都文京区にある大名庭園で、水戸徳川家によって江戸初期に造られた回遊式築山泉水庭園。明の遺臣・朱舜水の意見も取り入れられ、園名は「先憂後楽」に由来する。",
     "descriptionDe": "Der Garten Koishikawa Kōraku-en in Bunkyō gehörte der Mito-Linie der Tokugawa und zählt zu den ältesten Wandelgärten Edos. Bei der Gestaltung wirkte der chinesische Gelehrte Zhu Shunshui mit; der Name geht auf den Leitsatz zurück, sich erst nach dem Volk zu erfreuen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%9F%B3%E5%B7%9D%E5%BE%8C%E6%A5%BD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B0%8F%E7%9F%B3%E5%B7%9D%E5%BE%8C%E6%A5%BD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Koishikawa_korakuen_-_Osensui_and_Horaijima.jpg/1280px-Koishikawa_korakuen_-_Osensui_and_Horaijima.jpg",
+    "imageAttribution": "Gribeco · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 6,
@@ -79,7 +87,9 @@
     "lon": 138.56639,
     "descriptionJa": "山梨県甲府市にある荒川上流の渓谷で、花崗岩が削られてできた断崖や奇岩が連なる。主峰の覚円峰や仙娥滝が見どころで、日本有数の渓谷美として知られる。",
     "descriptionDe": "Die Shōsenkyō-Schlucht am Oberlauf des Arakawa bei Kōfu besticht durch schroffe Granitfelsen und bizarr geformte Steine. Höhepunkte sind der Felspfeiler Kakuenpō und der Wasserfall Senga-taki – eine der schönsten Schluchten Japans.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%B2%B3%E6%98%87%E4%BB%99%E5%B3%A1"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%BE%A1%E5%B2%B3%E6%98%87%E4%BB%99%E5%B3%A1",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Kakuenpou_in_autumn.jpg",
+    "imageAttribution": "Captain76 · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 8,
@@ -91,7 +101,9 @@
     "lon": 137.6333,
     "descriptionJa": "長野県の梓川沿いに広がる標高約1500mの山岳景勝地で、穂高連峰や焼岳を望む。河童橋や大正池、清流と原生林が織りなす風景で、日本を代表する山岳景勝地として知られる。",
     "descriptionDe": "Das Hochtal Kamikōchi auf rund 1500 m Höhe erstreckt sich entlang des Azusa-Flusses und blickt auf die Gipfel der Hotaka-Kette und den Vulkan Yakedake. Mit der Kappa-Brücke, dem Taishō-See und klaren Bergwäldern gilt es als eines der schönsten Alpengebiete Japans.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%AB%98%E5%9C%B0"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E9%AB%98%E5%9C%B0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%E7%A7%8B%E3%81%AE%E4%B8%8A%E9%AB%98%E5%9C%B0_%28Kamikochi_in_autumn%29_24_Oct%2C_2011_-_panoramio.jpg",
+    "imageAttribution": "Hiroaki Kaneko · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 9,
@@ -103,7 +115,9 @@
     "lon": 138.7274,
     "descriptionJa": "静岡県と山梨県にまたがる標高3776mの日本最高峰で、美しい円錐形の成層火山。古来、信仰の対象・芸術の源泉として親しまれ、2013年には世界文化遺産に登録された。",
     "descriptionDe": "Der 3776 m hohe Fuji an der Grenze von Shizuoka und Yamanashi ist Japans höchster Berg, ein Schichtvulkan von vollkommener Kegelform. Seit jeher Ziel religiöser Verehrung und Motiv der Kunst, wurde er 2013 als Weltkulturerbe anerkannt.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%A3%AB%E5%B1%B1"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%AF%8C%E5%A3%AB%E5%B1%B1",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Mt.Fuji_from_Mierula.jpg/1280px-Mt.Fuji_from_Mierula.jpg",
+    "imageAttribution": "Gifu-sizu · CC0 / Wikimedia Commons"
   },
   {
     "number": 10,
@@ -126,7 +140,9 @@
     "lon": 136.6625,
     "descriptionJa": "石川県金沢市にある加賀藩前田家の大名庭園で、日本三名園の一つ。広大な池泉回遊式庭園で、雪吊りや徽軫灯籠など、四季を通じて多彩な景色を楽しめる。",
     "descriptionDe": "Der Garten Kenroku-en in Kanazawa war der Fürstengarten der Maeda von Kaga und zählt zu den „Drei großen Gärten Japans“. Der weitläufige Wandelgarten mit Teich begeistert zu jeder Jahreszeit – etwa mit der berühmten Kotoji-Steinlaterne und den winterlichen Schneeschutz-Seilen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%BC%E5%85%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%85%BC%E5%85%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Kenrokuen10-r.jpg/1280px-Kenrokuen10-r.jpg",
+    "imageAttribution": "Oilstreet · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "number": 12,
@@ -138,7 +154,9 @@
     "lon": 136.2969,
     "descriptionJa": "福井市の一乗谷にある、戦国大名・朝倉氏の居館跡に残る四つの庭園。中世の姿をよくとどめた池泉庭園や石組が評価され、室町末期の庭園文化を今に伝える。",
     "descriptionDe": "Die Asakura-Gärten von Ichijōdani bei Fukui umfassen vier Gärten auf dem Gelände der Residenz des Kriegsfürsten-Klans Asakura. Ihre Teichgärten und Steinsetzungen sind seit dem Mittelalter kaum verändert und zeugen von der Gartenkunst der späten Muromachi-Zeit.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%80%E4%B9%97%E8%B0%B7%E6%9C%9D%E5%80%89%E6%B0%8F%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%80%E4%B9%97%E8%B0%B7%E6%9C%9D%E5%80%89%E6%B0%8F%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Asakura_Yakata_of_Ichijodani_Asakura_Family_Historic_Ruins02s3s4440.jpg/1280px-Asakura_Yakata_of_Ichijodani_Asakura_Family_Historic_Ruins02s3s4440.jpg",
+    "imageAttribution": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "number": 13,
@@ -150,7 +168,9 @@
     "lon": 135.191528,
     "descriptionJa": "京都府宮津市の宮津湾を南北に隔てる、約3.6kmの松に覆われた砂州。日本三景の一つで、股のぞきで見ると天に架かる橋のように見えることで知られる。",
     "descriptionDe": "Die Sandbank Amanohashidate teilt die Bucht von Miyazu auf einer Länge von rund 3,6 km und ist dicht mit Kiefern bestanden. Als eine der „Drei berühmten Ansichten Japans“ wirkt sie – kopfüber zwischen den Beinen betrachtet – wie eine Brücke zum Himmel.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E6%A9%8B%E7%AB%8B"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A9%E6%A9%8B%E7%AB%8B",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg/1280px-Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg",
+    "imageAttribution": "663highland · CC BY 2.5 / Wikimedia Commons"
   },
   {
     "number": 14,
@@ -162,7 +182,9 @@
     "lon": 135.7460806,
     "descriptionJa": "京都・大徳寺の塔頭、大仙院にある室町時代の枯山水庭園。石組と白砂だけで、深山から流れ出す滝が大河となり大海へ至る雄大な自然を表現している。",
     "descriptionDe": "Der Steingarten des Daisen-in, eines Untertempels des Daitoku-ji, entstand in der Muromachi-Zeit um 1509. Allein aus Steinen und weißem Sand stellt er dar, wie ein Wasserfall aus den Bergen zum Strom anschwillt und schließlich ins Meer mündet.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%BB%99%E9%99%A2%E6%9B%B8%E9%99%A2%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E4%BB%99%E9%99%A2%E6%9B%B8%E9%99%A2%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Daisen-in.JPG/1280px-Daisen-in.JPG",
+    "imageAttribution": "CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 15,
@@ -174,7 +196,9 @@
     "lon": 135.7460806,
     "descriptionJa": "京都市北区の大徳寺方丈にある江戸初期の枯山水庭園。白砂を敷いた簡素な構成に石組を配し、東と南に広がる庭は禅の美意識を映している。",
     "descriptionDe": "Der Hōjō-Garten des Daitoku-ji in Kyoto ist ein Trockenlandschaftsgarten aus der frühen Edo-Zeit. Auf weißem Sand ruhen wenige Steinsetzungen; die nach Osten und Süden ausgreifende Anlage spiegelt das Schönheitsempfinden des Zen wider.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%BE%B3%E5%AF%BA%E6%96%B9%E4%B8%88%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%BE%B3%E5%AF%BA%E6%96%B9%E4%B8%88%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/090228_Daitoku-ji_Kyoto_Japan03s5.jpg/1280px-090228_Daitoku-ji_Kyoto_Japan03s5.jpg",
+    "imageAttribution": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 16,
@@ -186,7 +210,9 @@
     "lon": 135.7293639,
     "descriptionJa": "金閣（舎利殿）で名高い鹿苑寺の池泉回遊式庭園。鏡湖池の水面に金色の楼閣が映える景観は、室町時代の北山文化を代表する名園として知られる。",
     "descriptionDe": "Der Garten des Rokuon-ji ist berühmt für den Kinkaku, den Goldenen Pavillon, der sich im Spiegelteich Kyōko-chi widerspiegelt. Der Teich-Wandelgarten gilt als Höhepunkt der Kitayama-Kultur der Muromachi-Zeit.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E8%8B%91%E5%AF%BA%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E8%8B%91%E5%AF%BA%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Kinkaku-ji_2015.JPG/1280px-Kinkaku-ji_2015.JPG",
+    "imageAttribution": "Kakidai · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 17,
@@ -275,7 +301,9 @@
     "lon": 135.6833139,
     "descriptionJa": "「苔寺」の名で親しまれる西芳寺の庭園で、夢窓疎石が再興した。約120種ともいわれる苔が池の周囲を覆い、緑一面に包まれた幽玄な景観で知られる。",
     "descriptionDe": "Der Garten des Saihō-ji, im Volksmund „Moostempel“ genannt, wurde vom Zen-Meister Musō Soseki neu gestaltet. Rund 120 Moosarten überziehen das Ufer des Teichs und hüllen die Anlage in ein tiefgrünes, mystisches Licht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E8%8A%B3%E5%AF%BA%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E8%8A%B3%E5%AF%BA%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Saihouji-kokedera01.jpg/1280px-Saihouji-kokedera01.jpg",
+    "imageAttribution": "Ivanoff~commonswiki · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 25,
@@ -287,7 +315,9 @@
     "lon": 135.821778,
     "descriptionJa": "京都・醍醐寺の三宝院にある池泉回遊式庭園で、豊臣秀吉が「醍醐の花見」に際して自ら基本設計をしたと伝わる。名石・藤戸石を中心に据えた、桃山文化を象徴する豪華な庭である。",
     "descriptionDe": "Der Sanbō-in-Garten des Daigo-ji geht auf Toyotomi Hideyoshi zurück, der ihn 1598 anlässlich seines berühmten Kirschblütenfests entwerfen ließ. Um den kostbaren Stein Fujido-ishi angeordnet, gilt er als prachtvolles Sinnbild der Momoyama-Kultur.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%86%8D%E9%86%90%E5%AF%BA%E4%B8%89%E5%AE%9D%E9%99%A2%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%86%8D%E9%86%90%E5%AF%BA%E4%B8%89%E5%AE%9D%E9%99%A2%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/DaigojiSanpoinKaramon.jpg/1280px-DaigojiSanpoinKaramon.jpg",
+    "imageAttribution": "ja:利用者:＋－ · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 26,
@@ -310,7 +340,9 @@
     "lon": 135.802389,
     "descriptionJa": "奈良市にある奈良時代の庭園跡で、発掘によって玉石を敷いた曲線状の流れが見つかった。曲水の宴などに用いられたとみられ、古代の庭園のありさまを伝える貴重な遺跡である。",
     "descriptionDe": "Dieser Palastgarten aus der Nara-Zeit wurde in der Stadt Nara ausgegraben und offenbarte einen geschwungenen, mit Kieseln ausgelegten Wasserlauf. Er diente wohl höfischen Dichterfesten am Wasser und gibt seltenen Einblick in die Gartenkunst des japanischen Altertums.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E4%BA%AC%E5%B7%A6%E4%BA%AC%E4%B8%89%E6%9D%A1%E4%BA%8C%E5%9D%8A%E5%AE%AE%E8%B7%A1%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E4%BA%AC%E5%B7%A6%E4%BA%AC%E4%B8%89%E6%9D%A1%E4%BA%8C%E5%9D%8A%E5%AE%AE%E8%B7%A1%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/2020_Heijokyo_Sakyo_Sanjo_Nibo_Palace_Garden_01.jpg/1280px-2020_Heijokyo_Sakyo_Sanjo_Nibo_Palace_Garden_01.jpg",
+    "imageAttribution": "NNDDD · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 28,
@@ -322,7 +354,9 @@
     "lon": 135.7956,
     "descriptionJa": "奈良の平城宮跡の東の張り出し部にある、奈良時代の庭園。発掘成果をもとに池や建物が復原され、日本庭園の原型ともいわれる古代の宴遊の場を今に伝えている。",
     "descriptionDe": "Der Tōin-Garten im Ostteil des Heijō-Palasts in Nara stammt aus der Nara-Zeit. Auf Grundlage der Ausgrabungen wurden Teich und Gebäude rekonstruiert; die Anlage gilt als eine Urform des japanischen Gartens und diente einst höfischen Festen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E5%AE%AE%E6%9D%B1%E9%99%A2%E5%BA%AD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B9%B3%E5%9F%8E%E5%AE%AE%E6%9D%B1%E9%99%A2%E5%BA%AD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/%E5%BE%A9%E5%85%83%E3%81%95%E3%82%8C%E3%81%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E6%A5%B5%E6%AE%BF.jpg/1280px-%E5%BE%A9%E5%85%83%E3%81%95%E3%82%8C%E3%81%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%A4%A7%E6%A5%B5%E6%AE%BF.jpg",
+    "imageAttribution": "Tsuyoshi chiba · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 29,
@@ -334,7 +368,9 @@
     "lon": 135.88628,
     "descriptionJa": "奈良・和歌山・三重の県境を流れる北山川（熊野川水系）の峡谷「瀞峡」のうち、最も美しいとされる下瀞の一帯。切り立った巨岩とエメラルドグリーンの淵が続く、清冽な渓谷美で知られる。",
     "descriptionDe": "Dorohatchō ist der eindrucksvollste Abschnitt der Doro-Schlucht am Fluss Kitayama (Kumano-System), wo die Grenzen von Nara, Wakayama und Mie zusammentreffen. Hoch aufragende Felsen und smaragdgrüne Wasserbecken prägen diese kristallklare Schlucht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%80%9E%E5%85%AB%E4%B8%81"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%80%9E%E5%85%AB%E4%B8%81",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/171007_Dorohatcho_Shingu_Wakayama_pref_Japan01s3.jpg/1280px-171007_Dorohatcho_Shingu_Wakayama_pref_Japan01s3.jpg",
+    "imageAttribution": "663highland · CC BY-SA 4.0 / Wikimedia Commons"
   },
   {
     "number": 30,
@@ -346,7 +382,9 @@
     "lon": 133.935139,
     "descriptionJa": "岡山市にある岡山藩主池田家の大名庭園で、日本三名園の一つ。広い芝生と池、築山を配した回遊式庭園で、岡山城を借景に取り込んだ明るくのびやかな景観で知られる。",
     "descriptionDe": "Der Garten Kōraku-en in Okayama war der Fürstengarten der Ikeda und zählt zu den „Drei großen Gärten Japans“. Weite Rasenflächen, Teiche und Hügel bilden einen offenen Wandelgarten, der die Burg von Okayama als geliehene Kulisse einbezieht.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E5%BE%8C%E6%A5%BD%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%B2%A1%E5%B1%B1%E5%BE%8C%E6%A5%BD%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Okayama_Korakuen_Garden01.jpg/1280px-Okayama_Korakuen_Garden01.jpg",
+    "imageAttribution": "Fjkelfeimvvn · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "number": 31,
@@ -358,7 +396,9 @@
     "lon": 132.1875,
     "descriptionJa": "広島県の太田川水系・柴木川がつくり出した約16kmの峡谷。三段滝をはじめとする滝や淵、切り立った岩壁が続き、西中国山地国定公園を代表する渓谷美として知られる。",
     "descriptionDe": "Die Sandan-Schlucht in der Präfektur Hiroshima erstreckt sich rund 16 km entlang des Shibaki-Flusses im Ōta-Flusssystem. Wasserfälle wie der dreistufige Sandan-taki, tiefe Gumpen und steile Felswände machen sie zum landschaftlichen Höhepunkt des Nishi-Chūgoku-Sanchi-Quasi-Nationalparks.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E5%B3%A1"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%AE%B5%E5%B3%A1",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Sandankyo_%289875225076%29.jpg/1280px-Sandankyo_%289875225076%29.jpg",
+    "imageAttribution": "Nobuyuki Kondo from Sendai, Miyagi, Japan · CC BY 2.0 / Wikimedia Commons"
   },
   {
     "number": 32,
@@ -370,7 +410,9 @@
     "lon": 132.3,
     "descriptionJa": "広島県廿日市市の、宮島とも呼ばれる島で、日本三景の一つ。海上に立つ大鳥居で名高い厳島神社を擁し、島全体が神聖な場所として古くから信仰を集めてきた。",
     "descriptionDe": "Die Insel Itsukushima, auch Miyajima genannt, gehört zu den „Drei berühmten Ansichten Japans“. Sie beherbergt den Itsukushima-Schrein mit seinem im Meer stehenden Torii und gilt seit alters her als heilige Insel.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8E%B3%E5%B3%B6"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8E%B3%E5%B3%B6",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Miyajima_From_The_Ferry_%2830093845%29.jpeg/1280px-Miyajima_From_The_Ferry_%2830093845%29.jpeg",
+    "imageAttribution": "Mark Bucayan · CC BY 3.0 / Wikimedia Commons"
   },
   {
     "number": 33,
@@ -382,7 +424,9 @@
     "lon": 134.044403,
     "descriptionJa": "香川県高松市にある高松藩主松平家の大名庭園。六つの池と十三の築山を巧みに配し、背後の紫雲山を借景とした、江戸時代を代表する広大な回遊式庭園である。",
     "descriptionDe": "Der Garten Ritsurin in Takamatsu war der Fürstengarten der Matsudaira und zählt zu den großartigsten Wandelgärten der Edo-Zeit. Sechs Teiche und dreizehn künstliche Hügel sind kunstvoll angeordnet, wobei der Berg Shiun als geliehene Landschaft dient.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E6%A0%97%E6%9E%97%E5%85%AC%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Ritsurin.JPG/1280px-Ritsurin.JPG",
+    "imageAttribution": "Leela Soden · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 34,
@@ -394,7 +438,9 @@
     "lon": 130.013556,
     "descriptionJa": "佐賀県唐津市の唐津湾沿いに約4.5km続く、クロマツの松原。江戸時代に防風林として植えられたもので、白砂青松の美しい海岸景観で知られる。",
     "descriptionDe": "Der Kiefernhain Niji-no-Matsubara zieht sich rund 4,5 km entlang der Bucht von Karatsu in der Präfektur Saga. In der Edo-Zeit als Windschutzwald angelegt, verkörpert er das klassische Bild von weißem Sand und grünen Kiefern.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%99%B9%E3%81%AE%E6%9D%BE%E5%8E%9F"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%99%B9%E3%81%AE%E6%9D%BE%E5%8E%9F",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Nijinomatsubara.jpg/1280px-Nijinomatsubara.jpg",
+    "imageAttribution": "ascesis · CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 35,
@@ -406,7 +452,9 @@
     "lon": 130.29889,
     "descriptionJa": "長崎県島原半島にある火山群の総称で、主峰の普賢岳や、1990年代の噴火で生まれた平成新山などからなる。温泉と紅葉の名所として知られ、火山がつくり出した雄大な景観が広がる。",
     "descriptionDe": "Der Berg Unzen auf der Shimabara-Halbinsel in Nagasaki ist eine Gruppe von Vulkanen um den Hauptgipfel Fugen-dake und den in den 1990er Jahren neu entstandenen Heisei-Shinzan. Berühmt für heiße Quellen und Herbstlaub, breitet sich hier eine großartige, von Vulkanen geformte Landschaft aus.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%B2%E4%BB%99%E5%B2%B3"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E9%9B%B2%E4%BB%99%E5%B2%B3",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Fugendake_02_Pyroplastic_flow_area.JPG/1280px-Fugendake_02_Pyroplastic_flow_area.JPG",
+    "imageAttribution": "CC BY-SA 3.0 / Wikimedia Commons"
   },
   {
     "number": 36,
@@ -418,6 +466,8 @@
     "lon": 127.715306,
     "descriptionJa": "沖縄県那覇市にある琉球王家の別邸庭園で、18世紀末に造られた回遊式庭園。中国風の六角堂やアーチ橋を池畔に配し、中国からの使者をもてなす場としても用いられた。",
     "descriptionDe": "Der Garten Shikina-en in Naha war die Villa der königlichen Familie der Ryūkyū und entstand als Wandelgarten am Ende des 18. Jahrhunderts. Ein Teich mit chinesisch anmutendem Sechseckpavillon und Bogenbrücke bildet sein Herz; hier empfing man auch Gesandte aus China.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%AD%98%E5%90%8D%E5%9C%92"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E8%AD%98%E5%90%8D%E5%9C%92",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Naha_Shikinaen17n4272.jpg/1280px-Naha_Shikinaen17n4272.jpg",
+    "imageAttribution": "663highland · CC BY 2.5 / Wikimedia Commons"
   }
 ]
