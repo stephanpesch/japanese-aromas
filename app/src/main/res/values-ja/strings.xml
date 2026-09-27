@@ -10,4 +10,8 @@
     <string name="location_needed">近くのかおり風景を見るには位置情報を許可してください。</string>
     <string name="grant_location">位置情報を許可</string>
     <string name="location_loading">位置情報を取得しています…</string>
+    <string name="back">戻る</string>
+    <string name="label_location">所在地</string>
+    <string name="label_source">かおりの源</string>
+    <string name="label_season">季節</string>
 </resources>

@@ -10,4 +10,8 @@
     <string name="location_needed">Gib deinen Standort frei, um die Duft-Landschaften in deiner Nähe zu sehen.</string>
     <string name="grant_location">Standort freigeben</string>
     <string name="location_loading">Standort wird ermittelt …</string>
+    <string name="back">Zurück</string>
+    <string name="label_location">Ort</string>
+    <string name="label_source">Duftquelle</string>
+    <string name="label_season">Jahreszeit</string>
 </resources>
