@@ -11,11 +11,11 @@ object CategoryLabels {
     private val japanese =
         mapOf(
             "Blumen & Blüten" to "花・花木",
-            "Speisen & Genuss" to "食・味覚",
-            "Bäume, Wald & Grün" to "樹木・森・緑",
-            "Räucherwerk & Duftstoffe" to "香・香料",
+            "Speisen & Genuss" to "食べ物",
+            "Bäume, Wald & Grün" to "森・緑",
+            "Räucherwerk & Duftstoffe" to "お香・香料",
             "Meer & Küste" to "海・海岸",
-            "Sake, Essig & Braukunst" to "酒・酢・醸造",
+            "Sake, Essig & Braukunst" to "酒・醸造",
             "Thermalquellen & Schwefel" to "温泉・硫黄",
             "Tee" to "茶",
             "Handwerk & Sonstiges" to "工芸・その他",
