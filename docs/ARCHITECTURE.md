@@ -1,33 +1,39 @@
-# Architektur
+# Architecture
 
-## Module
-- **`:core`** (`app.aromas.core`, Android-Library, UI-frei) — die testbare Domäne.
-  - `model/` — `Aroma` (`@Serializable`, spiegelt `aromas.json`), `Language`.
+## Modules
+- **`:core`** (`app.aromas.core`, Android library, UI-free) — the testable domain.
+  - `model/` — `Aroma` (`@Serializable`, mirrors `aromas.json`), `Language`.
   - `data/` — `AromaJsonParser` (kotlinx-serialization), `AromaRepository`
-    (In-Memory-Zugriff auf die 100 Einträge).
-  - `logic/` — `SeasonMatcher` (Monats-/Datumslogik wie die Web-App),
-    `DistanceCalculator` (Haversine), `AromaFilter` (Saison + Kategorie + Sortierung),
-    Sprach-Accessoren (`Aroma.titel(lang)` …).
-  - Coverage-Gate: **≥ 80 %** (Kover); `model/` ist als reine DTO-Schicht ausgenommen.
-- **`:app`** (`app.aromas`, Compose + Hilt) — UI, Standort, DI.
-  - `di/DataModule` liefert das `AromaRepository` (lädt `assets/aromas.json`).
-  - `ui/` — Screens + ViewModels (MVVM, `StateFlow`).
+    (in-memory access to the 100 entries).
+  - `logic/` — `SeasonMatcher` (month/date logic like the web app),
+    `DistanceCalculator` (Haversine), `AromaFilter` (season + category + sorting),
+    language accessors (`Aroma.title(language)` …).
+  - Coverage gate: **≥ 80 %** (Kover); `model/` is excluded as a pure DTO layer.
+- **`:app`** (`app.aromas`, Compose + Hilt) — UI, location, DI.
+  - `di/DataModule` provides the `AromaRepository` (loads `assets/aromas.json`).
+  - `ui/` — screens + view models (MVVM, `StateFlow`), `ui/map/` the MapLibre screen.
 
-## Muster
-- **MVVM + UDF**: ViewModel hält `StateFlow`; Compose rendert den Zustand.
-- **Offline-first**: alle Inhalte + Bilder im APK gebündelt; nur Kartenkacheln online.
-- **DI**: Hilt (`SingletonComponent`), ViewModels via `@HiltViewModel`.
+## Patterns
+- **MVVM + UDF:** the view model holds a `StateFlow`; Compose renders the state.
+- **Offline-first:** all content + images are bundled in the APK; only the map tiles
+  are fetched online.
+- **DI:** Hilt (`SingletonComponent`); view models via `@HiltViewModel`.
 
-## Daten
-`aromas.json` + `images/NNN.jpg` in `app/src/main/assets/` sind **generierte
-Snapshots** aus `../../100-aromas` (Skript `tools/sync_data.py`). Quelle der
-Wahrheit bleibt `100-aromas`; nach Änderungen dort das Skript neu laufen lassen.
+## Data
+`aromas.json` + `images/NNN.jpg` in `app/src/main/assets/` are **generated
+snapshots** from `../../100-aromas` (via `tools/sync_data.py`). The source of truth
+stays in `100-aromas`; re-run the script after changing it.
 
-## Karten
-MapLibre Native + OpenFreeMap-Vektor-Style (schlüsselfrei) via AndroidView im
-Compose-Baum; Marker nach Primärkategorie eingefärbt. Standort über
-FusedLocationProvider (nur im Vordergrund, v1).
+## Maps
+MapLibre Native (OpenGL renderer) + the keyless OpenFreeMap vector style, hosted in
+an `AndroidView` inside the Compose tree; markers coloured by primary category.
+Location will use FusedLocationProvider (foreground only, v1).
 
-## Geplant (als PRs)
-Kartenscreen, „in der Nähe", Detailscreen, Sprachumschalter DE⇄JA,
-später Näherungs-Alarme (Geofencing).
+## Language
+English is used everywhere in the codebase and docs. The only non-English content
+is the user-facing UI strings (`values/` German, `values-ja/` Japanese) and the
+bundled aroma dataset.
+
+## Planned (as PRs)
+Nearby (location + distance), detail screen, map filters (season/category),
+later proximity alerts (geofencing).

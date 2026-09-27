@@ -1,42 +1,47 @@
-# CLAUDE.md — Entwickler-Workflow (japanese-aromas)
+# CLAUDE.md — developer workflow (japanese-aromas)
 
-Native Android-App (Kotlin, Jetpack Compose, Hilt, MapLibre). Konventionen von
-`../Takibi` übernommen.
+Native Android app (Kotlin, Jetpack Compose, Hilt, MapLibre). Conventions mirrored
+from `../Takibi`.
 
-## Build/JDK
-- **JDK 21 nötig** (System-JRE 26 hat kein `javac`). Immer mit
-  `export JAVA_HOME=/usr/lib/jvm/java-21-openjdk` bauen. `org.gradle.java.home`
-  ist **absichtlich nicht** eingecheckt (CI nutzt Temurin 21).
-- SDK-Pfad in `local.properties` (gitignored).
+## Build / JDK
+- **JDK 21 required** (the system JRE 26 has no `javac`). Always build with
+  `export JAVA_HOME=/usr/lib/jvm/java-21-openjdk`. `org.gradle.java.home` is
+  **deliberately not** committed (CI uses Temurin 21).
+- SDK path in `local.properties` (gitignored).
 
-## Das Gate (vor jedem Merge grün)
+## The gate (green before every merge)
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 ./gradlew ktlintCheck detekt test :core:koverVerify lintDebug assembleDebug
 ```
-Grün = alle Tasks erfolgreich **und** Kover ≥ 80 % in `:core`. `ktlintFormat` fixt
-Formatierung vorab. Auf GitHub erzwingt die CI dieselben Checks als Pflicht-Status
-für den Merge nach `main`.
+Green = all tasks succeed **and** Kover ≥ 80 % in `:core`. `ktlintFormat` fixes
+formatting first. On GitHub, CI enforces the same checks as a required status for
+merging into `main`.
 
-## Review vor jedem Push/Merge (Pflicht)
-Vor dem Push den **`code-reviewer`-Subagenten** über den Diff laufen lassen
-(Agent-Tool), Findings fixen, dann erst committen/pushen. Der Reviewer prüft u. a.:
-englische Bezeichner/Kommentare, `:core`-Schichtung, Tests/Coverage, detekt-Fallen,
-Null-/Coroutine-Sicherheit, MapLibre-/Standort-Lifecycle.
+## Review before every push/merge (required)
+Before pushing, run the **`code-reviewer` subagent** over the diff (Agent tool),
+fix the findings, then commit/push. It checks: English everywhere, `:core` layering,
+tests/coverage, detekt traps, null-/coroutine-safety, MapLibre/location lifecycle.
 
-## Regeln
-- **Sprache im Code:** Bezeichner **und** Kommentare Englisch. Nutzertexte nur in
-  `values/` (Deutsch) + `values-ja/` (Japanisch); japanische Inhalte kommen aus
-  `aromas.json`.
-- **Schichten:** testbare Domain-Logik nach `:core` (UI-frei); UI/Standort/DI nach
-  `:app`. `SeasonMatcher` muss der Web-App (`100-aromas`) entsprechen.
-- **Daten:** `aromas.json` + `images/` sind generiert (`tools/sync_data.py`) — nie
-  von Hand editieren; Quelle ist `../../100-aromas`.
+## Rules
+- **English everywhere:** identifiers, comments, KDoc, commit messages, PR text and
+  docs are English. The **only** non-English content is the app's user-facing
+  strings (`values/` German, `values-ja/` Japanese) and the bundled aroma data
+  (`aromas.json`; its German JSON keys are mapped via `@SerialName`, never used as
+  identifiers).
+- **Layers:** testable domain logic goes into `:core` (UI-free); UI/location/DI into
+  `:app`. `SeasonMatcher` must match the web app (`100-aromas`).
+- **Data:** `aromas.json` + `images/` are generated (`tools/sync_data.py`) — never
+  hand-edit; the source of truth is `../../100-aromas`.
 
-## Arbeiten über Pull Requests
-`main` ist geschützt. Jedes Feature: Branch → lokales code-reviewer-Review → Push →
-PR → CI grün → Merge.
+## Working through pull requests
+`main` is protected. Every feature: branch → local code-reviewer → push → PR → CI
+green → merge.
 
-## Geräteprüfung
-Nach `:app:installDebug` die App auf dem Gerät testen und
-`adb logcat -d -b crash` prüfen (keine Abstürze), bevor etwas als „fertig" gilt.
+## Device / emulator verification
+After `:app:installDebug`, test the app on a device/emulator and check
+`adb logcat -d -b crash` (no crashes) before calling anything "done". A headless
+emulator can be created as an AVD under `/tmp` (limited disk on the main volume);
+capture UI with `adb exec-out screencap -p`. Note: MapLibre must use the
+**OpenGL** renderer (`org.maplibre.gl:android-sdk-opengl`) — the default Vulkan
+renderer aborts on the emulator's gfxstream driver.
