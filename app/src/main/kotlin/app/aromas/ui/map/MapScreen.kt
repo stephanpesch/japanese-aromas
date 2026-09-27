@@ -86,9 +86,11 @@ fun MapScreen(
             }
         }
         MapFilterBar(
+            collections = viewModel.collections,
             categories = viewModel.categories,
             filter = filter,
             language = language,
+            onToggleCollection = viewModel::toggleCollection,
             onToggleSeason = viewModel::toggleSeason,
             onToggleCategory = viewModel::toggleCategory,
             onClear = viewModel::clear,
@@ -168,8 +170,9 @@ private fun PlaceInfoCard(
                     text = "${place.number}. ${place.title(language)}",
                     style = MaterialTheme.typography.titleMedium,
                 )
+                val season = place.season(language)
                 Text(
-                    text = "${place.prefecture} · ${place.season(language)}",
+                    text = if (season.isEmpty()) place.prefecture else "${place.prefecture} · $season",
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }

@@ -24,19 +24,23 @@ import androidx.compose.ui.unit.dp
 import app.aromas.R
 import app.aromas.core.logic.Season
 import app.aromas.core.model.Language
+import app.aromas.core.model.PlaceCollection
 
-/** Top-of-map filter bar: a row of season chips over a row of category chips. */
+/** Top-of-map filter bar: collection chips over season chips over category chips. */
 @Composable
 fun MapFilterBar(
+    collections: List<PlaceCollection>,
     categories: List<String>,
     filter: MapFilter,
     language: Language,
+    onToggleCollection: (PlaceCollection) -> Unit,
     onToggleSeason: (Season) -> Unit,
     onToggleCategory: (String) -> Unit,
     onClear: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val hasActiveFilter = filter.seasons.isNotEmpty() || filter.categories.isNotEmpty()
+    val hasActiveFilter =
+        filter.collections.isNotEmpty() || filter.seasons.isNotEmpty() || filter.categories.isNotEmpty()
     Column(
         modifier =
             modifier
@@ -45,6 +49,21 @@ fun MapFilterBar(
                 .padding(vertical = 8.dp),
         verticalArrangement = Arrangement.spacedBy(4.dp),
     ) {
+        if (collections.size > 1) {
+            LazyRow(
+                contentPadding = PaddingValues(horizontal = 12.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                items(collections) { collection ->
+                    FilterChip(
+                        selected = collection in filter.collections,
+                        onClick = { onToggleCollection(collection) },
+                        label = { Text(stringResource(collectionLabel(collection))) },
+                        leadingIcon = { Dot(CollectionColors.hex(collection)) },
+                    )
+                }
+            }
+        }
         LazyRow(
             contentPadding = PaddingValues(horizontal = 12.dp),
             horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -74,7 +93,7 @@ fun MapFilterBar(
                     selected = category in filter.categories,
                     onClick = { onToggleCategory(category) },
                     label = { Text(CategoryLabels.localized(category, language)) },
-                    leadingIcon = { CategoryDot(CategoryColors.hex(category)) },
+                    leadingIcon = { Dot(CategoryColors.hex(category)) },
                 )
             }
         }
@@ -82,7 +101,7 @@ fun MapFilterBar(
 }
 
 @Composable
-private fun CategoryDot(hex: String) {
+private fun Dot(hex: String) {
     Box(
         modifier =
             Modifier
@@ -98,6 +117,14 @@ private fun seasonLabel(season: Season): Int =
         Season.SUMMER -> R.string.season_summer
         Season.AUTUMN -> R.string.season_autumn
         Season.WINTER -> R.string.season_winter
+    }
+
+private fun collectionLabel(collection: PlaceCollection): Int =
+    when (collection) {
+        PlaceCollection.AROMA -> R.string.collection_aroma
+        PlaceCollection.WATER -> R.string.collection_water
+        PlaceCollection.SOUND -> R.string.collection_sound
+        PlaceCollection.SCENERY -> R.string.collection_scenery
     }
 
 private const val SURFACE_ALPHA = 0.9f

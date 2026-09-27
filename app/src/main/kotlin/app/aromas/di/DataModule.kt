@@ -19,6 +19,6 @@ object DataModule {
         @ApplicationContext context: Context,
     ): PlaceRepository =
         PlaceRepository(
-            context.assets.open("aromas.json").use { PlaceJsonParser.parse(it) },
+            context.assets.open("places.json").use { PlaceJsonParser.parse(it) },
         )
 }

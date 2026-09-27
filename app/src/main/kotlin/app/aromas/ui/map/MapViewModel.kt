@@ -6,6 +6,7 @@ import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.PlaceFilter
 import app.aromas.core.logic.Season
 import app.aromas.core.model.Place
+import app.aromas.core.model.PlaceCollection
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -16,8 +17,9 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import javax.inject.Inject
 
-/** The active map filter: selected categories (OR) and seasons (union of months). */
+/** The active map filter: selected collections, categories (OR) and seasons. */
 data class MapFilter(
+    val collections: Set<PlaceCollection> = emptySet(),
     val categories: Set<String> = emptySet(),
     val seasons: Set<Season> = emptySet(),
 )
@@ -30,7 +32,10 @@ class MapViewModel
     ) : ViewModel() {
         private val all = repository.all()
 
-        /** All categories present in the dataset, in first-seen order (for the chips). */
+        /** All collections present in the dataset, in first-seen order (for the chips). */
+        val collections: List<PlaceCollection> = all.map { it.collection }.distinct()
+
+        /** All aroma categories present in the dataset, in first-seen order (for the chips). */
         val categories: List<String> = repository.categories()
 
         private val filterState = MutableStateFlow(MapFilter())
@@ -40,6 +45,10 @@ class MapViewModel
             filterState
                 .map { active -> apply(active) }
                 .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), all)
+
+        fun toggleCollection(collection: PlaceCollection) {
+            filterState.update { it.copy(collections = it.collections.toggle(collection)) }
+        }
 
         fun toggleCategory(category: String) {
             filterState.update { it.copy(categories = it.categories.toggle(category)) }
@@ -59,6 +68,7 @@ class MapViewModel
                 selectedMonths = active.seasons.flatMap { it.months }.toSet(),
                 includeYearRound = true,
                 selectedCategories = active.categories,
+                selectedCollections = active.collections,
             )
 
         private companion object {
