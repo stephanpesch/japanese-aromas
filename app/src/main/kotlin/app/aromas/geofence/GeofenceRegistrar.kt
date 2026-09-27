@@ -8,7 +8,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.util.Log
 import androidx.core.content.ContextCompat
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import com.google.android.gms.location.Geofence
 import com.google.android.gms.location.GeofencingRequest
 import com.google.android.gms.location.LocationServices
@@ -30,13 +30,13 @@ class GeofenceRegistrar
                 isGranted(Manifest.permission.ACCESS_BACKGROUND_LOCATION)
 
         @SuppressLint("MissingPermission")
-        suspend fun register(aromas: List<Aroma>): Boolean {
-            if (aromas.isEmpty() || !hasBackgroundLocationPermission()) return false
+        suspend fun register(places: List<Place>): Boolean {
+            if (places.isEmpty() || !hasBackgroundLocationPermission()) return false
             val request =
                 GeofencingRequest
                     .Builder()
-                    .setInitialTrigger(0) // don't fire for aromas the user already sits inside
-                    .addGeofences(aromas.map { it.toGeofence() })
+                    .setInitialTrigger(0) // don't fire for places the user already sits inside
+                    .addGeofences(places.map { it.toGeofence() })
                     .build()
             return runCatching { client.addGeofences(request, pendingIntent).await() }
                 .onFailure { Log.w(TAG, "Failed to register geofences", it) }
@@ -48,10 +48,10 @@ class GeofenceRegistrar
                 .onFailure { Log.w(TAG, "Failed to remove geofences", it) }
         }
 
-        private fun Aroma.toGeofence(): Geofence =
+        private fun Place.toGeofence(): Geofence =
             Geofence
                 .Builder()
-                .setRequestId(number.toString())
+                .setRequestId(id)
                 .setCircularRegion(lat, lon, RADIUS_METERS)
                 .setExpirationDuration(Geofence.NEVER_EXPIRE)
                 .setTransitionTypes(Geofence.GEOFENCE_TRANSITION_ENTER)

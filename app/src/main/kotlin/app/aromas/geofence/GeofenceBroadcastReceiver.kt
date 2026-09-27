@@ -7,7 +7,7 @@ import com.google.android.gms.location.Geofence
 import com.google.android.gms.location.GeofencingEvent
 import dagger.hilt.android.EntryPointAccessors
 
-/** Fires when the user enters an aroma's geofence and posts a proximity alert. */
+/** Fires when the user enters a place's geofence and posts a proximity alert. */
 class GeofenceBroadcastReceiver : BroadcastReceiver() {
     override fun onReceive(
         context: Context,
@@ -20,8 +20,7 @@ class GeofenceBroadcastReceiver : BroadcastReceiver() {
         val repository = entryPoint.repository()
         val notifier = entryPoint.notifier()
         event.triggeringGeofences.orEmpty().forEach { geofence ->
-            val number = geofence.requestId.toIntOrNull() ?: return@forEach
-            repository.byNumber(number)?.let(notifier::notifyNearby)
+            repository.byId(geofence.requestId)?.let(notifier::notifyNearby)
         }
     }
 }

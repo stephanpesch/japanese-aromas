@@ -1,6 +1,6 @@
 package app.aromas.core.logic
 
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import kotlin.math.asin
 import kotlin.math.cos
 import kotlin.math.pow
@@ -26,8 +26,8 @@ object DistanceCalculator {
     }
 
     fun distanceKm(
-        aroma: Aroma,
+        place: Place,
         lat: Double,
         lon: Double,
-    ): Double = distanceKm(aroma.lat, aroma.lon, lat, lon)
+    ): Double = distanceKm(place.lat, place.lon, lat, lon)
 }

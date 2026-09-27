@@ -1,6 +1,6 @@
 package app.aromas.geofence
 
-import app.aromas.core.data.AromaRepository
+import app.aromas.core.data.PlaceRepository
 import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
@@ -9,9 +9,9 @@ import dagger.hilt.components.SingletonComponent
 @EntryPoint
 @InstallIn(SingletonComponent::class)
 interface GeofenceEntryPoint {
-    fun repository(): AromaRepository
+    fun repository(): PlaceRepository
 
-    fun notifier(): AromaNotifier
+    fun notifier(): PlaceNotifier
 
     fun registrar(): GeofenceRegistrar
 

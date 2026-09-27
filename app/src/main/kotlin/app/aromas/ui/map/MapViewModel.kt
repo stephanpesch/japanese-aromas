@@ -2,10 +2,10 @@ package app.aromas.ui.map
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import app.aromas.core.data.AromaRepository
-import app.aromas.core.logic.AromaFilter
+import app.aromas.core.data.PlaceRepository
+import app.aromas.core.logic.PlaceFilter
 import app.aromas.core.logic.Season
-import app.aromas.core.model.Aroma
+import app.aromas.core.model.Place
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -26,7 +26,7 @@ data class MapFilter(
 class MapViewModel
     @Inject
     constructor(
-        repository: AromaRepository,
+        repository: PlaceRepository,
     ) : ViewModel() {
         private val all = repository.all()
 
@@ -36,7 +36,7 @@ class MapViewModel
         private val filterState = MutableStateFlow(MapFilter())
         val filter: StateFlow<MapFilter> = filterState.asStateFlow()
 
-        val filtered: StateFlow<List<Aroma>> =
+        val filtered: StateFlow<List<Place>> =
             filterState
                 .map { active -> apply(active) }
                 .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), all)
@@ -53,8 +53,8 @@ class MapViewModel
             filterState.value = MapFilter()
         }
 
-        private fun apply(active: MapFilter): List<Aroma> =
-            AromaFilter.filter(
+        private fun apply(active: MapFilter): List<Place> =
+            PlaceFilter.filter(
                 all = all,
                 selectedMonths = active.seasons.flatMap { it.months }.toSet(),
                 includeYearRound = true,

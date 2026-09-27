@@ -1,6 +1,6 @@
 package app.aromas.core.logic
 
-import app.aromas.core.aroma
+import app.aromas.core.place
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
@@ -10,25 +10,25 @@ import java.time.LocalDate
 class SeasonMatcherTest {
     @Test
     fun `no month filter matches everything`() {
-        val a = aroma(months = listOf(6, 7), yearRound = false)
+        val a = place(months = listOf(6, 7), yearRound = false)
         assertTrue(SeasonMatcher.matches(a, emptySet(), includeYearRound = true))
     }
 
     @Test
     fun `overlapping month matches`() {
-        val a = aroma(months = listOf(6, 7, 8))
+        val a = place(months = listOf(6, 7, 8))
         assertTrue(SeasonMatcher.matches(a, setOf(5, 6), includeYearRound = false))
     }
 
     @Test
     fun `disjoint months do not match`() {
-        val a = aroma(months = listOf(6, 7, 8))
+        val a = place(months = listOf(6, 7, 8))
         assertFalse(SeasonMatcher.matches(a, setOf(1, 2), includeYearRound = false))
     }
 
     @Test
     fun `year-round respects the include flag`() {
-        val a = aroma(months = emptyList(), yearRound = true)
+        val a = place(months = emptyList(), yearRound = true)
         assertTrue(SeasonMatcher.matches(a, setOf(3), includeYearRound = true))
         assertFalse(SeasonMatcher.matches(a, setOf(3), includeYearRound = false))
     }

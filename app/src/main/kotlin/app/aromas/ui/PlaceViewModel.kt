@@ -1,16 +1,16 @@
 package app.aromas.ui
 
 import androidx.lifecycle.ViewModel
-import app.aromas.core.data.AromaRepository
-import app.aromas.core.model.Aroma
+import app.aromas.core.data.PlaceRepository
+import app.aromas.core.model.Place
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class AromaViewModel
+class PlaceViewModel
     @Inject
     constructor(
-        repository: AromaRepository,
+        repository: PlaceRepository,
     ) : ViewModel() {
-        val aromas: List<Aroma> = repository.all()
+        val places: List<Place> = repository.all()
     }

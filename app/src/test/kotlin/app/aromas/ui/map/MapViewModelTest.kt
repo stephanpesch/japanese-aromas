@@ -1,8 +1,8 @@
 package app.aromas.ui.map
 
-import app.aromas.core.aroma
-import app.aromas.core.data.AromaRepository
+import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.Season
+import app.aromas.core.place
 import app.aromas.ui.testutil.MainDispatcherExtension
 import app.cash.turbine.test
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -14,11 +14,11 @@ import org.junit.jupiter.api.extension.ExtendWith
 @OptIn(ExperimentalCoroutinesApi::class)
 @ExtendWith(MainDispatcherExtension::class)
 class MapViewModelTest {
-    private val flower = aroma(number = 1, categories = listOf("Blumen & Blüten"), months = listOf(6, 7, 8))
-    private val coast = aroma(number = 2, categories = listOf("Meer & Küste"), months = listOf(3, 4, 5))
-    private val tea = aroma(number = 3, categories = listOf("Tee"), months = emptyList(), yearRound = true)
+    private val flower = place(number = 1, categories = listOf("Blumen & Blüten"), months = listOf(6, 7, 8))
+    private val coast = place(number = 2, categories = listOf("Meer & Küste"), months = listOf(3, 4, 5))
+    private val tea = place(number = 3, categories = listOf("Tee"), months = emptyList(), yearRound = true)
 
-    private fun viewModel() = MapViewModel(AromaRepository(listOf(flower, coast, tea)))
+    private fun viewModel() = MapViewModel(PlaceRepository(listOf(flower, coast, tea)))
 
     @Test
     fun `categories are the distinct dataset categories in order`() {
