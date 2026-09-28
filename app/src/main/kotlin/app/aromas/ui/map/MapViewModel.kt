@@ -7,6 +7,8 @@ import app.aromas.core.logic.PlaceFilter
 import app.aromas.core.logic.Season
 import app.aromas.core.model.Place
 import app.aromas.core.model.PlaceCollection
+import app.aromas.core.model.UserLocation
+import app.aromas.location.LocationProvider
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -29,8 +31,12 @@ class MapViewModel
     @Inject
     constructor(
         repository: PlaceRepository,
+        private val locationProvider: LocationProvider,
     ) : ViewModel() {
         private val all = repository.all()
+
+        /** The user's current location, for the "locate me" button; null if unavailable. */
+        suspend fun currentLocation(): UserLocation? = locationProvider.currentLocation()
 
         /** All collections present in the dataset, in first-seen order (for the chips). */
         val collections: List<PlaceCollection> = all.map { it.collection }.distinct()

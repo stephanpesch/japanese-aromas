@@ -3,7 +3,9 @@ package app.aromas.ui.map
 import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.Season
 import app.aromas.core.model.PlaceCollection
+import app.aromas.core.model.UserLocation
 import app.aromas.core.place
+import app.aromas.location.LocationProvider
 import app.aromas.ui.testutil.MainDispatcherExtension
 import app.cash.turbine.test
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -12,6 +14,10 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 
+private object FakeLocationProvider : LocationProvider {
+    override suspend fun currentLocation(): UserLocation? = null
+}
+
 @OptIn(ExperimentalCoroutinesApi::class)
 @ExtendWith(MainDispatcherExtension::class)
 class MapViewModelTest {
@@ -19,7 +25,7 @@ class MapViewModelTest {
     private val coast = place(number = 2, categories = listOf("Meer & Küste"), months = listOf(3, 4, 5))
     private val tea = place(number = 3, categories = listOf("Tee"), months = emptyList(), yearRound = true)
 
-    private fun viewModel() = MapViewModel(PlaceRepository(listOf(flower, coast, tea)))
+    private fun viewModel() = MapViewModel(PlaceRepository(listOf(flower, coast, tea)), FakeLocationProvider)
 
     @Test
     fun `categories are the distinct dataset categories in order`() {
@@ -30,7 +36,7 @@ class MapViewModelTest {
     fun `categories are scoped to the selected collection`() =
         runTest {
             val garden = place(number = 9, collection = PlaceCollection.SCENERY, categories = listOf("Garten"))
-            val vm = MapViewModel(PlaceRepository(listOf(flower, garden)))
+            val vm = MapViewModel(PlaceRepository(listOf(flower, garden)), FakeLocationProvider)
             vm.categories.test {
                 assertEquals(listOf("Blumen & Blüten", "Garten"), awaitItem()) // no collection filter: all
                 vm.toggleCollection(PlaceCollection.SCENERY)
@@ -51,7 +57,7 @@ class MapViewModelTest {
     @Test
     fun `narrowing to another collection drops out-of-scope selected categories`() {
         val garden = place(number = 9, collection = PlaceCollection.SCENERY, categories = listOf("Garten"))
-        val vm = MapViewModel(PlaceRepository(listOf(flower, garden)))
+        val vm = MapViewModel(PlaceRepository(listOf(flower, garden)), FakeLocationProvider)
         vm.toggleCategory("Blumen & Blüten")
         vm.toggleCollection(PlaceCollection.SCENERY)
         assertEquals(emptySet<String>(), vm.filter.value.categories)
@@ -63,7 +69,7 @@ class MapViewModelTest {
         runTest {
             val scene =
                 place(number = 9, collection = PlaceCollection.SCENERY, categories = emptyList(), months = emptyList())
-            val vm = MapViewModel(PlaceRepository(listOf(flower, scene)))
+            val vm = MapViewModel(PlaceRepository(listOf(flower, scene)), FakeLocationProvider)
             assertEquals(listOf(PlaceCollection.AROMA, PlaceCollection.SCENERY), vm.collections)
             vm.filtered.test {
                 assertEquals(listOf(1, 9), awaitItem().map { it.number })

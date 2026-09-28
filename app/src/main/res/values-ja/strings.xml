@@ -34,4 +34,5 @@
     <string name="collection_scenery">名勝</string>
     <string name="detail_open_map">地図アプリで開く</string>
     <string name="detail_wikipedia">ウィキペディア</string>
+    <string name="locate_me">現在地へ</string>
 </resources>

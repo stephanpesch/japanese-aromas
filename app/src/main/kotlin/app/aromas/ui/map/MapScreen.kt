@@ -1,6 +1,11 @@
 package app.aromas.ui.map
 
+import android.Manifest
+import android.annotation.SuppressLint
+import android.content.Context
 import android.graphics.RectF
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -10,7 +15,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
+import androidx.compose.material.icons.filled.MyLocation
 import androidx.compose.material3.Card
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -20,10 +27,12 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
@@ -34,8 +43,14 @@ import app.aromas.core.logic.season
 import app.aromas.core.logic.title
 import app.aromas.core.model.Language
 import app.aromas.core.model.Place
+import app.aromas.location.hasLocationPermission
+import kotlinx.coroutines.launch
 import org.maplibre.android.camera.CameraPosition
+import org.maplibre.android.camera.CameraUpdateFactory
 import org.maplibre.android.geometry.LatLng
+import org.maplibre.android.location.LocationComponentActivationOptions
+import org.maplibre.android.location.modes.CameraMode
+import org.maplibre.android.location.modes.RenderMode
 import org.maplibre.android.maps.MapLibreMap
 import org.maplibre.android.maps.Style
 import org.maplibre.android.style.expressions.Expression
@@ -51,6 +66,7 @@ private const val STROKE_WIDTH = 1.5f
 private const val JAPAN_LAT = 37.5
 private const val JAPAN_LON = 137.5
 private const val JAPAN_ZOOM = 3.8
+private const val USER_ZOOM = 10.0
 private const val TAP_SLOP = 24f
 
 @Composable
@@ -76,6 +92,27 @@ fun MapScreen(
     // re-run the setup and stack up click listeners.
     val configured = remember { AtomicBoolean(false) }
     var maplibreMap by remember { mutableStateOf<MapLibreMap?>(null) }
+
+    val context = LocalContext.current
+    val scope = rememberCoroutineScope()
+    val locate: () -> Unit = {
+        scope.launch {
+            val location = viewModel.currentLocation()
+            val map = maplibreMap
+            if (location != null && map != null) {
+                enableLocationDot(map, context)
+                map.animateCamera(
+                    CameraUpdateFactory.newLatLngZoom(LatLng(location.lat, location.lon), USER_ZOOM),
+                )
+            }
+        }
+    }
+    val locationLauncher =
+        rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) {
+            // Re-read the state: picking "Approximate" grants coarse (fine denied),
+            // which still satisfies hasLocationPermission and lets locate() work.
+            if (hasLocationPermission(context)) locate()
+        }
 
     Box(modifier.fillMaxSize()) {
         AndroidView(factory = { mapView }) { view ->
@@ -109,6 +146,21 @@ fun MapScreen(
                         .padding(12.dp),
             )
         }
+        FloatingActionButton(
+            onClick = {
+                if (hasLocationPermission(context)) {
+                    locate()
+                } else {
+                    locationLauncher.launch(Manifest.permission.ACCESS_FINE_LOCATION)
+                }
+            },
+            modifier =
+                Modifier
+                    .align(Alignment.BottomEnd)
+                    .padding(16.dp),
+        ) {
+            Icon(Icons.Filled.MyLocation, contentDescription = stringResource(R.string.locate_me))
+        }
     }
 
     // Push the filtered set into the existing marker source and drop a selection
@@ -125,6 +177,9 @@ private fun configureMap(
     places: List<Place>,
     onPick: (String?) -> Unit,
 ) {
+    // Keep the map fixed north-up and flat.
+    map.uiSettings.setRotateGesturesEnabled(false)
+    map.uiSettings.setTiltGesturesEnabled(false)
     map.cameraPosition =
         CameraPosition
             .Builder()
@@ -150,6 +205,24 @@ private fun configureMap(
         onPick(id)
         id != null
     }
+}
+
+/** Turns on the MapLibre blue "my location" dot (once the style is ready). */
+@SuppressLint("MissingPermission")
+private fun enableLocationDot(
+    map: MapLibreMap,
+    context: Context,
+) {
+    val style = map.style ?: return
+    val component = map.locationComponent
+    if (!component.isLocationComponentActivated) {
+        component.activateLocationComponent(
+            LocationComponentActivationOptions.builder(context, style).build(),
+        )
+    }
+    component.isLocationComponentEnabled = true
+    component.cameraMode = CameraMode.NONE
+    component.renderMode = RenderMode.NORMAL
 }
 
 @Composable
