@@ -25,7 +25,15 @@
     "bild": "images/001.jpg",
     "beschreibung_ja": "かつて世界の7割のハッカを生産していた北見市は、香りゃんせ公園、ハッカ記念館のハーブ園など、ハッカをシンボルとしたまちづくりを進めています。",
     "beschreibung_de": "Die Stadt Kitami, die einst 70 % der weltweiten Minzproduktion stellte, gestaltet ihre Stadtentwicklung ganz im Zeichen der Minze – etwa mit dem Park „Kaoryanse“ und dem Kräutergarten des Minz-Gedenkhauses.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 2,
@@ -165,7 +173,15 @@
     "bild": "images/006.jpg",
     "beschreibung_ja": "初夏にぼたんの大輪が咲きます。ふるさとづくりの一環として、3.3haに130種8,000本のぼたんが植栽されています。遠く残雪をいただいた八甲田山を背景にぼたんを観賞できます。",
     "beschreibung_de": "Im Frühsommer erblühen hier großblütige Päonien. Im Rahmen der Heimatpflege wurden auf 3,3 ha 8.000 Päonien in 130 Sorten gepflanzt. Man kann sie vor der Kulisse des noch schneebedeckten Hakkōda-Gebirges bewundern.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "18:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 7,
@@ -435,7 +451,15 @@
     "bild": "images/016.jpg",
     "beschreibung_ja": "145haの都市公園内に、7haのバラ公園があり、700品種2万株が植栽されています。バラ公園は3つの湖と森林に囲まれた自然豊かな環境にあります。",
     "beschreibung_de": "In einem 145 ha großen Stadtpark liegt ein 7 ha umfassender Rosengarten mit 20.000 Rosenstöcken in 700 Sorten. Der Rosenpark ist von drei Seen und Wald umgeben und in eine an Natur reiche Umgebung eingebettet.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 17,
@@ -486,7 +510,15 @@
     "bild": "images/018.jpg",
     "beschreibung_ja": "樹齢200年以上の古木牡丹290種7,000株が咲き、かおりが園内に広がります。また、天寿を全うした牡丹の枯木を供養する「牡丹焚き火」は、ほのかなかおりが漂います。",
     "beschreibung_de": "7.000 Päonienstöcke in 290 Sorten, darunter über 200 Jahre alte Altpflanzen, blühen und erfüllen den Garten mit ihrem Duft. Beim „Botan-Takibi“, einem Feuer, mit dem man die abgestorbenen Päonienstöcke nach ihrem vollendeten Leben ehrt, liegt ein zarter Duft in der Luft.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 19,
@@ -515,7 +547,15 @@
     "bild": "images/019.jpg",
     "beschreibung_ja": "三名園の一つである偕楽園は、正月から彼岸過ぎの長い間にわたり梅のかおりを感じられます。梅は100種3,000本。周囲の樹林地を保全し、親水性のある歴史的景観の形成を進めています。",
     "beschreibung_de": "Im Kairaku-en, einem der Drei Berühmten Gärten Japans, kann man über einen langen Zeitraum – von Neujahr bis nach dem Frühlings-Higan – den Duft der Pflaumenblüten wahrnehmen. Es sind 3.000 Pflaumenbäume in 100 Sorten. Die umliegenden Waldflächen werden geschützt, und man gestaltet eine historische, wassernahe Landschaft.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "06:00",
+        "bis_zeit": "19:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 20,
@@ -942,7 +982,15 @@
     "bild": "images/035.jpg",
     "beschreibung_ja": "樹齢300年の木曽ひのき天然林が広がり、728haの赤沢自然休養林内には木のかおりが漂います。赤沢の自然林は日本三大美林として知られています。国有林・自然休養林・ヒノキ材木遺伝資源保存林・ヒノキ植物群落保護林に指定されており、ボランティアや森林インストラクターの活動、専門誌の発刊などの自然保護活動が進められています。",
     "beschreibung_de": "Ein 300 Jahre alter Naturwald aus Kiso-Hinoki (Scheinzypressen) erstreckt sich hier; im 728 ha großen Erholungswald Akasawa liegt der Duft des Holzes in der Luft. Der Naturwald von Akasawa zählt zu den drei schönsten Wäldern Japans. Er ist als Staatswald, Erholungswald, Genressourcen-Schutzwald für Hinoki-Nutzholz und Pflanzengesellschafts-Schutzwald ausgewiesen; Freiwillige und Waldführer sowie eine eigene Fachzeitschrift fördern die Aufklärung über den Naturschutz.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "16:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 36,
@@ -1111,7 +1159,15 @@
     "bild": "images/041.jpg",
     "beschreibung_ja": "360mにわたり、朝市通には日本海でとれた魚介類のかおりがします。物々交換の市からはじまり、1,000年以上の歴史があります。",
     "beschreibung_de": "Auf 360 m Länge duftet die Morgenmarkt-Straße nach Meeresfrüchten aus dem Japanischen Meer. Der Markt begann als Tauschhandel und hat eine über 1.000-jährige Geschichte.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "12:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 42,
@@ -1231,7 +1287,15 @@
     "bild": "images/045.jpg",
     "beschreibung_ja": "1haの香りの公園内には、キンモクセイ、ハーブなどかおり豊かな植物が植えられており、四季折々のかおりが楽しめます。香りの博物館では花・ハーブなど香りの実体験や嗅覚の仕組み、かおりの歴史などを紹介しています。",
     "beschreibung_de": "Im 1 ha großen Duftpark sind duftreiche Pflanzen wie Duft-Ölbäume und Kräuter angepflanzt, sodass man die Düfte der vier Jahreszeiten genießen kann. Das Duftmuseum vermittelt praktische Dufterfahrungen mit Blumen und Kräutern sowie die Funktionsweise des Geruchssinns und die Geschichte der Düfte.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:30",
+        "bis_zeit": "17:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 46,
@@ -1419,7 +1483,15 @@
     "bild": "images/052.jpg",
     "beschreibung_ja": "2,000年余の歴史を有する内宮参道には、神宮スギやヒノキの常緑樹の他、自生の木々のかおりにつつまれ、内宮の鳥居前町800mの参道沿いには、お茶、お菓子、うどん等のかおりがします。",
     "beschreibung_de": "Am über 2.000 Jahre alten Zugangsweg zum Inneren Schrein (Naikū) ist man vom Duft immergrüner Bäume wie Jingū-Zedern und Hinoki sowie wild wachsender Bäume umgeben; entlang der 800 m langen Tempelvorstadt am Torii des Naikū duftet es nach Tee, Süßigkeiten und Udon.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "05:00",
+        "bis_zeit": "18:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 53,
@@ -1478,7 +1550,15 @@
     "bild": "images/054.jpg",
     "beschreibung_ja": "延暦寺は多数の堂塔を持つ日本有数の規模の寺院であり、霊峰・比叡山の名にふさわしく、杉の巨木がうっそうと茂り、威厳に満ちた雰囲気と特有のかおりが訪れる者の心を引き締めます。延暦寺や山麓の門前町坂本の里坊群の各寺院でお香があたりにただよいます。",
     "beschreibung_de": "Der Enryaku-ji ist mit seinen zahlreichen Hallen und Pagoden einer der größten Tempel Japans; dem Namen des heiligen Bergs Hiei würdig, wuchern hier mächtige Zedern, und eine würdevolle Atmosphäre samt eigentümlichem Duft strafft das Herz der Besucher. Im Enryaku-ji und in den Tempeln der Klostersiedlung Sakamoto am Bergfuß liegt der Duft von Räucherwerk in der Luft.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "16:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 55,
@@ -2004,7 +2084,15 @@
     "bild": "images/074.jpg",
     "beschreibung_ja": "柑橘の花や果実のかおり（約600品種）が楽しめるシトラスパビリオンがあり、一年中いつでも柑橘系のかおりを楽しむことができます。",
     "beschreibung_de": "Es gibt einen „Citrus-Pavillon“, in dem man den Duft von Zitrusblüten und -früchten (rund 600 Sorten) genießen kann; so lässt sich das ganze Jahr über jederzeit ein Zitrusduft erleben.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:30",
+        "bis_zeit": "16:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 75,
@@ -2028,7 +2116,15 @@
     "bild": "images/075.jpg",
     "beschreibung_ja": "社殿が回廊で結ばれており、満潮時には敷地が海となり、潮のかおりがします。緑濃い弥山山塊を背景に、波静かな紺碧の海を前景とした、竜宮城のような景観は宮島独特のものです。",
     "beschreibung_de": "Die Schreinhallen sind durch Wandelgänge verbunden; bei Flut wird das Gelände zum Meer, und es duftet nach den Gezeiten. Vor der Kulisse des sattgrünen Misen-Bergstocks und mit dem ruhigen, tiefblauen Meer im Vordergrund gleicht die Szenerie dem Drachenpalast – einzigartig für Miyajima.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "06:30",
+        "bis_zeit": "18:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 76,
@@ -2302,7 +2398,15 @@
     "bild": "images/085.jpg",
     "beschreibung_ja": "3月〜4月にかけて、しなやかにのびた竹が生い茂るさわやかな竹林のかおりが感じられます。合馬たけのこは、心地よい食感とふくよかなかおりで、全国的にも知られています。",
     "beschreibung_de": "Von März bis April nimmt man den frischen Duft des Bambushains wahr, in dem geschmeidig aufragender Bambus dicht wächst. Die Ōma-Bambussprossen sind für ihren angenehmen Biss und ihren vollen Duft landesweit bekannt.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "10:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 86,
@@ -2333,7 +2437,15 @@
     "bild": "images/086.jpg",
     "beschreibung_ja": "祭神菅原道真に縁のある梅林の中に、クスノキが境内をところ狭しと生育しています。1月から4月上旬には梅、新緑時にはクスノキのかおりも楽しむことができます。",
     "beschreibung_de": "In dem mit der Schreingottheit Sugawara no Michizane verbundenen Pflaumenhain wachsen Kampferbäume dicht gedrängt über das Gelände. Von Januar bis Anfang April kann man den Duft der Pflaumen, zur Zeit des frischen Grüns auch den der Kampferbäume genießen.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "06:30",
+        "bis_zeit": "19:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 87,
@@ -2573,7 +2685,15 @@
     "bild": "images/095.jpg",
     "beschreibung_ja": "崎津天主堂を中心に港町が栄え、海のかおりが漂います。天主堂の周りには物静かで教会の鐘の音も聞こえます。港フェスティバル等も開催されます。",
     "beschreibung_de": "Rund um die Kirche von Sakitsu blühte eine Hafenstadt, in der der Duft des Meeres liegt. Um die Kirche herum ist es still, und man hört das Läuten der Kirchenglocken. Auch ein Hafenfest wird veranstaltet.",
-    "collection": "aroma"
+    "collection": "aroma",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "nummer": 96,
@@ -2750,7 +2870,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -2796,7 +2924,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -2819,7 +2955,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -2839,7 +2983,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -2951,7 +3103,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "07:00",
+        "bis_zeit": "18:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -2974,7 +3134,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3020,7 +3188,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3066,7 +3242,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3086,7 +3270,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3106,7 +3298,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3126,7 +3326,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:30",
+        "bis_zeit": "16:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3146,7 +3354,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3166,7 +3382,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:45",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3186,7 +3410,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3252,7 +3484,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3272,7 +3512,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3295,7 +3543,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3318,7 +3574,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "16:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3364,7 +3628,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "07:30",
+        "bis_zeit": "18:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3433,7 +3705,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "07:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "scenery",
@@ -3502,7 +3782,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -3657,7 +3945,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -4153,7 +4449,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -4676,7 +4980,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "07:00",
+        "bis_zeit": "19:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -4851,7 +5163,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -5315,7 +5635,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "10:00",
+        "bis_zeit": "15:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -5450,7 +5778,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -5470,7 +5806,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "water",
@@ -5733,7 +6077,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:45",
+        "bis_zeit": "17:10",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -5753,7 +6105,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "10:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -5803,7 +6163,15 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "冬（12〜2月）",
-    "saison_de": "Winter (Dez–Feb)"
+    "saison_de": "Winter (Dez–Feb)",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "16:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6109,7 +6477,15 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "夏（7〜8月）",
-    "saison_de": "Sommer (Jul–Aug)"
+    "saison_de": "Sommer (Jul–Aug)",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6176,7 +6552,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:30",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6299,7 +6683,13 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "hinweis_de": "Glockenschlag 6/12/15/18 Uhr",
+        "hinweis_ja": "時の鐘 6・12・15・18時"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6406,7 +6796,13 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "hinweis_de": "Glockenschlag 6/12/18 Uhr",
+        "hinweis_ja": "時の鐘 6・12・18時"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6607,7 +7003,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "04:30",
+        "bis_zeit": "16:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6914,7 +7318,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "16:50",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -6979,7 +7391,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7003,7 +7423,13 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "秋（虫の音の頃）",
-    "saison_de": "Herbst (Insektengesang)"
+    "saison_de": "Herbst (Insektengesang)",
+    "verfuegbarkeit": [
+      {
+        "hinweis_de": "Zeitglocke 6/9/12/15/18 Uhr",
+        "hinweis_ja": "時報鐘 6・9・12・15・18時"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7254,7 +7680,15 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "冬（12〜2月）",
-    "saison_de": "Winter (Dez–Feb)"
+    "saison_de": "Winter (Dez–Feb)",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:30",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7399,7 +7833,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7497,7 +7939,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "08:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7539,7 +7989,13 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "hinweis_de": "Zeittrommel 6/12/18 Uhr",
+        "hinweis_ja": "刻太鼓 6・12・18時"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7609,7 +8065,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7789,7 +8253,15 @@
     "monate": [],
     "ganzjaehrig": true,
     "saison_ja": "通年",
-    "saison_de": "Ganzjährig"
+    "saison_de": "Ganzjährig",
+    "verfuegbarkeit": [
+      {
+        "von_zeit": "09:00",
+        "bis_zeit": "17:00",
+        "hinweis_de": "typische Öffnungszeiten",
+        "hinweis_ja": "通常の公開時間"
+      }
+    ]
   },
   {
     "collection": "sound",
