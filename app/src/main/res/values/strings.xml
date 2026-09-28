@@ -41,4 +41,27 @@
     <string name="hide_visited">Besuchte ausblenden</string>
     <string name="visited_all">Besucht</string>
     <string name="visited_only">Nur besuchte</string>
+    <string name="when_button">Wann?</string>
+    <string name="when_any">Egal</string>
+    <string name="when_soon">Demnächst</string>
+    <string name="when_today">Heute</string>
+    <string name="when_this_week">Diese Woche</string>
+    <string name="when_next_30_days">Nächste 30 Tage</string>
+    <string name="section_available">Verfügbar</string>
+    <string name="section_season">Saison</string>
+    <string name="section_month">Monat</string>
+    <string-array name="month_short">
+        <item>Jän</item>
+        <item>Feb</item>
+        <item>Mär</item>
+        <item>Apr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Okt</item>
+        <item>Nov</item>
+        <item>Dez</item>
+    </string-array>
 </resources>

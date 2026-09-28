@@ -116,4 +116,43 @@ class AvailabilityMatcherTest {
         val p = place(months = emptyList(), availability = listOf(Availability(from = "bogus", to = "08-31")))
         assertTrue(AvailabilityMatcher.isAvailableNow(p, at(2, 2)))
     }
+
+    // --- isAvailableInRange ---
+
+    @Test
+    fun `a full-day range includes a venue open at some point that day`() {
+        val temple = place(yearRound = true, availability = listOf(Availability(fromTime = "09:00", toTime = "17:00")))
+        // "Today" (whole day) overlaps the opening hours, so it is available today...
+        assertTrue(AvailabilityMatcher.isAvailableInRange(temple, at(3, 3, 0, 0), at(3, 3, 23, 59)))
+        // ...even though the single late-evening instant is not.
+        assertFalse(AvailabilityMatcher.isAvailableInRange(temple, at(3, 3, 22, 0), at(3, 3, 22, 0)))
+    }
+
+    @Test
+    fun `a multi-day range catches a festival falling within it`() {
+        val awa = place(months = emptyList(), availability = listOf(Availability(from = "08-12", to = "08-15")))
+        assertTrue(AvailabilityMatcher.isAvailableInRange(awa, at(8, 1, 0, 0), at(8, 20, 23, 59)))
+        assertFalse(AvailabilityMatcher.isAvailableInRange(awa, at(9, 1, 0, 0), at(9, 30, 23, 59)))
+    }
+
+    @Test
+    fun `a short soon-range catches a venue that opens later within it`() {
+        val temple = place(yearRound = true, availability = listOf(Availability(fromTime = "09:00", toTime = "17:00")))
+        // 07:00 looking ahead to 10:00 reaches the 09:00 opening.
+        assertTrue(AvailabilityMatcher.isAvailableInRange(temple, at(3, 3, 7, 0), at(3, 3, 10, 0)))
+        // 03:00 to 06:00 is still before opening.
+        assertFalse(AvailabilityMatcher.isAvailableInRange(temple, at(3, 3, 3, 0), at(3, 3, 6, 0)))
+    }
+
+    @Test
+    fun `a range respects the season for places without windows`() {
+        val summer = place(months = listOf(6, 7, 8), yearRound = false)
+        assertTrue(AvailabilityMatcher.isAvailableInRange(summer, at(7, 1, 0, 0), at(7, 7, 23, 59)))
+        assertFalse(AvailabilityMatcher.isAvailableInRange(summer, at(11, 1, 0, 0), at(11, 7, 23, 59)))
+    }
+
+    @Test
+    fun `a reversed interval is never available`() {
+        assertFalse(AvailabilityMatcher.isAvailableInRange(place(yearRound = true), at(3, 3, 12, 0), at(3, 3, 11, 0)))
+    }
 }

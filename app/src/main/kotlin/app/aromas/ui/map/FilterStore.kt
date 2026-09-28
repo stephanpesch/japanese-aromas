@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import java.time.Clock
 import java.time.LocalDateTime
+import java.time.LocalTime
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -23,12 +24,23 @@ enum class VisitedMode {
     HIDE_VISITED,
 }
 
-/** The active filter: collections, categories (OR), seasons, the "now" toggle and the visited mode. */
+/** The availability horizon, relative to the current moment in Japan. */
+enum class WhenMode {
+    ANY,
+    NOW,
+    SOON,
+    TODAY,
+    THIS_WEEK,
+    NEXT_30_DAYS,
+}
+
+/** The active filter: collections, categories (OR), seasons, months, the availability horizon and the visited mode. */
 data class MapFilter(
     val collections: Set<PlaceCollection> = emptySet(),
     val categories: Set<String> = emptySet(),
     val seasons: Set<Season> = emptySet(),
-    val nowOnly: Boolean = false,
+    val months: Set<Int> = emptySet(),
+    val whenMode: WhenMode = WhenMode.ANY,
     val visited: VisitedMode = VisitedMode.ALL,
 )
 
@@ -75,8 +87,13 @@ class FilterStore
             filterState.update { it.copy(seasons = it.seasons.toggle(season)) }
         }
 
-        fun toggleNowOnly() {
-            filterState.update { it.copy(nowOnly = !it.nowOnly) }
+        fun toggleMonth(month: Int) {
+            filterState.update { it.copy(months = it.months.toggle(month)) }
+        }
+
+        /** Sets the availability horizon, or clears it when [mode] is already active. */
+        fun setWhenMode(mode: WhenMode) {
+            filterState.update { it.copy(whenMode = if (it.whenMode == mode) WhenMode.ANY else mode) }
         }
 
         /** Cycles the visited filter: all -> only visited -> hide visited -> all. */
@@ -111,23 +128,41 @@ class FilterStore
             val base =
                 PlaceFilter.filter(
                     all = all,
-                    selectedMonths = active.seasons.flatMap { it.months }.toSet(),
+                    selectedMonths = active.seasons.flatMap { it.months }.toSet() + active.months,
                     includeYearRound = true,
                     selectedCategories = active.categories,
                     selectedCollections = active.collections,
                 )
             val timed =
-                if (active.nowOnly) {
-                    val now = LocalDateTime.now(clock)
-                    base.filter { AvailabilityMatcher.isAvailableNow(it, now) }
-                } else {
-                    base
-                }
+                whenRange(active.whenMode)?.let { (from, to) ->
+                    base.filter { AvailabilityMatcher.isAvailableInRange(it, from, to) }
+                } ?: base
             return when (active.visited) {
                 VisitedMode.ALL -> timed
                 VisitedMode.ONLY_VISITED -> timed.filter { it.id in visited }
                 VisitedMode.HIDE_VISITED -> timed.filterNot { it.id in visited }
             }
+        }
+
+        /** The date-time interval a [WhenMode] stands for, relative to now; null for [WhenMode.ANY]. */
+        private fun whenRange(mode: WhenMode): Pair<LocalDateTime, LocalDateTime>? {
+            if (mode == WhenMode.ANY) return null
+            val now = LocalDateTime.now(clock)
+            val dayStart = now.toLocalDate().atStartOfDay()
+            return when (mode) {
+                WhenMode.ANY -> null
+                WhenMode.NOW -> now to now
+                WhenMode.SOON -> now to now.plusHours(SOON_HOURS)
+                WhenMode.TODAY -> dayStart to now.toLocalDate().atTime(LocalTime.MAX)
+                WhenMode.THIS_WEEK -> dayStart to dayStart.plusDays(WEEK_DAYS).with(LocalTime.MAX)
+                WhenMode.NEXT_30_DAYS -> dayStart to dayStart.plusDays(MONTH_DAYS).with(LocalTime.MAX)
+            }
+        }
+
+        private companion object {
+            const val SOON_HOURS = 3L
+            const val WEEK_DAYS = 7L
+            const val MONTH_DAYS = 30L
         }
     }
 

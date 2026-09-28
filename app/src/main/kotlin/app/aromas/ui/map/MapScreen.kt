@@ -82,6 +82,7 @@ fun MapScreen(
     val categories by viewModel.categories.collectAsStateWithLifecycle()
     val visited by viewModel.visited.collectAsStateWithLifecycle()
     var selected by remember { mutableStateOf<Place?>(null) }
+    var showWhenSheet by remember { mutableStateOf(false) }
     val byId = remember(places) { places.associateBy { it.id } }
     // The map is configured once inside an async style load; read the latest
     // filtered set and lookup through these so a filter toggled while the style
@@ -131,13 +132,21 @@ fun MapScreen(
             filter = filter,
             language = language,
             onToggleCollection = viewModel::toggleCollection,
-            onToggleSeason = viewModel::toggleSeason,
             onToggleCategory = viewModel::toggleCategory,
             onCycleVisited = viewModel::cycleVisited,
-            onToggleNowOnly = viewModel::toggleNowOnly,
+            onOpenWhen = { showWhenSheet = true },
             onClear = viewModel::clear,
             modifier = Modifier.align(Alignment.TopCenter),
         )
+        if (showWhenSheet) {
+            WhenSheet(
+                filter = filter,
+                onSetWhenMode = viewModel::setWhenMode,
+                onToggleSeason = viewModel::toggleSeason,
+                onToggleMonth = viewModel::toggleMonth,
+                onDismiss = { showWhenSheet = false },
+            )
+        }
         selected?.let { place ->
             PlaceInfoCard(
                 place = place,
