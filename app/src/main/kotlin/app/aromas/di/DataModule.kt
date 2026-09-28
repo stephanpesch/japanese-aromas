@@ -9,6 +9,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import java.time.Clock
+import java.time.ZoneId
 import javax.inject.Singleton
 
 @Module
@@ -23,7 +24,12 @@ object DataModule {
             context.assets.open("places.json").use { PlaceJsonParser.parse(it) },
         )
 
-    /** The system clock, injected so time-dependent filters ("now") stay testable. */
+    /**
+     * "Now" for the availability filter, injected so it stays testable. It runs in
+     * Japan's time zone: every place is in Japan and the researched opening hours
+     * are given in JST, so the filter must compare against the current time in
+     * Japan, not the device's local time zone.
+     */
     @Provides
-    fun provideClock(): Clock = Clock.systemDefaultZone()
+    fun provideClock(): Clock = Clock.system(ZoneId.of("Asia/Tokyo"))
 }
