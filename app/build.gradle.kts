@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.play.services)
     implementation(libs.coil.compose)
+    implementation(libs.okhttp)
     implementation(libs.play.services.location)
     implementation(libs.maplibre.android)
     implementation(libs.hilt.android)
