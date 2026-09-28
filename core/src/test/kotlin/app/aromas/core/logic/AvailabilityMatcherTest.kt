@@ -64,6 +64,20 @@ class AvailabilityMatcherTest {
     }
 
     @Test
+    fun `a time-only opening-hours window still respects the place season`() {
+        // A plum garden: open daytime, but the scent is only there in season (Dec-Mar).
+        val plumGarden =
+            place(
+                months = listOf(12, 1, 2, 3),
+                yearRound = false,
+                availability = listOf(Availability(fromTime = "06:00", toTime = "19:00")),
+            )
+        assertTrue(AvailabilityMatcher.isAvailableNow(plumGarden, at(2, 15, 10))) // in season, open
+        assertFalse(AvailabilityMatcher.isAvailableNow(plumGarden, at(7, 15, 10))) // out of season
+        assertFalse(AvailabilityMatcher.isAvailableNow(plumGarden, at(2, 15, 22))) // in season, closed
+    }
+
+    @Test
     fun `a night window wraps midnight`() {
         val night = place(yearRound = true, availability = listOf(Availability(fromTime = "22:00", toTime = "02:00")))
         assertTrue(AvailabilityMatcher.isAvailableNow(night, at(3, 3, 23)))

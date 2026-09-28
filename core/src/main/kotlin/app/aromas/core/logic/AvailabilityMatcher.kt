@@ -25,7 +25,7 @@ object AvailabilityMatcher {
         if (place.availability.isEmpty()) {
             availableThisMonth(place, now.monthValue)
         } else {
-            place.availability.any { matches(it, now) }
+            place.availability.any { matches(it, place, now) }
         }
 
     /** Fallback for places with no structured window: month/year-round only. */
@@ -36,16 +36,20 @@ object AvailabilityMatcher {
 
     private fun matches(
         window: Availability,
+        place: Place,
         now: LocalDateTime,
-    ): Boolean = dateInRange(window, now.toLocalDate()) && timeInRange(window, now.toLocalTime())
+    ): Boolean = dateInRange(window, place, now.toLocalDate()) && timeInRange(window, now.toLocalTime())
 
     private fun dateInRange(
         window: Availability,
+        place: Place,
         today: LocalDate,
     ): Boolean {
         val from = parseMonthDay(window.from)
         val to = parseMonthDay(window.to)
-        if (from == null || to == null) return true // unbounded day range
+        // A window with no explicit day range (e.g. an opening-hours-only window)
+        // still respects the place's season, so a time window never overrides it.
+        if (from == null || to == null) return availableThisMonth(place, today.monthValue)
         val day = MonthDay(today.monthValue, today.dayOfMonth)
         // A range whose start is after its end wraps the year end (e.g. Dec–Feb).
         return if (from <= to) day in from..to else day >= from || day <= to

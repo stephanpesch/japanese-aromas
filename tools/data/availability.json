@@ -1,0 +1,474 @@
+{
+  "aroma-1": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-6": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "18:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-16": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-18": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-19": [
+    {
+      "von_zeit": "06:00",
+      "bis_zeit": "19:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-35": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "16:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-41": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "12:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-45": [
+    {
+      "von_zeit": "09:30",
+      "bis_zeit": "17:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-52": [
+    {
+      "von_zeit": "05:00",
+      "bis_zeit": "18:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-54": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "16:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-74": [
+    {
+      "von_zeit": "09:30",
+      "bis_zeit": "16:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-75": [
+    {
+      "von_zeit": "06:30",
+      "bis_zeit": "18:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-85": [
+    {
+      "von_zeit": "10:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-86": [
+    {
+      "von_zeit": "06:30",
+      "bis_zeit": "19:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "aroma-95": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-2": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-4": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-5": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-6": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-11": [
+    {
+      "von_zeit": "07:00",
+      "bis_zeit": "18:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-12": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-14": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-16": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-17": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-18": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-19": [
+    {
+      "von_zeit": "09:30",
+      "bis_zeit": "16:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-20": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-21": [
+    {
+      "von_zeit": "08:45",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-22": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-25": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-26": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-27": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-28": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "16:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-30": [
+    {
+      "von_zeit": "07:30",
+      "bis_zeit": "18:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-33": [
+    {
+      "von_zeit": "07:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "scenery-36": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-7": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-30": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-54": [
+    {
+      "von_zeit": "07:00",
+      "bis_zeit": "19:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-62": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-83": [
+    {
+      "von_zeit": "10:00",
+      "bis_zeit": "15:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-89": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "water-90": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-2": [
+    {
+      "von_zeit": "08:45",
+      "bis_zeit": "17:10",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-3": [
+    {
+      "von_zeit": "10:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-5": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "16:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-18": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-21": [
+    {
+      "von_zeit": "08:30",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-27": [
+    {
+      "hinweis_de": "Glockenschlag 6/12/15/18 Uhr",
+      "hinweis_ja": "時の鐘 6・12・15・18時"
+    }
+  ],
+  "sound-32": [
+    {
+      "hinweis_de": "Glockenschlag 6/12/18 Uhr",
+      "hinweis_ja": "時の鐘 6・12・18時"
+    }
+  ],
+  "sound-41": [
+    {
+      "von_zeit": "04:30",
+      "bis_zeit": "16:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-55": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "16:50",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-58": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-59": [
+    {
+      "hinweis_de": "Zeitglocke 6/9/12/15/18 Uhr",
+      "hinweis_ja": "時報鐘 6・9・12・15・18時"
+    }
+  ],
+  "sound-70": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:30",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-77": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-81": [
+    {
+      "von_zeit": "08:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-83": [
+    {
+      "hinweis_de": "Zeittrommel 6/12/18 Uhr",
+      "hinweis_ja": "刻太鼓 6・12・18時"
+    }
+  ],
+  "sound-86": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ],
+  "sound-94": [
+    {
+      "von_zeit": "09:00",
+      "bis_zeit": "17:00",
+      "hinweis_de": "typische Öffnungszeiten",
+      "hinweis_ja": "通常の公開時間"
+    }
+  ]
+}
