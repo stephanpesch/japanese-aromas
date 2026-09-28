@@ -63,6 +63,7 @@ fun MapScreen(
     val mapView = rememberMapViewWithLifecycle()
     val places by viewModel.filtered.collectAsStateWithLifecycle()
     val filter by viewModel.filter.collectAsStateWithLifecycle()
+    val categories by viewModel.categories.collectAsStateWithLifecycle()
     var selected by remember { mutableStateOf<Place?>(null) }
     val byId = remember(places) { places.associateBy { it.id } }
     // The map is configured once inside an async style load; read the latest
@@ -87,7 +88,7 @@ fun MapScreen(
         }
         MapFilterBar(
             collections = viewModel.collections,
-            categories = viewModel.categories,
+            categories = categories,
             filter = filter,
             language = language,
             onToggleCollection = viewModel::toggleCollection,

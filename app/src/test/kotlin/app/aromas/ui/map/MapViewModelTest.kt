@@ -23,8 +23,21 @@ class MapViewModelTest {
 
     @Test
     fun `categories are the distinct dataset categories in order`() {
-        assertEquals(listOf("Blumen & Blüten", "Meer & Küste", "Tee"), viewModel().categories)
+        assertEquals(listOf("Blumen & Blüten", "Meer & Küste", "Tee"), viewModel().categories.value)
     }
+
+    @Test
+    fun `categories are scoped to the selected collection`() =
+        runTest {
+            val garden = place(number = 9, collection = PlaceCollection.SCENERY, categories = listOf("Garten"))
+            val vm = MapViewModel(PlaceRepository(listOf(flower, garden)))
+            vm.categories.test {
+                assertEquals(listOf("Blumen & Blüten", "Garten"), awaitItem()) // no collection filter: all
+                vm.toggleCollection(PlaceCollection.SCENERY)
+                assertEquals(listOf("Garten"), awaitItem()) // scoped to scenery
+                cancelAndConsumeRemainingEvents()
+            }
+        }
 
     @Test
     fun `no filter shows every place`() =
@@ -34,6 +47,16 @@ class MapViewModelTest {
                 cancelAndConsumeRemainingEvents()
             }
         }
+
+    @Test
+    fun `narrowing to another collection drops out-of-scope selected categories`() {
+        val garden = place(number = 9, collection = PlaceCollection.SCENERY, categories = listOf("Garten"))
+        val vm = MapViewModel(PlaceRepository(listOf(flower, garden)))
+        vm.toggleCategory("Blumen & Blüten")
+        vm.toggleCollection(PlaceCollection.SCENERY)
+        assertEquals(emptySet<String>(), vm.filter.value.categories)
+        assertEquals(setOf(PlaceCollection.SCENERY), vm.filter.value.collections)
+    }
 
     @Test
     fun `collection filter keeps only the selected collection`() =
