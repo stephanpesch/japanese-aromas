@@ -3,16 +3,22 @@ package app.aromas.ui.detail
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.ImageNotSupported
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -23,6 +29,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
@@ -41,7 +48,7 @@ import app.aromas.core.model.Place
 import app.aromas.ui.map.CollectionColors
 import app.aromas.ui.map.OPENFREEMAP_STYLE_URL
 import app.aromas.ui.map.rememberMapViewWithLifecycle
-import coil.compose.AsyncImage
+import coil.compose.SubcomposeAsyncImage
 import org.maplibre.android.camera.CameraPosition
 import org.maplibre.android.geometry.LatLng
 import org.maplibre.android.maps.Style
@@ -59,6 +66,7 @@ private const val MARKER_RADIUS = 8f
 private const val MARKER_STROKE = 2f
 private const val HERO_HEIGHT_DP = 220
 private const val MAP_HEIGHT_DP = 200
+private const val PLACEHOLDER_ICON_DP = 48
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -91,10 +99,12 @@ fun DetailScreen(
                     .verticalScroll(rememberScrollState()),
         ) {
             place.image?.let { image ->
-                AsyncImage(
+                SubcomposeAsyncImage(
                     model = if (image.startsWith("http")) image else "file:///android_asset/$image",
                     contentDescription = place.title(language),
                     contentScale = ContentScale.Crop,
+                    loading = { HeroPlaceholder(loading = true) },
+                    error = { HeroPlaceholder(loading = false) },
                     modifier =
                         Modifier
                             .fillMaxWidth()
@@ -186,6 +196,28 @@ private fun launchView(
     uri: Uri,
 ) {
     runCatching { context.startActivity(Intent(Intent.ACTION_VIEW, uri)) }
+}
+
+@Composable
+private fun HeroPlaceholder(loading: Boolean) {
+    Box(
+        modifier =
+            Modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colorScheme.surfaceVariant),
+        contentAlignment = Alignment.Center,
+    ) {
+        if (loading) {
+            CircularProgressIndicator()
+        } else {
+            Icon(
+                imageVector = Icons.Filled.ImageNotSupported,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.size(PLACEHOLDER_ICON_DP.dp),
+            )
+        }
+    }
 }
 
 @Composable
