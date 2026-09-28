@@ -41,4 +41,27 @@
     <string name="hide_visited">訪問済みを隠す</string>
     <string name="visited_all">訪問済み</string>
     <string name="visited_only">訪問済みのみ</string>
+    <string name="when_button">いつ？</string>
+    <string name="when_any">指定なし</string>
+    <string name="when_soon">まもなく</string>
+    <string name="when_today">今日</string>
+    <string name="when_this_week">今週</string>
+    <string name="when_next_30_days">今後30日</string>
+    <string name="section_available">利用可能</string>
+    <string name="section_season">季節</string>
+    <string name="section_month">月</string>
+    <string-array name="month_short">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
 </resources>

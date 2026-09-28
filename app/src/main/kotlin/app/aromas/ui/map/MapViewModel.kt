@@ -49,7 +49,9 @@ class MapViewModel
 
         fun toggleSeason(season: Season) = store.toggleSeason(season)
 
-        fun toggleNowOnly() = store.toggleNowOnly()
+        fun toggleMonth(month: Int) = store.toggleMonth(month)
+
+        fun setWhenMode(mode: WhenMode) = store.setWhenMode(mode)
 
         fun cycleVisited() = store.cycleVisited()
 

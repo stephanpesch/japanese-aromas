@@ -34,19 +34,18 @@ fun MapFilterBar(
     filter: MapFilter,
     language: Language,
     onToggleCollection: (PlaceCollection) -> Unit,
-    onToggleSeason: (Season) -> Unit,
     onToggleCategory: (String) -> Unit,
     onCycleVisited: () -> Unit,
-    onToggleNowOnly: () -> Unit,
+    onOpenWhen: () -> Unit,
     onClear: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val whenActive = filter.whenMode != WhenMode.ANY || filter.seasons.isNotEmpty() || filter.months.isNotEmpty()
     val hasActiveFilter =
         filter.collections.isNotEmpty() ||
-            filter.seasons.isNotEmpty() ||
             filter.categories.isNotEmpty() ||
             filter.visited != VisitedMode.ALL ||
-            filter.nowOnly
+            whenActive
     Column(
         modifier =
             modifier
@@ -84,16 +83,9 @@ fun MapFilterBar(
             }
             item {
                 FilterChip(
-                    selected = filter.nowOnly,
-                    onClick = onToggleNowOnly,
-                    label = { Text(stringResource(R.string.filter_now)) },
-                )
-            }
-            items(Season.entries.toList()) { season ->
-                FilterChip(
-                    selected = season in filter.seasons,
-                    onClick = { onToggleSeason(season) },
-                    label = { Text(stringResource(seasonLabel(season))) },
+                    selected = whenActive,
+                    onClick = onOpenWhen,
+                    label = { Text(stringResource(R.string.when_button)) },
                 )
             }
             item {
@@ -138,7 +130,7 @@ private fun visitedChipLabel(mode: VisitedMode): Int =
         VisitedMode.HIDE_VISITED -> R.string.hide_visited
     }
 
-private fun seasonLabel(season: Season): Int =
+internal fun seasonLabel(season: Season): Int =
     when (season) {
         Season.SPRING -> R.string.season_spring
         Season.SUMMER -> R.string.season_summer

@@ -102,7 +102,7 @@ class FilterStoreTest {
     @Test
     fun `now filter keeps places available this month plus year-round`() {
         val s = store() // clock pinned to July
-        s.toggleNowOnly()
+        s.setWhenMode(WhenMode.NOW)
         assertEquals(listOf(1, 3), s.result())
     }
 
@@ -113,8 +113,24 @@ class FilterStoreTest {
         val augustFestival =
             place(number = 11, months = emptyList(), availability = listOf(Availability("08-02", "08-07")))
         val s = store(listOf(nowFestival, augustFestival))
-        s.toggleNowOnly()
+        s.setWhenMode(WhenMode.NOW)
         assertEquals(listOf(10), s.result())
+    }
+
+    @Test
+    fun `month filter matches the selected months and keeps year-round`() {
+        val s = store()
+        s.toggleMonth(3) // coast is a March aroma; tea is year-round; flower (summer) drops out.
+        assertEquals(listOf(2, 3), s.result())
+    }
+
+    @Test
+    fun `setting the same when-mode again clears it`() {
+        val s = store()
+        s.setWhenMode(WhenMode.NOW)
+        assertEquals(WhenMode.NOW, s.filter.value.whenMode)
+        s.setWhenMode(WhenMode.NOW)
+        assertEquals(WhenMode.ANY, s.filter.value.whenMode)
     }
 
     @Test
@@ -136,7 +152,7 @@ class FilterStoreTest {
     fun `clear removes all active filters`() {
         val s = store()
         s.toggleCategory("Tee")
-        s.toggleNowOnly()
+        s.setWhenMode(WhenMode.NOW)
         assertEquals(listOf(3), s.result())
         s.clear()
         assertEquals(MapFilter(), s.filter.value)

@@ -7,25 +7,55 @@ import java.time.LocalDateTime
 import java.time.LocalTime
 
 /**
- * Decides whether a place is available "now" — on the current day and at the
- * current time of day.
+ * Decides whether a place is available within a time interval — the engine behind
+ * every "when" filter (now, soon, today, this week, the next 30 days, a custom
+ * date range).
  *
  * A place with structured [Place.availability] windows is available when the
- * moment falls inside any one of them (each window matches independently). A
- * place without any window falls back to the coarse month/year-round season
- * data, and is then treated as available all day: that keeps the ~81 places
- * whose season is only known to the month honest — day- and time-precision are
- * applied only where they are real (festivals, venue opening hours).
+ * interval overlaps any one of them (each window matches independently, on both
+ * its day range and its time-of-day range). A place without any window falls back
+ * to the coarse month/year-round season data, and is then treated as available
+ * all day: that keeps the places whose season is only known to the month honest —
+ * day- and time-precision are applied only where they are real (festivals, venue
+ * opening hours).
  */
 object AvailabilityMatcher {
+    /** Whether the place is available at the single instant [now]. */
     fun isAvailableNow(
         place: Place,
         now: LocalDateTime,
+    ): Boolean = isAvailableInRange(place, now, now)
+
+    /** Whether the place is available at some instant in the inclusive interval [from]..[to]. */
+    fun isAvailableInRange(
+        place: Place,
+        from: LocalDateTime,
+        to: LocalDateTime,
+    ): Boolean {
+        if (to.isBefore(from)) return false
+        val firstDay = from.toLocalDate()
+        val lastDay = to.toLocalDate()
+        return generateSequence(firstDay) { it.plusDays(1) }
+            .takeWhile { !it.isAfter(lastDay) }
+            .take(MAX_RANGE_DAYS)
+            .any { day ->
+                val dayStart = if (day == firstDay) from.toLocalTime() else LocalTime.MIN
+                val dayEnd = if (day == lastDay) to.toLocalTime() else LocalTime.MAX
+                availableOnDay(place, day, dayStart, dayEnd)
+            }
+    }
+
+    /** Whether the place is available on [day] at some time in [fromTime]..[toTime]. */
+    private fun availableOnDay(
+        place: Place,
+        day: LocalDate,
+        fromTime: LocalTime,
+        toTime: LocalTime,
     ): Boolean =
         if (place.availability.isEmpty()) {
-            availableThisMonth(place, now.monthValue)
+            availableThisMonth(place, day.monthValue)
         } else {
-            place.availability.any { matches(it, place, now) }
+            place.availability.any { dateInRange(it, place, day) && timeOverlaps(it, fromTime, toTime) }
         }
 
     /** Fallback for places with no structured window: month/year-round only. */
@@ -33,12 +63,6 @@ object AvailabilityMatcher {
         place: Place,
         month: Int,
     ): Boolean = place.yearRound || place.months.isEmpty() || month in place.months
-
-    private fun matches(
-        window: Availability,
-        place: Place,
-        now: LocalDateTime,
-    ): Boolean = dateInRange(window, place, now.toLocalDate()) && timeInRange(window, now.toLocalTime())
 
     private fun dateInRange(
         window: Availability,
@@ -55,19 +79,20 @@ object AvailabilityMatcher {
         return if (from <= to) day in from..to else day >= from || day <= to
     }
 
-    private fun timeInRange(
+    /** Whether the window's daily opening time range overlaps the query interval [fromTime]..[toTime]. */
+    private fun timeOverlaps(
         window: Availability,
-        now: LocalTime,
+        fromTime: LocalTime,
+        toTime: LocalTime,
     ): Boolean {
-        val from = parseTime(window.fromTime)
-        val to = parseTime(window.toTime)
-        if (from == null || to == null) return true // unbounded time window
+        val open = parseTime(window.fromTime)
+        val close = parseTime(window.toTime)
+        if (open == null || close == null) return true // unbounded time window
         // A window whose start is after its end wraps midnight (e.g. 22:00–02:00).
-        return if (!from.isAfter(to)) {
-            !now.isBefore(from) && !now.isAfter(to)
+        return if (!open.isAfter(close)) {
+            !fromTime.isAfter(close) && !toTime.isBefore(open)
         } else {
-            !now.isBefore(from) ||
-                !now.isAfter(to)
+            !toTime.isBefore(open) || !fromTime.isAfter(close)
         }
     }
 
@@ -96,4 +121,5 @@ object AvailabilityMatcher {
 
     private const val MONTH_DAY_PARTS = 2
     private const val TIME_PARTS = 2
+    private const val MAX_RANGE_DAYS = 400
 }
