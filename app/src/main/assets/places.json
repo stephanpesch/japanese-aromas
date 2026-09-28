@@ -5892,7 +5892,17 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "8月2〜7日（ねぶた・ねぷた）",
-    "saison_de": "2.–7. August (Nebuta/Neputa)"
+    "saison_de": "2.–7. August (Nebuta/Neputa)",
+    "verfuegbarkeit": [
+      {
+        "von": "08-02",
+        "bis": "08-07",
+        "von_zeit": "19:00",
+        "bis_zeit": "21:00",
+        "hinweis_de": "abends",
+        "hinweis_ja": "夜"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7148,7 +7158,15 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "10月14〜15日",
-    "saison_de": "14.–15. Oktober"
+    "saison_de": "14.–15. Oktober",
+    "verfuegbarkeit": [
+      {
+        "von": "10-14",
+        "bis": "10-15",
+        "hinweis_de": "tagsüber",
+        "hinweis_ja": "日中"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7449,7 +7467,17 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "8月12〜15日",
-    "saison_de": "12.–15. August"
+    "saison_de": "12.–15. August",
+    "verfuegbarkeit": [
+      {
+        "von": "08-12",
+        "bis": "08-15",
+        "von_zeit": "18:00",
+        "bis_zeit": "22:30",
+        "hinweis_de": "abends",
+        "hinweis_ja": "夜"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7553,7 +7581,15 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "7月1〜15日",
-    "saison_de": "1.–15. Juli"
+    "saison_de": "1.–15. Juli",
+    "verfuegbarkeit": [
+      {
+        "von": "07-01",
+        "bis": "07-15",
+        "hinweis_de": "Höhepunkt „Oiyama“ am 15. Juli, 4:59 Uhr",
+        "hinweis_ja": "追い山は7月15日早朝4時59分"
+      }
+    ]
   },
   {
     "collection": "sound",
@@ -7616,7 +7652,15 @@
     ],
     "ganzjaehrig": false,
     "saison_ja": "11月2〜4日",
-    "saison_de": "2.–4. November"
+    "saison_de": "2.–4. November",
+    "verfuegbarkeit": [
+      {
+        "von": "11-02",
+        "bis": "11-04",
+        "hinweis_de": "tagsüber (Umzüge)",
+        "hinweis_ja": "日中（巡行）"
+      }
+    ]
   },
   {
     "collection": "sound",

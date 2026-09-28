@@ -40,7 +40,27 @@ data class Place(
     @SerialName("ganzjaehrig") val yearRound: Boolean = false,
     @SerialName("kategorie") val category: String? = null,
     @SerialName("kategorien") val categories: List<String> = emptyList(),
+    @SerialName("verfuegbarkeit") val availability: List<Availability> = emptyList(),
 ) {
     /** Stable identity, unique across all collections (e.g. "aroma-3"). */
     val id: String get() = "${collection.name.lowercase()}-$number"
 }
+
+/**
+ * When a place can actually be visited/heard/smelled: an optional day-of-year
+ * range (`from`/`to` as `MM-DD`) and an optional time-of-day window
+ * (`fromTime`/`toTime` as `HH:MM`). A missing bound means "unbounded on that
+ * axis": no dates = any day, no times = any time. Both ranges may wrap the
+ * boundary (e.g. a winter date range Dec–Feb, or a night-time window). The
+ * label ([noteDe]/[noteJa], e.g. "abends" or "typische Öffnungszeiten") is shown
+ * to the user; it never drives filtering.
+ */
+@Serializable
+data class Availability(
+    @SerialName("von") val from: String? = null,
+    @SerialName("bis") val to: String? = null,
+    @SerialName("von_zeit") val fromTime: String? = null,
+    @SerialName("bis_zeit") val toTime: String? = null,
+    @SerialName("hinweis_de") val noteDe: String? = null,
+    @SerialName("hinweis_ja") val noteJa: String? = null,
+)

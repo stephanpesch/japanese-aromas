@@ -13,7 +13,7 @@
     <string name="back">Zurück</string>
     <string name="label_location">Ort</string>
     <string name="label_source">Duftquelle</string>
-    <string name="label_season">Jahreszeit</string>
+    <string name="label_when">Wann</string>
     <string name="season_spring">Frühling</string>
     <string name="season_summer">Sommer</string>
     <string name="season_autumn">Herbst</string>

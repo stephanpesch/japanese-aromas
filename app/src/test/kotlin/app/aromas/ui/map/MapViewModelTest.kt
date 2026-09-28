@@ -2,6 +2,7 @@ package app.aromas.ui.map
 
 import app.aromas.core.data.PlaceRepository
 import app.aromas.core.logic.Season
+import app.aromas.core.model.Availability
 import app.aromas.core.model.PlaceCollection
 import app.aromas.core.model.UserLocation
 import app.aromas.core.place
@@ -152,6 +153,29 @@ class MapViewModelTest {
                 vm.toggleNowOnly()
                 // flower (Jun-Aug) is in season in July; tea is year-round; coast (spring) drops out.
                 assertEquals(listOf(1, 3), awaitItem().map { it.number })
+                cancelAndConsumeRemainingEvents()
+            }
+        }
+
+    @Test
+    fun `now filter respects structured day-range availability`() =
+        runTest {
+            // Clock pinned to 15 July; only the festival whose day range covers today survives.
+            val nowFestival =
+                place(number = 10, months = emptyList(), availability = listOf(Availability("07-10", "07-20")))
+            val augustFestival =
+                place(number = 11, months = emptyList(), availability = listOf(Availability("08-02", "08-07")))
+            val vm =
+                MapViewModel(
+                    PlaceRepository(listOf(nowFestival, augustFestival)),
+                    FakeLocationProvider,
+                    FakeVisitedStore(),
+                    JULY_CLOCK,
+                )
+            vm.filtered.test {
+                assertEquals(listOf(10, 11), awaitItem().map { it.number })
+                vm.toggleNowOnly()
+                assertEquals(listOf(10), awaitItem().map { it.number })
                 cancelAndConsumeRemainingEvents()
             }
         }

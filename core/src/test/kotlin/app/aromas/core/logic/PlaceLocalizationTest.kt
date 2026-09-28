@@ -1,5 +1,6 @@
 package app.aromas.core.logic
 
+import app.aromas.core.model.Availability
 import app.aromas.core.model.Language
 import app.aromas.core.model.PlaceCollection
 import app.aromas.core.place
@@ -49,5 +50,45 @@ class PlaceLocalizationTest {
     fun `secondary title is the other language`() {
         assertEquals("Kitami", p.secondaryTitle(Language.JAPANESE))
         assertEquals("北見", p.secondaryTitle(Language.GERMAN))
+    }
+
+    @Test
+    fun `whenText is the plain season when there is no availability`() {
+        assertEquals(p.seasonDe, p.whenText(Language.GERMAN))
+    }
+
+    @Test
+    fun `whenText appends the time window and note`() {
+        val festival =
+            place(
+                availability =
+                    listOf(
+                        Availability(
+                            from = "08-12",
+                            to = "08-15",
+                            fromTime = "18:00",
+                            toTime = "22:30",
+                            noteDe = "abends",
+                        ),
+                    ),
+            ).copy(seasonDe = "12.–15. August")
+        assertEquals("12.–15. August · 18:00–22:30 (abends)", festival.whenText(Language.GERMAN))
+    }
+
+    @Test
+    fun `whenText uses full-width parentheses for the japanese note`() {
+        val festival =
+            place(availability = listOf(Availability(fromTime = "18:00", toTime = "22:30", noteJa = "夜")))
+                .copy(seasonJa = "8月12〜15日")
+        assertEquals("8月12〜15日 · 18:00–22:30（夜）", festival.whenText(Language.JAPANESE))
+    }
+
+    @Test
+    fun `whenText shows a note alone when there is no time window`() {
+        val hours =
+            place(
+                availability = listOf(Availability(noteDe = "typische Öffnungszeiten")),
+            ).copy(seasonDe = "ganzjährig")
+        assertEquals("ganzjährig · typische Öffnungszeiten", hours.whenText(Language.GERMAN))
     }
 }
