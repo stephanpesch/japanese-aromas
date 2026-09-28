@@ -28,6 +28,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.settings.AppLanguage
 import app.aromas.ui.detail.DetailScreen
@@ -100,8 +101,10 @@ fun AromasApp(viewModel: PlaceViewModel = hiltViewModel()) {
             when (tab) {
                 AromaTab.MAP -> MapScreen(language, onOpenDetail = { detailId = it.id })
                 AromaTab.NEARBY -> NearbyScreen(language, onOpenDetail = { detailId = it.id })
-                AromaTab.LIST ->
-                    PlaceListContent(viewModel.places, language, onOpenDetail = { detailId = it.id })
+                AromaTab.LIST -> {
+                    val visited by viewModel.visited.collectAsStateWithLifecycle()
+                    PlaceListContent(viewModel.places, language, visited, onOpenDetail = { detailId = it.id })
+                }
             }
         }
     }

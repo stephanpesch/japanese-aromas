@@ -35,4 +35,7 @@
     <string name="detail_open_map">地図アプリで開く</string>
     <string name="detail_wikipedia">ウィキペディア</string>
     <string name="locate_me">現在地へ</string>
+    <string name="visited_mark">訪問済みにする</string>
+    <string name="visited_done">訪問済み</string>
+    <string name="hide_visited">訪問済みを隠す</string>
 </resources>

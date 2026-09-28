@@ -9,21 +9,24 @@ import app.aromas.core.model.Place
 import app.aromas.core.model.PlaceCollection
 import app.aromas.core.model.UserLocation
 import app.aromas.location.LocationProvider
+import app.aromas.visited.VisitedStore
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import javax.inject.Inject
 
-/** The active map filter: selected collections, categories (OR) and seasons. */
+/** The active map filter: selected collections, categories (OR), seasons and the visited toggle. */
 data class MapFilter(
     val collections: Set<PlaceCollection> = emptySet(),
     val categories: Set<String> = emptySet(),
     val seasons: Set<Season> = emptySet(),
+    val hideVisited: Boolean = false,
 )
 
 @HiltViewModel
@@ -32,6 +35,7 @@ class MapViewModel
     constructor(
         repository: PlaceRepository,
         private val locationProvider: LocationProvider,
+        private val visitedStore: VisitedStore,
     ) : ViewModel() {
         private val all = repository.all()
 
@@ -44,6 +48,9 @@ class MapViewModel
         private val filterState = MutableStateFlow(MapFilter())
         val filter: StateFlow<MapFilter> = filterState.asStateFlow()
 
+        /** Places the user has marked as visited, for dimming their markers. */
+        val visited: StateFlow<Set<String>> = visitedStore.visited
+
         /** Category chips scoped to the selected collections (all collections' if none). */
         val categories: StateFlow<List<String>> =
             filterState
@@ -51,9 +58,10 @@ class MapViewModel
                 .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), categoriesFor(emptySet()))
 
         val filtered: StateFlow<List<Place>> =
-            filterState
-                .map { active -> apply(active) }
-                .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), all)
+            combine(filterState, visitedStore.visited) { active, visited ->
+                val base = apply(active)
+                if (active.hideVisited) base.filterNot { it.id in visited } else base
+            }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), all)
 
         fun toggleCollection(collection: PlaceCollection) {
             filterState.update {
@@ -71,6 +79,10 @@ class MapViewModel
 
         fun toggleSeason(season: Season) {
             filterState.update { it.copy(seasons = it.seasons.toggle(season)) }
+        }
+
+        fun toggleHideVisited() {
+            filterState.update { it.copy(hideVisited = !it.hideVisited) }
         }
 
         fun clear() {

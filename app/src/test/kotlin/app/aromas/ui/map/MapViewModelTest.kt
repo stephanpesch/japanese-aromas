@@ -7,8 +7,12 @@ import app.aromas.core.model.UserLocation
 import app.aromas.core.place
 import app.aromas.location.LocationProvider
 import app.aromas.ui.testutil.MainDispatcherExtension
+import app.aromas.visited.VisitedStore
 import app.cash.turbine.test
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.test.runTest
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
@@ -18,6 +22,21 @@ private object FakeLocationProvider : LocationProvider {
     override suspend fun currentLocation(): UserLocation? = null
 }
 
+private class FakeVisitedStore(
+    initial: Set<String> = emptySet(),
+) : VisitedStore {
+    private val state = MutableStateFlow(initial)
+    override val visited: StateFlow<Set<String>> = state.asStateFlow()
+
+    override fun toggle(id: String) {
+        state.value =
+            state.value
+                .toMutableSet()
+                .apply { if (!add(id)) remove(id) }
+                .toSet()
+    }
+}
+
 @OptIn(ExperimentalCoroutinesApi::class)
 @ExtendWith(MainDispatcherExtension::class)
 class MapViewModelTest {
@@ -25,7 +44,8 @@ class MapViewModelTest {
     private val coast = place(number = 2, categories = listOf("Meer & Küste"), months = listOf(3, 4, 5))
     private val tea = place(number = 3, categories = listOf("Tee"), months = emptyList(), yearRound = true)
 
-    private fun viewModel() = MapViewModel(PlaceRepository(listOf(flower, coast, tea)), FakeLocationProvider)
+    private fun viewModel(visited: VisitedStore = FakeVisitedStore()) =
+        MapViewModel(PlaceRepository(listOf(flower, coast, tea)), FakeLocationProvider, visited)
 
     @Test
     fun `categories are the distinct dataset categories in order`() {
@@ -36,7 +56,7 @@ class MapViewModelTest {
     fun `categories are scoped to the selected collection`() =
         runTest {
             val garden = place(number = 9, collection = PlaceCollection.SCENERY, categories = listOf("Garten"))
-            val vm = MapViewModel(PlaceRepository(listOf(flower, garden)), FakeLocationProvider)
+            val vm = MapViewModel(PlaceRepository(listOf(flower, garden)), FakeLocationProvider, FakeVisitedStore())
             vm.categories.test {
                 assertEquals(listOf("Blumen & Blüten", "Garten"), awaitItem()) // no collection filter: all
                 vm.toggleCollection(PlaceCollection.SCENERY)
@@ -57,7 +77,7 @@ class MapViewModelTest {
     @Test
     fun `narrowing to another collection drops out-of-scope selected categories`() {
         val garden = place(number = 9, collection = PlaceCollection.SCENERY, categories = listOf("Garten"))
-        val vm = MapViewModel(PlaceRepository(listOf(flower, garden)), FakeLocationProvider)
+        val vm = MapViewModel(PlaceRepository(listOf(flower, garden)), FakeLocationProvider, FakeVisitedStore())
         vm.toggleCategory("Blumen & Blüten")
         vm.toggleCollection(PlaceCollection.SCENERY)
         assertEquals(emptySet<String>(), vm.filter.value.categories)
@@ -69,7 +89,7 @@ class MapViewModelTest {
         runTest {
             val scene =
                 place(number = 9, collection = PlaceCollection.SCENERY, categories = emptyList(), months = emptyList())
-            val vm = MapViewModel(PlaceRepository(listOf(flower, scene)), FakeLocationProvider)
+            val vm = MapViewModel(PlaceRepository(listOf(flower, scene)), FakeLocationProvider, FakeVisitedStore())
             assertEquals(listOf(PlaceCollection.AROMA, PlaceCollection.SCENERY), vm.collections)
             vm.filtered.test {
                 assertEquals(listOf(1, 9), awaitItem().map { it.number })
@@ -100,6 +120,21 @@ class MapViewModelTest {
                 vm.toggleSeason(Season.SPRING)
                 // coast is a spring aroma; tea is year-round; flower (summer) drops out.
                 assertEquals(listOf(2, 3), awaitItem().map { it.number })
+                cancelAndConsumeRemainingEvents()
+            }
+        }
+
+    @Test
+    fun `hide-visited filter drops visited places and clears with the others`() =
+        runTest {
+            val vm = viewModel(FakeVisitedStore(setOf(coast.id)))
+            vm.filtered.test {
+                assertEquals(listOf(1, 2, 3), awaitItem().map { it.number })
+                vm.toggleHideVisited()
+                // coast (number 2) is visited, so it drops out.
+                assertEquals(listOf(1, 3), awaitItem().map { it.number })
+                vm.clear()
+                assertEquals(listOf(1, 2, 3), awaitItem().map { it.number })
                 cancelAndConsumeRemainingEvents()
             }
         }

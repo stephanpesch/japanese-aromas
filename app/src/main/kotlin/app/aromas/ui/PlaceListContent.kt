@@ -12,6 +12,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.unit.dp
 import app.aromas.core.logic.season
 import app.aromas.core.logic.secondaryTitle
@@ -19,16 +20,19 @@ import app.aromas.core.logic.title
 import app.aromas.core.model.Language
 import app.aromas.core.model.Place
 
+private const val VISITED_ROW_ALPHA = 0.4f
+
 @Composable
 fun PlaceListContent(
     places: List<Place>,
     language: Language,
+    visited: Set<String>,
     onOpenDetail: (Place) -> Unit,
     modifier: Modifier = Modifier,
 ) {
     LazyColumn(modifier = modifier.fillMaxSize()) {
         items(places, key = { it.id }) { place ->
-            PlaceRow(place, language, onClick = { onOpenDetail(place) })
+            PlaceRow(place, language, isVisited = place.id in visited, onClick = { onOpenDetail(place) })
             HorizontalDivider()
         }
     }
@@ -38,6 +42,7 @@ fun PlaceListContent(
 private fun PlaceRow(
     place: Place,
     language: Language,
+    isVisited: Boolean,
     onClick: () -> Unit,
 ) {
     Column(
@@ -45,6 +50,7 @@ private fun PlaceRow(
             Modifier
                 .fillMaxWidth()
                 .clickable(onClick = onClick)
+                .alpha(if (isVisited) VISITED_ROW_ALPHA else 1f)
                 .padding(horizontal = 16.dp, vertical = 12.dp),
     ) {
         Text(

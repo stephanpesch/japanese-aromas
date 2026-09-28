@@ -2,6 +2,8 @@ package app.aromas.di
 
 import app.aromas.location.FusedLocationProvider
 import app.aromas.location.LocationProvider
+import app.aromas.visited.PrefsVisitedStore
+import app.aromas.visited.VisitedStore
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,4 +16,8 @@ abstract class LocationModule {
     @Binds
     @Singleton
     abstract fun bindLocationProvider(impl: FusedLocationProvider): LocationProvider
+
+    @Binds
+    @Singleton
+    abstract fun bindVisitedStore(impl: PrefsVisitedStore): VisitedStore
 }
