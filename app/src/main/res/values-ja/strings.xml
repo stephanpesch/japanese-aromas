@@ -50,6 +50,9 @@
     <string name="section_available">利用可能</string>
     <string name="section_season">季節</string>
     <string name="section_month">月</string>
+    <string name="when_range">期間</string>
+    <string name="apply">適用</string>
+    <string name="cancel">キャンセル</string>
     <string-array name="month_short">
         <item>1月</item>
         <item>2月</item>

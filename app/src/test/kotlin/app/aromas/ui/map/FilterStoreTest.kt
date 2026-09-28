@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.time.Clock
 import java.time.Instant
+import java.time.LocalDate
 import java.time.ZoneOffset
 
 private class FakeVisitedStore(
@@ -131,6 +132,27 @@ class FilterStoreTest {
         assertEquals(WhenMode.NOW, s.filter.value.whenMode)
         s.setWhenMode(WhenMode.NOW)
         assertEquals(WhenMode.ANY, s.filter.value.whenMode)
+    }
+
+    @Test
+    fun `a date range keeps only places available within it`() {
+        val julyFestival =
+            place(number = 10, months = emptyList(), availability = listOf(Availability("07-10", "07-20")))
+        val augustFestival =
+            place(number = 11, months = emptyList(), availability = listOf(Availability("08-02", "08-07")))
+        val s = store(listOf(julyFestival, augustFestival))
+        s.setDateRange(DateRange(LocalDate.of(2026, 8, 1), LocalDate.of(2026, 8, 10)))
+        assertEquals(listOf(11), s.result())
+    }
+
+    @Test
+    fun `a date range and a horizon are mutually exclusive`() {
+        val s = store()
+        s.setWhenMode(WhenMode.NOW)
+        s.setDateRange(DateRange(LocalDate.of(2026, 8, 1), LocalDate.of(2026, 8, 10)))
+        assertEquals(WhenMode.ANY, s.filter.value.whenMode)
+        s.setWhenMode(WhenMode.TODAY)
+        assertEquals(null, s.filter.value.dateRange)
     }
 
     @Test

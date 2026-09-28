@@ -142,6 +142,7 @@ fun MapScreen(
             WhenSheet(
                 filter = filter,
                 onSetWhenMode = viewModel::setWhenMode,
+                onSetDateRange = viewModel::setDateRange,
                 onToggleSeason = viewModel::toggleSeason,
                 onToggleMonth = viewModel::toggleMonth,
                 onDismiss = { showWhenSheet = false },

@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import java.time.Clock
+import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.LocalTime
 import javax.inject.Inject
@@ -34,13 +35,20 @@ enum class WhenMode {
     NEXT_30_DAYS,
 }
 
-/** The active filter: collections, categories (OR), seasons, months, the availability horizon and the visited mode. */
+/** A user-chosen inclusive date range (e.g. a travel period). */
+data class DateRange(
+    val from: LocalDate,
+    val to: LocalDate,
+)
+
+/** The active filter: collections, categories (OR), seasons, months, the availability window and the visited mode. */
 data class MapFilter(
     val collections: Set<PlaceCollection> = emptySet(),
     val categories: Set<String> = emptySet(),
     val seasons: Set<Season> = emptySet(),
     val months: Set<Int> = emptySet(),
     val whenMode: WhenMode = WhenMode.ANY,
+    val dateRange: DateRange? = null,
     val visited: VisitedMode = VisitedMode.ALL,
 )
 
@@ -51,6 +59,7 @@ data class MapFilter(
  * consumer turns it into its own [StateFlow] in its own scope.
  */
 @Singleton
+@Suppress("TooManyFunctions") // A filter facade with one toggle per filter dimension.
 class FilterStore
     @Inject
     constructor(
@@ -91,9 +100,16 @@ class FilterStore
             filterState.update { it.copy(months = it.months.toggle(month)) }
         }
 
-        /** Sets the availability horizon, or clears it when [mode] is already active. */
+        /** Sets the availability horizon (clearing any custom range), or clears it when [mode] is already active. */
         fun setWhenMode(mode: WhenMode) {
-            filterState.update { it.copy(whenMode = if (it.whenMode == mode) WhenMode.ANY else mode) }
+            filterState.update {
+                it.copy(whenMode = if (it.whenMode == mode) WhenMode.ANY else mode, dateRange = null)
+            }
+        }
+
+        /** Sets a custom date range (clearing the relative horizon). */
+        fun setDateRange(range: DateRange) {
+            filterState.update { it.copy(dateRange = range, whenMode = WhenMode.ANY) }
         }
 
         /** Cycles the visited filter: all -> only visited -> hide visited -> all. */
@@ -133,8 +149,11 @@ class FilterStore
                     selectedCategories = active.categories,
                     selectedCollections = active.collections,
                 )
+            val interval =
+                active.dateRange?.let { it.from.atStartOfDay() to it.to.atTime(LocalTime.MAX) }
+                    ?: whenRange(active.whenMode)
             val timed =
-                whenRange(active.whenMode)?.let { (from, to) ->
+                interval?.let { (from, to) ->
                     base.filter { AvailabilityMatcher.isAvailableInRange(it, from, to) }
                 } ?: base
             return when (active.visited) {
