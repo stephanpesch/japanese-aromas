@@ -35,4 +35,7 @@
     <string name="detail_open_map">In Karten öffnen</string>
     <string name="detail_wikipedia">Wikipedia</string>
     <string name="locate_me">Zu meinem Standort</string>
+    <string name="visited_mark">Als besucht markieren</string>
+    <string name="visited_done">Besucht</string>
+    <string name="hide_visited">Besuchte ausblenden</string>
 </resources>

@@ -80,6 +80,7 @@ fun MapScreen(
     val places by viewModel.filtered.collectAsStateWithLifecycle()
     val filter by viewModel.filter.collectAsStateWithLifecycle()
     val categories by viewModel.categories.collectAsStateWithLifecycle()
+    val visited by viewModel.visited.collectAsStateWithLifecycle()
     var selected by remember { mutableStateOf<Place?>(null) }
     val byId = remember(places) { places.associateBy { it.id } }
     // The map is configured once inside an async style load; read the latest
@@ -87,6 +88,7 @@ fun MapScreen(
     // is still loading is not lost.
     val currentPlaces by rememberUpdatedState(places)
     val currentById by rememberUpdatedState(byId)
+    val currentVisited by rememberUpdatedState(visited)
     // Guards the one-time map setup: setStyle() is async, so `map.style` stays
     // null during loading — a recomposition (e.g. language toggle) must not
     // re-run the setup and stack up click listeners.
@@ -119,7 +121,7 @@ fun MapScreen(
             if (configured.compareAndSet(false, true)) {
                 view.getMapAsync { map ->
                     maplibreMap = map
-                    configureMap(map, currentPlaces) { selected = currentById[it] }
+                    configureMap(map, currentPlaces, currentVisited) { selected = currentById[it] }
                 }
             }
         }
@@ -131,6 +133,7 @@ fun MapScreen(
             onToggleCollection = viewModel::toggleCollection,
             onToggleSeason = viewModel::toggleSeason,
             onToggleCategory = viewModel::toggleCategory,
+            onToggleHideVisited = viewModel::toggleHideVisited,
             onClear = viewModel::clear,
             modifier = Modifier.align(Alignment.TopCenter),
         )
@@ -163,10 +166,14 @@ fun MapScreen(
         }
     }
 
-    // Push the filtered set into the existing marker source and drop a selection
-    // that the filter just hid.
-    LaunchedEffect(places) {
-        maplibreMap?.style?.getSourceAs<GeoJsonSource>(SOURCE_ID)?.setGeoJson(PlaceFeatures.collection(places))
+    // Push the filtered set into the existing marker source (re-run when the
+    // visited set changes too, so newly marked places dim immediately) and drop a
+    // selection that the filter just hid.
+    LaunchedEffect(places, visited) {
+        maplibreMap
+            ?.style
+            ?.getSourceAs<GeoJsonSource>(SOURCE_ID)
+            ?.setGeoJson(PlaceFeatures.collection(places, visited))
         selected?.let { if (it.id !in byId) selected = null }
     }
 }
@@ -175,6 +182,7 @@ fun MapScreen(
 private fun configureMap(
     map: MapLibreMap,
     places: List<Place>,
+    visited: Set<String>,
     onPick: (String?) -> Unit,
 ) {
     // Keep the map fixed north-up and flat.
@@ -187,13 +195,15 @@ private fun configureMap(
             .zoom(JAPAN_ZOOM)
             .build()
     map.setStyle(Style.Builder().fromUri(OPENFREEMAP_STYLE_URL)) { style ->
-        style.addSource(GeoJsonSource(SOURCE_ID, PlaceFeatures.collection(places)))
+        style.addSource(GeoJsonSource(SOURCE_ID, PlaceFeatures.collection(places, visited)))
         style.addLayer(
             CircleLayer(LAYER_ID, SOURCE_ID).withProperties(
                 PropertyFactory.circleColor(Expression.get(PlaceFeatures.PROP_COLOR)),
                 PropertyFactory.circleRadius(CIRCLE_RADIUS),
+                PropertyFactory.circleOpacity(Expression.get(PlaceFeatures.PROP_OPACITY)),
                 PropertyFactory.circleStrokeColor("#ffffff"),
                 PropertyFactory.circleStrokeWidth(STROKE_WIDTH),
+                PropertyFactory.circleStrokeOpacity(Expression.get(PlaceFeatures.PROP_OPACITY)),
             ),
         )
     }
