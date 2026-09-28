@@ -36,7 +36,7 @@ fun MapFilterBar(
     onToggleCollection: (PlaceCollection) -> Unit,
     onToggleSeason: (Season) -> Unit,
     onToggleCategory: (String) -> Unit,
-    onToggleHideVisited: () -> Unit,
+    onCycleVisited: () -> Unit,
     onToggleNowOnly: () -> Unit,
     onClear: () -> Unit,
     modifier: Modifier = Modifier,
@@ -45,7 +45,7 @@ fun MapFilterBar(
         filter.collections.isNotEmpty() ||
             filter.seasons.isNotEmpty() ||
             filter.categories.isNotEmpty() ||
-            filter.hideVisited ||
+            filter.visited != VisitedMode.ALL ||
             filter.nowOnly
     Column(
         modifier =
@@ -98,9 +98,9 @@ fun MapFilterBar(
             }
             item {
                 FilterChip(
-                    selected = filter.hideVisited,
-                    onClick = onToggleHideVisited,
-                    label = { Text(stringResource(R.string.hide_visited)) },
+                    selected = filter.visited != VisitedMode.ALL,
+                    onClick = onCycleVisited,
+                    label = { Text(stringResource(visitedChipLabel(filter.visited))) },
                 )
             }
         }
@@ -130,6 +130,13 @@ private fun Dot(hex: String) {
                 .background(Color(android.graphics.Color.parseColor(hex))),
     )
 }
+
+private fun visitedChipLabel(mode: VisitedMode): Int =
+    when (mode) {
+        VisitedMode.ALL -> R.string.visited_all
+        VisitedMode.ONLY_VISITED -> R.string.visited_only
+        VisitedMode.HIDE_VISITED -> R.string.hide_visited
+    }
 
 private fun seasonLabel(season: Season): Int =
     when (season) {
