@@ -134,6 +134,7 @@ fun MapScreen(
             onToggleSeason = viewModel::toggleSeason,
             onToggleCategory = viewModel::toggleCategory,
             onToggleHideVisited = viewModel::toggleHideVisited,
+            onToggleNowOnly = viewModel::toggleNowOnly,
             onClear = viewModel::clear,
             modifier = Modifier.align(Alignment.TopCenter),
         )

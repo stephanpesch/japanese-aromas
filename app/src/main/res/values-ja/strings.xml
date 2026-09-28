@@ -19,6 +19,7 @@
     <string name="season_autumn">秋</string>
     <string name="season_winter">冬</string>
     <string name="filter_clear">フィルターをリセット</string>
+    <string name="filter_now">今</string>
     <string name="alerts_channel_name">周辺アラート</string>
     <string name="alerts_channel_description">かおり風景の近くに来たときに知らせます。</string>
     <string name="alert_title">近くのかおり風景</string>

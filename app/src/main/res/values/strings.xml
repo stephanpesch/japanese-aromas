@@ -19,6 +19,7 @@
     <string name="season_autumn">Herbst</string>
     <string name="season_winter">Winter</string>
     <string name="filter_clear">Filter zurücksetzen</string>
+    <string name="filter_now">Jetzt</string>
     <string name="alerts_channel_name">Umgebungs-Alarme</string>
     <string name="alerts_channel_description">Meldet, wenn du einer Duft-Landschaft nahe kommst.</string>
     <string name="alert_title">Eine Duft-Landschaft in der Nähe</string>
