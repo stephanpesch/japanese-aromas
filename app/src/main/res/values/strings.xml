@@ -39,4 +39,6 @@
     <string name="visited_mark">Als besucht markieren</string>
     <string name="visited_done">Besucht</string>
     <string name="hide_visited">Besuchte ausblenden</string>
+    <string name="visited_all">Besucht</string>
+    <string name="visited_only">Nur besuchte</string>
 </resources>

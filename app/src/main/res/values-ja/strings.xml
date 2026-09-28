@@ -39,4 +39,6 @@
     <string name="visited_mark">訪問済みにする</string>
     <string name="visited_done">訪問済み</string>
     <string name="hide_visited">訪問済みを隠す</string>
+    <string name="visited_all">訪問済み</string>
+    <string name="visited_only">訪問済みのみ</string>
 </resources>
