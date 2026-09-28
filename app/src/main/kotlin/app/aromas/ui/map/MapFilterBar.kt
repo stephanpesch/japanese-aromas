@@ -37,6 +37,7 @@ fun MapFilterBar(
     onToggleSeason: (Season) -> Unit,
     onToggleCategory: (String) -> Unit,
     onToggleHideVisited: () -> Unit,
+    onToggleNowOnly: () -> Unit,
     onClear: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -44,7 +45,8 @@ fun MapFilterBar(
         filter.collections.isNotEmpty() ||
             filter.seasons.isNotEmpty() ||
             filter.categories.isNotEmpty() ||
-            filter.hideVisited
+            filter.hideVisited ||
+            filter.nowOnly
     Column(
         modifier =
             modifier
@@ -79,6 +81,13 @@ fun MapFilterBar(
                         label = { Text(stringResource(R.string.filter_clear)) },
                     )
                 }
+            }
+            item {
+                FilterChip(
+                    selected = filter.nowOnly,
+                    onClick = onToggleNowOnly,
+                    label = { Text(stringResource(R.string.filter_now)) },
+                )
             }
             items(Season.entries.toList()) { season ->
                 FilterChip(

@@ -8,6 +8,7 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import java.time.Clock
 import javax.inject.Singleton
 
 @Module
@@ -21,4 +22,8 @@ object DataModule {
         PlaceRepository(
             context.assets.open("places.json").use { PlaceJsonParser.parse(it) },
         )
+
+    /** The system clock, injected so time-dependent filters ("now") stay testable. */
+    @Provides
+    fun provideClock(): Clock = Clock.systemDefaultZone()
 }

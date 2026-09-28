@@ -19,14 +19,17 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
+import java.time.Clock
+import java.time.LocalDate
 import javax.inject.Inject
 
-/** The active map filter: selected collections, categories (OR), seasons and the visited toggle. */
+/** The active map filter: selected collections, categories (OR), seasons and the visited/now toggles. */
 data class MapFilter(
     val collections: Set<PlaceCollection> = emptySet(),
     val categories: Set<String> = emptySet(),
     val seasons: Set<Season> = emptySet(),
     val hideVisited: Boolean = false,
+    val nowOnly: Boolean = false,
 )
 
 @HiltViewModel
@@ -36,6 +39,7 @@ class MapViewModel
         repository: PlaceRepository,
         private val locationProvider: LocationProvider,
         private val visitedStore: VisitedStore,
+        private val clock: Clock,
     ) : ViewModel() {
         private val all = repository.all()
 
@@ -85,6 +89,10 @@ class MapViewModel
             filterState.update { it.copy(hideVisited = !it.hideVisited) }
         }
 
+        fun toggleNowOnly() {
+            filterState.update { it.copy(nowOnly = !it.nowOnly) }
+        }
+
         fun clear() {
             filterState.value = MapFilter()
         }
@@ -94,14 +102,19 @@ class MapViewModel
             return scope.flatMap { it.categories }.distinct()
         }
 
-        private fun apply(active: MapFilter): List<Place> =
-            PlaceFilter.filter(
+        private fun apply(active: MapFilter): List<Place> {
+            // "Now" unions the current month into the season selection, so a place
+            // in season this month (or year-round) passes even with no season chip.
+            val months = active.seasons.flatMap { it.months }.toMutableSet()
+            if (active.nowOnly) months += LocalDate.now(clock).monthValue
+            return PlaceFilter.filter(
                 all = all,
-                selectedMonths = active.seasons.flatMap { it.months }.toSet(),
+                selectedMonths = months,
                 includeYearRound = true,
                 selectedCategories = active.categories,
                 selectedCollections = active.collections,
             )
+        }
 
         private companion object {
             const val STOP_TIMEOUT_MS = 5000L
