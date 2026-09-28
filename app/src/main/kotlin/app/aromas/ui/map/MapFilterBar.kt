@@ -40,7 +40,11 @@ fun MapFilterBar(
     onClear: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
-    val whenActive = filter.whenMode != WhenMode.ANY || filter.seasons.isNotEmpty() || filter.months.isNotEmpty()
+    val whenActive =
+        filter.whenMode != WhenMode.ANY ||
+            filter.dateRange != null ||
+            filter.seasons.isNotEmpty() ||
+            filter.months.isNotEmpty()
     val hasActiveFilter =
         filter.collections.isNotEmpty() ||
             filter.categories.isNotEmpty() ||

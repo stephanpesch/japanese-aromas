@@ -53,6 +53,8 @@ class MapViewModel
 
         fun setWhenMode(mode: WhenMode) = store.setWhenMode(mode)
 
+        fun setDateRange(range: DateRange) = store.setDateRange(range)
+
         fun cycleVisited() = store.cycleVisited()
 
         fun clear() = store.clear()

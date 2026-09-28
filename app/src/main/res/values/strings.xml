@@ -50,6 +50,9 @@
     <string name="section_available">Verfügbar</string>
     <string name="section_season">Saison</string>
     <string name="section_month">Monat</string>
+    <string name="when_range">Zeitraum</string>
+    <string name="apply">Übernehmen</string>
+    <string name="cancel">Abbrechen</string>
     <string-array name="month_short">
         <item>Jän</item>
         <item>Feb</item>
