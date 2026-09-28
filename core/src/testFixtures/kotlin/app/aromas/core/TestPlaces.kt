@@ -1,5 +1,6 @@
 package app.aromas.core
 
+import app.aromas.core.model.Availability
 import app.aromas.core.model.Place
 import app.aromas.core.model.PlaceCollection
 
@@ -15,6 +16,7 @@ fun place(
     categories: List<String> = listOf("Blumen & Blüten"),
     lat: Double = 35.0,
     lon: Double = 135.0,
+    availability: List<Availability> = emptyList(),
 ): Place =
     Place(
         number = number,
@@ -37,4 +39,5 @@ fun place(
         image = "images/%03d.jpg".format(number),
         descriptionJa = "説明",
         descriptionDe = "Beschreibung",
+        availability = availability,
     )

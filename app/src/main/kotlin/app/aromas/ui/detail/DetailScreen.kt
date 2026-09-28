@@ -44,10 +44,10 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.aromas.R
 import app.aromas.core.logic.description
-import app.aromas.core.logic.season
 import app.aromas.core.logic.secondaryTitle
 import app.aromas.core.logic.source
 import app.aromas.core.logic.title
+import app.aromas.core.logic.whenText
 import app.aromas.core.model.Language
 import app.aromas.core.model.Place
 import app.aromas.ui.map.CollectionColors
@@ -165,8 +165,8 @@ fun DetailScreen(
                 Field(stringResource(R.string.label_location), "${place.city} · ${place.prefecture}")
                 val source = place.source(language)
                 if (source.isNotEmpty()) Field(stringResource(R.string.label_source), source)
-                val season = place.season(language)
-                if (season.isNotEmpty()) Field(stringResource(R.string.label_season), season)
+                val whenText = place.whenText(language)
+                if (whenText.isNotEmpty()) Field(stringResource(R.string.label_when), whenText)
 
                 val context = LocalContext.current
                 Row(

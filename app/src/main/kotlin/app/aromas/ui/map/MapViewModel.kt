@@ -3,6 +3,7 @@ package app.aromas.ui.map
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import app.aromas.core.data.PlaceRepository
+import app.aromas.core.logic.AvailabilityMatcher
 import app.aromas.core.logic.PlaceFilter
 import app.aromas.core.logic.Season
 import app.aromas.core.model.Place
@@ -20,7 +21,7 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import java.time.Clock
-import java.time.LocalDate
+import java.time.LocalDateTime
 import javax.inject.Inject
 
 /** The active map filter: selected collections, categories (OR), seasons and the visited/now toggles. */
@@ -103,17 +104,19 @@ class MapViewModel
         }
 
         private fun apply(active: MapFilter): List<Place> {
-            // "Now" unions the current month into the season selection, so a place
-            // in season this month (or year-round) passes even with no season chip.
-            val months = active.seasons.flatMap { it.months }.toMutableSet()
-            if (active.nowOnly) months += LocalDate.now(clock).monthValue
-            return PlaceFilter.filter(
-                all = all,
-                selectedMonths = months,
-                includeYearRound = true,
-                selectedCategories = active.categories,
-                selectedCollections = active.collections,
-            )
+            val base =
+                PlaceFilter.filter(
+                    all = all,
+                    selectedMonths = active.seasons.flatMap { it.months }.toSet(),
+                    includeYearRound = true,
+                    selectedCategories = active.categories,
+                    selectedCollections = active.collections,
+                )
+            // "Now" narrows to what is available today and at this time of day
+            // (falling back to the coarse month data where no window is set).
+            if (!active.nowOnly) return base
+            val now = LocalDateTime.now(clock)
+            return base.filter { AvailabilityMatcher.isAvailableNow(it, now) }
         }
 
         private companion object {
