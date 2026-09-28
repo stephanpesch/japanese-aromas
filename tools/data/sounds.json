@@ -8,7 +8,19 @@
     "lat": 44.0206,
     "lon": 144.2735,
     "descriptionJa": "冬になると、オホーツク海から流れ着いた流氷が網走など北海道の沿岸を埋め尽くす。氷が押し合い、ぶつかり合って砕けるときの軋む音が、白い海辺に響きわたる。",
-    "descriptionDe": "Im Winter treibt das Packeis aus dem Ochotskischen Meer an die Küste von Abashiri und bedeckt das Meer bis zum Horizont. Wenn die Schollen sich aneinanderschieben und brechen, hört man ihr Knirschen und Bersten über der weißen Küste."
+    "descriptionDe": "Im Winter treibt das Packeis aus dem Ochotskischen Meer an die Küste von Abashiri und bedeckt das Meer bis zum Horizont. Wenn die Schollen sich aneinanderschieben und brechen, hört man ihr Knirschen und Bersten über der weißen Küste.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      1,
+      2,
+      3
+    ],
+    "saison_ja": "冬（1〜3月）",
+    "saison_de": "Winter (Jan–Mär)"
   },
   {
     "number": 2,
@@ -19,7 +31,15 @@
     "lat": 43.0628,
     "lon": 141.3536,
     "descriptionJa": "札幌市の中心部に建つ時計台は、明治期から時を刻み、今も正時ごとに鐘を打つ。街のざわめきの中に響く古い鐘の音は、開拓の時代から市民に親しまれてきた。",
-    "descriptionDe": "Der Uhrturm im Herzen Sapporos schlägt seit der Meiji-Zeit die vollen Stunden. Sein alter Glockenschlag, der über dem Lärm der Großstadt liegt, begleitet die Menschen seit den Pioniertagen Hokkaidos."
+    "descriptionDe": "Der Uhrturm im Herzen Sapporos schlägt seit der Meiji-Zeit die vollen Stunden. Sein alter Glockenschlag, der über dem Lärm der Großstadt liegt, begleitet die Menschen seit den Pioniertagen Hokkaidos.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 3,
@@ -30,7 +50,15 @@
     "lat": 41.7683,
     "lon": 140.7156,
     "descriptionJa": "函館の元町に建つロシア正教会は「ガンガン寺」の愛称で親しまれ、礼拝を告げる鐘の音が坂の街に響く。異国情緒あふれる、やわらかく甘い音色で知られる。",
-    "descriptionDe": "Die russisch-orthodoxe Kirche im Stadtteil Motomachi von Hakodate wird liebevoll „Gangan-Tempel“ genannt. Ihr weiches, vielstimmiges Geläut, das zum Gottesdienst ruft, klingt über die Hügelgassen der Hafenstadt."
+    "descriptionDe": "Die russisch-orthodoxe Kirche im Stadtteil Motomachi von Hakodate wird liebevoll „Gangan-Tempel“ genannt. Ihr weiches, vielstimmiges Geläut, das zum Gottesdienst ruft, klingt über die Hügelgassen der Hafenstadt.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 4,
@@ -41,7 +69,21 @@
     "lat": 43.6633,
     "lon": 142.8542,
     "descriptionJa": "北海道最高峰・旭岳の高山帯では、ナキウサギの鋭い鳴き声や小鳥のさえずりが岩場に響く。厳しい自然のなかに生きる動物たちの声が、静かな山肌を彩る。",
-    "descriptionDe": "In der alpinen Zone des Asahidake, des höchsten Gipfels Hokkaidos, hallen der schrille Pfiff der Pfeifhasen und der Gesang kleiner Vögel über die Felsen. Die Rufe der Tiere beleben die stille, raue Bergwelt."
+    "descriptionDe": "In der alpinen Zone des Asahidake, des höchsten Gipfels Hokkaidos, hallen der schrille Pfiff der Pfeifhasen und der Gesang kleiner Vögel über die Felsen. Die Rufe der Tiere beleben die stille, raue Bergwelt.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "saison_ja": "夏〜秋（高山帯）",
+    "saison_de": "Sommer–Herbst (alpine Zone)"
   },
   {
     "number": 5,
@@ -52,7 +94,19 @@
     "lat": 43.2244,
     "lon": 144.3125,
     "descriptionJa": "釧路湿原に近い鶴居村は、特別天然記念物タンチョウの越冬地。雪原に集まった鶴たちが翼を広げて舞い、高く澄んだ鳴き声を響かせる。",
-    "descriptionDe": "Das Dorf Tsurui am Rand des Kushiro-Moors ist ein Überwinterungsplatz der Mandschurenkraniche. Über den Schneefeldern breiten die Vögel ihre Flügel aus und lassen ihre hohen, klaren Trompetenrufe erklingen."
+    "descriptionDe": "Das Dorf Tsurui am Rand des Kushiro-Moors ist ein Überwinterungsplatz der Mandschurenkraniche. Über den Schneefeldern breiten die Vögel ihre Flügel aus und lassen ihre hohen, klaren Trompetenrufe erklingen.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（12〜2月）",
+    "saison_de": "Winter (Dez–Feb)"
   },
   {
     "number": 6,
@@ -63,7 +117,22 @@
     "lat": 40.5397,
     "lon": 141.5583,
     "descriptionJa": "八戸港に浮かぶ蕪島は、ウミネコの一大繁殖地として知られる。春から夏にかけて数万羽が島を埋め尽くし、絶え間ない鳴き声が港に満ちる。",
-    "descriptionDe": "Die Insel Kabushima im Hafen von Hachinohe ist eine der größten Brutkolonien der Japanmöwe. Von Frühling bis Sommer bevölkern Zehntausende Vögel den Felsen, und ihr unaufhörliches Kreischen erfüllt den Hafen."
+    "descriptionDe": "Die Insel Kabushima im Hafen von Hachinohe ist eine der größten Brutkolonien der Japanmöwe. Von Frühling bis Sommer bevölkern Zehntausende Vögel den Felsen, und ihr unaufhörliches Kreischen erfüllt den Hafen.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "saison_ja": "春〜夏（繁殖期）",
+    "saison_de": "Frühling–Sommer (Brutzeit)"
   },
   {
     "number": 7,
@@ -74,7 +143,15 @@
     "lat": 40.7833,
     "lon": 141.3167,
     "descriptionJa": "青森県東部の小川原湖は、水鳥や小鳥が集まる自然豊かな湖。湖畔の葦原や林から響くさまざまな野鳥のさえずりが、季節ごとに移ろう。",
-    "descriptionDe": "Der Ogawara-See im Osten Aomoris ist ein wasser- und vogelreiches Gewässer. Aus dem Schilf und den Wäldern am Ufer klingt der Gesang zahlloser Wildvögel, der mit den Jahreszeiten wechselt."
+    "descriptionDe": "Der Ogawara-See im Osten Aomoris ist ein wasser- und vogelreiches Gewässer. Aus dem Schilf und den Wäldern am Ufer klingt der Gesang zahlloser Wildvögel, der mit den Jahreszeiten wechselt.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 8,
@@ -85,7 +162,15 @@
     "lat": 40.51,
     "lon": 140.95,
     "descriptionJa": "十和田湖から流れ出す奥入瀬渓流は、ブナの原生林の中を清らかな水が下る名勝。大小の滝や瀬がつくり出す絶え間ない水音が、緑の渓谷に満ちる。",
-    "descriptionDe": "Der Oirase-Bach, der aus dem Towada-See abfließt, strömt durch urwüchsige Buchenwälder. Das unablässige Rauschen seiner Wasserfälle und Stromschnellen erfüllt die grüne Schlucht."
+    "descriptionDe": "Der Oirase-Bach, der aus dem Towada-See abfließt, strömt durch urwüchsige Buchenwälder. Das unablässige Rauschen seiner Wasserfälle und Stromschnellen erfüllt die grüne Schlucht.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 9,
@@ -96,7 +181,17 @@
     "lat": 40.8244,
     "lon": 140.74,
     "descriptionJa": "青森のねぶた祭と弘前のねぷたまつりは、夏の夜を彩る東北を代表する祭り。「ラッセラー」の掛け声と力強い太鼓、笛の音が、巨大な灯籠とともに街を練り歩く。",
-    "descriptionDe": "Das Nebuta-Fest in Aomori und das Neputa-Fest in Hirosaki gehören zu den großen Sommerfesten Tōhokus. Der Ruf „Rassera!“, wuchtige Trommeln und Flöten begleiten die riesigen beleuchteten Figuren durch die nächtlichen Straßen."
+    "descriptionDe": "Das Nebuta-Fest in Aomori und das Neputa-Fest in Hirosaki gehören zu den großen Sommerfesten Tōhokus. Der Ruf „Rassera!“, wuchtige Trommeln und Flöten begleiten die riesigen beleuchteten Figuren durch die nächtlichen Straßen.",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8
+    ],
+    "saison_ja": "8月2〜7日（ねぶた・ねぷた）",
+    "saison_de": "2.–7. August (Nebuta/Neputa)"
   },
   {
     "number": 10,
@@ -107,7 +202,15 @@
     "lat": 39.0186,
     "lon": 141.7808,
     "descriptionJa": "岩手県大船渡市の碁石海岸にある雷岩は、波が岩の空洞に打ち寄せるたびに雷のような轟音を響かせる。三陸のリアス海岸がつくり出した奇岩の名所である。",
-    "descriptionDe": "Am Kaminari-iwa („Donnerfels“) der Goishi-Küste bei Ōfunato lässt jede Welle, die in die Höhlung des Felsens schlägt, ein donnerähnliches Dröhnen erklingen. Der Fels ist ein Wahrzeichen der zerklüfteten Sanriku-Küste."
+    "descriptionDe": "Am Kaminari-iwa („Donnerfels“) der Goishi-Küste bei Ōfunato lässt jede Welle, die in die Höhlung des Felsens schlägt, ein donnerähnliches Dröhnen erklingen. Der Fels ist ein Wahrzeichen der zerklüfteten Sanriku-Küste.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 11,
@@ -118,7 +221,19 @@
     "lat": 39.1447,
     "lon": 141.1394,
     "descriptionJa": "岩手県奥州市の水沢駅では、夏になると南部鉄器の風鈴が構内に吊るされる。列車を待つ人々の耳に、涼やかで澄んだ鉄の音色が響く。",
-    "descriptionDe": "Am Bahnhof Mizusawa in Ōshū hängen im Sommer Windglöckchen aus Nambu-Gusseisen unter dem Bahnsteigdach. Ihr heller, kühler Klang begleitet die Reisenden, während sie auf den Zug warten."
+    "descriptionDe": "Am Bahnhof Mizusawa in Ōshū hängen im Sommer Windglöckchen aus Nambu-Gusseisen unter dem Bahnsteigdach. Ihr heller, kühler Klang begleitet die Reisenden, während sie auf den Zug warten.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      6,
+      7,
+      8
+    ],
+    "saison_ja": "夏（風鈴の頃）",
+    "saison_de": "Sommer (Windglöckchen)"
   },
   {
     "number": 12,
@@ -129,7 +244,17 @@
     "lat": 39.7347,
     "lon": 141.0764,
     "descriptionJa": "岩手県に伝わるチャグチャグ馬コは、色鮮やかに飾られた馬が鈴を鳴らして行進する初夏の祭り。「チャグチャグ」という無数の鈴の音が、田園の道にのどかに響く。",
-    "descriptionDe": "Beim Fest Chagu-Chagu Umako in Iwate ziehen prächtig geschmückte Pferde in einer Prozession, an denen zahllose Glöckchen hängen. Ihr sanftes „chagu-chagu“ klingt über die frühsommerlichen Feldwege."
+    "descriptionDe": "Beim Fest Chagu-Chagu Umako in Iwate ziehen prächtig geschmückte Pferde in einer Prozession, an denen zahllose Glöckchen hängen. Ihr sanftes „chagu-chagu“ klingt über die frühsommerlichen Feldwege.",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      6
+    ],
+    "saison_ja": "6月中旬（初夏）",
+    "saison_de": "Mitte Juni (Frühsommer)"
   },
   {
     "number": 13,
@@ -140,7 +265,19 @@
     "lat": 38.27,
     "lon": 140.9,
     "descriptionJa": "仙台の宮城野は、古くから歌に詠まれた鈴虫の名所。秋の夜、鈴を振るような澄んだ音色が草むらから聞こえてくる。",
-    "descriptionDe": "Miyagino bei Sendai ist seit alter Zeit für seine Glockengrillen (suzumushi) berühmt, die schon in klassischen Gedichten besungen wurden. In den Herbstnächten steigt aus dem Gras ihr klarer, glockenheller Gesang auf."
+    "descriptionDe": "Miyagino bei Sendai ist seit alter Zeit für seine Glockengrillen (suzumushi) berühmt, die schon in klassischen Gedichten besungen wurden. In den Herbstnächten steigt aus dem Gras ihr klarer, glockenheller Gesang auf.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8,
+      9,
+      10
+    ],
+    "saison_ja": "初秋（8〜10月）",
+    "saison_de": "Frühherbst (Aug–Okt)"
   },
   {
     "number": 14,
@@ -151,7 +288,18 @@
     "lat": 38.2531,
     "lon": 140.8556,
     "descriptionJa": "仙台の市街を流れる広瀬川では、初夏になるとカジカガエルの澄んだ鳴き声が瀬に響く。川辺には野鳥も多く、水音とさえずりが交じり合う。",
-    "descriptionDe": "Im Hirose-Fluss, der durch Sendai strömt, erklingt im Frühsommer der klare, flötende Ruf der Kajika-Frösche über den Stromschnellen. Am Ufer mischt sich der Gesang zahlreicher Vögel in das Wasserrauschen."
+    "descriptionDe": "Im Hirose-Fluss, der durch Sendai strömt, erklingt im Frühsommer der klare, flötende Ruf der Kajika-Frösche über den Stromschnellen. Am Ufer mischt sich der Gesang zahlreicher Vögel in das Wasserrauschen.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      5,
+      6
+    ],
+    "saison_ja": "初夏（5〜6月）",
+    "saison_de": "Frühsommer (Mai–Juni)"
   },
   {
     "number": 15,
@@ -162,7 +310,19 @@
     "lat": 38.4833,
     "lon": 141.3,
     "descriptionJa": "宮城県石巻市の北上川河口には、広大なヨシ原が広がる。風が吹き渡るたびに葦の穂がいっせいに揺れ、さわさわと乾いた音を立てる。",
-    "descriptionDe": "An der Mündung des Kitakami bei Ishinomaki dehnt sich ein weites Schilfröhricht. Wenn der Wind darüberstreicht, wiegen sich die Halme im Gleichklang und erzeugen ein trockenes, sanftes Rascheln."
+    "descriptionDe": "An der Mündung des Kitakami bei Ishinomaki dehnt sich ein weites Schilfröhricht. Wenn der Wind darüberstreicht, wiegen sich die Halme im Gleichklang und erzeugen ein trockenes, sanftes Rascheln.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      9,
+      10,
+      11
+    ],
+    "saison_ja": "秋（穂の頃）",
+    "saison_de": "Herbst (Schilfblüte)"
   },
   {
     "number": 16,
@@ -173,7 +333,19 @@
     "lat": 38.7167,
     "lon": 141.0917,
     "descriptionJa": "宮城県北部の伊豆沼・内沼は、冬にマガンなど多くの水鳥が飛来するラムサール条約登録湿地。夜明けに数万羽がいっせいに飛び立つときの羽音と鳴き声は壮観である。",
-    "descriptionDe": "Die Seen Izunuma und Uchinuma im Norden Miyagis sind ein Ramsar-Feuchtgebiet, in dem im Winter Blässgänse und andere Wasservögel rasten. Wenn im Morgengrauen Zehntausende zugleich auffliegen, sind ihr Flügelschlag und Geschrei überwältigend."
+    "descriptionDe": "Die Seen Izunuma und Uchinuma im Norden Miyagis sind ein Ramsar-Feuchtgebiet, in dem im Winter Blässgänse und andere Wasservögel rasten. Wenn im Morgengrauen Zehntausende zugleich auffliegen, sind ihr Flügelschlag und Geschrei überwältigend.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（12〜2月）",
+    "saison_de": "Winter (Dez–Feb)"
   },
   {
     "number": 17,
@@ -187,7 +359,15 @@
     "descriptionDe": "Der Kaze-no-Matsubara an der Küste von Noshiro ist ein riesiger Schutzwald aus rund sieben Millionen Schwarzkiefern. Der vom Japanischen Meer heranwehende Wind streicht durch die Wipfel und lässt ein Rauschen wie ferne Brandung erklingen.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E9%A2%A8%E3%81%AE%E6%9D%BE%E5%8E%9F",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Kaze_no_Matsubara_in_morning_mist_20180721a.jpg/1280px-Kaze_no_Matsubara_in_morning_mist_20180721a.jpg",
-    "imageAttribution": "掬茶 · CC BY-SA 4.0 / Wikimedia Commons"
+    "imageAttribution": "掬茶 · CC BY-SA 4.0 / Wikimedia Commons",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 18,
@@ -198,7 +378,18 @@
     "lat": 38.3138,
     "lon": 140.4367,
     "descriptionJa": "山形市の立石寺（山寺）は、松尾芭蕉が「閑さや岩にしみ入る蝉の声」と詠んだ古刹。夏には岩山の木々からセミの声が降り注ぎ、静寂といのちの声がともに響く。",
-    "descriptionDe": "Der Bergtempel Risshaku-ji (Yamadera) bei Yamagata ist der Ort, an dem Matsuo Bashō sein berühmtes Haiku über die in den Fels dringenden Zikadenstimmen dichtete. Im Sommer rieselt der Gesang der Zikaden von den Bäumen des Felsbergs herab."
+    "descriptionDe": "Der Bergtempel Risshaku-ji (Yamadera) bei Yamagata ist der Ort, an dem Matsuo Bashō sein berühmtes Haiku über die in den Fels dringenden Zikadenstimmen dichtete. Im Sommer rieselt der Gesang der Zikaden von den Bäumen des Felsbergs herab.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      7,
+      8
+    ],
+    "saison_ja": "夏（7〜8月）",
+    "saison_de": "Sommer (Jul–Aug)"
   },
   {
     "number": 19,
@@ -209,7 +400,17 @@
     "lat": 38.7106,
     "lon": 139.9906,
     "descriptionJa": "出羽三山の羽黒山に伝わる松の勧進では、山伏たちが吹き鳴らす法螺貝の音が冬の峰々に響きわたる。修験の伝統を今に伝える荘厳な音である。",
-    "descriptionDe": "Beim Ritus Matsu-no-Kanjin auf dem Berg Haguro der Dewa Sanzan lassen die Yamabushi-Bergasketen ihre Muschelhörner (horagai) über die winterlichen Gipfel schallen. Der feierliche Klang bewahrt die Tradition des Shugendō."
+    "descriptionDe": "Beim Ritus Matsu-no-Kanjin auf dem Berg Haguro der Dewa Sanzan lassen die Yamabushi-Bergasketen ihre Muschelhörner (horagai) über die winterlichen Gipfel schallen. Der feierliche Klang bewahrt die Tradition des Shugendō.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12
+    ],
+    "saison_ja": "冬（松の勧進の頃）",
+    "saison_de": "Winter (Matsu-no-Kanjin)"
   },
   {
     "number": 20,
@@ -220,7 +421,19 @@
     "lat": 38.93,
     "lon": 139.83,
     "descriptionJa": "山形県酒田市の最上川河口一帯は、冬に多くのハクチョウが飛来する越冬地。水面に群れ集う白鳥たちの高らかな鳴き声が、雪雲の下に響く。",
-    "descriptionDe": "Das Mündungsgebiet des Mogami bei Sakata ist ein Überwinterungsplatz für zahlreiche Schwäne. Auf dem Wasser versammelt, lassen die Vögel ihre lauten Rufe unter dem winterlichen Himmel erklingen."
+    "descriptionDe": "Das Mündungsgebiet des Mogami bei Sakata ist ein Überwinterungsplatz für zahlreiche Schwäne. Auf dem Wasser versammelt, lassen die Vögel ihre lauten Rufe unter dem winterlichen Himmel erklingen.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（12〜2月）",
+    "saison_de": "Winter (Dez–Feb)"
   },
   {
     "number": 21,
@@ -232,7 +445,15 @@
     "lon": 140.5,
     "descriptionJa": "福島市郊外の「小鳥の森」は、その名のとおり多くの野鳥が暮らす自然公園。四季を通じてさまざまな小鳥のさえずりが、雑木林の間に響きわたる。",
     "descriptionDe": "Der „Wald der kleinen Vögel“ (Kotori no Mori) am Rand von Fukushima macht seinem Namen alle Ehre. Das ganze Jahr über erklingt der Gesang vieler Singvögel zwischen den Laubbäumen.",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E5%B8%82%E5%B0%8F%E9%B3%A5%E3%81%AE%E6%A3%AE"
+    "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A6%8F%E5%B3%B6%E5%B8%82%E5%B0%8F%E9%B3%A5%E3%81%AE%E6%A3%AE",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 22,
@@ -243,7 +464,15 @@
     "lat": 37.3339,
     "lon": 139.8608,
     "descriptionJa": "福島県下郷町の大内宿は、茅葺き屋根の家並みが残る江戸時代の宿場町。街道の両脇を流れる用水路のせせらぎが、昔ながらの町並みに絶えず響く。",
-    "descriptionDe": "Ōuchi-juku in Shimogō ist eine erhaltene Poststation der Edo-Zeit mit reetgedeckten Häusern. Beiderseits der Straße plätschern offene Wasserkanäle, deren Rieseln beständig durch das alte Ortsbild klingt."
+    "descriptionDe": "Ōuchi-juku in Shimogō ist eine erhaltene Poststation der Edo-Zeit mit reetgedeckten Häusern. Beiderseits der Straße plätschern offene Wasserkanäle, deren Rieseln beständig durch das alte Ortsbild klingt.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 23,
@@ -254,7 +483,15 @@
     "lat": 37.4406,
     "lon": 139.6197,
     "descriptionJa": "福島県昭和村に伝わるからむし織は、苧麻（からむし）の繊維を用いた古い手織りの技。作業場からは、機を織るトントンという心地よい音が響いてくる。",
-    "descriptionDe": "Im Dorf Shōwa in Fukushima wird das Karamushi-Gewebe aus Ramiefasern von Hand gewoben. Aus den Werkstätten dringt das gleichmäßige, wohltuende Klappern der Webstühle."
+    "descriptionDe": "Im Dorf Shōwa in Fukushima wird das Karamushi-Gewebe aus Ramiefasern von Hand gewoben. Aus den Werkstätten dringt das gleichmäßige, wohltuende Klappern der Webstühle.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 24,
@@ -265,7 +502,15 @@
     "lat": 36.7906,
     "lon": 140.81,
     "descriptionJa": "茨城県北茨城市の五浦海岸は、切り立った断崖に太平洋の荒波が打ち寄せる景勝地。岡倉天心が愛したこの磯では、岩を打つ波音が絶えず響いている。",
-    "descriptionDe": "Die Izura-Küste bei Kitaibaraki ist ein Landstrich, an dem die Wogen des Pazifiks gegen schroffe Kliffe branden. An dieser von Okakura Tenshin geliebten Küste tönt unablässig das Schlagen der Wellen gegen den Fels."
+    "descriptionDe": "Die Izura-Küste bei Kitaibaraki ist ein Landstrich, an dem die Wogen des Pazifiks gegen schroffe Kliffe branden. An dieser von Okakura Tenshin geliebten Küste tönt unablässig das Schlagen der Wellen gegen den Fels.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 25,
@@ -276,7 +521,18 @@
     "lat": 36.36,
     "lon": 139.68,
     "descriptionJa": "栃木市の太平山へ続く「あじさい坂」は、初夏に無数のアジサイが咲く参道。雨が近づくと、石段のわきからアマガエルの鳴き声がにぎやかに聞こえてくる。",
-    "descriptionDe": "Der „Hortensienhang“ zum Ōhira-san bei Tochigi ist ein Tempelweg, an dem im Frühsommer unzählige Hortensien blühen. Naht der Regen, ertönt von den Rändern der Steinstufen das muntere Quaken der Laubfrösche."
+    "descriptionDe": "Der „Hortensienhang“ zum Ōhira-san bei Tochigi ist ein Tempelweg, an dem im Frühsommer unzählige Hortensien blühen. Naht der Regen, ertönt von den Rändern der Steinstufen das muntere Quaken der Laubfrösche.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      5,
+      6
+    ],
+    "saison_ja": "初夏（5〜6月）",
+    "saison_de": "Frühsommer (Mai–Juni)"
   },
   {
     "number": 26,
@@ -287,7 +543,15 @@
     "lat": 36.322,
     "lon": 138.95,
     "descriptionJa": "群馬県高崎市の水琴亭には、地中に伏せた甕に水滴が落ちて琴のような音を響かせる「水琴窟」がある。ぽとりと落ちる一滴の水が、澄んだ余韻を地中から奏でる。",
-    "descriptionDe": "Im Suikin-tei bei Takasaki befindet sich ein Suikinkutsu – ein unter der Erde vergrabener Krug, in den Tropfen fallen und einen kotoähnlichen Klang erzeugen. Jeder einzelne Tropfen lässt aus dem Boden einen klaren, nachhallenden Ton aufsteigen."
+    "descriptionDe": "Im Suikin-tei bei Takasaki befindet sich ein Suikinkutsu – ein unter der Erde vergrabener Krug, in den Tropfen fallen und einen kotoähnlichen Klang erzeugen. Jeder einzelne Tropfen lässt aus dem Boden einen klaren, nachhallenden Ton aufsteigen.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 27,
@@ -298,7 +562,15 @@
     "lat": 35.9256,
     "lon": 139.4839,
     "descriptionJa": "埼玉県川越市の蔵造りの町並みに建つ「時の鐘」は、江戸時代から時を告げてきた木造の鐘楼。今も一日四回、城下町に落ち着いた鐘の音を響かせる。",
-    "descriptionDe": "Die „Zeitglocke“ (Toki no Kane) in der Speicherstadt von Kawagoe ist ein hölzerner Glockenturm, der seit der Edo-Zeit die Stunden verkündet. Noch heute läutet er viermal täglich sein ruhiges Geläut über die alte Burgstadt."
+    "descriptionDe": "Die „Zeitglocke“ (Toki no Kane) in der Speicherstadt von Kawagoe ist ein hölzerner Glockenturm, der seit der Edo-Zeit die Stunden verkündet. Noch heute läutet er viermal täglich sein ruhiges Geläut über die alte Burgstadt.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 28,
@@ -309,7 +581,19 @@
     "lat": 36.15,
     "lon": 139.35,
     "descriptionJa": "埼玉県熊谷市の荒川・押切付近の河原では、秋になるとさまざまな虫が鳴き交わす。マツムシやスズムシなどの声が入り混じり、草むらに豊かな虫の音が広がる。",
-    "descriptionDe": "Auf den Uferwiesen des Arakawa bei Oshikiri in Kumagaya musizieren im Herbst zahllose Insekten. Die Stimmen von Pinien- und Glockengrillen mischen sich zu einem vollen Chor im Gras."
+    "descriptionDe": "Auf den Uferwiesen des Arakawa bei Oshikiri in Kumagaya musizieren im Herbst zahllose Insekten. Die Stimmen von Pinien- und Glockengrillen mischen sich zu einem vollen Chor im Gras.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8,
+      9,
+      10
+    ],
+    "saison_ja": "秋（虫の音の頃）",
+    "saison_de": "Herbst (Insektengesang)"
   },
   {
     "number": 29,
@@ -320,7 +604,15 @@
     "lat": 35.8975,
     "lon": 140.4986,
     "descriptionJa": "千葉県香取市佐原の樋橋は、かつて用水を対岸へ渡した木樋にちなむ橋。今も一定の時間ごとに水がザーッと川へ落とされ、「ジャージャー橋」の名で親しまれている。",
-    "descriptionDe": "Die Toyohashi-Brücke im Stadtteil Sawara von Katori erinnert an eine hölzerne Wasserleitung, die einst Felder am anderen Ufer versorgte. Noch heute stürzt in festen Abständen Wasser rauschend in den Fluss – daher der Beiname „Jaja-bashi“."
+    "descriptionDe": "Die Toyohashi-Brücke im Stadtteil Sawara von Katori erinnert an eine hölzerne Wasserleitung, die einst Felder am anderen Ufer versorgte. Noch heute stürzt in festen Abständen Wasser rauschend in den Fluss – daher der Beiname „Jaja-bashi“.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 30,
@@ -331,7 +623,18 @@
     "lat": 35.18,
     "lon": 140.18,
     "descriptionJa": "千葉県大多喜町の麻綿原高原は、ヒメハルゼミの一大生息地。夏の盛り、いっせいに鳴き始めては波のように高まり、また静まる大合唱が森を包む。",
-    "descriptionDe": "Das Hochland Amewabara bei Ōtaki ist ein großes Habitat der Himeharuzemi-Zikade. Auf dem Höhepunkt des Sommers schwillt ihr gemeinsamer Gesang wellenartig an und wieder ab und erfüllt den ganzen Wald."
+    "descriptionDe": "Das Hochland Amewabara bei Ōtaki ist ein großes Habitat der Himeharuzemi-Zikade. Auf dem Höhepunkt des Sommers schwillt ihr gemeinsamer Gesang wellenartig an und wieder ab und erfüllt den ganzen Wald.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      7,
+      8
+    ],
+    "saison_ja": "盛夏（7〜8月）",
+    "saison_de": "Hochsommer (Jul–Aug)"
   },
   {
     "number": 31,
@@ -342,7 +645,15 @@
     "lat": 35.7597,
     "lon": 139.8792,
     "descriptionJa": "東京・柴又帝釈天の門前町は、参道に土産物屋や団子屋が並び、参拝客のにぎわいに満ちる。近くの江戸川では、今も櫓で漕ぐ「矢切の渡し」の舟が静かに水を切る。",
-    "descriptionDe": "Die Tempelstraße vor Shibamata Taishakuten in Tokio ist von Souvenir- und Süßwarenläden gesäumt und vom Trubel der Pilger erfüllt. Auf dem nahen Edo-Fluss durchschneidet noch heute die handgeruderte „Yagiri-Fähre“ leise das Wasser."
+    "descriptionDe": "Die Tempelstraße vor Shibamata Taishakuten in Tokio ist von Souvenir- und Süßwarenläden gesäumt und vom Trubel der Pilger erfüllt. Auf dem nahen Edo-Fluss durchschneidet noch heute die handgeruderte „Yagiri-Fähre“ leise das Wasser.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 32,
@@ -353,7 +664,15 @@
     "lat": 35.7156,
     "lon": 139.7736,
     "descriptionJa": "東京・上野の山に建つ「時の鐘」は、江戸の人々に時を告げてきた鐘。松尾芭蕉も句に詠んだこの鐘は、今も朝夕に上野の杜へ荘重な音を響かせる。",
-    "descriptionDe": "Die „Zeitglocke“ auf dem Ueno-Hügel in Tokio verkündete schon den Menschen Edos die Stunden. Die Glocke, die auch Bashō in einem Haiku besang, läutet noch heute morgens und abends feierlich über dem Hain von Ueno."
+    "descriptionDe": "Die „Zeitglocke“ auf dem Ueno-Hügel in Tokio verkündete schon den Menschen Edos die Stunden. Die Glocke, die auch Bashō in einem Haiku besang, läutet noch heute morgens und abends feierlich über dem Hain von Ueno.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 33,
@@ -364,7 +683,16 @@
     "lat": 35.7411,
     "lon": 139.5883,
     "descriptionJa": "東京都練馬区の石神井公園にある三宝寺池は、都会に残る豊かな自然の池。水鳥の声、岸を打つ水の音、木々を渡る風がひとつに溶け合い、静かな水辺を包む。",
-    "descriptionDe": "Der Sanpōji-Teich im Shakujii-Park von Nerima ist ein naturreiches Gewässer inmitten Tokios. Vogelstimmen, das Plätschern am Ufer und der Wind in den Bäumen verschmelzen zu einem ruhigen Klangbild am Wasser."
+    "descriptionDe": "Der Sanpōji-Teich im Shakujii-Park von Nerima ist ein naturreiches Gewässer inmitten Tokios. Vogelstimmen, das Plätschern am Ufer und der Wind in den Bäumen verschmelzen zu einem ruhigen Klangbild am Wasser.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere",
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 34,
@@ -375,7 +703,24 @@
     "lat": 35.7047,
     "lon": 139.5697,
     "descriptionJa": "東京都武蔵野市の成蹊学園には、大正期に植えられたケヤキの並木が続く。風が吹くと大きな梢がいっせいに揺れ、葉ずれの音が学び舎の道に降りそそぐ。",
-    "descriptionDe": "Die Seikei-Schule in Musashino besitzt eine Allee mächtiger Zelkoven, die in der Taishō-Zeit gepflanzt wurden. Weht der Wind, wiegen sich die hohen Kronen, und das Rauschen der Blätter rieselt über den Schulweg."
+    "descriptionDe": "Die Seikei-Schule in Musashino besitzt eine Allee mächtiger Zelkoven, die in der Taishō-Zeit gepflanzt wurden. Weht der Wind, wiegen sich die hohen Kronen, und das Rauschen der Blätter rieselt über den Schulweg.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "saison_ja": "葉のある頃（春〜秋）",
+    "saison_de": "Belaubte Zeit (Frühling–Herbst)"
   },
   {
     "number": 35,
@@ -386,7 +731,18 @@
     "lat": 35.4517,
     "lon": 139.6689,
     "descriptionJa": "横浜港では、大晦日から元日に変わる瞬間、停泊する船々がいっせいに汽笛を鳴らして新年を祝う。低く響き合う汽笛の音が、港の夜空にこだまする。",
-    "descriptionDe": "Im Hafen von Yokohama lassen in der Silvesternacht, wenn das neue Jahr beginnt, die vor Anker liegenden Schiffe zugleich ihre Hörner ertönen. Das tiefe, ineinander verschmelzende Dröhnen hallt über den nächtlichen Hafen."
+    "descriptionDe": "Im Hafen von Yokohama lassen in der Silvesternacht, wenn das neue Jahr beginnt, die vor Anker liegenden Schiffe zugleich ihre Hörner ertönen. Das tiefe, ineinander verschmelzende Dröhnen hallt über den nächtlichen Hafen.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1
+    ],
+    "saison_ja": "年越しの夜（大晦日〜元日）",
+    "saison_de": "Silvesternacht (Neujahr)"
   },
   {
     "number": 36,
@@ -397,7 +753,15 @@
     "lat": 35.5347,
     "lon": 139.7306,
     "descriptionJa": "神奈川県川崎市の川崎大師の参道は、参拝客でにぎわう門前町。名物の飴を切る「トントントン」という包丁の小気味よい音が、店先のあちこちから響いてくる。",
-    "descriptionDe": "Der Pilgerweg zum Tempel Kawasaki Daishi ist eine belebte Ladenstraße voller Besucher. Von den Ständen tönt das flinke „ton-ton-ton“ der Messer, mit denen die berühmten Bonbons in Stücke gehackt werden."
+    "descriptionDe": "Der Pilgerweg zum Tempel Kawasaki Daishi ist eine belebte Ladenstraße voller Besucher. Von den Ständen tönt das flinke „ton-ton-ton“ der Messer, mit denen die berühmten Bonbons in Stücke gehackt werden.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 37,
@@ -408,7 +772,16 @@
     "lat": 35.55,
     "lon": 139.36,
     "descriptionJa": "神奈川県相模原市の道保川公園は、湧き水が集まる川沿いの自然公園。清らかなせせらぎと、木立から聞こえる野鳥のさえずりが、心地よく響き合う。",
-    "descriptionDe": "Der Dōhogawa-Park bei Sagamihara ist ein Naturpark an einem quellgespeisten Bach. Das klare Plätschern des Wassers und der Gesang der Vögel aus den Baumgruppen fügen sich zu einem wohltuenden Zusammenklang."
+    "descriptionDe": "Der Dōhogawa-Park bei Sagamihara ist ein Naturpark an einem quellgespeisten Bach. Das klare Plätschern des Wassers und der Gesang der Vögel aus den Baumgruppen fügen sich zu einem wohltuenden Zusammenklang.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser",
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 38,
@@ -419,7 +792,19 @@
     "lat": 37.9833,
     "lon": 139.2333,
     "descriptionJa": "新潟市の福島潟は、天然記念物オオヒシクイが越冬する広大な潟湖。夕暮れになると、ねぐらへ帰る雁の群れの鳴き声が水辺いっぱいに広がる。",
-    "descriptionDe": "Das Fukushima-gata bei Niigata ist eine weite Lagune, in der die Saatgans überwintert. In der Abenddämmerung erfüllt das Rufen der zu ihren Schlafplätzen heimkehrenden Gänseschwärme das ganze Ufer."
+    "descriptionDe": "Das Fukushima-gata bei Niigata ist eine weite Lagune, in der die Saatgans überwintert. In der Abenddämmerung erfüllt das Rufen der zu ihren Schlafplätzen heimkehrenden Gänseschwärme das ganze Ufer.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（12〜2月）",
+    "saison_de": "Winter (Dez–Feb)"
   },
   {
     "number": 39,
@@ -430,7 +815,18 @@
     "lat": 37.03,
     "lon": 137.86,
     "descriptionJa": "新潟県糸魚川市の尾山周辺の社叢林は、ヒメハルゼミの北限に近い生息地として知られる。夏、木立からわき上がる大合唱が、森全体を震わせるように響く。",
-    "descriptionDe": "Der Hain um den Oyama bei Itoigawa gilt als eines der nördlichsten Habitate der Himeharuzemi-Zikade. Im Sommer steigt aus den Bäumen ein Chor auf, der den ganzen Wald zu durchbeben scheint."
+    "descriptionDe": "Der Hain um den Oyama bei Itoigawa gilt als eines der nördlichsten Habitate der Himeharuzemi-Zikade. Im Sommer steigt aus den Bäumen ein Chor auf, der den ganzen Wald zu durchbeben scheint.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      7,
+      8
+    ],
+    "saison_ja": "盛夏（7〜8月）",
+    "saison_de": "Hochsommer (Jul–Aug)"
   },
   {
     "number": 40,
@@ -441,7 +837,15 @@
     "lat": 35.5,
     "lon": 138.68,
     "descriptionJa": "富士山北麓の西湖畔に広がる青木ヶ原の一角には「野鳥の森」が設けられている。富士を仰ぐ深い森から、さまざまな小鳥のさえずりが響いてくる。",
-    "descriptionDe": "Am Ufer des Saiko-Sees am Nordfuß des Fuji, am Rand des Aokigahara-Waldes, liegt ein „Wald der Wildvögel“. Aus dem tiefen Wald mit Blick auf den Fuji dringt der Gesang vieler kleiner Vögel."
+    "descriptionDe": "Am Ufer des Saiko-Sees am Nordfuß des Fuji, am Rand des Aokigahara-Waldes, liegt ein „Wald der Wildvögel“. Aus dem tiefen Wald mit Blick auf den Fuji dringt der Gesang vieler kleiner Vögel.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 41,
@@ -452,7 +856,15 @@
     "lat": 36.6614,
     "lon": 138.1872,
     "descriptionJa": "長野市の善光寺では、時を告げる大鐘が今も朝夕に撞かれる。門前町に広く響きわたる荘重な鐘の音が、参拝の人々を静かに迎える。",
-    "descriptionDe": "Am Tempel Zenkō-ji in Nagano wird die große Zeitglocke noch heute morgens und abends geschlagen. Ihr feierlicher Klang, der weit über die Tempelstadt trägt, empfängt die Pilger."
+    "descriptionDe": "Am Tempel Zenkō-ji in Nagano wird die große Zeitglocke noch heute morgens und abends geschlagen. Ihr feierlicher Klang, der weit über die Tempelstadt trägt, empfängt die Pilger.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 42,
@@ -463,7 +875,15 @@
     "lat": 36.06,
     "lon": 138.05,
     "descriptionJa": "長野県岡谷市と塩尻市にまたがる塩嶺高原は、野鳥の多い緑豊かな尾根。早朝の林に、さまざまな小鳥のさえずりが澄んだ空気の中で響き合う。",
-    "descriptionDe": "Das Enrei-Hochland zwischen Okaya und Shiojiri ist ein grüner, vogelreicher Höhenrücken. Im frühen Morgen erklingt in den Wäldern der Gesang vieler kleiner Vögel in der klaren Luft."
+    "descriptionDe": "Das Enrei-Hochland zwischen Okaya und Shiojiri ist ein grüner, vogelreicher Höhenrücken. Im frühen Morgen erklingt in den Wäldern der Gesang vieler kleiner Vögel in der klaren Luft.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 43,
@@ -474,7 +894,18 @@
     "lat": 36.1,
     "lon": 138.2,
     "descriptionJa": "長野県の霧ヶ峰にある八島湿原は、標高約1,600mの高層湿原。初夏の夜、湿原一帯にカエルの大合唱が広がり、静かな高原に響きわたる。",
-    "descriptionDe": "Das Yashima-Moor auf der Kirigamine-Hochebene ist ein Hochmoor auf rund 1600 Metern Höhe. In den Frühsommernächten breitet sich über das Moor ein gewaltiger Froschchor aus, der über die stille Hochebene hallt."
+    "descriptionDe": "Das Yashima-Moor auf der Kirigamine-Hochebene ist ein Hochmoor auf rund 1600 Metern Höhe. In den Frühsommernächten breitet sich über das Moor ein gewaltiger Froschchor aus, der über die stille Hochebene hallt.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      5,
+      6
+    ],
+    "saison_ja": "初夏（5〜6月）",
+    "saison_de": "Frühsommer (Mai–Juni)"
   },
   {
     "number": 44,
@@ -488,7 +919,15 @@
     "descriptionDe": "Die Shōmyō-Fälle bei Tateyama sind mit 350 Metern Japans höchster Wasserfall. Das in vier Stufen herabstürzende Wasser lässt ein grollendes Tosen durch das Tal dröhnen.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E7%A7%B0%E5%90%8D%E6%BB%9D",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Shomyo_Falls%2C_zenkei.jpg/1280px-Shomyo_Falls%2C_zenkei.jpg",
-    "imageAttribution": "Saigen Jiro · CC0 / Wikimedia Commons"
+    "imageAttribution": "Saigen Jiro · CC0 / Wikimedia Commons",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 45,
@@ -499,7 +938,16 @@
     "lat": 36.57,
     "lon": 137.13,
     "descriptionJa": "富山市八尾の町を流れる用水「エンナカ」のせせらぎは、坂の町に絶えず響く。九月には、胡弓の音色ともの悲しい唄が流れる「おわら風の盆」が町を包む。",
-    "descriptionDe": "Das Rieseln des Bewässerungskanals „Ennaka“ begleitet beständig die Hügelstadt Yatsuo bei Toyama. Im September hüllt das Fest Owara Kaze-no-Bon den Ort in die Klänge der Kokyū-Fiedel und schwermütige Gesänge."
+    "descriptionDe": "Das Rieseln des Bewässerungskanals „Ennaka“ begleitet beständig die Hügelstadt Yatsuo bei Toyama. Im September hüllt das Fest Owara Kaze-no-Bon den Ort in die Klänge der Kokyū-Fiedel und schwermütige Gesänge.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser",
+      "Fest"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年（おわらは9月）",
+    "saison_de": "Ganzjährig (Owara im Sept.)"
   },
   {
     "number": 46,
@@ -510,7 +958,15 @@
     "lat": 36.5556,
     "lon": 136.9781,
     "descriptionJa": "富山県南砺市の井波は、寺社彫刻で栄えた木彫りの町。通りを歩くと、あちこちの工房から木づちと鑿が刻む「トントン」という音が響いてくる。",
-    "descriptionDe": "Inami in Nanto ist eine Stadt der Holzschnitzkunst, berühmt für Tempelschnitzereien. Wer durch die Gassen geht, hört aus den Werkstätten überall das „ton-ton“ von Klöppel und Meißel."
+    "descriptionDe": "Inami in Nanto ist eine Stadt der Holzschnitzkunst, berühmt für Tempelschnitzereien. Wer durch die Gassen geht, hört aus den Werkstätten überall das „ton-ton“ von Klöppel und Meißel.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 47,
@@ -521,7 +977,18 @@
     "lat": 36.561,
     "lon": 136.665,
     "descriptionJa": "金沢市の中心部に残る本多の森は、樹齢を重ねた木々が茂る緑地。夏には無数のセミがいっせいに鳴き、降りしきる雨のような「蝉時雨」が森を満たす。",
-    "descriptionDe": "Der Honda-Wald mitten in Kanazawa ist eine grüne Insel alter Bäume. Im Sommer singen dort unzählige Zikaden zugleich, und ihr Gesang erfüllt den Wald wie ein prasselnder Regen (semishigure)."
+    "descriptionDe": "Der Honda-Wald mitten in Kanazawa ist eine grüne Insel alter Bäume. Im Sommer singen dort unzählige Zikaden zugleich, und ihr Gesang erfüllt den Wald wie ein prasselnder Regen (semishigure).",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      7,
+      8
+    ],
+    "saison_ja": "夏（7〜8月）",
+    "saison_de": "Sommer (Jul–Aug)"
   },
   {
     "number": 48,
@@ -532,7 +999,15 @@
     "lat": 36.5556,
     "lon": 136.6497,
     "descriptionJa": "金沢市の寺町には、多くの寺院が軒を連ねる。夕暮れどきになると、あちこちの寺から撞かれる鐘の音が重なり合い、城下町に静かに響く。",
-    "descriptionDe": "Im Viertel Teramachi von Kanazawa reihen sich zahlreiche Tempel aneinander. In der Abenddämmerung überlagern sich die Glockenschläge der verschiedenen Tempel und klingen leise über die alte Burgstadt."
+    "descriptionDe": "Im Viertel Teramachi von Kanazawa reihen sich zahlreiche Tempel aneinander. In der Abenddämmerung überlagern sich die Glockenschläge der verschiedenen Tempel und klingen leise über die alte Burgstadt.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 49,
@@ -546,7 +1021,15 @@
     "descriptionDe": "Das „Tokimizu“ in den Bergen von Minowaki bei Echizen ist eine seltene intermittierende Quelle, die in regelmäßigen Abständen zu fließen beginnt und wieder versiegt. Das Aufwallen des Wassers erklingt in der Stille des Bergtals.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E8%93%91%E8%84%87%E3%81%AE%E6%99%82%E6%B0%B4",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/%E6%99%82%E6%B0%B4.jpg",
-    "imageAttribution": "英恵芙 · Public domain / Wikimedia Commons"
+    "imageAttribution": "英恵芙 · Public domain / Wikimedia Commons",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 50,
@@ -557,7 +1040,15 @@
     "lat": 35.5464,
     "lon": 136.9078,
     "descriptionJa": "岐阜県美濃市は、屋根に「うだつ」を上げた商家が並ぶ古い町並みで知られる。その一角に据えられた水琴窟から、地中に落ちる水滴の澄んだ音色が聞こえてくる。",
-    "descriptionDe": "Mino in Gifu ist berühmt für seine alten Kaufmannshäuser mit den charakteristischen „Udatsu“-Brandmauern. In diesem Ortsbild lässt ein Suikinkutsu den klaren Klang der in die Erde fallenden Tropfen erklingen."
+    "descriptionDe": "Mino in Gifu ist berühmt für seine alten Kaufmannshäuser mit den charakteristischen „Udatsu“-Brandmauern. In diesem Ortsbild lässt ein Suikinkutsu den klaren Klang der in die Erde fallenden Tropfen erklingen.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 51,
@@ -568,7 +1059,18 @@
     "lat": 35.7486,
     "lon": 136.9631,
     "descriptionJa": "岐阜県郡上八幡の町なかを流れる吉田川では、夏になると子どもたちが橋の上から川へ飛び込んで遊ぶ。歓声と水しぶきの音が、清流の町に夏の訪れを告げる。",
-    "descriptionDe": "Im Yoshida-Fluss, der durch Gujō-Hachiman strömt, springen im Sommer die Kinder von der Brücke ins Wasser. Ihr Jubel und das Klatschen der Wasserspritzer künden in der Stadt am klaren Fluss vom Sommer."
+    "descriptionDe": "Im Yoshida-Fluss, der durch Gujō-Hachiman strömt, springen im Sommer die Kinder von der Brücke ins Wasser. Ihr Jubel und das Klatschen der Wasserspritzer künden in der Stadt am klaren Fluss vom Sommer.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      7,
+      8
+    ],
+    "saison_ja": "夏（川遊びの頃）",
+    "saison_de": "Sommer (Badezeit)"
   },
   {
     "number": 52,
@@ -579,7 +1081,22 @@
     "lat": 35.4331,
     "lon": 136.7778,
     "descriptionJa": "岐阜市の長良川では、千年以上続く伝統漁法「鵜飼」が夏の夜に行われる。かがり火のもと、鵜匠が鵜を励ます「ホウホウ」という声と、水面をたたく音が川面に響く。",
-    "descriptionDe": "Auf dem Nagara-Fluss bei Gifu wird in Sommernächten der über tausend Jahre alte Kormoranfischfang (ukai) betrieben. Im Schein der Feuerkörbe hallen die anfeuernden Rufe der Fischer und das Klatschen aufs Wasser über den Fluss."
+    "descriptionDe": "Auf dem Nagara-Fluss bei Gifu wird in Sommernächten der über tausend Jahre alte Kormoranfischfang (ukai) betrieben. Im Schein der Feuerkörbe hallen die anfeuernden Rufe der Fischer und das Klatschen aufs Wasser über den Fluss.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "saison_ja": "鵜飼の頃（5〜10月）",
+    "saison_de": "Ukai-Saison (Mai–Okt)"
   },
   {
     "number": 53,
@@ -590,7 +1107,19 @@
     "lat": 34.65,
     "lon": 137.75,
     "descriptionJa": "静岡県の遠州灘では、沖の高波が生む低い地鳴りのような「海鳴り」が、天気の崩れる前に遠く聞こえるという。この音は、伝説の妖怪「波小僧」の仕業と語り継がれてきた。",
-    "descriptionDe": "Am Enshū-Meer in Shizuoka hört man vor einem Wetterumschwung von fern das tiefe, grollende „Meeresdröhnen“ der hohen See. Der Überlieferung nach ist es das Werk des Sagenwesens „Namikozō“."
+    "descriptionDe": "Am Enshū-Meer in Shizuoka hört man vor einem Wetterumschwung von fern das tiefe, grollende „Meeresdröhnen“ der hohen See. Der Überlieferung nach ist es das Werk des Sagenwesens „Namikozō“.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（波の高い頃）",
+    "saison_de": "Winter (hoher Seegang)"
   },
   {
     "number": 54,
@@ -601,7 +1130,15 @@
     "lat": 35.1,
     "lon": 138.1,
     "descriptionJa": "静岡県の大井川鐵道では、今も本物の蒸気機関車が茶畑の谷あいを走る。「ボーッ」という汽笛と、力強く煙を吐く「シュッシュッ」という音が、川沿いの里山にこだまする。",
-    "descriptionDe": "Auf der Ōigawa-Bahn in Shizuoka fahren noch echte Dampflokomotiven durch das Tal mit seinen Teefeldern. Der langgezogene Pfiff und das kräftige Schnaufen der Maschine hallen über die Hügel am Fluss."
+    "descriptionDe": "Auf der Ōigawa-Bahn in Shizuoka fahren noch echte Dampflokomotiven durch das Tal mit seinen Teefeldern. Der langgezogene Pfiff und das kräftige Schnaufen der Maschine hallen über die Hügel am Fluss.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 55,
@@ -612,7 +1149,15 @@
     "lat": 35.1556,
     "lon": 136.9781,
     "descriptionJa": "名古屋市の東山植物園は、豊かな樹木に恵まれた都市の緑地。園内を歩けば、季節ごとにさまざまな野鳥のさえずりが木々の間から聞こえてくる。",
-    "descriptionDe": "Der Botanische Garten Higashiyama in Nagoya ist eine baumreiche grüne Oase der Großstadt. Wer durch ihn spaziert, hört zwischen den Bäumen je nach Jahreszeit den Gesang verschiedenster Wildvögel."
+    "descriptionDe": "Der Botanische Garten Higashiyama in Nagoya ist eine baumreiche grüne Oase der Großstadt. Wer durch ihn spaziert, hört zwischen den Bäumen je nach Jahreszeit den Gesang verschiedenster Wildvögel.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 56,
@@ -623,7 +1168,15 @@
     "lat": 34.5808,
     "lon": 137.0139,
     "descriptionJa": "愛知県渥美半島の先端、伊良湖岬にある恋路ヶ浜は、太平洋に面した美しい砂浜。寄せては返す波の音が、島崎藤村の詩にも歌われたこの浜辺に絶えず響く。",
-    "descriptionDe": "Der Strand Koijigahama am Kap Irago an der Spitze der Atsumi-Halbinsel liegt weit offen zum Pazifik. Das Kommen und Gehen der Wellen tönt unablässig über diesen Strand, den schon Shimazaki Tōson besang."
+    "descriptionDe": "Der Strand Koijigahama am Kap Irago an der Spitze der Atsumi-Halbinsel liegt weit offen zum Pazifik. Das Kommen und Gehen der Wellen tönt unablässig über diesen Strand, den schon Shimazaki Tōson besang.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 57,
@@ -634,7 +1187,20 @@
     "lat": 34.48,
     "lon": 136.84,
     "descriptionJa": "三重県の伊勢志摩では、素潜りで漁をする海女たちが今も活躍する。海面に浮かび上がるたびに息を整えて発する「磯笛」という口笛のような音が、静かな入り江に響く。",
-    "descriptionDe": "In Ise-Shima gehen die Ama-Taucherinnen noch heute ohne Gerät auf Tauchfang. Jedes Mal, wenn sie auftauchen, stoßen sie den pfeifenden Atemlaut „isobue“ aus, der über die stillen Buchten klingt."
+    "descriptionDe": "In Ise-Shima gehen die Ama-Taucherinnen noch heute ohne Gerät auf Tauchfang. Jedes Mal, wenn sie auftauchen, stoßen sie den pfeifenden Atemlaut „isobue“ aus, der über die stillen Buchten klingt.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "saison_ja": "夏（海女漁の頃）",
+    "saison_de": "Sommer (Ama-Tauchsaison)"
   },
   {
     "number": 58,
@@ -645,7 +1211,15 @@
     "lat": 35.0136,
     "lon": 135.8528,
     "descriptionJa": "滋賀県大津市の三井寺（園城寺）の鐘は、「近江八景」の一つ「三井の晩鐘」として名高い。夕暮れに琵琶湖畔へ広がる荘重な鐘の音は、日本三名鐘にも数えられる。",
-    "descriptionDe": "Die Glocke des Mii-dera (Onjō-ji) bei Ōtsu ist als „Abendglocke von Mii“ eine der „Acht Ansichten von Ōmi“ berühmt. Ihr feierlicher Klang, der sich am Abend über das Ufer des Biwa-Sees ausbreitet, zählt zu den drei schönsten Glocken Japans."
+    "descriptionDe": "Die Glocke des Mii-dera (Onjō-ji) bei Ōtsu ist als „Abendglocke von Mii“ eine der „Acht Ansichten von Ōmi“ berühmt. Ihr feierlicher Klang, der sich am Abend über das Ufer des Biwa-Sees ausbreitet, zählt zu den drei schönsten Glocken Japans.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 59,
@@ -656,7 +1230,19 @@
     "lat": 35.2764,
     "lon": 136.2517,
     "descriptionJa": "滋賀県の彦根城には、時を告げる「時報鐘」が今も残る。城山に響く鐘の音と、堀端の草むらから聞こえる虫の音が重なり合い、城下に情緒ある音風景をつくる。",
-    "descriptionDe": "Auf Schloss Hikone in Shiga läutet noch immer die alte „Zeitglocke“. Ihr Klang über dem Burgberg und der Gesang der Insekten aus dem Gras am Burggraben fügen sich zu einer stimmungsvollen Klanglandschaft."
+    "descriptionDe": "Auf Schloss Hikone in Shiga läutet noch immer die alte „Zeitglocke“. Ihr Klang über dem Burgberg und der Gesang der Insekten aus dem Gras am Burggraben fügen sich zu einer stimmungsvollen Klanglandschaft.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel",
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      9,
+      10
+    ],
+    "saison_ja": "秋（虫の音の頃）",
+    "saison_de": "Herbst (Insektengesang)"
   },
   {
     "number": 60,
@@ -667,7 +1253,15 @@
     "lat": 35.017,
     "lon": 135.6716,
     "descriptionJa": "京都の嵯峨野・嵐山一帯には、見上げるほど高い竹が林立する竹林が広がる。風が吹き抜けるたびに竹が触れ合い、さらさらと葉が鳴る涼やかな音が響く。",
-    "descriptionDe": "In Sagano und Arashiyama bei Kyoto erheben sich dichte Haine hoch aufragenden Bambus. Streicht der Wind hindurch, reiben die Halme aneinander, und das kühle Rascheln der Blätter erfüllt den Hain."
+    "descriptionDe": "In Sagano und Arashiyama bei Kyoto erheben sich dichte Haine hoch aufragenden Bambus. Streicht der Wind hindurch, reiben die Halme aneinander, und das kühle Rascheln der Blätter erfüllt den Hain.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 61,
@@ -681,7 +1275,15 @@
     "descriptionDe": "Die Ruri-Schlucht bei Nantan ist ein rund vier Kilometer langes, malerisches Tal des Sonobe-Flusses. Wasserfälle und Gumpen reihen sich aneinander, und das über die Felsen rinnende Wasser klingt kühl durch die grüne Schlucht.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%8B%E3%82%8A%E6%B8%93",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Meibaku%2C_Rurikei02.JPG/1280px-Meibaku%2C_Rurikei02.JPG",
-    "imageAttribution": "Kansai explorer · CC BY 3.0 / Wikimedia Commons"
+    "imageAttribution": "Kansai explorer · CC BY 3.0 / Wikimedia Commons",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 62,
@@ -692,7 +1294,15 @@
     "lat": 35.68,
     "lon": 135.03,
     "descriptionJa": "京都府京丹後市の琴引浜は、歩くと「キュッキュッ」と音が鳴る「鳴き砂」で知られる。砂の清らかさが保たれた浜辺でだけ聞ける、この不思議な音が名の由来である。",
-    "descriptionDe": "Der Strand Kotohikihama bei Kyōtango ist für seinen „singenden Sand“ berühmt, der beim Darübergehen quietschende Töne von sich gibt. Dieser eigentümliche Klang, der nur an sauber gebliebenen Stränden erklingt, gab dem Ort seinen Namen."
+    "descriptionDe": "Der Strand Kotohikihama bei Kyōtango ist für seinen „singenden Sand“ berühmt, der beim Darübergehen quietschende Töne von sich gibt. Dieser eigentümliche Klang, der nur an sauber gebliebenen Stränden erklingt, gab dem Ort seinen Namen.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 63,
@@ -703,7 +1313,19 @@
     "lat": 34.73,
     "lon": 135.53,
     "descriptionJa": "大阪市を流れる淀川の河川敷では、秋になるとマツムシが鳴き始める。「チンチロリン」という涼やかな音色が、大都市を流れる川べりの草地に広がる。",
-    "descriptionDe": "Auf den Uferwiesen des Yodo-Flusses in Osaka beginnen im Herbst die Pinien-Grillen (matsumushi) zu zirpen. Ihr klarer „chin-chiro-rin“-Ruf breitet sich über das Grasland am Fluss der Großstadt aus."
+    "descriptionDe": "Auf den Uferwiesen des Yodo-Flusses in Osaka beginnen im Herbst die Pinien-Grillen (matsumushi) zu zirpen. Ihr klarer „chin-chiro-rin“-Ruf breitet sich über das Grasland am Fluss der Großstadt aus.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8,
+      9,
+      10
+    ],
+    "saison_ja": "秋（8〜10月）",
+    "saison_de": "Herbst (Aug–Okt)"
   },
   {
     "number": 64,
@@ -714,7 +1336,17 @@
     "lat": 34.6269,
     "lon": 135.6008,
     "descriptionJa": "大阪府八尾市の常光寺では、盆の時期に「河内音頭」の盆踊りが境内でにぎやかに行われる。独特の節回しの唄と太鼓に合わせ、人々が輪になって夜を踊り明かす。",
-    "descriptionDe": "Im Tempel Jōkō-ji in Yao wird zur Bon-Zeit im Hof ausgelassen der Bon-Tanz zum „Kawachi-Ondo“ getanzt. Zu den eigenwilligen Gesängen und Trommeln drehen sich die Menschen im Kreis und tanzen die Nacht hindurch."
+    "descriptionDe": "Im Tempel Jōkō-ji in Yao wird zur Bon-Zeit im Hof ausgelassen der Bon-Tanz zum „Kawachi-Ondo“ getanzt. Zu den eigenwilligen Gesängen und Trommeln drehen sich die Menschen im Kreis und tanzen die Nacht hindurch.",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8
+    ],
+    "saison_ja": "お盆のころ（8月）",
+    "saison_de": "Bon-Zeit (August)"
   },
   {
     "number": 65,
@@ -725,7 +1357,19 @@
     "lat": 34.62,
     "lon": 135.05,
     "descriptionJa": "神戸市の垂水漁港では、春の訪れとともにイカナゴ漁が最盛期を迎える。水揚げされた魚を運ぶ声や競りのかけ声が飛び交い、漁港は活気に満ちあふれる。",
-    "descriptionDe": "Im Fischereihafen Tarumi in Kobe erreicht mit dem Frühling der Fang der Sandaale (ikanago) seinen Höhepunkt. Die Rufe beim Anlanden des Fangs und die Ausrufe der Versteigerung erfüllen den Hafen mit geschäftigem Leben."
+    "descriptionDe": "Im Fischereihafen Tarumi in Kobe erreicht mit dem Frühling der Fang der Sandaale (ikanago) seinen Höhepunkt. Die Rufe beim Anlanden des Fangs und die Ausrufe der Versteigerung erfüllen den Hafen mit geschäftigem Leben.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      2,
+      3,
+      4
+    ],
+    "saison_ja": "春（イカナゴ漁）",
+    "saison_de": "Frühling (Ikanago-Fang)"
   },
   {
     "number": 66,
@@ -736,7 +1380,17 @@
     "lat": 34.77,
     "lon": 134.72,
     "descriptionJa": "兵庫県姫路市の松原八幡神社で行われる灘のけんか祭りでは、担ぎ手が神輿を勇壮にぶつけ合う。腹に響く「だんじり太鼓」の音と観衆の熱気が、境内を包み込む。",
-    "descriptionDe": "Beim Nada-Kampffest am Matsubara-Hachiman-Schrein in Himeji stoßen die Träger ihre Schreine wuchtig gegeneinander. Der in der Brust dröhnende Klang der Danjiri-Trommeln und die Hitze der Menge erfüllen das Schreingelände."
+    "descriptionDe": "Beim Nada-Kampffest am Matsubara-Hachiman-Schrein in Himeji stoßen die Träger ihre Schreine wuchtig gegeneinander. Der in der Brust dröhnende Klang der Danjiri-Trommeln und die Hitze der Menge erfüllen das Schreingelände.",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      10
+    ],
+    "saison_ja": "10月14〜15日",
+    "saison_de": "14.–15. Oktober"
   },
   {
     "number": 67,
@@ -747,7 +1401,16 @@
     "lat": 34.68,
     "lon": 135.843,
     "descriptionJa": "奈良公園の春日野では、野生の鹿が甲高い声で鳴き交わす。東大寺や興福寺など古寺の鐘の音と鹿の声が響き合い、古都ならではの音風景をつくる。",
-    "descriptionDe": "Auf der Kasugano-Wiese im Nara-Park rufen die frei lebenden Hirsche mit hohem Laut einander zu. Ihre Stimmen und die Glocken alter Tempel wie Tōdai-ji und Kōfuku-ji fügen sich zur unverwechselbaren Klanglandschaft der alten Kaiserstadt."
+    "descriptionDe": "Auf der Kasugano-Wiese im Nara-Park rufen die frei lebenden Hirsche mit hohem Laut einander zu. Ihre Stimmen und die Glocken alter Tempel wie Tōdai-ji und Kōfuku-ji fügen sich zur unverwechselbaren Klanglandschaft der alten Kaiserstadt.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere",
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 68,
@@ -758,7 +1421,15 @@
     "lat": 34.31,
     "lon": 135.6,
     "descriptionJa": "和歌山県橋本市の不動山の頂にある巨石には、耳を当てると遠くを流れる紀ノ川の水音が聞こえるという伝承がある。岩の中から響く不思議な水の音が、古くから人々を驚かせてきた。",
-    "descriptionDe": "Am großen Felsen auf dem Gipfel des Fudō-san bei Hashimoto soll man, wenn man das Ohr anlegt, das Rauschen des fernen Kino-Flusses vernehmen. Das rätselhafte Wassergeräusch aus dem Inneren des Felsens verblüfft die Menschen seit alters her."
+    "descriptionDe": "Am großen Felsen auf dem Gipfel des Fudō-san bei Hashimoto soll man, wenn man das Ohr anlegt, das Rauschen des fernen Kino-Flusses vernehmen. Das rätselhafte Wassergeräusch aus dem Inneren des Felsens verblüfft die Menschen seit alters her.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 69,
@@ -772,7 +1443,15 @@
     "descriptionDe": "Der Nachi-Wasserfall bei Nachikatsuura stürzt 133 Meter in einem einzigen Fall herab und wird seit alters als Gottheit verehrt. Das Tosen des über die senkrechte Felswand fallenden Wassers hallt über die Berge von Kumano.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E9%82%A3%E6%99%BA%E6%BB%9D",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Nachi_Falls_2025-10-13.jpg/1280px-Nachi_Falls_2025-10-13.jpg",
-    "imageAttribution": "Alpsdake · CC0 / Wikimedia Commons"
+    "imageAttribution": "Alpsdake · CC0 / Wikimedia Commons",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 70,
@@ -783,7 +1462,19 @@
     "lat": 35.43,
     "lon": 133.3,
     "descriptionJa": "鳥取県米子市の米子水鳥公園は、中海に面した渡り鳥の飛来地。冬にはコハクチョウやガンカモ類が数多く集まり、鳴き声と羽ばたきが湖面いっぱいに広がる。",
-    "descriptionDe": "Der Wasservogelpark von Yonago liegt am Nakaumi-See und ist ein Rastplatz für Zugvögel. Im Winter versammeln sich hier Zwergschwäne, Gänse und Enten in großer Zahl, und ihr Rufen und Flügelschlagen erfüllt die Wasserfläche."
+    "descriptionDe": "Der Wasservogelpark von Yonago liegt am Nakaumi-See und ist ein Rastplatz für Zugvögel. Im Winter versammeln sich hier Zwergschwäne, Gänse und Enten in großer Zahl, und ihr Rufen und Flügelschlagen erfüllt die Wasserfläche.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（12〜2月）",
+    "saison_de": "Winter (Dez–Feb)"
   },
   {
     "number": 71,
@@ -794,7 +1485,19 @@
     "lat": 35.4,
     "lon": 133.9,
     "descriptionJa": "鳥取県三朝町の三徳川は、名刹三仏寺へと続く清らかな渓流。せせらぎの音に、初夏にはカジカガエルの澄んだ美しい鳴き声が重なり合う。",
-    "descriptionDe": "Der Mitoku-Fluss bei Misasa ist ein klarer Gebirgsbach, der zum berühmten Tempel Sanbutsu-ji führt. In sein Rauschen mischt sich im Frühsommer der klare, schöne Ruf der Kajika-Frösche."
+    "descriptionDe": "Der Mitoku-Fluss bei Misasa ist ein klarer Gebirgsbach, der zum berühmten Tempel Sanbutsu-ji führt. In sein Rauschen mischt sich im Frühsommer der klare, schöne Ruf der Kajika-Frösche.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser",
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      5,
+      6
+    ],
+    "saison_ja": "初夏（5〜6月）",
+    "saison_de": "Frühsommer (Mai–Juni)"
   },
   {
     "number": 72,
@@ -805,7 +1508,15 @@
     "lat": 35.42,
     "lon": 134.15,
     "descriptionJa": "鳥取市の因州和紙は、古くから伝わる手すき和紙。工房では、簀桁（すけた）を前後に揺らして紙をすく、水がザブザブと打つリズミカルな音が響く。",
-    "descriptionDe": "Das Inshū-Washi aus Tottori ist ein altüberliefertes, von Hand geschöpftes Papier. In den Werkstätten erklingt der rhythmische, schwappende Klang des Wassers, wenn der Schöpfrahmen vor- und zurückgeschwenkt wird."
+    "descriptionDe": "Das Inshū-Washi aus Tottori ist ein altüberliefertes, von Hand geschöpftes Papier. In den Werkstätten erklingt der rhythmische, schwappende Klang des Wassers, wenn der Schöpfrahmen vor- und zurückgeschwenkt wird.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 73,
@@ -816,7 +1527,15 @@
     "lat": 35.13,
     "lon": 132.44,
     "descriptionJa": "島根県大田市の琴ヶ浜は、歩くと琴の音のように「キュッキュッ」と鳴る鳴き砂の浜。その澄んだ音は砂の清らかさの証しとされ、浜の名の由来にもなっている。",
-    "descriptionDe": "Der Strand Kotogahama bei Ōda ist ein „singender Sand“, der beim Gehen wie eine Koto klingende Töne von sich gibt. Dieser reine Klang gilt als Zeichen der Sauberkeit des Sandes und gab dem Strand seinen Namen."
+    "descriptionDe": "Der Strand Kotogahama bei Ōda ist ein „singender Sand“, der beim Gehen wie eine Koto klingende Töne von sich gibt. Dieser reine Klang gilt als Zeichen der Sauberkeit des Sandes und gab dem Strand seinen Namen.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 74,
@@ -827,7 +1546,16 @@
     "lat": 35.05,
     "lon": 133.62,
     "descriptionJa": "岡山県真庭市の諏訪洞は、備中川沿いにある鍾乳洞。清流のせせらぎと、近くでゆっくりと回る水車の「ギーコ、ギーコ」という音が、のどかな山里に響く。",
-    "descriptionDe": "Die Suwa-Höhle bei Maniwa ist eine Tropfsteinhöhle am Bicchū-Fluss. Das Plätschern des klaren Wassers und das gemächliche Knarren eines nahen Wasserrads klingen über das beschauliche Bergdorf."
+    "descriptionDe": "Die Suwa-Höhle bei Maniwa ist eine Tropfsteinhöhle am Bicchū-Fluss. Das Plätschern des klaren Wassers und das gemächliche Knarren eines nahen Wasserrads klingen über das beschauliche Bergdorf.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser",
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 75,
@@ -838,7 +1566,15 @@
     "lat": 35.06,
     "lon": 133.55,
     "descriptionJa": "岡山県新庄村の新庄宿は、旧出雲街道の面影を残す宿場町。家並みに沿って小川がさらさらと流れ、澄んだせせらぎが昔ながらの町並みに絶えず響く。",
-    "descriptionDe": "Shinjō-juku im Dorf Shinjō ist eine Poststation, die den alten Izumo-Landweg bewahrt. Entlang der Häuserzeilen fließen klare Bäche, deren stetes Plätschern durch das altertümliche Ortsbild klingt."
+    "descriptionDe": "Shinjō-juku im Dorf Shinjō ist eine Poststation, die den alten Izumo-Landweg bewahrt. Entlang der Häuserzeilen fließen klare Bäche, deren stetes Plätschern durch das altertümliche Ortsbild klingt.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 76,
@@ -849,7 +1585,15 @@
     "lat": 34.3955,
     "lon": 132.4536,
     "descriptionJa": "広島市の平和記念公園にある「平和の鐘」は、世界の恒久平和を願って設けられた鐘。訪れた人が自ら撞くことができ、澄んだ音が園内に静かに響きわたる。",
-    "descriptionDe": "Die „Friedensglocke“ im Friedenspark von Hiroshima wurde in der Hoffnung auf dauerhaften Weltfrieden aufgestellt. Besucher dürfen sie selbst anschlagen, und ihr klarer Ton hallt still über den Park."
+    "descriptionDe": "Die „Friedensglocke“ im Friedenspark von Hiroshima wurde in der Hoffnung auf dauerhaften Weltfrieden aufgestellt. Besucher dürfen sie selbst anschlagen, und ihr klarer Ton hallt still über den Park.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 77,
@@ -860,7 +1604,15 @@
     "lat": 34.413,
     "lon": 133.197,
     "descriptionJa": "広島県尾道市の千光寺にある鐘楼「驚音楼」の鐘は、坂の街尾道と瀬戸内海を見下ろす高台に響く。「除夜の鐘」でも知られ、その音は港町の暮らしに親しまれてきた。",
-    "descriptionDe": "Die Glocke des Glockenturms „Kyōonrō“ am Tempel Senkō-ji klingt von einer Anhöhe über der Hügelstadt Onomichi und der Seto-Inlandsee. Auch für ihr Silvestergeläut bekannt, ist ihr Klang dem Leben der Hafenstadt vertraut."
+    "descriptionDe": "Die Glocke des Glockenturms „Kyōonrō“ am Tempel Senkō-ji klingt von einer Anhöhe über der Hügelstadt Onomichi und der Seto-Inlandsee. Auch für ihr Silvestergeläut bekannt, ist ihr Klang dem Leben der Hafenstadt vertraut.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 78,
@@ -871,7 +1623,15 @@
     "lat": 34.46,
     "lon": 131.77,
     "descriptionJa": "山口線を走る「SLやまぐち号」は、新山口から津和野へと山あいを行く蒸気機関車。「ボーッ」という汽笛と黒い煙、力強い走行音が、沿線の里山にこだまする。",
-    "descriptionDe": "Die „SL Yamaguchi“ auf der Yamaguchi-Linie ist eine Dampflok, die von Shin-Yamaguchi durch die Berge nach Tsuwano fährt. Ihr Pfiff, der schwarze Rauch und das kraftvolle Stampfen hallen über die Hügel entlang der Strecke."
+    "descriptionDe": "Die „SL Yamaguchi“ auf der Yamaguchi-Linie ist eine Dampflok, die von Shin-Yamaguchi durch die Berge nach Tsuwano fährt. Ihr Pfiff, der schwarze Rauch und das kraftvolle Stampfen hallen über die Hügel entlang der Strecke.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 79,
@@ -885,7 +1645,15 @@
     "descriptionDe": "In der Naruto-Straße zwischen Naruto und der Insel Awaji entstehen durch die Gezeiten Strudel von weltweit einzigartiger Größe. Bei jeder Springflut erfüllt das Tosen der wirbelnden, aufeinandertreffenden Wassermassen die Meerenge.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E9%B3%B4%E9%96%80%E3%81%AE%E6%B8%A6%E6%BD%AE",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Naruto_Whirlpools_taken_4-21-2008.jpg/1280px-Naruto_Whirlpools_taken_4-21-2008.jpg",
-    "imageAttribution": "Hellbuny · CC BY-SA 3.0 / Wikimedia Commons"
+    "imageAttribution": "Hellbuny · CC BY-SA 3.0 / Wikimedia Commons",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 80,
@@ -899,7 +1667,17 @@
     "descriptionDe": "Der Awa-Odori in Tokushima ist ein über vierhundert Jahre alter Bon-Tanz von nationalem Rang. Zu der treibenden „Zomeki“-Begleitung aus Shamisen, Trommeln, Gongs und Flöten heizen die Rufe der Tänzer die Sommernacht an.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E9%98%BF%E6%B3%A2%E8%B8%8A%E3%82%8A",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Awa-odori_2008_Tokushima.jpg/1280px-Awa-odori_2008_Tokushima.jpg",
-    "imageAttribution": "Rosino · CC BY-SA 2.0 / Wikimedia Commons"
+    "imageAttribution": "Rosino · CC BY-SA 2.0 / Wikimedia Commons",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8
+    ],
+    "saison_ja": "8月12〜15日",
+    "saison_de": "12.–15. August"
   },
   {
     "number": 81,
@@ -910,7 +1688,15 @@
     "lat": 34.15,
     "lon": 134.19,
     "descriptionJa": "香川県さぬき市の大窪寺は、四国八十八ヶ所霊場の結願の寺。境内に響く鐘の音に、巡礼を終えたお遍路さんが振る持鈴の「チリンチリン」という音が交じり合う。",
-    "descriptionDe": "Der Tempel Ōkubo-ji in Sanuki ist der abschließende, 88. Tempel der Shikoku-Pilgerfahrt. In den Klang der Tempelglocke mischt sich das feine Klingeln der Handglöckchen der Pilger, die ihre Wallfahrt vollendet haben."
+    "descriptionDe": "Der Tempel Ōkubo-ji in Sanuki ist der abschließende, 88. Tempel der Shikoku-Pilgerfahrt. In den Klang der Tempelglocke mischt sich das feine Klingeln der Handglöckchen der Pilger, die ihre Wallfahrt vollendet haben.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 82,
@@ -921,7 +1707,17 @@
     "lat": 34.2,
     "lon": 133.9,
     "descriptionJa": "香川県まんのう町の満濃池は、日本最大級のため池。初夏の「ゆる抜き」では、水門が開かれて田へ向かう水が勢いよく流れ出し、豊かな水音が響きわたる。",
-    "descriptionDe": "Der Mannō-Teich in Mannō ist eines der größten Stauwasserbecken Japans. Bei der „Yuru-nuki“ im Frühsommer werden die Schleusen geöffnet, und das zu den Reisfeldern strömende Wasser tost kraftvoll heraus."
+    "descriptionDe": "Der Mannō-Teich in Mannō ist eines der größten Stauwasserbecken Japans. Bei der „Yuru-nuki“ im Frühsommer werden die Schleusen geöffnet, und das zu den Reisfeldern strömende Wasser tost kraftvoll heraus.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      6
+    ],
+    "saison_ja": "6月中旬（ゆる抜き）",
+    "saison_de": "Mitte Juni (Yuru-nuki)"
   },
   {
     "number": 83,
@@ -932,7 +1728,15 @@
     "lat": 33.8517,
     "lon": 132.7864,
     "descriptionJa": "愛媛県松山市の道後温泉本館の屋上にある「振鷺閣」では、時を告げる「刻太鼓」が今も打たれる。朝・昼・夕に響く太鼓の音が、湯の街に時を知らせる。",
-    "descriptionDe": "Auf dem Dach des Hauptgebäudes des Dōgo-Onsen in Matsuyama steht der Turm „Shinrokaku“, in dem noch heute die „Zeittrommel“ geschlagen wird. Ihr Klang verkündet morgens, mittags und abends der Badestadt die Stunde."
+    "descriptionDe": "Auf dem Dach des Hauptgebäudes des Dōgo-Onsen in Matsuyama steht der Turm „Shinrokaku“, in dem noch heute die „Zeittrommel“ geschlagen wird. Ihr Klang verkündet morgens, mittags und abends der Badestadt die Stunde.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 84,
@@ -943,7 +1747,15 @@
     "lat": 33.2517,
     "lon": 134.1739,
     "descriptionJa": "高知県室戸岬にある御厨人窟は、若き空海が修行したと伝わる海食洞。洞窟の奥に打ち寄せる波の音が反響し、「空海」の名の由来になったともいわれる。",
-    "descriptionDe": "Die Meereshöhle Mikurodo am Kap Muroto gilt als Ort, an dem der junge Kūkai asketische Übungen vollzog. Das Echo der in die Höhle schlagenden Wellen soll den Namen „Kūkai“ (Leere und Meer) inspiriert haben."
+    "descriptionDe": "Die Meereshöhle Mikurodo am Kap Muroto gilt als Ort, an dem der junge Kūkai asketische Übungen vollzog. Das Echo der in die Höhle schlagenden Wellen soll den Namen „Kūkai“ (Leere und Meer) inspiriert haben.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 85,
@@ -954,7 +1766,17 @@
     "lat": 33.5947,
     "lon": 130.4103,
     "descriptionJa": "福岡市の博多祇園山笠は、七月に行われる勇壮な祭り。「オイサ、オイサ」の掛け声とともに、男たちが重い舁き山笠を担いで博多の町を駆け抜ける。",
-    "descriptionDe": "Das Hakata Gion Yamakasa in Fukuoka ist ein wuchtiges Fest im Juli. Mit dem Ruf „oisa, oisa“ tragen die Männer die schweren Prozessionswagen im Laufschritt durch die Straßen von Hakata."
+    "descriptionDe": "Das Hakata Gion Yamakasa in Fukuoka ist ein wuchtiges Fest im Juli. Mit dem Ruf „oisa, oisa“ tragen die Männer die schweren Prozessionswagen im Laufschritt durch die Straßen von Hakata.",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      7
+    ],
+    "saison_ja": "7月1〜15日",
+    "saison_de": "1.–15. Juli"
   },
   {
     "number": 86,
@@ -965,7 +1787,15 @@
     "lat": 33.515,
     "lon": 130.5136,
     "descriptionJa": "福岡県太宰府市の観世音寺の梵鐘は、飛鳥時代に鋳造された日本最古級の鐘。千三百年以上の時を超えて今も残り、その荘重な音は古都大宰府に静かに響く。",
-    "descriptionDe": "Die Bronzeglocke des Kanzeon-ji in Dazaifu wurde in der Asuka-Zeit gegossen und zählt zu den ältesten Glocken Japans. Über 1300 Jahre alt, erklingt sie noch heute feierlich über der alten Amtsstadt Dazaifu."
+    "descriptionDe": "Die Bronzeglocke des Kanzeon-ji in Dazaifu wurde in der Asuka-Zeit gegossen und zählt zu den ältesten Glocken Japans. Über 1300 Jahre alt, erklingt sie noch heute feierlich über der alten Amtsstadt Dazaifu.",
+    "kategorie": "Glocken & Tempel",
+    "kategorien": [
+      "Glocken & Tempel"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 87,
@@ -976,7 +1806,16 @@
     "lat": 33.96,
     "lon": 130.96,
     "descriptionJa": "本州と九州を隔てる関門海峡は、速い潮の流れと船の往来でにぎわう。渦を巻く潮騒に、行き交う船の汽笛が重なり合い、海峡ならではの音風景をつくる。",
-    "descriptionDe": "Die Kanmon-Straße zwischen Honshū und Kyūshū ist von starken Strömungen und regem Schiffsverkehr geprägt. In das Rauschen der wirbelnden Gezeiten mischen sich die Hörner der vorbeifahrenden Schiffe zu einer eigenen Klanglandschaft der Meerenge."
+    "descriptionDe": "Die Kanmon-Straße zwischen Honshū und Kyūshū ist von starken Strömungen und regem Schiffsverkehr geprägt. In das Rauschen der wirbelnden Gezeiten mischen sich die Hörner der vorbeifahrenden Schiffe zu einer eigenen Klanglandschaft der Meerenge.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser",
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 88,
@@ -987,7 +1826,17 @@
     "lat": 33.45,
     "lon": 129.9686,
     "descriptionJa": "佐賀県唐津市の唐津くんちは、豪華な曳山が町を巡る秋祭り。「エンヤ、エンヤ」の掛け声と、笛・太鼓・鉦が奏でる勇壮な囃子が、城下町に響きわたる。",
-    "descriptionDe": "Das Karatsu Kunchi in Karatsu ist ein Herbstfest, bei dem prächtige Prozessionswagen durch die Stadt ziehen. Der Ruf „enya, enya“ und die schwungvolle Musik aus Flöten, Trommeln und Gongs schallen durch die alte Burgstadt."
+    "descriptionDe": "Das Karatsu Kunchi in Karatsu ist ein Herbstfest, bei dem prächtige Prozessionswagen durch die Stadt ziehen. Der Ruf „enya, enya“ und die schwungvolle Musik aus Flöten, Trommeln und Gongs schallen durch die alte Burgstadt.",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      11
+    ],
+    "saison_ja": "11月2〜4日",
+    "saison_de": "2.–4. November"
   },
   {
     "number": 89,
@@ -998,7 +1847,15 @@
     "lat": 33.25,
     "lon": 129.9,
     "descriptionJa": "佐賀県伊万里市の大川内山は、鍋島藩の御用窯が置かれた焼物の里。窯元の集まる谷あいには、ろくろを回す音や器を成形する音が、今も静かに響いている。",
-    "descriptionDe": "Das Tal Ōkawachiyama bei Imari war Standort der herrschaftlichen Nabeshima-Öfen und ist bis heute ein Porzellandorf. Zwischen den Werkstätten klingen leise das Surren der Töpferscheiben und das Formen der Gefäße."
+    "descriptionDe": "Das Tal Ōkawachiyama bei Imari war Standort der herrschaftlichen Nabeshima-Öfen und ist bis heute ein Porzellandorf. Zwischen den Werkstätten klingen leise das Surren der Töpferscheiben und das Formen der Gefäße.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 90,
@@ -1009,7 +1866,15 @@
     "lat": 32.7708,
     "lon": 129.8639,
     "descriptionJa": "長崎市の山王神社には、原爆の熱線を浴びながらも生き延びた二本の大クスノキがそびえる。復興のシンボルとして枝を広げ、風にそよぐ葉の音が訪れる人を静かに包む。",
-    "descriptionDe": "Am Sannō-Schrein in Nagasaki ragen zwei große Kampferbäume auf, die die Hitzestrahlung der Atombombe überlebten. Als Sinnbild des Wiederaufbaus breiten sie ihre Äste aus, und das Rauschen ihrer Blätter im Wind umfängt still die Besucher."
+    "descriptionDe": "Am Sannō-Schrein in Nagasaki ragen zwei große Kampferbäume auf, die die Hitzestrahlung der Atombombe überlebten. Als Sinnbild des Wiederaufbaus breiten sie ihre Äste aus, und das Rauschen ihrer Blätter im Wind umfängt still die Besucher.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 91,
@@ -1020,7 +1885,24 @@
     "lat": 32.6944,
     "lon": 130.9903,
     "descriptionJa": "熊本県山都町の通潤橋は、江戸時代に造られた石造りの水路橋。管に詰まった土砂を出すための豪快な放水では、橋の中央から水が勢いよく噴き出し、水しぶきの音が谷に響く。",
-    "descriptionDe": "Die Tsūjun-Brücke in Yamato ist ein steinernes Aquädukt aus der Edo-Zeit. Beim gewaltigen Wasserablass, mit dem Schlamm aus den Leitungen gespült wird, schießt aus der Brückenmitte ein kräftiger Strahl heraus, dessen Rauschen durch das Tal hallt."
+    "descriptionDe": "Die Tsūjun-Brücke in Yamato ist ein steinernes Aquädukt aus der Edo-Zeit. Beim gewaltigen Wasserablass, mit dem Schlamm aus den Leitungen gespült wird, schießt aus der Brückenmitte ein kräftiger Strahl heraus, dessen Rauschen durch das Tal hallt.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "saison_ja": "観光放水の頃（春〜秋）",
+    "saison_de": "Wasserablass (Frühjahr–Herbst)"
   },
   {
     "number": 92,
@@ -1031,7 +1913,15 @@
     "lat": 32.42,
     "lon": 130.2,
     "descriptionJa": "熊本県天草市五和町の沖合には、野生のミナミハンドウイルカが一年を通じて群れをなす。海面に浮かび上がって潮を吹く音や、水を跳ね上げる音が、静かな海に響く。",
-    "descriptionDe": "Vor der Küste von Itsuwa auf den Amakusa-Inseln leben das ganze Jahr über Schulen wilder Großer Tümmler. Ihr Atmen beim Auftauchen und das Klatschen, wenn sie das Wasser aufspritzen lassen, tönt über das stille Meer."
+    "descriptionDe": "Vor der Küste von Itsuwa auf den Amakusa-Inseln leben das ganze Jahr über Schulen wilder Großer Tümmler. Ihr Atmen beim Auftauchen und das Klatschen, wenn sie das Wasser aufspritzen lassen, tönt über das stille Meer.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 93,
@@ -1042,7 +1932,15 @@
     "lat": 33.4,
     "lon": 130.98,
     "descriptionJa": "大分県日田市の小鹿田焼の里では、川の水を利用した「唐臼」が陶土を砕く。「ギー…ゴットン」と規則正しく響く唐臼の音が、山あいの窯元の集落に絶えずこだまする。",
-    "descriptionDe": "Im Töpferdorf der Onta-Keramik bei Hita zerstampfen wassergetriebene Stampfmühlen (karausu) den Töpferton. Ihr regelmäßiges „giii… gotton“ hallt unablässig durch die Werkstattsiedlung im Bergtal."
+    "descriptionDe": "Im Töpferdorf der Onta-Keramik bei Hita zerstampfen wassergetriebene Stampfmühlen (karausu) den Töpferton. Ihr regelmäßiges „giii… gotton“ hallt unablässig durch die Werkstattsiedlung im Bergtal.",
+    "kategorie": "Handwerk & Alltag",
+    "kategorien": [
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 94,
@@ -1053,7 +1951,15 @@
     "lat": 32.9694,
     "lon": 131.4106,
     "descriptionJa": "大分県竹田市の岡城跡は、断崖の上に石垣が残る山城の跡。滝廉太郎の「荒城の月」の着想の地とされ、城跡の松林を渡る風の音「松籟」が、往時をしのばせる。",
-    "descriptionDe": "Die Burgruine Oka bei Taketa liegt mit ihren Steinmauern hoch auf einem Kliff. Sie gilt als Inspiration für Taki Rentarōs Lied „Kōjō no Tsuki“, und das Rauschen des Windes in den Kiefern der Ruine (shōrai) beschwört vergangene Zeiten."
+    "descriptionDe": "Die Burgruine Oka bei Taketa liegt mit ihren Steinmauern hoch auf einem Kliff. Sie gilt als Inspiration für Taki Rentarōs Lied „Kōjō no Tsuki“, und das Rauschen des Windes in den Kiefern der Ruine (shōrai) beschwört vergangene Zeiten.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 95,
@@ -1064,7 +1970,15 @@
     "lat": 32.0,
     "lon": 130.97,
     "descriptionJa": "宮崎県小林市の三之宮峡は、岩を削って流れる渓流沿いに手掘りの隧道が続く峡谷。狭い岩間を勢いよく流れ落ちる水が、あたりに轟音を響かせる。",
-    "descriptionDe": "Die Sannomiya-Schlucht bei Kobayashi ist ein enges Tal, an dessen Bach von Hand gegrabene Tunnel entlangführen. Das durch die schmalen Felsspalten stürzende Wasser lässt ringsum ein Tosen erklingen."
+    "descriptionDe": "Die Sannomiya-Schlucht bei Kobayashi ist ein enges Tal, an dessen Bach von Hand gegrabene Tunnel entlangführen. Das durch die schmalen Felsspalten stürzende Wasser lässt ringsum ein Tosen erklingen.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 96,
@@ -1075,7 +1989,19 @@
     "lat": 31.93,
     "lon": 130.85,
     "descriptionJa": "宮崎県えびの市のえびの高原は、霧島連山に抱かれた高原。秋の夕暮れ、雄鹿が甲高く鳴き交わす声が、静かな草原に長く尾を引いて響く。",
-    "descriptionDe": "Die Ebino-Hochebene in Miyazaki liegt eingebettet in die Kirishima-Bergkette. In der herbstlichen Abenddämmerung ziehen die hohen, langgezogenen Röhrrufe der Hirsche über die stille Grasfläche."
+    "descriptionDe": "Die Ebino-Hochebene in Miyazaki liegt eingebettet in die Kirishima-Bergkette. In der herbstlichen Abenddämmerung ziehen die hohen, langgezogenen Röhrrufe der Hirsche über die stille Grasfläche.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      9,
+      10,
+      11
+    ],
+    "saison_ja": "秋（鹿の鳴く頃）",
+    "saison_de": "Herbst (Hirschbrunft)"
   },
   {
     "number": 97,
@@ -1089,7 +2015,19 @@
     "descriptionDe": "Auf dem eingedeichten Marschland von Izumi überwintern jeden Winter über zehntausend Kraniche. An diesem weltweit bedeutenden Rastplatz ist das Rufen der vielen tausend Vögel am Morgen und Abend überwältigend.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E5%87%BA%E6%B0%B4%E3%81%AE%E3%83%84%E3%83%AB",
     "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Cranes_in_Izumi%2C_Kagoshima.jpg/1280px-Cranes_in_Izumi%2C_Kagoshima.jpg",
-    "imageAttribution": "20nana75 · CC BY-SA 3.0 / Wikimedia Commons"
+    "imageAttribution": "20nana75 · CC BY-SA 3.0 / Wikimedia Commons",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      12,
+      1,
+      2
+    ],
+    "saison_ja": "冬（12〜2月）",
+    "saison_de": "Winter (Dez–Feb)"
   },
   {
     "number": 98,
@@ -1100,7 +2038,16 @@
     "lat": 30.32,
     "lon": 130.55,
     "descriptionJa": "屋久島の千頭川流域では、清らかな渓流の音が深い森に響く。かつて林業を支えたトロッコ（森林軌道）が今も残り、レールを走る「ガタンゴトン」という音が水音に混じる。",
-    "descriptionDe": "Im Tal des Senzu-Flusses auf Yakushima erfüllt das Rauschen klarer Gebirgsbäche den tiefen Wald. Die einst für die Forstwirtschaft gebaute Waldbahn (Trolley) fährt noch heute, und ihr Rattern auf den Schienen mischt sich in das Wasserrauschen."
+    "descriptionDe": "Im Tal des Senzu-Flusses auf Yakushima erfüllt das Rauschen klarer Gebirgsbäche den tiefen Wald. Die einst für die Forstwirtschaft gebaute Waldbahn (Trolley) fährt noch heute, und ihr Rattern auf den Schienen mischt sich in das Wasserrauschen.",
+    "kategorie": "Wasser",
+    "kategorien": [
+      "Wasser",
+      "Handwerk & Alltag"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 99,
@@ -1111,7 +2058,15 @@
     "lat": 24.35,
     "lon": 123.85,
     "descriptionJa": "沖縄県西表島の後良川（しいらがわ）流域には、手つかずの亜熱帯の森が広がる。マングローブや密林から、鳥や虫、カエルなど島の生き物たちの声がにぎやかに響く。",
-    "descriptionDe": "Am Shiira-Fluss auf der Insel Iriomote dehnt sich unberührter subtropischer Wald. Aus Mangroven und Dickicht tönen lebhaft die Stimmen von Vögeln, Insekten und Fröschen – der Tierwelt der Insel."
+    "descriptionDe": "Am Shiira-Fluss auf der Insel Iriomote dehnt sich unberührter subtropischer Wald. Aus Mangroven und Dickicht tönen lebhaft die Stimmen von Vögeln, Insekten und Fröschen – der Tierwelt der Insel.",
+    "kategorie": "Natur & Tiere",
+    "kategorien": [
+      "Natur & Tiere"
+    ],
+    "ganzjaehrig": true,
+    "monate": [],
+    "saison_ja": "通年",
+    "saison_de": "Ganzjährig"
   },
   {
     "number": 100,
@@ -1125,6 +2080,17 @@
     "descriptionDe": "Der Eisā auf Okinawa ist ein traditioneller Tanz, mit dem zur Bon-Zeit die Ahnen geleitet werden. Der wuchtige Klang großer und kleiner Trommeln, die Töne der Sanshin und die Rufe der Tänzer beleben die sommerlichen Inselnächte.",
     "wikipedia": "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%A4%E3%82%B5%E3%83%BC",
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Seragaki_eisa.jpg",
-    "imageAttribution": "Kasanui]＆KI] · CC BY-SA 3.0 / Wikimedia Commons"
+    "imageAttribution": "Kasanui]＆KI] · CC BY-SA 3.0 / Wikimedia Commons",
+    "kategorie": "Fest",
+    "kategorien": [
+      "Fest"
+    ],
+    "ganzjaehrig": false,
+    "monate": [
+      8,
+      9
+    ],
+    "saison_ja": "旧盆のころ（8〜9月）",
+    "saison_de": "Bon-Zeit (Aug–Sept)"
   }
 ]

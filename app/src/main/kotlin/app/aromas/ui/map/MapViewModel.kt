@@ -35,11 +35,14 @@ class MapViewModel
         /** All collections present in the dataset, in first-seen order (for the chips). */
         val collections: List<PlaceCollection> = all.map { it.collection }.distinct()
 
-        /** All aroma categories present in the dataset, in first-seen order (for the chips). */
-        val categories: List<String> = repository.categories()
-
         private val filterState = MutableStateFlow(MapFilter())
         val filter: StateFlow<MapFilter> = filterState.asStateFlow()
+
+        /** Category chips scoped to the selected collections (all collections' if none). */
+        val categories: StateFlow<List<String>> =
+            filterState
+                .map { active -> categoriesFor(active.collections) }
+                .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), categoriesFor(emptySet()))
 
         val filtered: StateFlow<List<Place>> =
             filterState
@@ -47,7 +50,13 @@ class MapViewModel
                 .stateIn(viewModelScope, SharingStarted.WhileSubscribed(STOP_TIMEOUT_MS), all)
 
         fun toggleCollection(collection: PlaceCollection) {
-            filterState.update { it.copy(collections = it.collections.toggle(collection)) }
+            filterState.update {
+                val collections = it.collections.toggle(collection)
+                // Drop selected categories that the new collection scope no longer offers,
+                // so no category chip becomes an unreachable "orphan" that empties results.
+                val inScope = categoriesFor(collections).toSet()
+                it.copy(collections = collections, categories = it.categories intersect inScope)
+            }
         }
 
         fun toggleCategory(category: String) {
@@ -60,6 +69,11 @@ class MapViewModel
 
         fun clear() {
             filterState.value = MapFilter()
+        }
+
+        private fun categoriesFor(collections: Set<PlaceCollection>): List<String> {
+            val scope = if (collections.isEmpty()) all else all.filter { it.collection in collections }
+            return scope.flatMap { it.categories }.distinct()
         }
 
         private fun apply(active: MapFilter): List<Place> =

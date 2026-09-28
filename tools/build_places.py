@@ -59,6 +59,11 @@ def authored_places(filename, collection):
         if s.get("image"):
             entry["bild"] = s["image"]
             entry["bild_quelle"] = s.get("imageAttribution", "Wikimedia Commons")
+        # Season + category (added to the non-aroma collections so the season and
+        # per-collection category filters work); keys already match the schema.
+        for key in ("kategorie", "kategorien", "monate", "ganzjaehrig", "saison_ja", "saison_de"):
+            if key in s:
+                entry[key] = s[key]
         out.append(entry)
     return out
 
